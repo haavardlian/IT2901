@@ -1,6 +1,32 @@
 *.class
+bin/
+gen/
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Binaries
+*.apk
+*.ap_
+
+# Dex VM
+*.dex
