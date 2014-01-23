@@ -116,7 +116,12 @@ Pia	Karlsen	Lindkjølen\\}\par
 \titleLL
 \clearpage
 
-\tableofcontents
+\renewcommand\contentsname{\hspace{-1.5cm}Contents}
+
+\tableofcontents*
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+
+
 \cleardoublepage
 \pagestyle{plain}
 \pagenumbering{arabic}
