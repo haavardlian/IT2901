@@ -1,64 +1,43 @@
-\documentclass[12pt]{memoir}
+\documentclass[12pt, oneside]{memoir}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{pdfpages}
 \usepackage{graphicx}
 \usepackage{changepage}
-%\usepackage[includehead, hmargin=1.7cm]{geometry}
+\usepackage[left=3.5cm, right=3.5cm,top=3.5cm,bottom=3cm,
+  includefoot]{geometry}
 \usepackage{comment}
 \usepackage{caption}
 \usepackage{float}
 \usepackage{calc,color}
 \usepackage{lipsum}
-
-
-\newif\ifNoChapNumber
-\newcommand\Vlines{%
-\def\VL{\rule[-2cm]{1pt}{5cm}\hspace{1mm}\relax}
-\VL\VL\VL\VL\VL\VL\VL}
-\makeatletter
-\setlength\midchapskip{0pt}
-\makechapterstyle{VZ43}{
-\renewcommand\chapternamenum{}
-\renewcommand\printchaptername{}
-\renewcommand\printchapternum{}
-\renewcommand\chapnumfont{\Huge\bfseries\centering}
-\renewcommand\chaptitlefont{\Huge\bfseries\raggedright}
-\renewcommand\printchaptertitle[1]{%
-\Vlines\hspace*{-2em}%
-\begin{tabular}{@{}p{1cm} p{\textwidth-3cm}}%
-\ifNoChapNumber\relax\else%
-\colorbox{black}{\color{white}%
-\makebox[.8cm]{\chapnumfont\strut \thechapter}}
-\fi
-& \chaptitlefont ##1
-\end{tabular}
-\NoChapNumberfalse
-}
-\renewcommand\printchapternonum{\NoChapNumbertrue}
-}
-\makeatother
-\chapterstyle{VZ43}
-
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{url}
 \usepackage[svgnames]{xcolor}
-\ifpdf
-\usepackage{pdfcolmk}
-\fi
-%% check if using xelatex rather than pdflatex
-\ifxetex
-\usepackage{fontspec}
-\fi
-\usepackage{graphicx}
-%%\usepackage{hyperref}
-%% drawing package
-\usepackage{tikz}
-%% for dingbats
-\usepackage{pifont}
-\providecommand{\HUGE}{\Huge}% if not using memoir
+
+%%Title page
+\newcommand*{\titleLL}{\begingroup% Lost Languages
+\drop=0.1\textheight
+\fboxsep 0.5\baselineskip
+\sffamily
+\vspace*{\drop}
+\centering
+{\textcolor{SkyBlue}{\HUGE Smart electricity}}\par
+\vspace{0.5\drop}
+\colorbox{Dark}{\textcolor{white}{\normalfont\itshape\Large
+Project report: IT2901}}\par
+\vspace{\drop}
+{\Large Spring 2014}\par\vfill{\footnotesize Beate Baier Biribakken\\
+Tor-Håkon	Bonsaksen\\
+Lars Erik Græsdal-Knutrud\\
+Per	Øyvind	Kanestrøm\\
+Håvard	Holmboe	Lian\\
+Pia	Karlsen	Lindkjølen\\}\par
+\vspace*{\drop}
+\endgroup}
+
 \newlength{\drop}% for my convenience
 %% specify the Webomints family
 \newcommand*{\wb}[2]{\fontsize{#1}{#2}\usefont{U}{webo}{xl}{n}}
@@ -94,48 +73,54 @@
 \makeatother
 
 
-\newcommand*{\titleLL}{\begingroup% Lost Languages
-\drop=0.1\textheight
-\fboxsep 0.5\baselineskip
-\sffamily
-\vspace*{\drop}
-\centering
-{\textcolor{SkyBlue}{\HUGE Smart electricity}}\par
-\vspace{0.5\drop}
-\colorbox{Dark}{\textcolor{white}{\normalfont\itshape\Large
-Project report: IT2901}}\par
-\vspace{\drop}
-{\Large Spring 2014}\par
-\vfill{\footnotesize Beate Baier Biribakken\\
-Tor-Håkon	Bonsaksen\\
-Lars Erik Græsdal-Knutrud\\
-Per	Øyvind	Kanestrøm\\
-Håvard	Holmboe	Lian\\
-Pia	Karlsen	Lindkjølen\\}\par
-\vspace*{\drop}
-\endgroup}
 
-
-
-\title{\textbf{
-IT2901
+%%Chapter-styling
+\newif\ifNoChapNumber
+\newcommand\Vlines{%
+\def\VL{\rule[-2cm]{1pt}{5cm}\hspace{1mm}\relax}
+\VL\VL\VL\VL\VL\VL\VL}
+\makeatletter
+\setlength\midchapskip{0pt}
+\makechapterstyle{VZ43}{
+\renewcommand\chapternamenum{}
+\renewcommand\printchaptername{}
+\renewcommand\printchapternum{}
+\renewcommand\chapnumfont{\Huge\bfseries\centering}
+\renewcommand\chaptitlefont{\Huge\bfseries\raggedright}
+\renewcommand\printchaptertitle[1]{%
+%\Vlines\hspace*{-2em}%
+\begin{tabular}{@{}p{1cm} p{\textwidth-3cm}}%
+\ifNoChapNumber\relax\else%
+\colorbox{black}{\color{white}%
+\makebox[.8cm]{\chapnumfont\strut \thechapter}}
+\fi
+& \chaptitlefont ##1
+\end{tabular}
+\NoChapNumberfalse
 }
+\renewcommand\printchapternonum{\NoChapNumbertrue}
 }
+\makeatother
+\chapterstyle{VZ43}
 
-\author{Beate Baier Biribakken\\
-Tor-Håkon	Bonsaksen\\
-Lars Erik Græsdal-Knutrud\\
-Per	Øyvind	Kanestrøm\\
-Håvard	Holmboe	Lian\\
-Pia	Karlsen	Lindkjølen\\}
-\date{}
+
+
+%Row height in tables
+\renewcommand{\arraystretch}{1.5}
+
+
+
 \begin{document}
-%\maketitle
+\thispagestyle{empty}
+\pagenumbering{gobble}
 \titleLL
-
-
 \clearpage
+
 \tableofcontents
+\cleardoublepage
+\pagestyle{plain}
+\pagenumbering{arabic}
+
 
 
 
@@ -149,13 +134,50 @@ check if there already exist solutions for our problem and make evaluation of th
 \chapter{Architecture}
 
 \chapter{Team organization}
+In order to exploit the team's resources in the best way possible, all the team members has summed up their background knowledge and which role they wish to have in the project. The team has organized its structure the based on this information.
+
+\section{The team members}
+The team consists of six persons, all in their final year of a bachelor in Informatics. All the members have previous experience on working in teams on educational projects.
+
+\subsubsection{Beate Baier Biribakken}
+Beate have previously worked at Student-Media AS and Sportradar AS as web developer. From these experiences, she gained knowledge about Linux and web development, such as PHP, JavaScript, HTML and CSS. She also has some experience with Scrum, Java and Android.
+
+\subsubsection{Tor-Håkon Bonsaksen}
+Tor Håkon has..
+\subsubsection{Lars Erik Græsdal-Knutrud}
+ Lars Erik has..
+\subsubsection{Per Øyvind Kanestrøm}
+Per Øyvind has..
+
+\subsubsection{Håvard	Holmboe	Lian}
+Håvard has ..
+\subsubsection{Pia	Karlsen	Lindkjølen}
+Pia has ..
+
+\section{Main responsibilities}
+\begin{table}[H]
+\begin{tabular}{l|p{7cm}}
+\textbf{Role} & \textbf{Description}\\\hline
+Project leader: Pia & Keeping team updated and monitor the project's status\\\hline
+Deputy project leader: Lars Erik & Fill in whenever the project leader is incapable to perform all duties\\\hline
+Scrum-master: Per Øyvind & Make sure that Scrum-process goes as smooth as possible, that the team provides necessary documentation and keep track of the project process\\\hline
+Customer relations: Pia & All customer communication mainly goes through this person.\\\hline
+Development: Tor-Håkon & Keep track of the technological development progress, make sure it is going by schedule and take necessary action \\\hline
+Report: Beate & Monitor the report's progress, spell check and review content.\\\hline
+Testing: Håvard & Make sure that the code is properly tested during the development process to detect possible errors, deficiencies and bugs and take the necessary action \\\hline
+Secretary: circulates & Take note of important information during meetings within the team and with the customer.
+\end{tabular}
+\end{table}
+
 \chapter{Process model}
 \chapter{Development environment}
 - tools for programming, testing, versioning, documenting, archiving, communication within team, communication with customer
 
+\section{Communication}
+\subsection{Within the team}
+\subsection{With the customer}
+
 \chapter{Project schedule}
-
-
 
 
 \end{document}
