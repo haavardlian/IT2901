@@ -5,7 +5,7 @@
 \usepackage{pdfpages}
 \usepackage{graphicx}
 \usepackage{changepage}
-\usepackage[left=3.5cm, right=3.5cm,top=3.5cm,bottom=3cm,
+\usepackage[left=3cm, right=3cm,top=3.5cm,bottom=2.5cm,
   includefoot]{geometry}
 \usepackage{comment}
 \usepackage{caption}
@@ -15,7 +15,10 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{url}
-\usepackage[svgnames]{xcolor}
+\usepackage[svgnames, table]{xcolor}
+
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{darkgray}{gray}{0.7}
 
 %%Title page
 \newcommand*{\titleLL}{\begingroup% Lost Languages
@@ -29,7 +32,8 @@
 \colorbox{Dark}{\textcolor{white}{\normalfont\itshape\Large
 Project report: IT2901}}\par
 \vspace{\drop}
-{\Large Spring 2014}\par\vfill{\footnotesize Beate Baier Biribakken\\
+{\Large Spring 2014}\par\vfill
+{\footnotesize Beate Baier Biribakken\\
 Tor-Håkon	Bonsaksen\\
 Lars Erik Græsdal-Knutrud\\
 Per	Øyvind	Kanestrøm\\
@@ -108,6 +112,20 @@ Pia	Karlsen	Lindkjølen\\}\par
 %Row height in tables
 \renewcommand{\arraystretch}{1.5}
 
+%Header and page numbering
+\makepagestyle{headings}
+\makeheadrule{headings}{\textwidth}{\normalrulethickness}
+\makeevenfoot{headings}{}{\thepage}{}
+\makeoddfoot{headings}{}{\thepage}{}
+\makeevenhead{headings}{\sffamily\rightmark}{}{\sffamily\leftmark}
+\makeoddhead{headings}{\sffamily\rightmark}{}{\sffamily\leftmark}
+\makeatletter % because of \@chapapp
+\makepsmarks{headings}{
+\nouppercaseheads
+\createmark {chapter} {both} {shownumber}{\@chapapp\ }{. \ }
+\createmark {section} {right}{shownumber}{} {. \ }
+}
+\makeatother
 
 
 \begin{document}
@@ -117,72 +135,20 @@ Pia	Karlsen	Lindkjølen\\}\par
 \clearpage
 
 \renewcommand\contentsname{\hspace{-1.5cm}Contents}
-
+\pagenumbering{Roman}
 \tableofcontents*
 \addtocontents{toc}{~\hfill\textbf{Page}\par}
 
-
 \cleardoublepage
-\pagestyle{plain}
+\pagestyle{headings}
 \pagenumbering{arabic}
 
+\input ch/introduction/introduction.tex
+\input ch/projectPlan/projectPlan.tex
+%\input ch/testing/testing.tex
+\input ch/research/research.tex
+\input ch/specification/specification.tex
 
-
-
-\chapter{Description}
-the problem we're going to solve, as-is and to-be
-\chapter{Requirements}
-main requirements. Must be sorted out with customer.
-\chapter{Alternative solutions}
-check if there already exist solutions for our problem and make evaluation of them. Evaluation criterias should be discussed with customer. this isthe ennd.
-
-\chapter{Architecture}
-
-\chapter{Team organization}
-In order to exploit the team's resources in the best way possible, all the team members has summed up their background knowledge and which role they wish to have in the project. The team has organized its structure the based on this information.
-
-\section{The team members}
-The team consists of six persons, all in their final year of a bachelor in Informatics. All the members have previous experience on working in teams on educational projects.
-
-\subsubsection{Beate Baier Biribakken}
-Beate have previously worked at Student-Media AS and Sportradar AS as web developer. From these experiences, she gained knowledge about Linux and web development, such as PHP, JavaScript, HTML and CSS. She also has some experience with Scrum, Java and Android.
-
-\subsubsection{Tor-Håkon Bonsaksen}
-Tor Håkon has..
-\subsubsection{Lars Erik Græsdal-Knutrud}
- Lars Erik has..
-\subsubsection{Per Øyvind Kanestrøm}
-Per Øyvind has..
-
-\subsubsection{Håvard	Holmboe	Lian}
-Håvard has ..
-\subsubsection{Pia	Karlsen	Lindkjølen}
-Pia has ..
-
-\section{Main responsibilities}
-\begin{table}[H]
-\begin{tabular}{l|p{7cm}}
-\textbf{Role} & \textbf{Description}\\\hline
-Project leader: Pia & Keeping team updated and monitor the project's status\\\hline
-Deputy project leader: Lars Erik & Fill in whenever the project leader is incapable to perform all duties\\\hline
-Scrum-master: Per Øyvind & Make sure that Scrum-process goes as smooth as possible, that the team provides necessary documentation and keep track of the project process\\\hline
-Customer relations: Pia & All customer communication mainly goes through this person.\\\hline
-Development: Tor-Håkon & Keep track of the technological development progress, make sure it is going by schedule and take necessary action \\\hline
-Report: Beate & Monitor the report's progress, spell check and review content.\\\hline
-Testing: Håvard & Make sure that the code is properly tested during the development process to detect possible errors, deficiencies and bugs and take the necessary action \\\hline
-Secretary: circulates & Take note of important information during meetings within the team and with the customer.
-\end{tabular}
-\end{table}
-
-\chapter{Process model}
-\chapter{Development environment}
-- tools for programming, testing, versioning, documenting, archiving, communication within team, communication with customer
-
-\section{Communication}
-\subsection{Within the team}
-\subsection{With the customer}
-
-\chapter{Project schedule}
 
 
 \end{document}
