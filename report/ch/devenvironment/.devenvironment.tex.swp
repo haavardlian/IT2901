@@ -1,0 +1,16 @@
+\chapter{Development environment}
+- tools for programming, testing, versioning, 
+
+\section{Software}
+\subsection{Development tools}
+
+The team members have decided to use the  integrated development environments Eclipse and IntelliJ for the Android development. 
+
+All the team members already had experience with Eclipse, but some of us also wanted to try out IntelliJ, as it appeared to have more features, such as a faster compiler, better search function and autocompletion of code, than Eclipse. However, the remaining part of the team considered the learning curve to switch to IntelliJ to be greater than the advantages and therefore chose to stay with Eclipse.
+
+\subsubsection{Eclipse}
+Eclipse is an integrated development environment (IDE) that is well integrated with Android.
+
+\subsubsection{IntelliJ}
+\subsection{Code convension}
+\section{Testing}
