@@ -4,3 +4,10 @@
 *.jar
 *.war
 *.ear
+
+# Tex
+*.pdf
+*.aux
+*.log
+*.gz
+*.toc
