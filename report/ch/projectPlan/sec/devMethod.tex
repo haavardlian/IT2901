@@ -6,33 +6,45 @@ mock-up or prototype; phases and iteration
 
 %\subsection{Resources}
 \subsection{Risk analysis}
-As part of our project planning, we have outlined potential risks to the progress of our work. A risk
-is defined as an unwanted event that affects the process. We acknowledge the possibility of challenges and problems arising during the work, such as technical problems, human error or personal problems. These are risks for both individuals and the group as a whole. Effects of these problems include delays, conflict and anything that will slow the progress, and ultimately lead to failure to  meet deadlines. One of the most prevalent and dangerous risks is loss of motivation from one or more members of the group. Our assessment of the risks to this project is included in attachment E. The risk elements are sorted by their importance. Importance is calculated with two factors in mind; the calculated probability of the event actually occurring and the effect the event will have on the project. 
+As part of our project planning, we have outlined potential risks to the progress of our work. A risk is defined as an unwanted event that affects the process. We acknowledge the possibility of challenges and problems that arises during the work, such as technical problems, human error or personal problems. These are risks for both individuals and the group as a whole. Effects of these problems include delays, conflict and anything that will slow the progress, and ultimately lead to failure to  meet deadlines. One of the most prevalent and dangerous risks is loss of motivation from one or more members of the group. Our assessment of the risks to this project is included in attachment E. The risk elements are sorted by their importance. Importance is calculated with two factors in mind; the calculated probability of the event actually occurring and the effect the event will have on the project. 
+
 In the table given below, we analyze the elements we consider risks to our project. Likelihood (L) and effect (E) is measured on a scale from 1 to 9. For likelihood, a 9 is very likely and a 1 is very unlikely. For effect, a 9 is devastating and a 1 is not much effect. The table is sorted from high to low importance (I). Importance is the product of probability and effect. 
 
 
 
 
-\begin{table}[H]
-\begin{tabular}{|p{4cm}|p{0.2cm}|p{0.2cm}|l|p{4.8cm}|p{4.8cm}|}
+\begin{longtable}{|p{4cm}|p{0.3cm}|p{0.3cm}|p{0.3cm}|p{4.8cm}|p{4.8cm}|}
+\hline \multicolumn{1}{|l}{\textbf{Description}} & \multicolumn{1}{l}{\textbf{L}} & \multicolumn{1}{l}{\textbf{E}} & \multicolumn{1}{l}{\textbf{I}} & \multicolumn{1}{l}{\textbf{Preventive actions}} & \multicolumn{1}{l|}{\textbf{Remedial actions}}\\ \hline 
+\endfirsthead
+
+\multicolumn{6}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|l}{\textbf{Description}} & \multicolumn{1}{l}{\textbf{L}} & \multicolumn{1}{l}{\textbf{E}} & \multicolumn{1}{l}{\textbf{I}} & \multicolumn{1}{l}{\textbf{Preventive actions}} & \multicolumn{1}{l|}{\textbf{Remedial actions}}\\ \hline 
+\endhead
+
+\hline \multicolumn{6}{|l|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline 
+\endlastfoot
+
 \hline
-Description &L& E& I& Preventive action & Remedial action \\\hline
-Customer requirements exceeds predicted amount of time&&&& Continiously revise the workload and prioritize &  \\\hline
-Underestimation of workload & &&& Continiously revise workload and how much time is left, and prioritize & Reestimate continiously\\\hline
-Data loss&&&& Use version control system &Restore data from previous versions\\\hline
-Conflict in group& & & & Have in mind that people often misunderstand each other and have an open dialog to solve problem. & Contact supervisor for help.\\\hline
-Communication failure &&&& Make e-mail-list and exchange contact information. Be explicit. & Check e-mail and phones multiple times a day.\\\hline
-Unbalanced workload&&&& Coordinate with entire team and log hours & Reallocate tasks\\\hline
-Issues with software or tools&&&& Choose software the team members are familiar with & Hold workshops and view tutorials\\\hline
-Eclipse and IntelliJ is imcompatible&&&&&\\\hline
-External services unavailable &&&&&\\\hline
-Team member unavailable &&&& Good infrastructure for communication and progress reports & Keep in touch with unavailable team member or redistribute tasks\\\hline
-Team member drops out &&&& Keep track of the effort and the hour's log public & Contact supervisor and redistribute tasks \\\hline
-Illness &&&&Multiple team members work on the same task& Allocate sick member's task to remaining members\\\hline
-Supervisor unavailable&&&& Keep regular contact with supervisor & Discuss problem internally and contact department\\\hline
-Customer unavailable&&&& Keep regular contact with customer & Discuss problem within team and contact supervisor\\\hline
-\end{tabular}
-\end{table}
+Customer requirements exceeds predicted amount of time& 4 & 3 & 12 & Continiously revise the workload and prioritize. Set a date for last major changes. & Politely explain that there is not enough time for the changes he suggests. \\
+Underestimation of workload & 9 & 8 & 72 & Continiously revise workload and how much time is left, and prioritize & Reestimate continiously\\
+Data loss & 2 & 9 & 18 & Use version control system &Restore data from previous versions\\
+Conflict in group & 5 & 2 & 10 & Have in mind that people often misunderstand each other and have an open dialog to solve problem. & Contact supervisor for help.\\
+Communication failure & 7 & 2 & 14 & Make e-mail-list and exchange contact information. Be explicit. & Check e-mail and phones multiple times a day.\\
+Unbalanced workload & 5 & 7 & 35 & Coordinate with entire team and log hours & Reallocate tasks\\
+Issues with software or tools & 9 & 5 & 45 & Choose software the team members are familiar with & Hold workshops and view tutorials\\
+%Lars and Beate would possibly have to change to IntelliJ, so this might disappear. Android -> IntelliJ. Back-end->Eclipse/IntelliJ.
+Eclipse and IntelliJ is imcompatible & 7 & 3 & 21 & Evaluate whether use of different IDEs have any negative impact on project & Decide to choose only one of them. \\
+External services unavailable & 4 & 7 & 21 & Project not fully dependent of external services. Server is easy to deploy. & Must find new external service to replace the one(s) becoming unavailable. Deploy elsewhere.\\
+Team member unavailable & 9 & 3 & 27 & Inform each other of dates we know we will be unavailable. Good infrastructure for communication and progress reports & Keep in touch with unavailable team member or redistribute tasks\\
+Team member is freeloading & 1 & 7 & 7 & Keep track of the effort and the hour's log public & Contact supervisor and redistribute tasks \\
+Illness & 9 & 4 & 36 & Multiple team members work on the same task& Allocate sick member's task to remaining members\\
+Supervisor unavailable & 3 & 4 & 12 & Keep regular contact with supervisor & Discuss problem internally and contact department.\\
+Customer unavailable & 3 & 6 & 18 & Keep regular contact with customer & Discuss problem within team and contact supervisor\\
+\end{longtable}
 
 
 %\subsection{Work Breakdown Structure}
