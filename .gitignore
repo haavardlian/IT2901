@@ -11,6 +11,9 @@
 *.log
 *.gz
 *.toc
+*.synctex
+*.dvi
+*.bak
 
 # VIM
 *.swp
