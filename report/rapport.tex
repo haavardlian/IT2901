@@ -1,148 +1,27 @@
-\documentclass[12pt]{memoir}
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{pdfpages}
-\usepackage{graphicx}
-\usepackage{changepage}
-%\usepackage[includehead, hmargin=1.7cm]{geometry}
-\usepackage{comment}
-\usepackage{caption}
-\usepackage{float}
-\usepackage{calc,color}
-\usepackage{lipsum}
+\documentclass[12pt, oneside]{memoir}
+\input config.tex
 
-
-\newif\ifNoChapNumber
-\newcommand\Vlines{%
-\def\VL{\rule[-2cm]{1pt}{5cm}\hspace{1mm}\relax}
-\VL\VL\VL\VL\VL\VL\VL}
-\makeatletter
-\setlength\midchapskip{0pt}
-\makechapterstyle{VZ43}{
-\renewcommand\chapternamenum{}
-\renewcommand\printchaptername{}
-\renewcommand\printchapternum{}
-\renewcommand\chapnumfont{\Huge\bfseries\centering}
-\renewcommand\chaptitlefont{\Huge\bfseries\raggedright}
-\renewcommand\printchaptertitle[1]{%
-\Vlines\hspace*{-2em}%
-\begin{tabular}{@{}p{1cm} p{\textwidth-3cm}}%
-\ifNoChapNumber\relax\else%
-\colorbox{black}{\color{white}%
-\makebox[.8cm]{\chapnumfont\strut \thechapter}}
-\fi
-& \chaptitlefont ##1
-\end{tabular}
-\NoChapNumberfalse
-}
-\renewcommand\printchapternonum{\NoChapNumbertrue}
-}
-\makeatother
-\chapterstyle{VZ43}
-
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{url}
-\usepackage[svgnames]{xcolor}
-\ifpdf
-\usepackage{pdfcolmk}
-\fi
-%% check if using xelatex rather than pdflatex
-\ifxetex
-\usepackage{fontspec}
-\fi
-\usepackage{graphicx}
-%%\usepackage{hyperref}
-%% drawing package
-\usepackage{tikz}
-%% for dingbats
-\usepackage{pifont}
-\providecommand{\HUGE}{\Huge}% if not using memoir
-\newlength{\drop}% for my convenience
-%% specify the Webomints family
-\newcommand*{\wb}[2]{\fontsize{#1}{#2}\usefont{U}{webo}{xl}{n}}
-%% select a (FontSite) font by its font family ID
-\newcommand*{\FSfont}[1]{\fontencoding{T1}\fontfamily{#1}\selectfont}
-%% if you don’t have the FontSite fonts either \renewcommand*{\FSfont}[1]{}
-%% or use your own choice of family.
-%% select a (TeX Font) font by its font family ID
-\newcommand*{\TXfont}[1]{\fontencoding{T1}\fontfamily{#1}\selectfont}
-%% Generic publisher’s logo
-\newcommand*{\plogo}{\fbox{$\mathcal{PL}$}}
-\definecolor{Dark}{gray}{0.2}
-\definecolor{MedDark}{gray}{0.4}
-\definecolor{Medium}{gray}{0.6}
-\definecolor{Light}{gray}{0.8}
-%%%% Additional font series macros
-\makeatletter
-%%%% light series
-%% e.g., kernel doc, section s: line 12 or thereabouts
-\DeclareRobustCommand\ltseries
-{\not@math@alphabet\ltseries\relax
-\fontseries\ltdefault\selectfont}
-%% e.g., kernel doc, section t: line 32 or thereabouts
-\newcommand{\ltdefault}{l}
-%% e.g., kernel doc, section v: line 19 or thereabouts
-\DeclareTextFontCommand{\textlt}{\ltseries}
-% heavy(bold) series
-\DeclareRobustCommand\hbseries
-{\not@math@alphabet\hbseries\relax
-\fontseries\hbdefault\selectfont}
-\newcommand{\hbdefault}{hb}
-\DeclareTextFontCommand{\texthb}{\hbseries}
-\makeatother
-
-
-\newcommand*{\titleLL}{\begingroup% Lost Languages
-\drop=0.1\textheight
-\fboxsep 0.5\baselineskip
-\sffamily
-\vspace*{\drop}
-\centering
-{\textcolor{SkyBlue}{\HUGE Smart electricity}}\par
-\vspace{0.5\drop}
-\colorbox{Dark}{\textcolor{white}{\normalfont\itshape\Large
-Project report: IT2901}}\par
-\vspace{\drop}
-{\Large Spring 2014}\par
-\vfill{\footnotesize Beate Baier Biribakken\\
-Tor-Håkon	Bonsaksen\\
-Lars Erik Græsdal-Knutrud\\
-Per	Øyvind	Kanestrøm\\
-Håvard	Holmboe	Lian\\
-Pia	Karlsen	Lindkjølen\\}\par
-\vspace*{\drop}
-\endgroup}
-
-
-
-\title{\textbf{
-IT2901
-}
-}
-
-\author{Beate Baier Biribakken\\
-Tor-Håkon	Bonsaksen\\
-Lars Erik Græsdal-Knutrud\\
-Per	Øyvind	Kanestrøm\\
-Håvard	Holmboe	Lian\\
-Pia	Karlsen	Lindkjølen\\}
-\date{}
 \begin{document}
-%\maketitle
+\thispagestyle{empty}
+\pagenumbering{gobble}
+
 \titleLL
-
-
 \clearpage
-\tableofcontents
 
+\renewcommand\contentsname{\hspace{-1.5cm}Contents}
+\pagenumbering{Roman}
+\tableofcontents*
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
 
-\chapter{Test}
+\cleardoublepage
+\pagestyle{headings}
+\pagenumbering{arabic}
 
-\lipsum
-
-
-
-
+\input ch/introduction/introduction.tex
+\input ch/projectPlan/projectPlan.tex
+%\input ch/testing/testing.tex
+\input ch/research/research.tex
+\input ch/devenvironment/devenvironment.tex
+\input ch/specification/specification.tex
+\input bib.tex
 \end{document}
