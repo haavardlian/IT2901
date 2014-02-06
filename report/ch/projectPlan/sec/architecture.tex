@@ -1,6 +1,6 @@
 \section{Architecture}
 \subsection{Server}
-The server has two communications parts and one storage backend. The first communications part is responsible for talking the the aggregator placed in the users home, it will poll data from this device and place them in a database. The second part is responsible for talking with users Android devices and feeding them data from their own aggregator box and other usage data such as friends data and general statistics. The storage back end is responsible for keeping data updated and available.
+The backend server is divided into two parts with an underlying database connection. The first part is responsible for fetching data from the users home from the Home Data Aggregator and store this data in the database for future use. The second part is responsible for talking with the application on the Android device. It will fetch data about a users specific usage, users friends usage, or general statistics concerning power usage. The database connection layer will serve as an abstraction to the database itself and provide easy to use access to the data stored.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/projectPlan/fig/server.png}
@@ -8,7 +8,7 @@ The server has two communications parts and one storage backend. The first commu
 \end{figure}
 
 \subsection{Android Device}
-The application running on the Android device will be responsible for handling connections to external services like Google Drive and Facebook as well as fetching data from the server.
+The application running on the Android device will be responsible for handling connections to external services like Google Drive and Facebook and combine them with data from the server in order to represent data to the user.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/projectPlan/fig/androidDevice.png}
@@ -16,7 +16,7 @@ The application running on the Android device will be responsible for handling c
 \end{figure}
 
 \subsection{Home Data Aggregator}
-This device will collect data from sources in the users home. The reason for this external box as opposed to using the users phone to collect data, is with this solution the team can fetch data at regular intervals throughout the whole day with no need for the users to be home. The device will pass data along to the external server at request from the server.
+This device will collect data from sources in the users home. The reason for this external box as opposed to using the users phone to collect data, is that with this solution the system can fetch data at regular intervals throughout the whole day. So there is no need to the user to be home in order to collect usage data. The device will pass data along to the external server at request from the server.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/projectPlan/fig/home.png}
