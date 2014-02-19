@@ -3,9 +3,9 @@ Devices
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Overview of devices}\\\hline
+\textbf{ID:} 1&\textbf{Overview of devices}\\\hline
 \textbf{Actor} &User\\\hline
 \textbf{Description}&
 The user should be able to see which devices in his house that actually use or produce electricity, real time.\\\hline
@@ -18,21 +18,21 @@ Depends on x.\\\hline
 Registrered energy usage\\\hline
 \textbf{Postconditions}& App displays list of all active devices\\\hline
 \textbf{Basic flow}&
-1. User taps “Devices”-tab in menu
+1. User taps ''Devices''-tab in menu
 2. All active devices are displayed in list\\\hline
 \textbf{Alternative flow}&
-1.a User taps wrong menu tab. Return to basic flow 1.\\\hline
+1.1 User taps wrong menu tab. Return to basic flow 1.\\\hline
 \textbf{Comments}&\\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 1}
 \end{table}
 
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Display energy usage per device}\\\hline
+\textbf{ID: }2&\textbf{Display energy usage per device}\\\hline
 \textbf{Actor} &User\\\hline
 \textbf{Description}&
 The user should be able to see how much electricity each device in his house use on an average basis, on a monthly basis and on a yearly basis.\\\hline
@@ -44,25 +44,25 @@ Depends on x.\\\hline
 Registered energy usage\\\hline
 \textbf{Postconditions}& App displays sector graph where each area represents a device\\\hline
 \textbf{Basic flow}&
-1. User taps “Usage”-tab in menu\newline
-2. User taps “Show devices”\newline
+1. User taps ''Usage''-tab in menu\newline
+2. User taps ''Show devices''\newline
 3. User wants to display graphs for specific time period\newline
-3.a User choose “Last month” in drop down menu (default view)\newline
-3.b User choose “Last year” in drop down menu\\\hline
+3.a User choose ''Last month'' in drop down menu (default view)\newline
+3.b User choose ''Last year'' in drop down menu\\\hline
 \textbf{Alternative flow}&
 3.1 No electricity usage is registred. Average consumption is displayed.\newline
-3.1.a User choose “Last month” in drop down menu (default view)\newline
-3.1.b User choose “Last year” in drop down menu\\\hline
+3.1.a User choose ''Last month'' in drop down menu (default view)\newline
+3.1.b User choose ''Last year'' in drop down menu\\\hline
 \textbf{Comments}&\\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 2}
 \end{table}
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Turn off device}
+\textbf{ID:} 3&\textbf{Turn off device}
 \\\hline
 \textbf{Actor} &User
 \\\hline
@@ -79,33 +79,33 @@ User should be able to turn off devices from the app.\\\hline
 \newline
 Depends on x.\\\hline
 \textbf{Input}&
-User presses “Turn off”-button
+User presses ''Turn off''-button
 \\\hline
 \textbf{Postconditions}& 
 Device is turned off.
 \\\hline
 \textbf{Basic flow}&
-1. User taps “Devices”\newline
+1. User taps ''Devices''\newline
 2. User taps the specific device he wants to turn off\newline
-3. User turns off device by pressing “Turn off”-button
+3. User turns off device by pressing ''Turn off''-button
 \\\hline
 \textbf{Alternative flow}&
 2.1 User taps wrong device. Return to basic flow 2.\newline
 2.2 User turns off wrong device.\newline
-2.2.a User turns on the wrongly selected device. See use case scenario //legg til ref (turn on device)\newline
+2.2.a User turns on the wrongly selected device. See use case scenario 4.\newline
 2.2.b User turns off the correct device. Return to basic flow 3.
 \\\hline
 \textbf{Comments}&\\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 3}
 \end{table}
 
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Turn on device}
+\textbf{ID: }4&\textbf{Turn on device}
 \\\hline
 \textbf{Actor} &User
 \\\hline
@@ -117,34 +117,34 @@ User should be able to turn on devices from the app.\\\hline
 3. The device must be turned off. \newline
 Depends on x.\\\hline
 \textbf{Input}&
-User presses “Turn on”-button
+User presses ''Turn on''-button
 \\\hline
 \textbf{Postconditions}& 
 Device is turned on.
 \\\hline
 \textbf{Basic flow}&
-1. User taps “Devices”\newline
+1. User taps ''Devices''\newline
 2. User taps the specific device he wants to turn on\newline
-3. User turns on device by pressing “Turn on”-button\newline
+3. User turns on device by pressing ''Turn on''-button\newline
 \\\hline
 \textbf{Alternative flow}&
 2.1 User taps wrong device. Return to basic flow 2.\newline
 2.2 User turns on wrong device.\newline
-2.2.a User turns off the wrongly selected device. See use case scenario //legg til ref (turn off device)\newline
+2.2.a User turns off the wrongly selected device. See use case scenario 3\newline
 2.2.b User turns on the correct device. Return to basic flow 3\newline
 \\\hline
 \textbf{Comments}&\\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 4}
 \end{table}
 
 
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Specify a maximum of power consumption}
+\textbf{ID: }5&\textbf{Specify a maximum of power consumption}
 \\\hline
 \textbf{Actor} &User
 \\\hline
@@ -163,7 +163,7 @@ User registers maximum kwh/day
 Device is turned off when maximum power consumption limit is reached.
 \\\hline
 \textbf{Basic flow}&
-1. User taps “Devices”-tab in menu\newline
+1. User taps ''Devices''-tab in menu\newline
 2. User taps specific, correct device\newline
 3. User sets maximum power consumption limit
 \\\hline
@@ -175,15 +175,15 @@ Device is turned off when maximum power consumption limit is reached.
 \\\hline
 \textbf{Comments}& Not available for critical devices\\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 5}
 \end{table}
 
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Schedule device’s consumption}
+\textbf{ID: }6&\textbf{Schedule device’s consumption}
 \\\hline
 \textbf{Actor} &User
 \\\hline
@@ -203,7 +203,7 @@ Deviceid, time period
 The specific device is turned off in the chosen time period.
 \\\hline
 \textbf{Basic flow}&
-1. User taps “Devices”-tab in menu\newline
+1. User taps ''Devices''-tab in menu\newline
 2. User taps specific, correct device\newline
 3. User choose a time period
 \\\hline
@@ -215,15 +215,15 @@ The specific device is turned off in the chosen time period.
 \\\hline
 \textbf{Comments}& Not available for critical devices\\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 6}
 \end{table}
 
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Notification if the device’s power consumption reaches maximum limit}
+\textbf{ID: }7&\textbf{Notification if the device’s power consumption reaches maximum limit}
 \\\hline
 \textbf{Actor} &System
 \\\hline
@@ -250,14 +250,14 @@ System sends notification to user about the device in question. User receives no
 \textbf{Alternative flow}&\\\hline
 \textbf{Comments}& Not available for critical devices\\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 7}
 \end{table}
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Adding Power Savers}
+\textbf{ID: }8&\textbf{Adding Power Savers}
 \\\hline
 \textbf{Actor} &User
 \\\hline
@@ -279,15 +279,15 @@ The Power Saver is added to the public database and is visible for other users.
 \textbf{Alternative flow}&\\\hline
 \textbf{Comments}& \\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 8}
 \end{table}
 
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Choosing anonymity}
+\textbf{ID: }9&\textbf{Choosing anonymity}
 \\\hline
 \textbf{Actor} &User
 \\\hline
@@ -310,14 +310,14 @@ Anonymity settings based on user's choice.
 \textbf{Alternative flow}&\\\hline
 \textbf{Comments}& \\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 9}
 \end{table}
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Show a wishlist of items }
+\textbf{ID: }10&\textbf{Show a wishlist of items }
 \\\hline
 \textbf{Actor} &User
 \\\hline
@@ -343,15 +343,15 @@ A list of items with their cost, followed by how much % of that item the user ha
 \\\hline
 \textbf{Comments}& \\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 10}
 \end{table}
 
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Showing power savings in desired currency}
+\textbf{ID: }11&\textbf{Showing power savings in desired currency}
 \\\hline
 \textbf{Actor} &User
 \\\hline
@@ -374,15 +374,15 @@ All savings in the application are projected in the chosen currency\\\hline
 \\\hline
 \textbf{Comments}& \\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 11}
 \end{table}
 
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Changing the display language of the application.}
+\textbf{ID: }12&\textbf{Changing the display language of the application.}
 \\\hline
 \textbf{Actor} &User
 \\\hline
@@ -405,15 +405,15 @@ The application uses the chosen language.\\\hline
 \\\hline
 \textbf{Comments}&Only a limited amount of languages will be available upon release. \\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 12}
 \end{table}
 
 
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
-\begin{tabular}{|l|p{12cm}|}
+\begin{tabular}{|l|p{11.7cm}|}
 \hline
-&\textbf{Sharing power savings of social media like Facebook and Twitter.}
+\textbf{ID: }13&\textbf{Sharing power savings of social media like Facebook and Twitter.}
 \\\hline
 \textbf{Actor} &User
 \\\hline
@@ -438,42 +438,66 @@ The data is shared on the selected accounts. \\\hline
 \\\hline
 \textbf{Comments}& \\\hline
 \end{tabular}
-\caption{Textual use case 1: Overview of devices}
+\caption{Textual use case 13}
+\end{table}
+
+\rowcolors{0}{darkgray}{lightgray}
+\begin{table}[H]
+\begin{tabular}{|l|p{11.7cm}|}
+\hline
+\textbf{ID: }14&\textbf{Connecting with friends whom are using the application}
+\\\hline
+\textbf{Actor} &User
+\\\hline
+\textbf{Description}&
+The user should be able to find and connect to his friends through Facebook.\\\hline
+\textbf{Preconditions}&
+1. User is logged in.\newline
+Depends on x.\\\hline
+\textbf{Input}&
+User's facebook credentials.\\\hline
+\textbf{Postconditions}& 
+A list of friends currently using the application.\\hline
+\textbf{Basic flow}&
+1. The user taps the social tab
+\\\hline
+\textbf{Alternative flow}&
+1.1. The user does not have any friends currently using the application
+\\\hline
+\textbf{Comments}& \\\hline
+\end{tabular}
+\caption{Textual use case 14}
 \end{table}
 
 
-Connecting with friends whom are using the application
-
-The user should be able to find and connect to his friends through Facebook
-Preconditions
-1. The user is logged in
-Input
-Users facebook credentials
-Postconditions
-A list of friends currently using the application
-Basic flow
-1a. The user taps the social tab
-Alternative flow
-1.1. The user does not have any friends currently using the application
-
-
-
-Comparison of data and power savers
-
-The user should be able to compare his power usage and power savers with friends or other people in the area
-Preconditions
-1. User is logged in
-2. User has logged energy consumption data
-Input
-The users energy consumption data or power savers
-Postconditions
-Application displays a list of friends and their respective energy consumption. A list of energy savers implemented by friends is also available. 
-Basic flow
-1. The user taps the social tab
-2. The user taps the compare button
-3a. The system retrieves the users friends and graphs their consumption against his own logged consumption
+\rowcolors{0}{darkgray}{lightgray}
+\begin{table}[H]
+\begin{tabular}{|l|p{11.7cm}|}
+\hline
+\textbf{ID: }15&\textbf{Comparison of data and power savers}
+\\\hline
+\textbf{Actor} &User
+\\\hline
+\textbf{Description}&
+The user should be able to compare his power usage and power savers with friends or other people in the area\\\hline
+\textbf{Preconditions}&
+1. User is logged in\newline
+2. User has logged energy consumption data\newline
+Depends on x.\\\hline
+\textbf{Input}&
+The users energy consumption data or power savers.\\\hline
+\textbf{Postconditions}& 
+Application displays a list of friends and their respective energy consumption. A list of energy savers implemented by friends is also available. \\\hline
+\textbf{Basic flow}&
+1. The user taps the social tab\newline
+2. The user taps the compare button\newline
+3. The system retrieves the users friends and graphs their consumption against his own logged consumption\newline
 4. Power savers from friends and others is also available
-Alternative flow
+\\\hline
+\textbf{Alternative flow}&
 3.1. The does not have any friends currently using the application
-
-
+\\\hline
+\textbf{Comments}& \\\hline
+\end{tabular}
+\caption{Textual use case 15}
+\end{table}
