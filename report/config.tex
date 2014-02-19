@@ -11,6 +11,7 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{calc,color}
+\usepackage{listings}
 \usepackage{lmodern}
 \usepackage{url}
 \usepackage{longtable}
@@ -128,3 +129,24 @@ Pia	Karlsen	Lindkjølen\\}\par
 }
 \makeatother
 
+% Coding style
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+ 
+\lstset{language=Java,
+basicstyle=\ttfamily,
+keywordstyle=\color{javapurple}\bfseries,
+stringstyle=\color{javared},
+commentstyle=\color{javagreen},
+morecomment=[s][\color{javadocblue}]{/**}{*/},
+frame = single,
+numbers=left,
+stepnumber=1,
+numbersep=5pt,
+numberstyle=\small\color{black},
+tabsize = 2,
+showspaces=false,
+captionpos=b, 
+showstringspaces=false}
