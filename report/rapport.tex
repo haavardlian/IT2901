@@ -8,22 +8,21 @@
 \titleLL
 \clearpage
 
-\renewcommand\contentsname{\hspace{-1.5cm}Contents}
+\renewcommand\contentsname{Contents}
 \pagenumbering{Roman}
 \tableofcontents*
 
 \cleardoublepage
 \pagestyle{headings}
 
-\renewcommand\lstlistlistingname{\hspace{-1.5cm}List of code}
+\renewcommand\lstlistlistingname{Code snippets}
 \lstlistoflistings
 
-\renewcommand\listfigurename{\hspace{-1.5cm}List of figures}
+\renewcommand\listfigurename{Figures}
 \listoffigures*
 
-\renewcommand\listtablename{\hspace{-1.5cm}List of tables}
+\renewcommand\listtablename{Tables}
 \listoftables*
-
 
 \pagenumbering{arabic}
 \lsstyle
@@ -31,9 +30,8 @@
 \input ch/introduction/introduction.tex
 \input ch/projectPlan/projectPlan.tex
 \input ch/testing/testing.tex
-\input ch/research/research.tex
-\input ch/specification/specification.tex
 \input ch/devenvironment/devenvironment.tex
+\input ch/specification/specification.tex
 %\input ch/sprint1/sprint1.tex
 %\input ch/sprint2/sprint2.tex
 %\input ch/sprint3/sprint3.tex
@@ -41,13 +39,11 @@
 %\input ch/sprint5/sprint5.tex
 %\input ch/sprint6/sprint6.tex
 
-
-
 \input bib.tex
 
 \appendix
 \addcontentsline{toc}{chapter}{Appendices}
-\input ch/specification/sec/usecase.tex
+\input appendix/usecase/usecase.tex
 
 %legge til et punkt til i tabellen med eksisterende løsninger: om de kan måle for enkelt-devices ?
 
