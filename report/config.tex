@@ -19,6 +19,10 @@
 \usepackage[letterspace=30]{microtype}
 
 
+\renewcommand\lstlistingname{Code}
+\renewcommand\lstlistlistingname{Code snippets}
+
+
 \definecolor{lightgray}{gray}{0.9}
 \definecolor{darkgray}{gray}{0.7}
 
@@ -104,11 +108,15 @@ Pia	Karlsen	Lindkjølen\\}\par
 \end{tabular}
 \NoChapNumberfalse
 }
-\renewcommand\printchapternonum{\NoChapNumbertrue}
+\renewcommand\printchapternonum{\NoChapNumbertrue\hspace{-1.5cm}\printchaptername}
 }
 \makeatother
 \chapterstyle{VZ43}
 
+
+\makeatletter
+\renewcommand*{\l@lstlisting}{\@dottedtocline{1}{0em}{2.3em}}
+\makeatother
 
 
 %Row height in tables
