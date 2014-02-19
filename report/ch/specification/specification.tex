@@ -96,10 +96,29 @@ for critical devices such as refrigerators.
 
 \begin{itemize}
 \item The application should be easy to use.
+To ensure familiarity for Android users, the user interface should follow standard Android specifications for GUIs. 
+Furthermore, the application should be able to function without the purchase of new hardware. The application will be
+designed for use with wireless consumption readers and a small server to be positioned in the home of the user, but basic
+operation should be possible without these tools. The most basic mode operation is logging of data that 
+the user inputs manually after reading standalone power consumption meters. 
+More generally, the user interface should be easy to use, also for people whom are not accustomed to Android devices. In 
+addition to following Android specifications, this will be achieved by keeping the interface as plain and explanatory as 
+possible.
+\end{itemize}
+
 \begin{itemize}
-\item The user interface should follow standard Android specifications. 
-\item The applification should not need a lot of extra material to get started (Power devices, own server).
+\item Installation guide and documentation.
+The system should come with a comprehensive guide to using the system. This should include documentation for operation of the
+application along with a guide to what the rest of the system operates. As we will not be developing hardware for metering and 
+aggregating data from homes, we will focus on the application and our central server. The documentation will contain an outline 
+of the intended architecture for the rest of the system.
 \end{itemize}
-\end{itemize}
+
+\subsection{Testing Non-Functional requirements}
+Testing the Non-Functional requirements is a process quite different from testing that functionality has been implemented correctly.
+The only Non-Functional requirements we will be testing is the usability of the Android application. These test will primarily be 
+tested by individuals that are not a part of the development team. The team will have user test to observe how people use and experience 
+the application. After testing the users will be able to rate different aspects of the application and comment on usability. Detailed 
+test plans for testing usability can be found in chapter 3.x Research:Testing.
 
 \input ch/specification/sec/usecase.tex
