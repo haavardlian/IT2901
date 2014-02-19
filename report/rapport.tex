@@ -12,8 +12,8 @@
 \pagenumbering{Roman}
 \tableofcontents*
 \addtocontents{toc}{~\hfill\textbf{Page}\par}
-%\listoffigures*
-%\listoftables*
+\renewcommand\contentsname{\hspace{-1.5cm}\listoffigures}
+\listoftables
 
 \cleardoublepage
 \pagestyle{headings}
@@ -22,11 +22,24 @@
 
 \input ch/introduction/introduction.tex
 \input ch/projectPlan/projectPlan.tex
-%\input ch/testing/testing.tex
+\input ch/testing/testing.tex
 \input ch/research/research.tex
 \input ch/specification/specification.tex
 \input ch/devenvironment/devenvironment.tex
+%\input ch/sprint1/sprint1.tex
+%\input ch/sprint2/sprint2.tex
+%\input ch/sprint3/sprint3.tex
+%\input ch/sprint4/sprint4.tex
+%\input ch/sprint5/sprint5.tex
+%\input ch/sprint6/sprint6.tex
+
+
+
 \input bib.tex
+
+\appendix
+\addcontentsline{toc}{chapter}{Appendices}
+\input ch/specification/sec/usecase.tex
 
 %legge til et punkt til i tabellen med eksisterende løsninger: om de kan måle for enkelt-devices ?
 
