@@ -11,12 +11,17 @@
 \renewcommand\contentsname{\hspace{-1.5cm}Contents}
 \pagenumbering{Roman}
 \tableofcontents*
-\addtocontents{toc}{~\hfill\textbf{Page}\par}
-\renewcommand\contentsname{\hspace{-1.5cm}\listoffigures}
-\listoftables
 
 \cleardoublepage
 \pagestyle{headings}
+
+\renewcommand\listfigurename{\hspace{-1.5cm}List of figures}
+\listoffigures*
+
+\renewcommand\listtablename{\hspace{-1.5cm}List of tables}
+\listoftables*
+
+
 \pagenumbering{arabic}
 \lsstyle
 
