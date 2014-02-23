@@ -1,15 +1,19 @@
 \section{Scrum}
 
 The assignment at hand will demand innovation and most likely result in frequent changes throughout the entire duration of the project.
+
 What the team needs is to follow the guidelines of an agile development framework. First and foremost it must also be a development framework that is known to the team, so that a minimum of time will be spent trying to learn a new process. The standard and obvious choice is to follow the Scrum model. All the members of the team have previous experience with Scrum from the course IT1901.
 
 The Scrum model is an iterative and incremental agile software development framework. The main principle is that a small team is to focus on reaching a common goal.
 
 The Scrum process consists of iterations of sprints that has a duration one to four weeks. Each sprint has three important parts.
-The first part is the planning meeting, then begins the daily  meetings, and the process is ended with an end meeting.
+The first part is the planning meeting~\ref{sec:sprintplanning}, then begins the daily  meetings~\ref{sec:dailymeeting}, and finally, the process is concluded with an end meeting~\ref{sec:endmeeting}.
+
+In this section, the concept behind the Scrum process will be thouroughly explained. The team's project process will be reviewed in detail in chapter~\ref{sec:sprints}.
 
 \subsection{Sprint planning}
-The objective of the sprint planning is to find out what work that needs to be completed. This is done by preparing a sprint backlog that consists of the tasks to be done, a so called user story, and how much time the team thinks it will take to complete it, based on previous experiences or lack of it, and difficulty level. A normal strategy for time planning is planning poker, in which the team also decided to use.
+\label{sec:sprintplanning}
+The objective of the sprint planning is to find out what work that needs to be completed. This is done by preparing a sprint backlog that consists of the tasks to be done, a so called user story, and how much time the team thinks it will take to complete it, based on previous experiences or lack of it, and difficulty level. A normal strategy for time planning is planning poker.
 
 In planning poker, each team member individually decide on how many units of time they think a user story will require. This is done for each user story. 
 Units of time can be in hours, work days, or whatever unit the team sees fit (some even use cloth sizes). The team decided to use the units small(S), medium (M), large(L) and extra large(XL), where each of them represents respectively one hour(S), two hours(M), four hours(L) and eight hours(XL).
@@ -18,29 +22,27 @@ When a user story is presented, every team member presents the unit they believe
 After this meeting the team should have a well prepared strategy for the sprint.
 
 \subsection{Daily meetings}
-Daily meetings happen at the start of the day. They should only last around fifteen minutes. 
-The point of these meetings is that all the team members tells what they have done and if something went wrong.
-It could be that the time estimate for a user story was wrong and demands more thought and replanning, 
-or some other risk may occur, as discussed in section~\ref{sec:risk}. 
-The result of having this meeting is that the problems that arise are dealt with quickly.
+A work day is usually initiated with a daily meeting. The point of these meetings is to give an overview to the entire team of what all the other members are working on. For about fifteen minutes, all the team members briefly summarize which tasks they have performed and whether something went wrong.
+
+By having this meeting, the team will quickly become aware if something has not gone as planned, such as a wrongly estimated user story that acquires more thought and replanning, or some other risk may occur, as discussed in section~\ref{sec:risk}. The result of having this meeting is that the problems that arise may be dealt with quickly.
 
 \subsection{End meeting}
-The end meeting is held at the end of a sprint. The meeting consists of a sprint review and a retrospective discussion 
-for the last sprint.
-Thus the project progress is reviewed, and accumulated lessons from the sprint can be taken in account for the
-next sprint.
+The end meeting is held at the end of a sprint. The meeting consists of a sprint review and a retrospective discussion for the last sprint.
+Thus the project progress is reviewed, and accumulated lessons from the sprint can be taken in account for the next sprint.
 It's also typical to have customer meetings to show what has been done so the customer can give feedback on 
 whether or not he is satisfied with the product being developed.
 
 \subsection{Our process}
-The team has chosen to have sprints with a duration of two weeks. Unfortunately, having daily meetings is not 
-possible with the team's schedule. The team has come to an agreement to meet twice a week, each beginning with a daily meeting.
+The team has chosen to have sprints with a duration of two weeks. Unfortunately, having daily meetings is not possible with the team's schedule. The team has come to an agreement to meet twice a week, each beginning with a daily meeting.
 
+\subsection{Scrum tool}
 The team has also decided to use a Scrum tool to make the process easier.
-To find this tool, the team discussed what kind of functionality that would be useful to the project. 
-Specifically, the team wanted a tool that provided automatic sprint backlogs, time measurements for each user story, 
-graphs, and an interactive Scrum board.
+To find this tool, the team discussed what kind of functionality that would be useful to the project.
 
+Specifically, the team wanted a tool that provided automatic sprint backlogs, time measurements for each user story, graphs, and an interactive Scrum board. See section~\ref{sec:scrumtools} for further details.
+
+% kutt her til beskrivelse av valg av scrum-verktøy. Bør legges inn under riktig sprint
+\section{Election process of Scrum tools}
 The team has previous experience with a Scrum tool called iceScrum~\cite{icescrum}. After a discussion, the team came to the conclusion 
 that iceScrum was not to be used again and that an alternative was needed.
 After having reviewing lots of different cloud based Scrum tools, the team ended up with Yodiz~\cite{yodiz}.
