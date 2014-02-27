@@ -1,16 +1,16 @@
 \chapter{Requirement specification}
 \section{Functional requirements}
 
-\begin{comment}
+
 \subsection{Device control/overview}
-\begin{itemize}
-\item The user should be able to monitor his energy usage.
+\subsubsection{FR1: The user should be able to monitor his energy usage}
+
 \begin{itemize}
 \item The user should be able to see which devices in his house that actually use electricity, real time.
 \item The user should be able to see how much electricity each device in his house use on an average basis, on a monthly basis and on a yearly basis.
 \end{itemize}
 
-\item The user should be able to turn devices on and off from within the application.
+\subsubsection{FR2: The user should be able to turn devices on and off from within the application}
 \begin{itemize}
 \item If a device's power consumption becomes too high, the user should be able to turn it off.
 \item The user should be able to turn on devices, for instance the heat in his house, from the application. An example of such a use can be if the user wants the heat to turn on before he comes home.
@@ -21,82 +21,66 @@ consumption reaches that limit. This functionality will not be available
 for critical devices such as refrigerators. 
 \end{itemize}
 
-\item The user should be able to monitor and control his energy production.
-\begin{itemize}
-\item In the same way the user can see his energy usage. Be able to add devices producing power and control how much they produce.
-\end{itemize}
-\end{itemize}
+\subsubsection{FR3: The user should be able to monitor and control his energy production}
+In the same way the user can see his energy usage. Be able to add devices producing power and control how much they produce.
 
-\subsection{Power consumption/usage}
-\begin{itemize}
-\item The application should show the user graphs over his total usage real time, the last week and/or the last month and/or year.
-\begin{itemize}
-\item Here, the user will get the alternatives to how he want to display the data, and will get the data accordingly.
-\end{itemize}
-\item The user should be able to view his power consumption from one device over a given time.
-\begin{itemize}
-\item The user will get alternatives in the same way as when showing total usage.
-\end{itemize}
-\item The user should get information about what he can do to lower his power consumption from a ''best power saver of the month''. Which power saver that is the best is decided by all the users through rating.
-\end{itemize}
+
+\subsection{Power usage}
+\subsubsection{FR4: The application should show the user graphs over his total usage real time, the last week and/or the last month and/or year.}
+Here, the user will get the alternatives to how he want to display the data, and will get the data accordingly.
+
+\subsubsection{FR5: The user should be able to view his power consumption from one device over a given time}
+The user will get alternatives in the same way as when showing total usage.
+
+\subsubsection{FR6: The user should get information about what he can do to lower his power consumption from a ''best power saver of the month''}
+ Which power saver that is the best is decided by all the users through rating.
 
 \subsection{Power savers}
 
-\begin{itemize}
-\item The user will get a list over the most used and/or best rated actions towards saving power.
-\begin{itemize}
-\item The rating will be by all of the users.
-\end{itemize}
-\item The user will get a list over what actions he has taken.
-\begin{itemize}
-\item The user will also be able to ''checkout'' actions he want to perform in the future. The application should part what actions the user has already done, and what he wants to do at a later stage.
-\end{itemize}
-\item The user should be able to add actions.
-\begin{itemize}
-\item If an action is not present in the list, the user should be able to add the action to the list.
-\end{itemize}
-\end{itemize}
+\subsubsection{FR7: The user will get a list over the most used and/or best rated actions towards saving power.}
+The rating will be by all of the users.
+
+\subsubsection{FR8: The user will get a list over what actions he has taken.}
+The user will also be able to ''checkout'' actions he want to perform in the future. The application should part what actions the user has already done, and what he wants to do at a later stage.
+
+\subsubsection{FR9: The user should be able to add actions}
+If an action is not present in the list, the user should be able to add the action to the list.
+
 
 
 \subsection{Profile}
 
-\begin{itemize}
-\item The user should have its own profile, with all the information about him.
-\begin{itemize}
-\item The user should be able to choose to remain anonymous.
-\end{itemize}
-\item The user should be able to add a ''wish list'' with things he wants to save money for.
-\begin{itemize}
-\item This list will be connected to how much money the power the user has saved represents.
-\end{itemize}
-\item The user should be able to choose what currency to use when converting from power saved to money.
-\item The user should also be able to choose what language he wants the application to be in.
-\end{itemize}
+\subsubsection{FR10: The user should have its own profile, with all the information about him}
+The user should be able to choose to remain anonymous.
+
+\subsubsection{FR11: The user should be able to add a ''wish list'' with things he wants to save money for}
+This list will be connected to how much money the power the user has saved represents.
+
+\subsubsection{FR12: The user should be able to choose what currency to use when converting from power saved to money.}
+
+\subsubsection{FR13: The user should also be able to choose what language he wants the application to be in.}
 
 
 \subsection{Social}
-\begin{itemize}
-\item The user should be able to share his power savings on social media, like Facebook and Twitter.
-\item The user should be able to connect to other friends, also using this application.
-\item The user should be able to compare his power usage and savings with friends, other similar people, or people in his area.
-\end{itemize}
+\subsubsection{FR14: The user should be able to share his power savings on social media, like Facebook and Twitter.}
+
+\subsubsection{FR15: The user should be able to connect to other friends, also using this application}
+
+\subsubsection{FR16: The user should be able to compare his power usage and savings with friends, other similar people, or people in his area}
 
 \subsection{Other (Not specified yet)}
-\begin{itemize}
-\item The user should be able to choose a environmental profile that he wants to follow.
-\item The application should involve gamification in some way.
+\subsubsection{FR17: The user should be able to choose a environmental profile that he wants to follow}
+\subsubsection{FR18: The application should involve gamification in some way}
 \begin{itemize}
 \item Ideas so far is that the user gets point as a result of how much he saves.
 \item The user can get achievements when he has reached his goals, or when he has taken an action.
 \item The user can get points/achievements when he has shared his savings with other people through social media.
 \end{itemize}
-\end{itemize}
-\end{comment}
+
 
 \subsection{Non-functional requirements}
 
-\begin{itemize}
-\item The application should be easy to use.
+\subsubsection{NFR1: The application should be easy to use.}
 To ensure familiarity for Android users, the user interface should follow standard Android specifications for graphical user interfaces.
  
 Furthermore, the application should be able to function without the purchase of new hardware. The application will be designed for use with wireless power consumption readers and a small server to be positioned in the home of the user, but the basic operation should be possible to perform even without these tools. The most basic mode operation is logging of data that 
@@ -104,15 +88,12 @@ the user inputs manually after reading standalone power consumption meters.
  
 More generally, the user interface should be easy to use, also for people whom are not accustomed to Android devices. In 
 addition to following Android specifications, this will be achieved by keeping the interface as plain and intuitive as possible.
-\end{itemize}
 
-\begin{itemize}
-\item Installation guide and documentation.
+\subsubsection{NFR2: Installation guide and documentation}
 The system should come with a comprehensive guide to using the system. This should include documentation for operation of the
 application along with a guide to what the rest of the system operates. As the team will not be developing hardware for metering and 
 aggregating data from homes, the main focus will be on the application and the team's central server. The documentation will contain an outline 
 of the intended architecture for the rest of the system.
-\end{itemize}
 
 \subsection{Testing non-functional requirements}
 Testing the non-functional requirements is a process quite different from testing that functionality has been implemented correctly.
