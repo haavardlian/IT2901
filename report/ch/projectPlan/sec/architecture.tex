@@ -1,7 +1,8 @@
+\newpage
 \section{Architecture}
 \subsection{Server}
-The back end server is divided into two parts with an underlying database connection. 
-The first part is responsible for fetching data from the users' home from the Home Data Aggregator and store
+The back-end server is divided into two parts with an underlying database connection. 
+The first part is responsible for fetching data from the user's home from the Home Data Aggregator and store
 this data in the database for future use. The second part is responsible for communicating with the application on the 
 Android device. It will fetch data about a user's specific usage, the user's friends usage, or general statistics 
 concerning power usage. The database connection layer will serve as an abstraction to the database itself and provide 
