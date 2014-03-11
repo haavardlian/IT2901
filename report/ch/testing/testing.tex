@@ -1,5 +1,71 @@
 \chapter{Testing}
 
-\begin{lstlisting}[caption = The console output, label = lis:consOutput]
-En testete test.
-\end{lstlisting}
+In order to deliver a complete and functional product to the customer, it is paramount to make sure the system is regularly tested during development. By running tests we increase system stability and robustness, which in turn increases the usability of the product. 
+
+There are several approaches when it comes to testing of software systems. The team looked into unit testing and functional testing. Unit testing is a form of white box testing and when unit testing Java based applications it is very common to use JUnit [1]. With JUnit you can easily test every function on the program. The team decided that functional testing made the most sense for this project, this approach is described in its own section.
+
+At the end of each sprint tests will be run to see if the applications meets the specifications. Tests will also be run at the end of the development process. In addition to this the customer will also participate in the testing, and deliver the application to third-party users so the application will be tested by users as well.
+
+\section{Test methods}
+Testing is done with several approaches, this helps with structuring the work involved with testing. The team has decided to use functional testing and acceptance testing in order to test the server and the android application during development.
+
+\subsection{Functional testing}
+Functional testing is tests that control the functionality of the software. Internal classes and methods is tested indirectly. This is a type of Black Box Testing [4]. The team will pick several classes and methods that the application should complete and some that it should not, but handle in a satisfying way. This is done by asking the application to do something and compare the result with what was expected.
+
+The following steps are required in order to test the system
+\begin{enumerate}
+\item Identify what features are to be tested
+\item Specify input to the system
+\item Specify expected output from the system
+\item Execute. Feed input data into the system and compare the output with what is expected. If the output is not what was expected there is a bug that needs to be investigated and fixed before the test is run again.
+\end{enumerate}
+
+\subsection{Test table}
+\textcolor{red}{TODO: Apply magic to make this look good}
+\begin{table}[H]
+\centering
+\rowcolors{1}{darkgray}{lightgray}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{ } & \textbf{Description} & \textbf{Result}\\
+Server & \textit{Functional tests of server}&\\
+&Server should deliver data in JSON format&\\
+&\textit{REST calls that should have a reply}&\\
+&Fetch usage data for user&\\
+&Fetch usage data for users friends?&\\
+&Store usage data for user&\\
+Android application & \textit{Functional tests of application} &  \\
+&Add device&\\
+&Remove device&\\
+&Add power used for device&\\
+&Add power produced for device&\\
+\hline
+\end{tabular}
+\caption{Test table}
+\label{tab:testTable}
+\end{table}
+
+\subsection{Planned tests}
+\begin{table}[H]
+\centering
+\rowcolors{1}{darkgray}{lightgray}
+\begin{tabular}{|l|l|}
+\hline
+Test 1&Get usage data in JSON for user 1\\
+Test 2&Store usage data in database for user 1\\
+Test 3&User can read the amount of power a device has produced\\
+Test 4&User can add a device\\
+Test 5&User can delete a device\\
+Test 6&User can read the amount of power a device has consumed\\
+Test 7&User can type in the amount of energy produced by a device\\
+Test 8&user can type in the amount of energy consumed by a device\\
+\hline
+\end{tabular}
+\caption{Planned tests}
+\label{tab:plannedTable}
+\end{table}
+
+\subsection{Acceptance testing}
+In addition to the functional testing the customer will also participate in the testing process. This is done because the customer has insight in what he wants and can provide a fresh set of eyes to spot problems. The customer will also deliver the application to third party users so the application can be tested in real life circumstances.
+
+Acceptance testing will be done throughout the development process, but is also a part of the final testing.

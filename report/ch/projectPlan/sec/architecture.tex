@@ -1,26 +1,20 @@
 \section{Architecture}
-\subsection{Server}
-The back end server is divided into two parts with an underlying database connection. 
-The first part is responsible for fetching data from the users' home from the Home Data Aggregator and store
-this data in the database for future use. The second part is responsible for communicating with the application on the 
-Android device. It will fetch data about a user's specific usage, the user's friends usage, or general statistics 
-concerning power usage. The database connection layer will serve as an abstraction to the database itself and provide 
-easy access to the data stored.
 
-\begin{figure}[H]
-\includegraphics[width=\textwidth]{ch/projectPlan/fig/server.png}
-\caption{Server}
-\end{figure}
+The implementation will consist of three parts. The server, The device in the users home used to 
+collect and send usage data, and the android application. The android application is the main focus for 
+this project and most of the teams resources will be used on this.
+
+\subsection{Server}
+The server will consist of two parts. One for handling requests from the android application and one for storing data that is collected in the users home. 
+The part that handles the android application will be running Dropwizard\cite{dropwizard} which is a collection of java libraries that together make a REST service. 
+These libraries include Jetty, Jersey, JDBC, and Jackson. The server will expose a set of URL’s that will provide the android application with 
+possibilities to get and store data from the database.The other part that stores data from the users home is under development. Info will come here.
 
 \subsection{Android Device}
-The application running on the Android device will be responsible for handling connections to external 
-services like the APIs of Google Drive and Facebook and combine them with data from the server in order to represent 
-data to the user.
-
-\begin{figure}[H]
-\includegraphics[width=\textwidth]{ch/projectPlan/fig/androidDevice.png}
-\caption{Android device}
-\end{figure}
+The application running on the users Android device will be designed to run on Android 4.0 or greater.
+The team will also use the Model-View-Presenter (MVP)\cite{mvp} this is a Model-View-Controller (MVC)\cite{mvc} derivative 
+that pushes almost all logic into the presenter. The application will follow standard Android design guidelines 
+when it comes to user interface design.
 
 \subsection{Home Data Aggregator}
 This device will collect data from sources in the user's home. The reason for this external box as opposed to using 
@@ -29,6 +23,6 @@ the whole day. This would result in that the user would not need to be home in o
 usage data. The device will pass data along to the external server at request from the server.
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{ch/projectPlan/fig/home.png}
-\caption{Home data aggregator}
+\includegraphics[width=\textwidth]{ch/projectPlan/fig/architecture.png}
+\caption{Architecture}
 \end{figure}
