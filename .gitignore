@@ -6,14 +6,30 @@
 *.ear
 
 # Tex
-*.pdf
 *.aux
+*.glo
+*.idx
 *.log
-*.gz
+*.lol
 *.toc
-*.synctex
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
 *.dvi
-*.bak
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
 
 # VIM
 *.swp
