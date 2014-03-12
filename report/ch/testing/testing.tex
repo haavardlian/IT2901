@@ -21,24 +21,23 @@ The following steps are required in order to test the system
 \end{enumerate}
 
 \subsection{Test table}
-\textcolor{red}{TODO: Apply magic to make this look good}
+
+\todo[inline]{remove white lines between rows}
 \begin{table}[H]
-\centering
-\rowcolors{1}{darkgray}{lightgray}
 \begin{tabular}{|l|l|l|}
 \hline
-\textbf{ } & \textbf{Description} & \textbf{Result}\\
-Server & \textit{Functional tests of server}&\\
-&Server should deliver data in JSON format&\\
-&\textit{REST calls that should have a reply}&\\
-&Fetch usage data for user&\\
-&Fetch usage data for users friends?&\\
-&Store usage data for user&\\
-Android application & \textit{Functional tests of application} &  \\
-&Add device&\\
-&Remove device&\\
-&Add power used for device&\\
-&Add power produced for device&\\
+\rowcolor{darkgray} & \textbf{Description} & \textbf{Result}\\\hline
+\rowcolor{lightgray} \multirow{6}{*}{Server} & \textit{Functional tests of server}&\\
+\rowcolor{lightgray}&Server should deliver data in JSON format&\\
+\rowcolor{lightgray}&\textit{REST calls that should have a reply}&\\
+\rowcolor{lightgray}&Fetch usage data for user&\\
+\rowcolor{lightgray}&Fetch usage data for users friends?&\\
+\rowcolor{lightgray}&Store usage data for user&\\\hline
+\rowcolor{darkgray}Android application & \textit{Functional tests of application} &  \\
+\rowcolor{darkgray}&Add device&\\
+\rowcolor{darkgray}&Remove device&\\
+\rowcolor{darkgray}&Add power used for device&\\
+\rowcolor{darkgray}&Add power produced for device&\\
 \hline
 \end{tabular}
 \caption{Test table}
