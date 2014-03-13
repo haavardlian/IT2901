@@ -21,23 +21,27 @@ The following steps are required in order to test the system
 \end{enumerate}
 
 \subsection{Test table}
-
-\todo[inline]{remove white lines between rows}
 \begin{table}[H]
 \begin{tabular}{|l|l|l|}
 \hline
-\rowcolor{darkgray} & \textbf{Description} & \textbf{Result}\\\hline
+\rowcolor{darkgray} & \textbf{Description} & \textbf{Result}\\\hline \arrayrulecolor{lightgray}
 \rowcolor{lightgray} Server& \textit{Functional tests of server}&\\
+\cline{1-2}\cline{2-3}
 \rowcolor{lightgray}&Server should deliver data in JSON format&\\
+\cline{1-2}\cline{2-3}
 \rowcolor{lightgray}&\textit{REST calls that should have a reply}&\\
+\cline{1-2}\cline{2-3}
 \rowcolor{lightgray}&Fetch usage data for user&\\
+\cline{1-2}\cline{2-3}
 \rowcolor{lightgray}&Fetch usage data for users friends?&\\
+\cline{1-2}\cline{2-3}\arrayrulecolor{black}
 \rowcolor{lightgray}&Store usage data for user&\\\hline
-\rowcolor{darkgray}Android application & \textit{Functional tests of application} &  \\
-\rowcolor{darkgray}&Add device&\\
-\rowcolor{darkgray}&Remove device&\\
-\rowcolor{darkgray}&Add power used for device&\\
-\rowcolor{darkgray}&Add power produced for device&\\
+\arrayrulecolor{darkgray}
+\rowcolor{darkgray}Android application & \textit{Functional tests of application} &  \\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Add device&\\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Remove device&\\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Add power used for device&\\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Add power produced for device&\\\arrayrulecolor{black}
 \hline
 \end{tabular}
 \caption{Test table}
