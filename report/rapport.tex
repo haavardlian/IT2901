@@ -11,9 +11,9 @@ Pia	Karlsen	Lindkjølen\\}
 \date{Spring 2014}
 
 \begin{document}
+\listoftodos
 \maketitle
 \newpage
-%\listoftodos
 %\lsstyle
 \thispagestyle{empty}
 \pagenumbering{gobble}
@@ -40,26 +40,32 @@ Pia	Karlsen	Lindkjølen\\}
 \pagenumbering{arabic}
 
 
+%Structural:
+\todo[inline]{dobbelsjekke om urler er de riktige urlene-> fører til riktig nettsted}
+\todo[inline]{dobbelsjekke om referansene fungerer som de skal -> at det ikke står et spmtegn der}
+\todo[inline]{sjekke at alle illustrasjoner har en caption}
+\todo[inline]{sjekke at captionene gir mening. Forklaring bør gjøres i avsnitt som refererer til figuren/tabellen}
+\todo[inline]{sjekke at de riktige illustrasjonene er på plass}
+\todo[inline]{divide sections into own files}
+
+%Grammatical:
+\todo[inline]{spellcheck}
+\todo[inline]{back end -> back-end}
+\todo[inline]{Dobbelsjekke om egennavn er skrevet riktig}
+\todo[inline]{check all verbs and formulations for past tense}
+\todo[inline]{se over rapporten om vi blir omtalt som noe annet enn the team, our, we; IKKE group, their, they}
+\todo{explain what gamification is in a footnote or in text}
+
 \input ch/introduction/introduction.tex
 \input ch/projectPlan/projectPlan.tex
+\input ch/planning/planning.tex
 \input ch/testing/testing.tex
 \input ch/devenvironment/devenvironment.tex
 \input ch/specification/specification.tex
 \input ch/sprints/sprints.tex
 
-\input bib.tex
-\begin{comment}
-\todo{spellcheck}
-\todo{back end -> back-end}
-\todo{flytte existing solutions?}
-\todo{Dobbelsjekke om egennavn er skrevet riktig}
-\todo{dobbelsjekke om urler er de riktige urlene-> fører til riktig nettsted}
-\todo{dobbelsjekke om referansene fungerer som de skal}
-\todo{sjekke at alle illustrasjoner har en caption}
-\todo{sjekke at de riktige illustrasjonene er på plass}
-\todo{se over rapporten om vi blir omtalt som noe annet enn the team, our, we; IKKE group, their, they}
-\todo{check that references are in the correct order}
-\end{comment}
+%\input bib.tex
+\bibliography{master}
 
 \appendix
 \addcontentsline{toc}{chapter}{Appendices}

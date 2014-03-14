@@ -2,7 +2,7 @@
 
 In order to deliver a complete and functional product to the customer, it is paramount to make sure the system is regularly tested during development. By running tests we increase system stability and robustness, which in turn increases the usability of the product. 
 
-There are several approaches when it comes to testing of software systems. The team looked into unit testing and functional testing. Unit testing is a form of white box testing and when unit testing Java based applications it is very common to use JUnit [1]. With JUnit you can easily test every function on the program. The team decided that functional testing made the most sense for this project, this approach is described in its own section.
+There are several approaches when it comes to testing of software systems. The team looked into unit testing and functional testing. Unit testing is a form of white box testing and when unit testing Java based applications it is very common to use JUnit~\cite{junit}. With JUnit you can easily test every function on the program. The team decided that functional testing made the most sense for this project, this approach is described in its own section.
 
 At the end of each sprint tests will be run to see if the applications meets the specifications. Tests will also be run at the end of the development process. In addition to this the customer will also participate in the testing, and deliver the application to third-party users so the application will be tested by users as well.
 
@@ -10,7 +10,7 @@ At the end of each sprint tests will be run to see if the applications meets the
 Testing is done with several approaches, this helps with structuring the work involved with testing. The team has decided to use functional testing and acceptance testing in order to test the server and the android application during development.
 
 \subsection{Functional testing}
-Functional testing is tests that control the functionality of the software. Internal classes and methods is tested indirectly. This is a type of Black Box Testing [4]. The team will pick several classes and methods that the application should complete and some that it should not, but handle in a satisfying way. This is done by asking the application to do something and compare the result with what was expected.
+Functional testing is tests that control the functionality of the software. Internal classes and methods is tested indirectly. This is a type of Black Box Testing~\cite{blackbox}. The team will pick several classes and methods that the application should complete and some that it should not, but handle in a satisfying way. This is done by asking the application to do something and compare the result with what was expected.
 
 The following steps are required in order to test the system
 \begin{enumerate}
@@ -21,23 +21,27 @@ The following steps are required in order to test the system
 \end{enumerate}
 
 \subsection{Test table}
-
-\todo[inline]{remove white lines between rows}
 \begin{table}[H]
 \begin{tabular}{|l|l|l|}
 \hline
-\rowcolor{darkgray} & \textbf{Description} & \textbf{Result}\\\hline
-\rowcolor{lightgray} \multirow{6}{*}{Server} & \textit{Functional tests of server}&\\
+\rowcolor{darkgray} & \textbf{Description} & \textbf{Result}\\\hline \arrayrulecolor{lightgray}
+\rowcolor{lightgray} Server& \textit{Functional tests of server}&\\
+\cline{1-2}\cline{2-3}
 \rowcolor{lightgray}&Server should deliver data in JSON format&\\
+\cline{1-2}\cline{2-3}
 \rowcolor{lightgray}&\textit{REST calls that should have a reply}&\\
+\cline{1-2}\cline{2-3}
 \rowcolor{lightgray}&Fetch usage data for user&\\
+\cline{1-2}\cline{2-3}
 \rowcolor{lightgray}&Fetch usage data for users friends?&\\
+\cline{1-2}\cline{2-3}\arrayrulecolor{black}
 \rowcolor{lightgray}&Store usage data for user&\\\hline
-\rowcolor{darkgray}Android application & \textit{Functional tests of application} &  \\
-\rowcolor{darkgray}&Add device&\\
-\rowcolor{darkgray}&Remove device&\\
-\rowcolor{darkgray}&Add power used for device&\\
-\rowcolor{darkgray}&Add power produced for device&\\
+\arrayrulecolor{darkgray}
+\rowcolor{darkgray}Android application & \textit{Functional tests of application} &  \\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Add device&\\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Remove device&\\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Add power used for device&\\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Add power produced for device&\\\arrayrulecolor{black}
 \hline
 \end{tabular}
 \caption{Test table}
