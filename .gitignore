@@ -30,7 +30,7 @@
 *.mtc1
 *.out
 *.synctex.gz
-*.pdf
+rapport.pdf
 # VIM
 *.swp
 #Mac
