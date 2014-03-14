@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2013-12-01" view-index="0" gantt-divider-location="435" resource-divider-location="300" version="2.0" locale="en_US">
     <description/>
     <view zooming-state="default:10" id="gantt-chart">
-        <field id="tpd3" name="Name" width="70" order="0"/>
+        <field id="tpd3" name="Name" width="69" order="0"/>
         <field id="tpd4" name="Begin date" width="16" order="1"/>
-        <field id="tpd5" name="End date" width="12" order="2"/>
+        <field id="tpd5" name="End date" width="13" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="70" order="0"/>
@@ -62,9 +62,9 @@
         <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd1" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="302" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="303" visible="true"/>
         <displaycolumn property-id="tpd4" order="1" width="73" visible="true"/>
-        <displaycolumn property-id="tpd5" order="2" width="56" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="57" visible="true"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>
