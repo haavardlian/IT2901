@@ -1,5 +1,7 @@
 \documentclass[12pt, oneside]{memoir}
 \input config.tex
+\input glossary.tex
+
 \title{Smart electricity\\
 Project report: IT2901}
 \author{Beate Baier Biribakken\\
@@ -13,6 +15,7 @@ Pia	Karlsen	Lindkjølen\\}
 \begin{document}
 \listoftodos
 \maketitle
+\makeglossaries
 \newpage
 %\lsstyle
 \thispagestyle{empty}
@@ -56,6 +59,7 @@ Pia	Karlsen	Lindkjølen\\}
 \todo[inline]{se over rapporten om vi blir omtalt som noe annet enn the team, our, we; IKKE group, their, they}
 \todo{explain what gamification is in a footnote or in text}
 
+
 \input ch/introduction/introduction.tex
 \input ch/projectPlan/projectPlan.tex
 \input ch/planning/planning.tex
@@ -64,7 +68,8 @@ Pia	Karlsen	Lindkjølen\\}
 \input ch/specification/specification.tex
 \input ch/sprints/sprints.tex
 
-%\input bib.tex
+\glsaddall
+\printglossaries
 \bibliography{master}
 
 \appendix
