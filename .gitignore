@@ -30,6 +30,8 @@
 *.mtc1
 *.out
 *.synctex.gz
-
+rapport.pdf
 # VIM
 *.swp
+#Mac
+.DS_Store

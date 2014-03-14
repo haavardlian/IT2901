@@ -2,30 +2,28 @@
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/planning/fig/wbs.png}
-\caption{The work breakdown structure. Each work package (WP) is a product of the project work.}
+\caption{Product oriented work breakdown structure for the project application.}
 \label{fig:wbs}
 \end{figure}
 
-\todo[inline]{@peri: is wbs-packet correct? should it be wp (as in work package?)}
+As shown in figure~\ref{fig:wbs}, the Work Breakdown Structure (WBS) is divided into five work packages(WP). Each work package represents a subset of the project. Specifically, it specifies \emph{what} will be done, and not how or when the work is to be performed.
 
-The work breakdown structure \ref{fig:wbs} is divided into five parts. Each part is a work package that represents a part of the work that needs to be done.
-The team decided to use WBS is so that we may analyze how much time that is actually spent on the different parts of the project, compared to how it originally was planned.
-The effect of doing this is that it is easy to see whether some part of the project is forgotten or \todo[inline]{gets too much time.}
+The team used WBS in order to get an overview of what the different parts of the project consisted of, and used this information when we estimated how much time we wanted to use on each work package.
+
+The estimated time for each work package is given in table~\ref{tab:timeEstWP}. By comparing the original time estimates to how much time that actually was spent, we were able to evaluate our project's progress to a much greater extent. It was easier to see whether some part of the project was forgotten, and if it should have been estimated more  or less time to complete it.
 
 \begin{table}[H]
 \centering
 \rowcolors{1}{darkgray}{lightgray}
-\begin{tabular}{|l|c|r|}
+\begin{tabular}{|l|c|c|r|}
 \hline
-    \textbf{WB \#} & \textbf{Name} & \textbf{Hours} \\\hline
-    1 & Project management & .5/10 = 87\\\hline
-    2 & Tools 			   & 1.5/10 = 261\\\hline
-    3 & Report 			   & 4/10 = 696\\\hline
-    4 & Development 	   & 3/10 = 522\\\hline
-    5 & Testing  		   & 1/10 = 174\\\hline
+    \textbf{WP \#} & \textbf{Name} & \textbf{Percentage} & \textbf{Hours} \\\hline
+    1 & Project management & 5 & 87\\\hline
+    2 & Tools 			   & 15 & 261\\\hline
+    3 & Report 			   & 40 & 696\\\hline
+    4 & Development 	   & 30 & 522\\\hline
+    5 & Testing  		   & 10 & 174\\\hline
 \end{tabular}
+\caption{Time estimate for work packages}
+\label{tab:timeEstWP}
 \end{table}
-
-From the total amount of hours for project, the team has divided each WBS packet into a smaller part, based on how much time the team should use one the given part.
-
-For each sprint the team can see how much time that has been spent on each packet, \todo{and if time is beeing distributed according to the planned amount of time on each packet.}
