@@ -1,10 +1,13 @@
-PHONY: rapport all clean
+.PHONY: rapport.pdf rapport.gls all clean
 
-all: rapport
+all: rapport.pdf
 
-rapport: rapport.tex
-	latexmk -pdf -pdflatex="pdflatex -interaction=batchmode -interactive=nonstopmode" -use-make rapport.tex
+rapport.pdf: rapport.tex
+	latexmk -f -quiet -pdf -pdflatex="pdflatex -interactive=nonstopmode" -use-make rapport.tex
+
+rapport.gls:
+	makeglossaries rapport
 
 clean:
-	latexmk -CA
+	latexmk -quiet -CA
 
