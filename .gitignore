@@ -29,8 +29,14 @@
 *.mtc
 *.mtc1
 *.out
+*.tdo
 *.synctex.gz
 rapport.pdf
+#latexmk
+*.fdb_latexmk
+*.fls
+
+
 # VIM
 *.swp
 #Mac

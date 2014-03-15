@@ -16,13 +16,14 @@ The server will expose a set of URL’s that will provide the android applicatio
 possibilities to get and store data from the database. The other part, that stores data from the users home is under development.
 
 \subsection{Android Application}
-The application running on the users Android device will be designed to run on Android 4.0 or greater.
-The team will also use the Model-View-Presenter (MVP)~\cite{mvp} this is a Model-View-Controller (MVC)~\cite{mvc} derivative 
-that pushes almost all logic into the presenter. The application will follow standard Android design guidelines~\cite{androidgui}
-when it comes to user interface design.
+The application running on the users Android device will be designed to run on Android 4.0 or greater. As of March 2014 this includes 79,7\% of Android devices~\cite{androidDeviceFragmentation}. The rest is on the old Android 2.3 and above. The team decided not to include these devices since the application is a proof-of-concept, and for the purpose of the app, one can assume that the relevent users do have a modern new phone. 
 
-\subsubsection{MVP}
-\todo[inline]{Add info about MVP}
+The architecture will heavily rely on using ContentProviders~\cite{contentproviders} for database access. This will give a uniform access model for the data, that will not run on the UI thread. When lists of data is accesed for an Activity or a Fragment, then LoaderManagers~\cite{loadermanager} are used. This will handle the lifcecycle of data change notification through the cursor. 
+
+The remaining problem is where to place the business logic for data manipulation. This is where the pattern Model-View-Presenter (MVP)~\cite{mvp} comes in. MVP is a Model-View-Controller (MVC)~\cite{mvc} derivative. All business logic is handled in presenter classes. Through this uniform access, all logic applied to data preservation (sever syncronization), and data control can be done. The lifecycle of the presenter classes is in the base Activity class, and all other sub fragments can get access to it though a interface. This pushes almost all logic into the presenters, making the fragments code clean.
+
+The application will follow standard Android design guidelines~\cite{androidgui}
+when it comes to user interface design.
 
 \subsection{Home Data Aggregator}
 This device will collect data from sources in the user's home. The reason for this external box as opposed to using 
