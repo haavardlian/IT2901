@@ -24,7 +24,7 @@ the app.
 \subsection{Sprint end}
 
 \subsubsection{Improper use of Scrum tool}
-As mentioned in section~\ref{sec:scrumtools}, the team used a lot of time on
+As mentioned in section~\ref{sec:scrumtool}, the team used a lot of time on
 deciding on which Scrum tool to use for the project management. Although our
 choice fell on Yodiz, the team was in lack of any previous experience with the
 tool, and despite the team's efforts to get acquainted with the tool, a
@@ -51,14 +51,14 @@ issue for the overall progress of the project.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/sprints/fig/wrongUse.png}
+\caption{Example screenshot to illustrate improper use of Yodiz}
 \label{fig:wrongUse}
-\caption{Example screen shot to illustrate improper use of Yodiz}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/sprints/fig/addsTasks.png}
+\caption{Example screenshot to illustrate how the team resolved the issue.}
 \label{fig:addsTasks}
-\caption{Example screen shot to illustrate how the team resolved the issue.}
 \end{figure}
 
 \subsubsection{Working away from the team}
@@ -81,9 +81,20 @@ by the team members.
 
 The backlog and time usage result.
 
-\begin{tabular}{l|c|c|c|r}%
-    \bfseries User story & \bfseries Details & \bfseries Hours estimated &
-    \bfseries Hours spent & \bfseries Hours left
+
+
+\end{tabular}
+
+\end{table}
+
+\begin{table}[H]
+    %\resizebox{\textwidth}{!}{
+    \begin{tabularx}{\textwidth}{|l|p{4cm}|c|c|r}%
+    \hline \bfseries User story & \bfseries Details & \bfseries Hours estimated & \bfseries Hours spent & \bfseries Hours left
     \csvreader[head to column names]{ch/projectManagement/sec/sprint2/userstories.csv}{}% use head of csv as column names
     {\\\hline \id & \title & \estimated & \spent & \left}% specify your coloumns here
-\end{tabular}
+    %\hline
+    \end{tabularx}
+    \caption{Sprint 2 backlog}
+%}
+\end{table}

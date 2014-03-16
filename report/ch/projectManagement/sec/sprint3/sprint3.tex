@@ -11,9 +11,8 @@
 
 The backlog and time usage result.
 
-\begin{tabular}{l|c|c|c|r}%
-    \bfseries User story & \bfseries Details & \bfseries Hours estimated &
-    \bfseries Hours spent & \bfseries Hours left
+\begin{tabular}{|l|p{4cm}|c|c|r}%
+    \hline \bfseries User story & \bfseries Details & \bfseries Hours estimated & \bfseries Hours spent & \bfseries Hours left \hline
     \csvreader[head to column names]{ch/projectManagement/sec/sprint3/userstories.csv}{}% use head of csv as column names
     {\\\hline \id & \title & \estimated & \spent & \left}% specify your coloumns here
 \end{tabular}
