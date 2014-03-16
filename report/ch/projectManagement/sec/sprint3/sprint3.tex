@@ -20,11 +20,14 @@ The sprint burndown chart~\ref{fig:sprint3burndown} shows that progress was made
 
 The backlog and time usage result.
 
-\begin{tabular}{|l|p{4cm}|c|c|r}%
-    \hline \bfseries User story & \bfseries Details & \bfseries Hours estimated & \bfseries Hours spent & \bfseries Hours left
-    \csvreader[head to column names]{ch/projectManagement/sec/sprint3/userstories.csv}{}% use head of csv as column names
-    {\\\hline \id & \title & \estimated & \spent & \left}% specify your coloumns here
-\end{tabular}
+\begin{table}[H]
+	\begin{tabular}{|l|p{4cm}|c|c|r|}%
+		\hline \bfseries User story & \bfseries Details & \bfseries Hours estimated & \bfseries Hours spent & \bfseries Hours left
+		\csvreader[head to column names]{ch/projectManagement/sec/sprint3/userstories.csv}{}% use head of csv as column names
+		{\\\hline \id & \title & \estimated & \spent & \left} \\\hline% specify your coloumns here
+	\end{tabular}
+    \caption{Sprint 3 backlog}
+\end{table}
 
 
 \subsubsection{Sprint end}

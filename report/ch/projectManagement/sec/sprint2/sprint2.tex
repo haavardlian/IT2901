@@ -37,10 +37,10 @@ The backlog and time usage result.
 
 \begin{table}[H]
     %\resizebox{\textwidth}{!}{
-    \begin{tabular}{|l|p{4cm}|c|c|r}%
+    \begin{tabular}{|l|p{4cm}|c|c|r|}%
     \hline \bfseries User story & \bfseries Details & \bfseries Hours estimated & \bfseries Hours spent & \bfseries Hours left
     \csvreader[head to column names]{ch/projectManagement/sec/sprint2/userstories.csv}{}% use head of csv as column names
-    {\\\hline \id & \title & \estimated & \spent & \left}% specify your coloumns here
+    {\\\hline \id & \title & \estimated & \spent & \left}\\\hline% specify your coloumns here
     %\hline
     \end{tabular}
     \caption{Sprint 2 backlog}
