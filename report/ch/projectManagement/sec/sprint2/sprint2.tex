@@ -21,6 +21,32 @@ The groundwork for the apps server was put down in sprint 2. Using Dropwizard
 the development team started the implementation of the functions available to
 the app.
 
+\subsubsection{Sprint burndown}
+
+The sprint burndown chart~\ref{fig:sprint2burndown} shows progress.
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{ch/projectManagement/fig/sprint2burndown.png}
+\caption{Sprint 2 burndown chart}
+\label{fig:sprint2burndown}
+\end{figure}
+
+\subsubsection{Sprint backlog}
+
+The backlog and time usage result.
+
+\begin{table}[H]
+    %\resizebox{\textwidth}{!}{
+    \begin{tabular}{|l|p{4cm}|c|c|r}%
+    \hline \bfseries User story & \bfseries Details & \bfseries Hours estimated & \bfseries Hours spent & \bfseries Hours left
+    \csvreader[head to column names]{ch/projectManagement/sec/sprint2/userstories.csv}{}% use head of csv as column names
+    {\\\hline \id & \title & \estimated & \spent & \left}% specify your coloumns here
+    %\hline
+    \end{tabular}
+    \caption{Sprint 2 backlog}
+%}
+\end{table}
+
 \subsection{Sprint end}
 
 \subsubsection{Improper use of Scrum tool}
@@ -76,19 +102,3 @@ overestimated rather than underestimated in the eventuality of another event.
 progress on the prototype, and provided rich and detailed feedback on how the
 app should be improved for the next iteration. The sprint was deemed successful
 by the team members.
-
-\subsubsection{Sprint backlog}
-
-The backlog and time usage result.
-
-\begin{table}[H]
-    %\resizebox{\textwidth}{!}{
-    \begin{tabular}{|l|p{4cm}|c|c|r}%
-    \hline \bfseries User story & \bfseries Details & \bfseries Hours estimated & \bfseries Hours spent & \bfseries Hours left
-    \csvreader[head to column names]{ch/projectManagement/sec/sprint2/userstories.csv}{}% use head of csv as column names
-    {\\\hline \id & \title & \estimated & \spent & \left}% specify your coloumns here
-    %\hline
-    \end{tabular}
-    \caption{Sprint 2 backlog}
-%}
-\end{table}
