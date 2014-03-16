@@ -7,8 +7,8 @@ The implementation consisted of three parts. The server, the device in the users
 The server consisted of two parts. One for handling requests from the Android application and one for storing data that is collected in the users home. 
 The part that handles the Android application runs Dropwizard~\cite{dropwizard}, which is a collection of Java libraries that together constitutes a REST service. 
 
-These libraries include Jetty~\cite{jetty}, Jersey~\cite{jersey}, JDBC~\cite{jdbc}, and Jackson~\cite{jackson} and are discussed in further detail in \todo{\textbf{Add: }section}.
-The server exposed a set of URLs that provided the Android application with 
+These libraries include Jetty~\cite{jetty}, Jersey~\cite{jersey}, JDBC~\cite{jdbc}, and Jackson~\cite{jackson}. These are discussed in further detail in section~\ref{sec:libraries}.
+The server exposes a set of URLs that provided the Android application with 
 possibilities to get and store data from the database. The other part, that stores data from the users home is under development.
 
 \subsection{Android Application}
