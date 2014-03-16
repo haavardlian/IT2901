@@ -19,8 +19,10 @@ The team members deemed sprint 1 very successful.
 
 The backlog and time usage result.
 
-\begin{tabular}{l|c|c|r}%
-    \bfseries User story & Details & \bfseries Hours estimated & Hours spent
+\begin{table}[H]
+\begin{tabular}{|l|p{4cm}|c|r}%
+    \hline \bfseries User story & \bfseries Details & \bfseries Hours estimated & \bfseries Hours spent \hline
     \csvreader[head to column names]{ch/projectManagement/sec/sprint1/sprint1userstories.csv}{}% use head of csv as column names
     {\\\hline \id & \title & \estimated & \spent}% specify your coloumns here
 \end{tabular}
+\end{table}
