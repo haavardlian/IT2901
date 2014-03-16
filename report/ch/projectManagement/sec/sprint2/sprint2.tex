@@ -81,20 +81,14 @@ by the team members.
 
 The backlog and time usage result.
 
-
-
-\end{tabular}
-
-\end{table}
-
 \begin{table}[H]
     %\resizebox{\textwidth}{!}{
-    \begin{tabularx}{\textwidth}{|l|p{4cm}|c|c|r}%
+    \begin{tabular}{|l|p{4cm}|c|c|r}%
     \hline \bfseries User story & \bfseries Details & \bfseries Hours estimated & \bfseries Hours spent & \bfseries Hours left
     \csvreader[head to column names]{ch/projectManagement/sec/sprint2/userstories.csv}{}% use head of csv as column names
     {\\\hline \id & \title & \estimated & \spent & \left}% specify your coloumns here
     %\hline
-    \end{tabularx}
+    \end{tabular}
     \caption{Sprint 2 backlog}
 %}
 \end{table}
