@@ -3,12 +3,14 @@
 In order to deliver a complete and functional product to the customer, it is paramount to make sure the system is regularly tested during development. 
 By running tests we increase system stability and robustness, which in turn increases the usability of the product. 
 
-There are several approaches when it comes to testing of software systems. The team looked into \gls{unit} and functional testing.  When unit testing Java based applications it is very common to use JUnit~\cite{junit}.
-With JUnit you can easily test every function on the program. The team decided that functional testing made the most sense to use for this project. See section \todo{add ref, ref to what?} for further descriptions.
+There are several approaches when it comes to testing of software systems. The team looked into both \gls{unit} and functional testing. For the unit testing, we used JUnit~\cite{junit}, which is very common to use when unit testing Java based applications.
+
+With JUnit it is easy to test every function on the program. The team decided that functional testing made the most sense to use for this project. For further details, see section~\ref{sec:funcTest}.
 
 
-At the end of each sprint tests would be runned to see whether the applications met the specifications. Tests would also be runned at the end of the development process. 
+At the end of each sprint, tests was runned to see whether the application met the specifications. Tests was also runned at the end of the development process. 
 
-In addition to this, the customer also participated in the testing, and delivered the application to third-party users so the application will be user-tested as well.
+The team has also conducted usability tests to fullfill the non-functional requirement of a user friendly app. The customer also participated in this part of the testing, and delivered the application to third-party users. For further details about the usability testing, see section~\ref{sec:userTest}.
 \newpage
 \input ch/testing/sec/testMethods.tex
+\input ch/testing/sec/usabilityTesting.tex
