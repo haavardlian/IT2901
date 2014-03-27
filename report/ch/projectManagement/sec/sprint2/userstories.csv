@@ -1,12 +1,12 @@
 id,title,estimated,spent,left
 US-50,Design prototype for sprint 2 functionality,1,2.5,0
-US-49,User can plot in data,20,12.3833333333,0
+US-49,User can plot in data,20,12.38,0
 US-48,Server,46,32.25,5
-US-47,Midterm report work,50.6666666667,23.7,10.48
+US-47,Midterm report work,50.67,23.7,10.48
 US-3,User can see his personalia,7,6.25,0
 US-40,User has a log in screen,2,1.5,0
 US-41,User has a usage tab,18,7.2,0
-US-42,User has a swipe in menu,8,1.2833333333,0
+US-42,User has a swipe in menu,8,1.28,0
 US-43,User menu has a search field,2,1,0
-US-44,User has a app on android to start,11.25,14.5166666667,2.77
-US-52,User has device tab,14,14.1666666667,0
+US-44,User has a app on android to start,11.25,14.5,2.77
+US-52,User has device tab,14,14.17,0

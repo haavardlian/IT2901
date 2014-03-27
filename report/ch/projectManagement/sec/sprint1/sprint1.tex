@@ -20,8 +20,8 @@ The sprint burndown chart~\ref{fig:sprint1burndown} clearly shows that no progre
 The backlog and time usage result.
 
 \begin{table}[H]
-	\begin{tabular}{|l|p{4cm}|c|r|}%
-		\hline \bfseries User story & \bfseries Details & \bfseries Hours estimated & \bfseries Hours spent
+	\begin{tabular}{|l|p{7cm}|p{2.2cm}|p{1.5cm}|p{1.5cm}|}%
+		\hline \bfseries User story & \bfseries Details & \bfseries Hours \newline estimated & \bfseries Hours spent
 		\csvreader[head to column names]{ch/projectManagement/sec/sprint1/sprint1userstories.csv}{}% use head of csv as column names
 		{\\\hline \id & \title & \estimated & \spent}\\\hline% specify your coloumns here
 	\end{tabular}
