@@ -26,7 +26,7 @@ the app.
 The sprint burndown chart~\ref{fig:sprint2burndown} shows progress.
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{ch/projectManagement/fig/sprint2burndown.png}
+\includegraphics[width=\textwidth, trim= 1cm 21cm 1cm 1cm, clip=true]{ch/projectManagement/fig/burndown2.pdf}
 \caption{Sprint 2 burndown chart}
 \label{fig:sprint2burndown}
 \end{figure}
@@ -39,7 +39,7 @@ The backlog and time usage result.
     %\resizebox{\textwidth}{!}{
     \begin{tabular}{|l|p{7cm}|p{2.2cm}|p{1.5cm}|p{1.5cm}|}%
     \hline \bfseries User story & \bfseries Details & \bfseries Hours \newline estimated & \bfseries Hours spent & \bfseries Hours left
-    \csvreader[head to column names]{ch/projectManagement/sec/sprint2/userstories.csv}{}% use head of csv as column names
+    \csvreader[head to column names]{ch/projectManagement/sec/sprints/sprint2/userstories.csv}{}% use head of csv as column names
     {\\\hline \id & \title & \estimated & \spent & \left}\\\hline% specify your coloumns here
     %\hline
     \end{tabular}
