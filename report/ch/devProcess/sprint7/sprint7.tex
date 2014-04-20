@@ -1,0 +1,29 @@
+\subsection{Sprint 7}
+\subsubsection{Sprint start}
+
+\subsubsection{Sprint burndown}
+
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth, trim= 1cm 21cm 1cm 1cm, clip=true]{ch/projectManagement/fig/burndown4.pdf}
+\caption{Sprint 7 burndown chart}
+\label{fig:sprint7burndown}
+\end{figure}
+
+\subsubsection{Sprint backlog}
+
+The backlog and time usage result.
+
+%\rowcolors{0}{lightgray}{darkgray}
+\begin{table}[H]
+	\begin{tabular}{|l|p{7cm}|p{2.2cm}|p{1.5cm}|p{1.5cm}|}%
+		\hline \bfseries User story & \bfseries Details & \bfseries Hours\newline estimated & \bfseries Hours spent & \bfseries Hours left
+		\csvreader[head to column names]{ch/projectManagement/sec/sprints/sprint7/userstories.csv}{}% use head of csv as column names
+		{\\\hline \id & \title & \estimated & \spent & \left} \\\hline% specify your coloumns here
+	\end{tabular}
+    \caption{Sprint 3 backlog}
+\end{table}
+\rowcolors{0}{}{}
+
+
+\subsubsection{Sprint end}
