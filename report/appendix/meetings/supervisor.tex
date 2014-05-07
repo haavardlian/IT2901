@@ -39,15 +39,33 @@ The team is currently working on sprint \#7. What mostly remains is adding some 
 During this sprint, I've mainly worked with the comparison functionality and layout. A lot of time were spent on solutions that were later restructured or removed, especially when replacing dummy data, such as actual Facebook profile pictures and charts in stead of pictures. I also set up the layout for the home-tab. I addition, I've spent some time reviewing the report and identified tasks that needs to be done to complete a satisfactory report.
 
 \subsection*{Håkon}
+Håkon has largely focused his work on the graphs that represent the energy usage of a user. They have been changed to adapt better to irregular user input and give a consistent look. He has also been working on improving the GUI for the graphs to conform with android guidelines. Lastly he has done a lot of work on shortening load times for the graphs. This has been done by optimizing and rewriting the queries responsible for building the graphs.
+
 \subsection*{Lars}
+Lars Erik's work has been focused on improving the profile tab, with a few tasks in Facebook integration. Adding logic for handling the administration of different residences in all layers has been one of the larger tasks. Another focus has been replacing the static dummy list of friends with an actual list of friends that have the application installed. This functionality includes the feature to create and retrieve Facebook users from our database.
+
 \subsection*{Håvard}
+Synchronization has been Håvard's main task throughout this sprint. He has implemented server side support for synchronizing all data that our app collects on the client side. This means that users can have the app on multiple devices and still have persistent data. He has also been working on solving known bugs in the code, especially in the section of code that handles power saving tips.
+
+
 \subsection*{Per Øyvind}
+Per Øyvind has handled the client side synchronization. He has written code for asynchronous building of the graphs to conserve resources, and also fixed memory leaks and bugs in this area. Using Android Lint he has re factored a lot of code and corrected errors that Lint has pointed out. Some of the models have also been rewritten for optimization.
+
 \subsection*{Pia}
+Pia has been working with the administration of devices. The layout for the presentation of devices has been revamped several times. Full support for adding, editing and deleting devices has also been implemented.
 \section{Open/closed problems}
-\subsection{Open problems}
-\subsection{Closed problems}
+Closed
+Synchronization
+Home tab
+
+Opened
+Complete implementation of residences
+
+
 \section{Allocation of time in project period}
+
 \section{Planned work for next period}
-\section{Updated risk analysis}
+In the following weeks we will finish up the remaining code and run functional tests on the system before presenting it to the customer for acceptance testing. Part of the group will be working full time on the report to make sure it is possible to finish it the week we have from product delivery to project deadline. What remains in implementation is bundling some loose ends in the code and some functionality. The report has a lot of content, but we are adding progress chapters for sprints and other content that we find necessary. 
+
 \section{Other}
 \end{document}
