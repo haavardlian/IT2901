@@ -1,10 +1,11 @@
 \documentclass[12pt]{article}
-\usepackage[norsk]{babel}
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{float}
 \renewcommand{\arraystretch}{1.5}
-\usepackage[left=2.5cm, right=2.5cm,top=2.5cm,bottom=2.5cm,
+\usepackage[left=2.5cm , right=2.5cm ,top=2.5cm ,bottom=2.5cm ,
   includefoot]{geometry}
+  \usepackage{multirow}
 
 \title{\textbf{SINTEF\_ENERGY\\STATUS REPORT \# 5\\Week 19}}
 \author{}
@@ -39,20 +40,21 @@ The team is currently working on sprint \#7. What mostly remains is adding some 
 During this sprint, I've mainly worked with the comparison functionality and layout. A lot of time were spent on solutions that were later restructured or removed, especially when replacing dummy data, such as actual Facebook profile pictures and charts in stead of pictures. I also set up the layout for the home-tab. I addition, I've spent some time reviewing the report and identified tasks that needs to be done to complete a satisfactory report.
 
 \subsection*{Håkon}
-Håkon has largely focused his work on the graphs that represent the energy usage of a user. They have been changed to adapt better to irregular user input and give a consistent look. He has also been working on improving the GUI for the graphs to conform with android guidelines. Lastly he has done a lot of work on shortening load times for the graphs. This has been done by optimizing and rewriting the queries responsible for building the graphs.
+I have mainly focused on working with the graphs that represent the energy usage of a user. They have been changed to adapt better to irregular user input and give a consistent look. I have also been working on improving the GUI for the graphs to conform with Android design guidelines. Lastly I have done a lot of work on optimilization by shortening the load times for the graphs. This was done by rewriting the queries responsible for building the graphs.
 
 \subsection*{Lars}
-Lars Erik's work has been focused on improving the profile tab, with a few tasks in Facebook integration. Adding logic for handling the administration of different residences in all layers has been one of the larger tasks. Another focus has been replacing the static dummy list of friends with an actual list of friends that have the application installed. This functionality includes the feature to create and retrieve Facebook users from our database.
+I have focused on improving the profile tab, with a few tasks in Facebook integration. Adding logic for handling the administration of different residences in all layers has been one of the larger tasks. Another focus has been replacing the static dummy list of friends with an actual list of friends that have the application installed. This functionality includes the feature to create and retrieve Facebook users from our database.
 
 \subsection*{Håvard}
-Synchronization has been Håvard's main task throughout this sprint. He has implemented server side support for synchronizing all data that our app collects on the client side. This means that users can have the app on multiple devices and still have persistent data. He has also been working on solving known bugs in the code, especially in the section of code that handles power saving tips.
+Synchronization was my main task throughout this sprint. I implemented the server side support for synchronizing all data that our app collects on the client side. This means that users can have the app on multiple devices and still have persistent data. I have also done some work on solving known bugs in the code, especially in the section of code that handles power saving tips.
 
 
 \subsection*{Per Øyvind}
-Per Øyvind has handled the client side synchronization. He has written code for asynchronous building of the graphs to conserve resources, and also fixed memory leaks and bugs in this area. Using Android Lint he has re factored a lot of code and corrected errors that Lint has pointed out. Some of the models have also been rewritten for optimization.
+I have handled the client side synchronization. I wrote code for asynchronous building of the graphs to conserve resources, and also fixed memory leaks and bugs in this area. Using Android Lint, I refactored a lot of code and corrected errors that Lint has pointed out. Some of the models have also been rewritten for optimization.
 
 \subsection*{Pia}
-Pia has been working with the administration of devices. The layout for the presentation of devices has been revamped several times. Full support for adding, editing and deleting devices has also been implemented.
+I have worked on the administration of devices. The layout for the presentation of devices has been revamped several times. Full support for adding, editing and deleting devices has also been implemented.
+
 \section{Open/closed problems}
 Closed
 Synchronization
@@ -61,8 +63,49 @@ Home tab
 Opened
 Complete implementation of residences
 
+\section{Updated risk analysis}
+The team did not think it necessary to update the risk analysis this time.
+
 
 \section{Allocation of time in project period}
+As shown in the time allocation overview in table 1, there was some divergence between how much time we estimated to use and how much time we actually spent. This sprint the entire team missed out on the two first days of the sprint, as we were travelling from China at the time. 
+
+Unfortunately, this resulted in a somewhat incomplete estimation of the sprint. However, we had taken into consideration that we would in fact be affected by the school trip, hence the sprints with durations of 50 hours from sprint 2 and to and including sprint 8.
+
+The table also shows that we planned to focus on usability testing with actual users. Much time was used on planning these tests, but the team was unsatisfied with the application's completeness, and decided to focus on getting it ready in stead of spending time on usability testing we suspected would not be of much help. That is also why we postponed the review of the design consistency.
+
+The amount of time spent on meetings diverges because we missed two meetings, but also because we added an extra hour before the customer meeting to prepare for the demonstration for the customer.
+
+\begin{table}[H]
+\label{tab:timealloc}
+    %\resizebox{\textwidth}{!}{
+    \centering
+    \begin{tabular}{|l|l|l|}%
+    \hline 
+    \textbf{ID} & \textbf{Hours estimated} & \textbf{Hours spent}\\\hline
+    \textbf{User testing} &18&5\\\hline
+\textbf{Review requirement specification} & 4 &8 \\\hline
+\textbf{Facebook integration}&5&3.75\\\hline
+
+
+%\textbf{Language support} & 3 &3 \\\hline
+%\textbf{User has home tab} & 5.25 & 3.25\\\hline
+%\textbf{The user has profile tab }& 18 & 17.5\\\hline
+%\textbf{The user has a concept usage tab} &37&40\\\hline
+%\textbf{The user has a concept device tab} & 22 & 14.75\\\hline
+%\textbf{The user has a concept social tab} &33 & 38.5\\\hline
+%\textbf{Replace dummy data with data from server}&5&33\\\hline
+\textbf{Development} &123.2& 150\\\hline
+
+\textbf{Design}&6&0\\\hline
+\textbf{Report}&14.5 &10 \\\hline
+\textbf{Meetings} &60&47\\\hline
+\textbf{Total} & 230.75&223.75 \\\hline
+    \end{tabular}
+    \caption{Time allocation overview for sprint 6}
+
+\end{table}
+
 
 \section{Planned work for next period}
 In the following weeks we will finish up the remaining code and run functional tests on the system before presenting it to the customer for acceptance testing. Part of the group will be working full time on the report to make sure it is possible to finish it the week we have from product delivery to project deadline. What remains in implementation is bundling some loose ends in the code and some functionality. The report has a lot of content, but we are adding progress chapters for sprints and other content that we find necessary. 
