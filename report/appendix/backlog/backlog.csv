@@ -1,0 +1,9 @@
+id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeight, daynine, dayten
+% 								21, 	22, 	23,	24,	25, 	28, 	29, 	30, 	1, 	2
+125, \textbf{Review requirement specification}, 			\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{8}, 	\textbf{0} 
+124,\textbf{Language support},					\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{3}, 	\textbf{0}, 	\textbf{1.25} 
+122, \textbf{User has home tab},\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0.5}, 	\textbf{0}, 	\textbf{0}, 	\textbf{2}, 	\textbf{0}, 	\textbf{0.75}
+121, \textbf{Final version of report}, \textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{2}, 	\textbf{0}, 	\textbf{0}, 	\textbf{1}, 	\textbf{0}, 	\textbf{4.5} 
+110, \textbf{The user has a concept device tab}, \textbf{0}, 	\textbf{0}, 	\textbf{4.75}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{2}, 	\textbf{5}, 	\textbf{2}, 	\textbf{0}
+120, \textbf{The user has a concept social tab},\textbf{0}, 	\textbf{4.1}, 	\textbf{2.25}, 	\textbf{1.5}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{1}, 	\textbf{6}, 	\textbf{13}
+, \textbf{SUM},0,0,0,0,0,0,0,0
