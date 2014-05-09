@@ -2,7 +2,7 @@
 %\setlength{\tabcolsep}{6pt}
 
 \newpage
-    \begin{longtable}{|l|p{5cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|}%
+    \begin{longtable}{|l|p{5.5cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|}%
 
 
 \hline
@@ -21,10 +21,18 @@
 
  \multicolumn{12}{|c|}{{Continued on next page}} \\ \hline
 \endfoot
- 
+
 \endlastfoot
-\csvreader[head to column names]{appendix/backlog/backlog1.csv}{}% use head of csv as column names
+\csvreader[head to column names]{backlog1.csv}{}% use head of csv as column names
  {\\\hline \textbf{\id} & \tasks & \dayone & \daytwo & \daythree & \dayfour & \dayfive  & \daysix & \dayseven & \dayeight & \daynine &\dayten}\\\hline% 
+ 
+
 
 \caption{Sprint 1 backlog}
 \end{longtable}
+ \vspace{-5cm}
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{burndown1.png}
+\caption{Burndown chart for sprint 1}
+\end{figure}
