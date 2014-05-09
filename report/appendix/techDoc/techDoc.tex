@@ -1,3 +1,28 @@
 \chapter{Technical documentation}
+The Wattitude server is a RESTful service written in Java and based on the Dropwizard framework. It acts as a HTTP server that receives and answers requests with JSON objects. 
 \section{Installing the server}
+\subsection{Installation requirements}
+The Wattitude server has the following requirements to the environment:
+\begin{itemize}
+\item Java version 7
+\item Apache Maven 
+\item Git scm tool
+\item MySQL server
+\item OS-independent
+\end{itemize}
+\subsection{Installation procedure}
+The following instructions assume that the previously listed requirements are installed and configured correctly. This is especially important to note on Windows systems as they require modification of PATH.
+\begin{description}
+  \item[Clone repository] \hfill \\
+  The systems source code is easily accessible on GitHub. Navigate to desired directory and run "git clone git@github.com:haavardlian/UbiSolar.git"
+  \item[Build project] \hfill \\
+  The systems server should be build using Apache Maven. Navigate into the "server" directory and build the server by running "mvn package"
+  \item[Configure server] \hfill \\
+  Traffic between the server and clients run on port 8080. Make sure this port is open in the computers and networks firewall. 
+  
+\end{description}
+
 \section{Running the server}
+Running the server is done, simply by navigating into the newly built "server" directory and run "java server-1.0.jar server".
+
+\section{Troubleshooting}
