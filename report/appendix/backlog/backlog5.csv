@@ -1,11 +1,66 @@
 id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeight, daynine, dayten
+\vspace{-0.8cm}
 % 24, 	25,	26,	27, 28,	31, 	1, 	2, 	3, 	4
-95, \textbf{User testing}, 			\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0.5}
+
+
+88\cellcolor{lightgray}, \textbf{The user wants icons}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}
+,create icons, 0, 0,0, 0,0 ,1 ,0 , 1, 0, 0
+,invert and fix size,0, 0,0, 0,0 ,4 ,0 , 0, 0, 0
+
+
+89\cellcolor{lightgray}, \textbf{The user has a concept profile tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
+,Implement the profile GUI,0,0,0,0,0,2,0,3,4,0
+,Facebook auth look better,0,0,5,0,0,0,0,0,0,0
+
+90\cellcolor{lightgray}, \textbf{The user has concept device tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
+,bug fixes,0,0,0,0,0,0,0,5,0,0
+,research,0,0,0,0,0,0,0,2,0,0
+,Add the data we want to show in the dropdown datafield,0,0,1,0,0,0,0,0,0,0
+,Change the devicelist to use expandablelist,0,0,2,0.5,1,0,0,0,0,0
+,Add hamburger with the right values,1.5,0,5,0,0,0,0,0,0,0
+,Make the deviceModel have categoryfield,0,0,3,0,0,0,0,0,0,0
+,Make the list be sorted by categories,0,0,0,0,0,3,0.75,1,0,0
+
+
+92\cellcolor{lightgray}, \textbf{The user has a concept social tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}
+, implement social GUI, 5, 2.5, 6.5, 0, 0, 0, 2, 0.5, 0, 0
+
+93\cellcolor{lightgray}, \textbf{The user has a concept usage tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
+,Save state on activity swap, 0, 5,0, 0,0 ,0 ,0 , 0, 0,0
+,Make the graph bether with manually added points, 0, 0,2, 0,0 ,0 ,0 , 4, 0,0
+,tabs, 0, 0,1, 0,0 ,0 ,0 , 0, 0,0
+,Database date query needs to filter on selected devices, 2, 0,0.5, 0,0 ,0 ,0 , 0, 0,0
+,Fragment state behavior, 2, 0,6, 1,0 ,0 ,0 , 0, 0,0
+,Implement time selection in the pie graph, 0, 0,0, 0,0 ,2 ,0 , 4, 0,0
+,Implement zoom in the pie chart, 0, 0,0, 0,0 ,0 ,0 , 3, 0,1
+,Get a picture of the graph view, 0, 0,0, 0,0 ,0 ,0 , 0, 0,3
+,Fix manual usage adding, 0, 0,0, 0,0 ,0 ,0 , 0, 2,1
+,Resolution handling rewrite, 0, 0,0, 0,0 ,0 ,0 , 2, 0,0
+,Graph edge case fixing, 0, 0,0, 0,0 ,0 ,2 , 0, 0,1
+,Pie chart cleanup, 0, 0,0, 0,0 ,0 ,0 , 0, 0,1
+
+
+
+94\cellcolor{lightgray}, \textbf{Administration}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}
+,mail correspondance, 0, 0,0.25, 0,0 ,0 ,0 , 1.1, 0, 0
+,scrum-master tasks,0, 0,0, 0,0 ,0 ,0 , 0, 0, 0
+,status report,0, 0,1.5, 0,0 ,0 ,0 , 0, 0, 1
+
+95\cellcolor{lightgray}, \textbf{User testing}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}
 ,Write user stories for user tests, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0.5
 
 
+97\cellcolor{lightgray}, \textbf{The user can get tips}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
+,translate risk analysis, 0, 0,0, 0,0 ,0 ,0 , 0.5, 0, 0.5
+
+98\cellcolor{lightgray}, \textbf{The user wants to be social}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
+,translate risk analysis, 0, 0,0, 0,0 ,0 ,0 , 0.5, 0, 0.5
+
+100\cellcolor{lightgray}, \textbf{Restructure the menu}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
+,translate risk analysis, 0, 0,0, 0,0 ,0 ,0 , 0.5, 0, 0.5
+
 % 24, 	25,	26,	27, 28,	31, 	1, 	2, 	3, 	4
-117, \textbf{Final version of report}, \textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{3.5}
+117\cellcolor{lightgray}, \textbf{Final version of report}\cellcolor{lightgray}, 				\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{3.5}\cellcolor{lightgray}
 ,add review of main responsibility, 0,0, 0, 0, 0, 0, 0,0, 0,0.5
 , look through previous reports, 0,0, 0, 0, 0, 0, 0,0, 0,3 
 , review requirements, 8, 0, 0, 0, 6, 0, 0, 0, 0, 0
@@ -13,13 +68,5 @@ id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeigh
 , read example reports, 9.5, 0, 0, 0, 0, 0, 0, 0, 0, 0
 , discuss report changes, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0
 , restructure report based on other reports, 4.5, 0, 0, 0, 0, 0, 0, 0, 0, 0
-
-92, \textbf{The user has a concept social tab},\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}
-, implement social GUI, 5, 2.5, 6.5, 0, 0, 0, 2, 0.5, 0, 0
-
-88, \textbf{The user wants icons},\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}
-
-
-94, \textbf{Administration},\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}, 	\textbf{0}
 
 , \textbf{SUM},0,0,0,0,0,0,0,0

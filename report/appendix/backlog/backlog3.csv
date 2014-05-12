@@ -6,11 +6,12 @@ x\cellcolor{lightgray}, \textbf{Planning}\cellcolor{lightgray}, 			\textbf{12}\c
 
 x\cellcolor{lightgray}, 							\textbf{Meetings}\cellcolor{lightgray},					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}
 
-62\cellcolor{lightgray},						\textbf{The server site}\cellcolor{lightgray},				\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}
-,update database schema, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0
-,database/server fixes, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0
-, add tips to server,0, 0,0, 0,0 ,0 ,0 , 0, 0, 0	
-, add ratings to server,0, 0,0, 0,0 ,0 ,0 , 0, 0, 0
+62\cellcolor{lightgray},						\textbf{The server site}\cellcolor{lightgray},				\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{4.5}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}
+,update database schema, 0, 0,0, 0,0 ,0 ,0 , 1, 0, 1
+,database/server fixes, 0, 0,0, 0,0 ,0 ,0 , 1, 0, 0
+, add tips to server,0, 0,0, 0,0 ,0 ,0 , 0, 0, 2	
+, add ratings to server,0, 0,0, 0,0 ,0 ,0 , 0, 0, 3
+,research,0,0,0,0,0,0,0,2.5,0,0
 
 
 61\cellcolor{lightgray},						\textbf{The user has concept device tab}\cellcolor{lightgray},								\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}
