@@ -1,0 +1,55 @@
+id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeight, daynine, dayten
+\vspace{-0.8cm}
+% 27, 	28,	29,	30, 31,	3, 	4, 	5, 	6, 7
+
+x\cellcolor{lightgray}, \textbf{Planning}\cellcolor{lightgray}, 			\textbf{12}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{6}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{12}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{12}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
+
+x\cellcolor{lightgray}, 							\textbf{Meetings}\cellcolor{lightgray},					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}
+
+62\cellcolor{lightgray},						\textbf{The server site}\cellcolor{lightgray},				\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}
+,update database schema, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0
+,database/server fixes, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0
+, add tips to server,0, 0,0, 0,0 ,0 ,0 , 0, 0, 0	
+, add ratings to server,0, 0,0, 0,0 ,0 ,0 , 0, 0, 0
+
+
+61\cellcolor{lightgray},						\textbf{The user has concept device tab}\cellcolor{lightgray},								\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}
+,research, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0
+		
+69\cellcolor{lightgray},						\textbf{The user has concept social tab}\cellcolor{lightgray},								\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}
+,research, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0
+
+59\cellcolor{lightgray},						\textbf{The user has concept profile tab}\cellcolor{lightgray},								\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}
+,research, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0			
+,implement profile GUI, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0			
+,implement facebook API, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0			
+
+58\cellcolor{lightgray},						\textbf{The user has concept usage tab}\cellcolor{lightgray},								\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}
+,change graph library,0,0,0,0,0,0,0,0,0,0
+,make usage tab use new graph library,	0,0,0,0,0,0,0,0,0,0	
+,zooming changes data correctly,0,0,0,0,0,0,0,0,0,0
+					
+57\cellcolor{lightgray},						\textbf{Prototyping}\cellcolor{lightgray},								\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}							
+	,find online site for prototyping,0,0,0,0,0,0,0,0,0,0		
+	,research general ui guidelines,0,0,0,0,0,0,0,0,0,0
+	,decide on general ui guidelines,0,0,0,0,0,0,0,0,0,0	
+	,decide on functionality we want,0,0,0,0,0,0,0,0,0,0		
+	,prototype device tab,0,0,0,0,0,0,0,0,0,0
+	,prototype social tab,0,0,0,0,0,0,0,0,0,0
+	,prototype graph functionality,0,0,0,0,0,0,0,0,0,0
+	,prototype usage tab,0,0,0,0,0,0,0,0,0,0
+	,revise profile tab,0,0,0,0,0,0,0,0,0,0
+
+
+
+56\cellcolor{lightgray},						\textbf{Mid-term report work}\cellcolor{lightgray},								\textbf{4}\cellcolor{lightgray}, 					\textbf{2}\cellcolor{lightgray}, 					\textbf{2}\cellcolor{lightgray}, 					\textbf{1.85}\cellcolor{lightgray}, 					\textbf{2.5}\cellcolor{lightgray}, 					\textbf{7.5}\cellcolor{lightgray}, 					\textbf{2}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{5}\cellcolor{lightgray}, 					\textbf{5}\cellcolor{lightgray}
+
+
+55\cellcolor{lightgray},						\textbf{Branding}\cellcolor{lightgray},								\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{6}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}										
+,find new app name,0,0,0,0,0,0,0,0,0,0
+,make icon packs,0,0,0,0,0,0,0,0,0,0
+
+
+53\cellcolor{lightgray},						\textbf{Administration}\cellcolor{lightgray},								\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{2}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}
+	,mail correspondance, 0, 0,0.5, 0,0,0,0,0,0,0
+	,status report,	0, 0,1.5, 0,0, 0, 0, 0, 0,
