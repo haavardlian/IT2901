@@ -9,11 +9,17 @@ id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeigh
 
 
 89\cellcolor{lightgray}, \textbf{The user has a concept profile tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
-,translate risk analysis, 0, 0,0, 0,0 ,0 ,0 , 0.5, 0, 0.5
-
+,Implement the profile GUI,0,0,0,0,0,2,0,3,4,0
+,Facebook auth look better,0,0,5,0,0,0,0,0,0,0
 
 90\cellcolor{lightgray}, \textbf{The user has concept device tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
-
+,bug fixes,0,0,0,0,0,0,0,5,0,0
+,research,0,0,0,0,0,0,0,2,0,0
+,Add the data we want to show in the dropdown datafield,0,0,1,0,0,0,0,0,0,0
+,Change the devicelist to use expandablelist,0,0,2,0.5,1,0,0,0,0,0
+,Add hamburger with the right values,1.5,0,5,0,0,0,0,0,0,0
+,Make the deviceModel have categoryfield,0,0,3,0,0,0,0,0,0,0
+,Make the list be sorted by categories,0,0,0,0,0,3,0.75,1,0,0
 
 
 92\cellcolor{lightgray}, \textbf{The user has a concept social tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}
