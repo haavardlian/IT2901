@@ -3,29 +3,29 @@ id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeigh
 % 24, 	25,	26,	27, 28,	31, 	1, 	2, 	3, 	4
 
 
-88\cellcolor{lightgray}, \textbf{The user wants icons}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}
+88\cellcolor{lightgray}, \textbf{The user wants icons}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{5}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
 ,create icons, 0, 0,0, 0,0 ,1 ,0 , 1, 0, 0
 ,invert and fix size,0, 0,0, 0,0 ,4 ,0 , 0, 0, 0
 
 
-89\cellcolor{lightgray}, \textbf{The user has a concept profile tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
+89\cellcolor{lightgray}, \textbf{Concept profile tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{5}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{2}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{3}\cellcolor{lightgray}, 	\textbf{4}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
 ,Implement the profile GUI,0,0,0,0,0,2,0,3,4,0
 ,Facebook auth look better,0,0,5,0,0,0,0,0,0,0
 
-90\cellcolor{lightgray}, \textbf{The user has concept device tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
+90\cellcolor{lightgray}, \textbf{Concept device tab}\cellcolor{lightgray}, 			\textbf{1.5}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{11}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}, 	\textbf{1}\cellcolor{lightgray}, 	\textbf{3}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}, 	\textbf{8}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
 ,bug fixes,0,0,0,0,0,0,0,5,0,0
 ,research,0,0,0,0,0,0,0,2,0,0
-,Add the data we want to show in the dropdown datafield,0,0,1,0,0,0,0,0,0,0
-,Change the devicelist to use expandablelist,0,0,2,0.5,1,0,0,0,0,0
-,Add hamburger with the right values,1.5,0,5,0,0,0,0,0,0,0
-,Make the deviceModel have categoryfield,0,0,3,0,0,0,0,0,0,0
-,Make the list be sorted by categories,0,0,0,0,0,3,0.75,1,0,0
+,add the data we want to show in the dropdown datafield,0,0,1,0,0,0,0,0,0,0
+,change the devicelist to use expandablelist,0,0,2,0.5,1,0,0,0,0,0
+,add hamburger with the right values,1.5,0,5,0,0,0,0,0,0,0
+,make the deviceModel have categoryfield,0,0,3,0,0,0,0,0,0,0
+,make the list be sorted by categories,0,0,0,0,0,3,0.75,1,0,0
 
 
-92\cellcolor{lightgray}, \textbf{The user has a concept social tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}
+92\cellcolor{lightgray}, \textbf{Concept social tab}\cellcolor{lightgray}, 			\textbf{5}\cellcolor{lightgray}, 	\textbf{2.5}\cellcolor{lightgray}, 	\textbf{6.5}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{2}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
 , implement social GUI, 5, 2.5, 6.5, 0, 0, 0, 2, 0.5, 0, 0
 
-93\cellcolor{lightgray}, \textbf{The user has a concept usage tab}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
+93\cellcolor{lightgray}, \textbf{Concept usage tab}\cellcolor{lightgray}, 			\textbf{4}\cellcolor{lightgray}, 	\textbf{5}\cellcolor{lightgray}, 	\textbf{9.5}\cellcolor{lightgray}, 	\textbf{1}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{2}\cellcolor{lightgray}, 	\textbf{2}\cellcolor{lightgray}, 	\textbf{13}\cellcolor{lightgray}, 	\textbf{2}\cellcolor{lightgray}, 	\textbf{7}\cellcolor{lightgray}
 ,Save state on activity swap, 0, 5,0, 0,0 ,0 ,0 , 0, 0,0
 ,Make the graph bether with manually added points, 0, 0,2, 0,0 ,0 ,0 , 4, 0,0
 ,tabs, 0, 0,1, 0,0 ,0 ,0 , 0, 0,0
@@ -41,7 +41,7 @@ id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeigh
 
 
 
-94\cellcolor{lightgray}, \textbf{Administration}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}
+94\cellcolor{lightgray}, \textbf{Administration}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.75}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.1}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1}\cellcolor{lightgray}
 ,mail correspondance, 0, 0,0.25, 0,0 ,0 ,0 , 1.1, 0, 0
 ,scrum-master tasks,0, 0,0, 0,0 ,0 ,0 , 0, 0, 0
 ,status report,0, 0,1.5, 0,0 ,0 ,0 , 0, 0, 1
