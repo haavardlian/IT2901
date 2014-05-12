@@ -47,26 +47,26 @@ id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeigh
 ,status report,0, 0,1.5, 0,0 ,0 ,0 , 0, 0, 1
 
 95\cellcolor{lightgray}, \textbf{User testing}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.5}\cellcolor{lightgray}
-,Write user stories for user tests, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0.5
+,write user stories for user tests, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 0.5
 
 
-97\cellcolor{lightgray}, \textbf{The user can get tips}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
-,translate risk analysis, 0, 0,0, 0,0 ,0 ,0 , 0.5, 0, 0.5
+97\cellcolor{lightgray}, \textbf{The user can get tips}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{5}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
+,ratings are shown and updated throughout session, 0, 0,5,0, 0,0 ,0 ,0 , 0, 0
 
-98\cellcolor{lightgray}, \textbf{The user wants to be social}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
-,translate risk analysis, 0, 0,0, 0,0 ,0 ,0 , 0.5, 0, 0.5
+98\cellcolor{lightgray}, \textbf{The user wants to be social}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{4.5}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
+,Look into facebook api for posts and photos, 0, 0,4.5, 0,0 ,0 ,0 , 0, 0, 0
 
-100\cellcolor{lightgray}, \textbf{Restructure the menu}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1.25}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0.75}\cellcolor{lightgray}
-,translate risk analysis, 0, 0,0, 0,0 ,0 ,0 , 0.5, 0, 0.5
+100\cellcolor{lightgray}, \textbf{Restructure the menu}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{5.5}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
+,update the menu with new look and items, 0, 0,0, 0,0 ,0 ,0 , 5.5, 0, 0
 
 % 24, 	25,	26,	27, 28,	31, 	1, 	2, 	3, 	4
-117\cellcolor{lightgray}, \textbf{Final version of report}\cellcolor{lightgray}, 				\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{3.5}\cellcolor{lightgray}
+117\cellcolor{lightgray}, \textbf{Final version of report}\cellcolor{lightgray}, 				\textbf{24}\cellcolor{lightgray}, 	\textbf{3}\cellcolor{lightgray}, 	\textbf{2}\cellcolor{lightgray}, 	\textbf{1}\cellcolor{lightgray}, 	\textbf{6.5}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{40.5}\cellcolor{lightgray}
 ,add review of main responsibility, 0,0, 0, 0, 0, 0, 0,0, 0,0.5
-, look through previous reports, 0,0, 0, 0, 0, 0, 0,0, 0,3 
+, look through previous reports, 0,0, 0, 0, 0, 0, 0,0, 0,40 
 , review requirements, 8, 0, 0, 0, 6, 0, 0, 0, 0, 0
 , fix burndown charts, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0
-, read example reports, 9.5, 0, 0, 0, 0, 0, 0, 0, 0, 0
-, discuss report changes, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0
+, read example reports, 3.5, 3, 2, 1, 0, 0, 0, 0, 0, 0
+, discuss report changes, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0
 , restructure report based on other reports, 4.5, 0, 0, 0, 0, 0, 0, 0, 0, 0
+,SUM,46.5,10.5,45.25,3,13.5,24.25,5.25,38.6,12, 48.5
 
-, \textbf{SUM},0,0,0,0,0,0,0,0
