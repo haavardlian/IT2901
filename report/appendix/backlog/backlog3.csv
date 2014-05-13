@@ -54,7 +54,7 @@ id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeigh
 , add ratings to server,0, 0,0, 0,0 ,0 ,0 , 0, 0, 3
 ,research,0,0,0,0,0,0,0,2.5,0,0
 
-69\cellcolor{lightgray},						\textbf{The user has concept social tab}\cellcolor{lightgray},								\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{2}\cellcolor{lightgray}
+69\cellcolor{lightgray},						\textbf{Concept social tab}\cellcolor{lightgray},								\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}	, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{0}\cellcolor{lightgray}, 					\textbf{2}\cellcolor{lightgray}
 ,research, 0, 0,0, 0,0 ,0 ,0 , 0, 0, 2
 
 , Sum,46.5, 5, 53.5,17.35,7.5, 32, 11, 40.75, 5, 23.25
