@@ -1,46 +1,48 @@
 id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeight, daynine, dayten
 \vspace{-0.8cm}
 
-x,planning,12,0,0,0,0,12,0,0,0,0
+x\cellcolor{lightgray},																\textbf{Planning}\cellcolor{lightgray},																	 \textbf{12}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{12}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
 
-x,møter,0,0,0,0,12,0,0,0,0,0
+x\cellcolor{lightgray},																\textbf{Meetings}\cellcolor{lightgray},														 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{12}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
 
-53,Administration,0,0,0,0,0,0,0,0,0,0
-,Mail correspondence,0,0,0,0,0,0.25,0,0,0,0
-,Status report,0,0,0,2,0,0,0,0,0,0
+53\cellcolor{lightgray},															\textbf{Administration}\cellcolor{lightgray},													 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{2}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0.25}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,mail correspondence,0,0,0,0,0,0.25,0,0,0,0
+,status report,0,0,0,2,0,0,0,0,0,0
 
-64,Concept usage tab,0,0,0,0,0,0,0,0,0,0
-,Work on the design,0,0,0,2.5,0,0,0,0,0,0
-,Zooming changes data correctly,2,0,0,0,0,0,0,0,0,0
-,List to show devices,0,0,0,3,0,0,0,0,0,0
-,Filter data on choosen devices,5,0,4,0,0,0,0,0,0,0
-,Add usage view,0,0,4.5,0,0,0,0,0,0,0
-,Rewrite to use ContentProvider,0,3.5,0,0,0,0,0,0,0,0
-,Implement database data into multiple device filtering,0,0,0,5,0,0,0,0,0,0
-,Bug fixes,0,0,0,2,2,0,0,1,0,0.5
-,Implement database data into pie chart,0,0,0,0,0,0,4,0,0,0
-,Dont reset the chart when new devices are added,0,0,0,0,0,0,0,3,0,0
-,Query database to get compressed data(days, weeks, months),0,0,0,0,0,0,0,0,3.75,0
-,Optimalize data simulating,0,0,0,0,0,0,0,6,0.75,0
-,Save state on activity swap,0,0,0,0,0,0,0,0,0,1
-,Save state on application exit,0,0,0,0,0,0,0,2,0,0
-,Tabs,0,0,0,0,0,0,0,0,0,6
-,Hook up the graphs to use the compressed data from the database,0,0,0,0,0,0,0,0,0,2
-,Separate device selection for pie and line graph,0,0,0,0,0,0,0,0,0,2
+64\cellcolor{lightgray},															\textbf{Concept usage tab}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,work on the design,0,0,0,2.5,0,0,0,0,0,0
+,zooming changes data correctly,2,0,0,0,0,0,0,0,0,0
+,list to show devices,0,0,0,3,0,0,0,0,0,0
+,filter data on choosen devices,5,0,4,0,0,0,0,0,0,0
+,add usage view,0,0,4.5,0,0,0,0,0,0,0
+,rewrite to use ContentProvider,0,3.5,0,0,0,0,0,0,0,0
+,implement database data into multiple device filtering,0,0,0,5,0,0,0,0,0,0
+,bug fixes,0,0,0,2,2,0,0,1,0,0.5
+,implement database data into pie chart,0,0,0,0,0,0,4,0,0,0
+,dont reset the chart when new devices are added,0,0,0,0,0,0,0,3,0,0
+,query database to get compressed data(days, weeks, months),0,0,0,0,0,0,0,0,3.75,0
+,optimalize data simulating,0,0,0,0,0,0,0,6,0.75,0
+,save state on activity swap,0,0,0,0,0,0,0,0,0,1
+,save state on application exit,0,0,0,0,0,0,0,2,0,0
+,tabs,0,0,0,0,0,0,0,0,0,6
+,hook up the graphs to use the compressed data from the database,0,0,0,0,0,0,0,0,0,2
+,separate device selection for pie and line graph,0,0,0,0,0,0,0,0,0,2
 
-67,Concept profile tab,0,0,0,0,0,0,0,0,0,0
-,Research Android,0,0,0,0,0,0,1,0,0,3.5
-,Implement the profile GUI,0,0,2.75,0,1,0,0,0,0,3.5
-,Implement Facebook authorization,0,0,7,0,0,0,0,0,0,4.5
-68,The user wants icons,0,0,0,0,0,0,0,0,0,0
-,Change icons to fit in app,0,0,0,0,0,2,0,0,0,0
+67\cellcolor{lightgray},															\textbf{Concept profile tab}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{9.75}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{1}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{11.5}\cellcolor{lightgray}
+,research Android,0,0,0,0,0,0,1,0,0,3.5
+,implement the profile GUI,0,0,2.75,0,1,0,0,0,0,3.5
+,implement Facebook authorization,0,0,7,0,0,0,0,0,0,4.5
 
-72,Concept social tab,0,0,0,0,0,0,0,0,0,0
+68\cellcolor{lightgray},															\textbf{The user wants icons}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{2}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,change icons to fit in app,0,0,0,0,0,2,0,0,0,0
+
+
+72\cellcolor{lightgray},															\textbf{Concept social tab}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0.25}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{7.5}\cellcolor{lightgray},														\textbf{5}\cellcolor{lightgray}
 ,Implement sosial GUI,0,0,0,0,0,0,0,0,7.5,5
 ,Research android, fragments, etc.,0,0,0,5.25,0,0,1.75,0,0.75,0
 ,add scrollbar,0,0,0,0.25,0,0,0,0,0,0
 
-73,Report,0,0,0,0,0,0,0,0,0,0
+73\cellcolor{lightgray},															\textbf{Report}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
 ,General layout fixes,0,0,1.8,0,0.25,0,0,0,0,0
 ,Revise architecture,0,0,0.5,0,0,0,0,0,0,3
 ,Add description of MVP to report in LaTeX,0,0,0,0,0,2,0,0,0,0
@@ -66,17 +68,16 @@ x,møter,0,0,0,0,12,0,0,0,0,0
 ,Write about sprints,0,0,0,0,7,0,0,0,0,0
 ,Report structure cleanup,0,0,0,0,0,2.25,0,0,0,0
 
-
-75,Prepare presentation,0,0,1.5,0,0,0,0,0,0,0
-,Watch the presentation,0,0,0,0,0,0,0,9,0,0
-
-76,Peer-evaluation,0,0,0,0,0,0,0,0,0,0
+76\cellcolor{lightgray},															\textbf{Peer-evaluation}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{1.5}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{20.25}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
 ,Evaluate other group's report,0,0,0,0,0,0,0,11.25,0,0
+,Watch the presentation,0,0,0,0,0,0,0,9,0,0
+,Prepare presentation,0,0,1.5,0,0,0,0,0,0,0
 
-77,Git fixing,0,0,0,0,0,0,0,0,0,0
-,Rebase and FF master into develop,0,0.5,0,0,0,0,0,0,0,0
 
-78,Concept device tab,0,0,0,0,0,0,0,0,0,0
+77\cellcolor{lightgray},																		\textbf{Git fixing}\cellcolor{lightgray},												 	\textbf{0}\cellcolor{lightgray},														\textbf{0.5}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,rebase and FF master into develop,0,0.5,0,0,0,0,0,0,0,0
+
+78\cellcolor{lightgray},																		\textbf{Concept device tab}\cellcolor{lightgray},												 	\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{4}\cellcolor{lightgray},														\textbf{6}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{9}\cellcolor{lightgray},														\textbf{11}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
 ,Add category to devices,0,0,0,0,0,0,1,0,0,0
 ,Put the "add device-" button to the top toolbar,0,0,0,4,0,0,0,0,0,0
 ,Research MVP and make the code follow this pattern,0,0,0,2,0,0,0,0,0,0
@@ -85,35 +86,27 @@ x,møter,0,0,0,0,12,0,0,0,0,0
 ,Change the structure of the code,0,0,2,0,0,0,0,0,0,0
 ,Change the devicelist to use expandablelist,0,0,0,0,0,0,8,6,0,0
 
-80,Server,0,0,0,0,0,0,0,0,0,0
+
+80\cellcolor{lightgray},																		\textbf{Server}\cellcolor{lightgray},												 	\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{3}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{3}\cellcolor{lightgray}
 ,Add JavaDoc to server,0,0,1,0,0,0,0,0,0,1.5
 ,Restructure server and database,0,0,2,0,0,0,0,0,0,1.5
 
-83,User testing,0,0,0,0,0,0,0,0,0,0
+83\cellcolor{lightgray},																		\textbf{User testing}\cellcolor{lightgray},												 	\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0.25}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
 ,Create test cases,0,0,0,0,0,0,0.25,0,0,0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-84,Overall app code,0,0,0,0,0,0,0,0,0,0
+84\cellcolor{lightgray},																		\textbf{Overall app code}\cellcolor{lightgray},												 	\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{4}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
 ,Change drawer fragment placements,0,0,0,0,0,0,0,0,0.5,0
 ,Changing tabs in drawer uses backstack,0,0,0,0,0,0,0,0,2,0
 ,Drawer uses icons,0,0,0,0,0,0,0,0,1.5,0
 
 
-87,User can get and create tips,0,0,0,0,0,0,0,0,0,0
+
+87\cellcolor{lightgray},																		\textbf{User can get and create tips}\cellcolor{lightgray},																 	\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{1}\cellcolor{lightgray},														\textbf{2}\cellcolor{lightgray},														\textbf{1}\cellcolor{lightgray},														\textbf{12.5}\cellcolor{lightgray}
 ,Create tips in database/server with volley,0,0,0,0,0,0,0,0,0,1.5
 ,Get tips from database with volley,0,0,0,0,0,0,1,2,1,2
 ,Add user interface for tips,0,0,0,0,0,0,0,0,0,4
 ,Add tips to database/server,0,0,0,0,0,0,0,0,0,5
+
+, SUM, 25, 11.75, 46.55, 32.5, 46.5, 43.75, 19, 47.25, 19.75, 52.5
