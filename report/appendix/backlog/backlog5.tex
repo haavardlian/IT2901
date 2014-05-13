@@ -1,5 +1,31 @@
-%\rowcolors{0}{lightgray}{darkgray}
-%\setlength{\tabcolsep}{6pt}
+\documentclass[12pt]{report}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{todonotes}
+\usepackage{changepage}
+\usepackage[left=1.2cm, right=2cm,top=3.5cm,bottom=2.5cm,
+  includefoot]{geometry}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{calc,color}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{csvsimple}
+
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{darkgray}{gray}{0.7}
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+\pagestyle{empty}
+
 
     \begin{longtable}{|l|p{5.5cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|}%
 
@@ -30,7 +56,6 @@
 \caption{Sprint 5 backlog}
 \end{longtable}
 
-\begin{figure}[H]
-\includegraphics[width=\textwidth]{burndown5.png}
-\caption{Burndown chart for sprint 5}
-\end{figure}
+
+
+\end{document}
