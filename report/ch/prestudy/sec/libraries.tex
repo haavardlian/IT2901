@@ -1,22 +1,42 @@
 \subsection{Libraries}
 \label{sec:libraries}
-Libraries are pieces of code that will be integrated into the project. They provide functionality needed and saves the team time by reducing the workload. 
-When utilizing libraries, it is important to make sure the licenses match the project and the customers request. All the libraries used in the project falls under the Apache 2.0 license~\cite{Apache}.
+Libraries are pieces of code that is integrated into the project. They provide functionality needed and saves the team time by reducing the workload. The libraries we used in this project and what we used them for is displayed in table~\ref{tab:libs}.
+
+When utilizing libraries, it is important to make sure the licenses match the project and the customer's request. All the libraries used in the project falls under the Apache 2.0 license~\cite{Apache}.
+
+\begin{table}[H]
+\rowcolors{0}{lightgray}{darkgray}
+\begin{tabular}{|l|p{12.9cm}|}
+\hline
+\textbf{Library }& \textbf{What it is used for}\\\hline
+Jersey/JAX-RS & Provides the Representational State Transfer(REST) service of our server.\\\hline
+Jackson&Translates data to JSON before it is sent to the client.\\\hline
+JSON&Textual representation of the objects and standard way to store and transfer data between different components\\\hline
+Jetty&Allows the server application to run by itself without the need for any external web server\\\hline
+JDBI&Exposes relational databases and makes them more modular and flexible\\\hline
+Volley & handle network requests on the Android device\\\hline
+aChartEngine& Displaying detailed power usage data through  pie charts and line charts.\\\hline
+\end{tabular}
+\caption{Libraries and their application areas}
+\label{tab:libs}
+\end{table}
 
 \subsubsection{Dropwizard}
 Dropwizard is a lightweight collection of tools used to set up and host a server. Dropwizard itself is new and not much used yet, but the tools in the collection are popular and well maintained. 
 The advantages of using Dropwizard instead of using the tools by themselves is that everything is configured to work together and it synergises well.
-Dropwizard and all its parts is under the Apache 2.0 license. 
 
-\todo{extract all parts under dropwizard in a table (jersey, jetty, jackson, jdbi and more, if any)}
 
+
+\begin{comment}
 \subsubsection{Jersey/JAX-RS}
-Jersey provides the Representational State Transfer(REST) service of our server. REST is the Application Programming Interface(API) that provides programmers with an 
+%Jersey provides the Representational State Transfer(REST) service of our server. 
+REST is the Application Programming Interface(API) that provides programmers with an 
 interface to communicate with the server through basic HTTP commandos like GET, POST, PUT and UPDATE. For the application, the communication was done by using the JSON format 
 described in the subsequent subsection.
 
 \subsubsection{Jackson}
-Jackson is a tool used to translate data to JSON before it is sent to the client. JSON is used as a textual representation of the objects and is a standard way to store 
+%Jackson is a tool used to translate data to JSON before it is sent to the client. 
+JSON is used as a textual representation of the objects and is a standard way to store 
 and transfer data between different components.
 
 \subsubsection{Jetty}
@@ -24,15 +44,21 @@ Jetty is an integrated HTTP server that allows the server application to run by 
 This makes setting up and running the server application more user friendly and faster.
 
 \subsubsection{JDBI}
-JDBI is a library that exposes relational databases and makes them more modular and flexible. This library removes many of the problems related to database usage and communication.
+%JDBI is a library that exposes relational databases and makes them more modular and flexible. 
+This library removes many of the problems related to database usage and communication.
 
 \subsubsection{Volley}
 Volley is the library that was used to handle network requests on the Android device. It is a easy-to-use, lightweight library that makes communication with the server 
-simpler and more error proof.  Volley is made and maintained by Google and is licensed under Apache 2.0.
+simpler and more error proof. 
 
 \subsubsection{aChartEngine}
-aChartEngine~\cite{achart} is a popular Android library for creating graphs. In the project this library will mainly be used for line graphs, for displaying detailed power 
-usage data, and pie charts for comparing power consumption between devices. This library is licensed under Apache 2.0
+aChartEngine~\cite{achart} is a popular Android library for creating graphs. In the project this library was mainly used for line graphs, for displaying detailed power 
+usage data, and pie charts for comparing power consumption between devices.
+\end{comment}
+
+
+
+
 
 \subsubsection{Facebook SDK}
 The Facebook SDK~\cite{fsdk} is a collection of functions that allows Facebook’s functionality to be integrated into the application. Key functionality for this project, 

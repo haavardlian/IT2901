@@ -2,7 +2,38 @@
 \label{sec:altsolution}
 Based on the product requirements the team worked out, we did some research on existing solutions in the same market. This resulted in a list of the most relevant solutions, possibly competing with the team's own application.
  
-This list contains a brief overview of the functionalities and drawbacks of the existing solutions. The team will use this study in alternative solutions as an inspiration for functionality and features to implement in the project application.
+This list contains a brief overview of the functionalities and drawbacks of the existing solutions, summarized in table~\ref{tab:existingSolutions}. The team will use this study in alternative solutions as an inspiration for functionality and features to implement in the project application.
+
+
+\begin{table}[H]
+\centering
+\rowcolors{1}{darkgray}{lightgray}
+\begin{tabular}{|l|l|p{2.6cm}|p{2.3cm}|p{2.2cm}|}
+\hline
+\textbf{Product} & \textbf{Device control} & \textbf{Social media} & \textbf{Measure production} & \textbf{Measure individual devices} \\
+Smartly & Limited & No  & No & No\\
+OpenEnergyMonitor & Yes & No  & Limited & No \\
+Minisolo & Yes & No  & No & Limited\\
+TheOwl & Yes & No & No & Yes\\
+Efergy & Yes & Yes &  No & Yes\\\hline
+\end{tabular}
+\caption{Comparison of existing solutions}
+\label{tab:existingSolutions}
+\end{table}
+
+
+\subsection{NTE miniSolo energydisplay}
+
+The NTE miniSolo energydisplay~\cite{nte} measures the total power usage real time and allows the user to power off devices to see the effect the device has on the total power consumption. It offers some interesting features like detailed power consumption and a relation to how much money the power usage amounts to, which the team also want to have in the application. However, the miniSolo energydisplay has some drawbacks: It is linked to a proprietary device and has no Android application. These drawbacks made the solution incompatible with the team's application.
+
+
+\subsection{Theowl}
+
+Theowl~\cite{theowl} mainly focuses on temperature control. 
+As that was not the only property the team would like to focus on, the solution lacked many of the features the team wanted to have in the application. Other drawbacks is that the product does not have any official support in Norway and also is beyond a reasonable price range. 
+
+However, Theowl has an architecture with remote sensors that sends precise data and allow the user to control certain devices, which the team would like to consider for the application.
+
 
 \subsection{Smartly}
 
@@ -16,10 +47,10 @@ Even though Smartly has some of the features the team would like to have in the 
 \label{fig:smartly}
   \centering
   \subbottom[\label{fig:smartlya}Screenshot of Smartly's possibility to remotely control devices.]{%
-\includegraphics[width=0.3\textwidth, trim=0cm 12cm 13cm 0cm, clip]{ch/prestudy/fig/smartlyLock.pdf}}
+\includegraphics[width=0.45\textwidth, trim=0cm 12cm 13cm 0cm, clip]{ch/prestudy/fig/smartlyLock.pdf}}
 \quad
   \subbottom[\label{fig:smartlyb} Screenshot of Smartly's consumption overview.]{%
-\includegraphics[width=0.3\textwidth, trim=0cm 12cm 13cm 0cm, clip]{ch/prestudy/fig/smartlyConsume.pdf}}
+\includegraphics[width=0.45\textwidth, trim=0cm 12cm 13cm 0cm, clip]{ch/prestudy/fig/smartlyConsume.pdf}}
 \end{figure}
 
 
@@ -40,20 +71,7 @@ However, OpenEnergyMonitor offers no automatic collection of data - the user wou
 
 
 
-\subsection{NTE miniSolo energydisplay}
-
-The NTE miniSolo energydisplay~\cite{nte} measures the total power usage real time and allows the user to power off devices to see the effect the device has on the total power consumption. It offers some interesting features like detailed power consumption and a relation to how much money the power usage amounts to, which the team also want to have in the application. However, the miniSolo energydisplay has some drawbacks: It is linked to a proprietary device and has no Android application. These drawbacks made the solution incompatible with the team's application.
-
-
-
-\subsection{Theowl}
-
-Theowl~\cite{theowl} mainly focuses on temperature control. 
-As that was not the only property the team would like to focus on, the solution lacked many of the features the team wanted to have in the application. Other drawbacks is that the product does not have any official support in Norway and also is beyond a reasonable price range. 
-
-However, Theowl has an architecture with remote sensors that sends precise data and allow the user to control certain devices, which the team would like to consider for the application.
-
-
+\newpage
 \subsection{Efergy}
 
 Efergy~\cite{efergy} was considered to be the closest solution to what the team wanted to develop. As shown in figure~\ref{fig:efergyGUI}, it has nice visual representation of data, and it offers social integration. The architecture is interesting, as it supports measuring the power usage of single devices over wireless radio, communicating with a local receiver. The receiver is connected to a server through the user's Internet. Unfortunately, it lacks the ability to monitor and control private power production. It is also beyond a reasonable price range.
@@ -65,19 +83,4 @@ Efergy~\cite{efergy} was considered to be the closest solution to what the team 
 \label{fig:efergyGUI}
 \end{figure}
 
-\subsection{Comparison of existing solutions}
-\begin{table}[H]
-\centering
-\rowcolors{1}{darkgray}{lightgray}
-\begin{tabular}{|l|l|p{2.6cm}|p{2.3cm}|p{2.2cm}|}
-\hline
-\textbf{Product} & \textbf{Device control} & \textbf{Social media} & \textbf{Measure production} & \textbf{Measure individual devices} \\
-Smartly & Limited & No  & No & No\\
-OpenEnergyMonitor & Yes & No  & Limited & No \\
-Minisolo & Yes & No  & No & Limited\\
-TheOwl & Yes & No & No & Yes\\
-Efergy & Yes & Yes &  No & Yes\\\hline
-\end{tabular}
-\caption{Existing solutions}
-\label{tab:existingSolutions}
-\end{table}
+
