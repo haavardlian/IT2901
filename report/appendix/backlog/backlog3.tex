@@ -26,6 +26,7 @@
 \begin{document}
 \pagestyle{empty}
 
+
     \begin{longtable}{|l|p{5.5cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|}%
 
 
@@ -47,13 +48,9 @@
 \endfoot
 
 \endlastfoot
-\csvreader[head to column names]{backlog1.csv}{}% use head of csv as column names
+\csvreader[head to column names]{backlog3.csv}{}% use head of csv as column names
  {\\\hline \textbf{\id} & \tasks & \dayone & \daytwo & \daythree & \dayfour & \dayfive  & \daysix & \dayseven & \dayeight & \daynine &\dayten}\\\hline% 
-
-
-\caption{Sprint 1 backlog}
-\end{longtable}
- \vspace{-5cm}
+ \end{longtable}
 
 
 \end{document}

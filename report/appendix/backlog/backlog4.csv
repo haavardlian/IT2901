@@ -1,0 +1,112 @@
+id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeight, daynine, dayten
+\vspace{-0.8cm}
+
+x\cellcolor{lightgray},																\textbf{Planning}\cellcolor{lightgray},																	 \textbf{12}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{12}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+
+x\cellcolor{lightgray},																\textbf{Meetings}\cellcolor{lightgray},														 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{12}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+
+53\cellcolor{lightgray},															\textbf{Administration}\cellcolor{lightgray},													 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{2}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0.25}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,mail correspondence,0,0,0,0,0,0.25,0,0,0,0
+,status report,0,0,0,2,0,0,0,0,0,0
+
+64\cellcolor{lightgray},															\textbf{Concept usage tab}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,work on the design,0,0,0,2.5,0,0,0,0,0,0
+,zooming changes data correctly,2,0,0,0,0,0,0,0,0,0
+,list to show devices,0,0,0,3,0,0,0,0,0,0
+,filter data on choosen devices,5,0,4,0,0,0,0,0,0,0
+,add usage view,0,0,4.5,0,0,0,0,0,0,0
+,rewrite to use ContentProvider,0,3.5,0,0,0,0,0,0,0,0
+,implement database data into multiple device filtering,0,0,0,5,0,0,0,0,0,0
+,bug fixes,0,0,0,2,2,0,0,1,0,0.5
+,implement database data into pie chart,0,0,0,0,0,0,4,0,0,0
+,dont reset the chart when new devices are added,0,0,0,0,0,0,0,3,0,0
+,query database to get compressed data(days, weeks, months),0,0,0,0,0,0,0,0,3.75,0
+,optimalize data simulating,0,0,0,0,0,0,0,6,0.75,0
+,save state on activity swap,0,0,0,0,0,0,0,0,0,1
+,save state on application exit,0,0,0,0,0,0,0,2,0,0
+,tabs,0,0,0,0,0,0,0,0,0,6
+,hook up the graphs to use the compressed data from the database,0,0,0,0,0,0,0,0,0,2
+,separate device selection for pie and line graph,0,0,0,0,0,0,0,0,0,2
+
+67\cellcolor{lightgray},															\textbf{Concept profile tab}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{9.75}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{1}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{11.5}\cellcolor{lightgray}
+,research Android,0,0,0,0,0,0,1,0,0,3.5
+,implement the profile GUI,0,0,2.75,0,1,0,0,0,0,3.5
+,implement Facebook authorization,0,0,7,0,0,0,0,0,0,4.5
+
+68\cellcolor{lightgray},															\textbf{The user wants icons}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{2}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,change icons to fit in app,0,0,0,0,0,2,0,0,0,0
+
+
+72\cellcolor{lightgray},															\textbf{Concept social tab}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0.25}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{7.5}\cellcolor{lightgray},														\textbf{5}\cellcolor{lightgray}
+,Implement sosial GUI,0,0,0,0,0,0,0,0,7.5,5
+,Research android, fragments, etc.,0,0,0,5.25,0,0,1.75,0,0.75,0
+,add scrollbar,0,0,0,0.25,0,0,0,0,0,0
+
+73\cellcolor{lightgray},															\textbf{Report}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,General layout fixes,0,0,1.8,0,0.25,0,0,0,0,0
+,Revise architecture,0,0,0.5,0,0,0,0,0,0,3
+,Add description of MVP to report in LaTeX,0,0,0,0,0,2,0,0,0,0
+,Make class diagrams,0,0,1,0,1.25,0,0,0,0,0
+,Make use case diagram (simple, what the system can do),0,0,0,0,0.5,0,0,0,0,0
+,Make gantt diagram,0,0,1,0,0,0,0,0,0,0
+,proofreading,0,5.5,11.75,0,2.5,13.5,1.25,0,0,6
+,todonotes,0,0.25,0,0,0.5,0,0,0,0,0
+,Revise and restructure sprints section,0,0,2.75,0,3,0,0,0,0,0
+,Switch bibliography,0,0,0,2.5,0,0,0,0,0,0
+,burndown charts,6,2,1,4,3,0,0,2,2,0
+,Add activity plan,0,0,0,0,2,0,0,0,0,0
+,Refrase section wbs-section,0,0,0,0,2.75,0,0,0,0,0
+,Add section about extreme programming,0,0,0,0,0,4,0,0,0,0
+,Add testplan,0,0,0,0,0.5,0,0,0,0,0
+,glossary,0,0,0,0,3.25,0,0,0,0,0
+,Complete the library section,0,0,0,0,1,0,0,0,0,0
+,Take screen shots of proto.io,0,0,0,0,0,0.25,0,0,0,0
+,Add description of each risk in risk table (beneath the table),0,0,0,0,0,2.5,0,0,0,0
+,Reorganize the structure of the report,0,0,0,0,4,4,0,0,0,0
+,Write about what the different requirements is,0,0,0,0,0,1,0,0,0,0
+,Convert extreme programming practices to table,0,0,0,0,0,0,0.75,0,0,0
+,Write about sprints,0,0,0,0,7,0,0,0,0,0
+,Report structure cleanup,0,0,0,0,0,2.25,0,0,0,0
+
+76\cellcolor{lightgray},															\textbf{Peer-evaluation}\cellcolor{lightgray},												 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{1.5}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{20.25}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,Evaluate other group's report,0,0,0,0,0,0,0,11.25,0,0
+,Watch the presentation,0,0,0,0,0,0,0,9,0,0
+,Prepare presentation,0,0,1.5,0,0,0,0,0,0,0
+
+
+77\cellcolor{lightgray},																		\textbf{Git fixing}\cellcolor{lightgray},												 	\textbf{0}\cellcolor{lightgray},														\textbf{0.5}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,rebase and FF master into develop,0,0.5,0,0,0,0,0,0,0,0
+
+78\cellcolor{lightgray},																		\textbf{Concept device tab}\cellcolor{lightgray},												 	\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{4}\cellcolor{lightgray},														\textbf{6}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{9}\cellcolor{lightgray},														\textbf{11}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,Add category to devices,0,0,0,0,0,0,1,0,0,0
+,Put the "add device-" button to the top toolbar,0,0,0,4,0,0,0,0,0,0
+,Research MVP and make the code follow this pattern,0,0,0,2,0,0,0,0,0,0
+,Research the content provider and change it into giving categories to devices,0,0,0,0,0,0,0,5,0,0
+,Research the provider and the changes we need to do,0,0,2,0,0,0,0,0,0,0
+,Change the structure of the code,0,0,2,0,0,0,0,0,0,0
+,Change the devicelist to use expandablelist,0,0,0,0,0,0,8,6,0,0
+
+
+80\cellcolor{lightgray},																		\textbf{Server}\cellcolor{lightgray},												 	\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{3}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{3}\cellcolor{lightgray}
+,Add JavaDoc to server,0,0,1,0,0,0,0,0,0,1.5
+,Restructure server and database,0,0,2,0,0,0,0,0,0,1.5
+
+83\cellcolor{lightgray},																		\textbf{User testing}\cellcolor{lightgray},												 	\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0.25}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,Create test cases,0,0,0,0,0,0,0.25,0,0,0
+
+
+
+84\cellcolor{lightgray},																		\textbf{Overall app code}\cellcolor{lightgray},												 	\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{4}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+,Change drawer fragment placements,0,0,0,0,0,0,0,0,0.5,0
+,Changing tabs in drawer uses backstack,0,0,0,0,0,0,0,0,2,0
+,Drawer uses icons,0,0,0,0,0,0,0,0,1.5,0
+
+
+
+87\cellcolor{lightgray},																		\textbf{User can get and create tips}\cellcolor{lightgray},																 	\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{1}\cellcolor{lightgray},														\textbf{2}\cellcolor{lightgray},														\textbf{1}\cellcolor{lightgray},														\textbf{12.5}\cellcolor{lightgray}
+,Create tips in database/server with volley,0,0,0,0,0,0,0,0,0,1.5
+,Get tips from database with volley,0,0,0,0,0,0,1,2,1,2
+,Add user interface for tips,0,0,0,0,0,0,0,0,0,4
+,Add tips to database/server,0,0,0,0,0,0,0,0,0,5
+
+, SUM, 25, 11.75, 46.55, 32.5, 46.5, 43.75, 19, 47.25, 19.75, 52.5
