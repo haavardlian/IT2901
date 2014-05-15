@@ -1,17 +1,55 @@
 id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeight, daynine, dayten
 \vspace{-0.8cm}
 
-,møter,0,0,0,0,12,0,0,0,0,6
-,planlegging,18,0,12,0,0,12,0,12,0,12
-50,Design prototype for sprint 2 functionality,0,0,0,0,0,0,0,0,0,0
-,User has a menu,0,0,0.25,0,0,0,0,0,0,0
-,User har usage graph,0,0,0.75,0,0,0,0,0,0,0
-,Transferred prototype on paper onto computer (took pictures),0,0,0,0,1.5,0,0,0,0,0
-49,User can plot in data,0,0,0,0,0,0,0,0,0,0
-,User can add energy data,0,0,0,0,0,0,0,9,0,0
-,SQLlite database schema for energy data,0,0,0,0,0,1.5,0,0,1.5,0
-,Provider wrapped around energy DB,0,0.75,0,0,0,0,0,0,0,0
-48,Server,0,0,0,0,0,0,0,0,0,0
+x\cellcolor{lightgray},Meetings\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},12\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},6\cellcolor{lightgray}
+
+x\cellcolor{lightgray},Planning\cellcolor{lightgray},18\cellcolor{lightgray},0\cellcolor{lightgray},12\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},12\cellcolor{lightgray},0\cellcolor{lightgray},12\cellcolor{lightgray},0\cellcolor{lightgray},12\cellcolor{lightgray}
+
+3\cellcolor{lightgray},User can see his personalia\cellcolor{lightgray},0.25\cellcolor{lightgray},0\cellcolor{lightgray},4\cellcolor{lightgray},0\cellcolor{lightgray},1\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1\cellcolor{lightgray},0\cellcolor{lightgray}
+,Find graph libary,0.25,0,0,0,0,0,0,0,0,0
+,Add profile fields,0,0,0,0,1,0,0,0,1,0
+,Learn to use graph library and set it up,0,0,4,0,0,0,0,0,0,0
+
+
+40\cellcolor{lightgray},User has a log in screen\cellcolor{lightgray},0.5\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
+,Placeholder log in screen,0.5,0,0,0,1,0,0,0,0,0
+
+41\cellcolor{lightgray},User has a usage tab\cellcolor{lightgray},1.5\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1\cellcolor{lightgray},2\cellcolor{lightgray},0\cellcolor{lightgray},0.5\cellcolor{lightgray},4\cellcolor{lightgray},0\cellcolor{lightgray}
+,Graph showing total usage,0,0,0,0,0,0,0,0,4,0
+,Buttons for changing views to 'last twelve months',0,0,0,0,0,0,0,0.5,0,0
+,Buttons for changing views to 'show devices' and the fragment,0,0,0,0,1,0,0,0,0,0
+,Familiarize with the code and what we should do from here,0,0,0,0,0,2,0,0,0,0
+
+42\cellcolor{lightgray},User has a swipe in menu\cellcolor{lightgray}1.50\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
+,Implement to all activites,1.5,0,0,0,0,0,0,0,0,0
+
+43\cellcolor{lightgray},User menu has a search field\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0,\cellcolor{lightgray}0\cellcolor{lightgray}
+,Search bar in the drawer,0,0,1,0,0,0,0,0,0,0
+
+44\cellcolor{lightgray},User has a app on android to start\cellcolor{lightgray},0.25\cellcolor{lightgray},0\cellcolor{lightgray},2\cellcolor{lightgray},0\cellcolor{lightgray},10.85\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1.5\cellcolor{lightgray}
+,Create the project files,0.25,0,0,0,0,0,0,0,0,0
+,Localization,0,0,0,0,0.1,0,0,0,0,0
+,Add all fragments,0,0,0,0,0.75,0,0,0,0,0
+,Get development tools up and running,0,0,0,0,6,0,0,0,0,0
+,Set up dev. environment for application,0,0,2,0,4,0,0,0,0,1.5
+
+47\cellcolor{lightgray},Mid-term report\cellcolor{lightgray},2.5\cellcolor{lightgray},0.25\cellcolor{lightgray},0.75\cellcolor{lightgray},3\cellcolor{lightgray},0\cellcolor{lightgray},5\cellcolor{lightgray},6\cellcolor{lightgray},7.1\cellcolor{lightgray},0\cellcolor{lightgray},5.25\cellcolor{lightgray}
+,Add listings in table of contents,0,0,0,0,0,2.5,0,1.5,0,0
+,Test plan,0,0,0,0,0,0,2.5,0,0,0
+,project management,1.5,0.25,0.75,0,0,0,0,0,0,2.25
+,Use case,0,0,0,0,0,2.5,0,2,0,0
+,Update programs and tools used,0,0,0,0,0,1,0,0,0,1.5
+,revise non-functional requirements,0,0,0,0,0,0,0,0,0,0.5
+,Formalize the functional requirements and add use case text to LaTeX,1,0,0,0,0,0,1.25,1.75,0,0
+,Updated risk analysis,0,0,0,3,0,0,0,0,0,0
+,Check if tasks in sprint 1 are assigned to correct persons,0,0,0,0,0,0,1,0,0,0
+,General layout,0,0,0,0,0,0,0.25,1.1,0,0.5
+,Write about how the team is going to compensate for the lost days caused by field trip to China.,0,0,0,0,0,0,1,0,0,0
+,Explain more througly about the planning poker,0,0,0,0,0,0,0,0.25,0,0
+,Separate general Scrum-material from sprint specific Scrum-material,0,0,0,0,0,0,0,0.5,0,0
+,Write about non-functional requirements and how we are going to test them,0,0,0,0,0,0,,0,0,0.5
+
+48\cellcolor{lightgray},\cellcolor{lightgray}Server,\cellcolor{lightgray}0,\cellcolor{lightgray}0,4\cellcolor{lightgray},2\cellcolor{lightgray},6\cellcolor{lightgray},4.5\cellcolor{lightgray},0\cellcolor{lightgray},13\cellcolor{lightgray},0\cellcolor{lightgray},7.5\cellcolor{lightgray}
 ,Create server project,0,0,2,0,0,0,0,0,0,0
 ,Add database functionality to server,0,0,2,0,0,0,0,0,0,0
 ,Design server database layout,0,0,0,0,0.5,0.5,0,0.5,0,1
@@ -23,45 +61,22 @@ id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeigh
 ,Write tests,0,0,0,0,0,0,0,4,0,0
 ,Add client side methods,0,0,0,0,0,0,0,0,0,4
 ,Server debugging,0,0,0,0,0,0,0,0,0,2.5
-47,Mid-term report,0,0,0,0,0,0,0,0,0,0
-,Add listings in table of contents,0,0,0,0,0,2.5,0,1.5,0,0
-,Test plan,0,0,0,0,0,0,2.5,0,0,0
-,project management,1.5,0.25,0.75,0,0,0,0,0,0,2.25
-,Use case,0,0,0,0,0,2.5,0,2,0,0
-,Update programs and tools used,0,0,0,0,0,1,0,0,0,1.5
-,Write about non-functional requirements and how we are going to test them - revision,0,0,0,0,0,0,0,0,0,0.5
-,Formalize the functional requirements and add use case text to LaTeX,1,0,0,0,0,0,1.25,1.75,0,0
-,Updated risk analysis,0,0,0,3,0,0,0,0,0,0
-,Check if tasks in sprint 1 are assigned to correct persons,0,0,0,0,0,0,1,0,0,0
-,General layout,0,0,0,0,0,0,0.25,1.1,0,0.5
-,Write about how the team is going to compensate for the lost days caused by field trip to China.,0,0,0,0,0,0,1,0,0,0
-,Explain more througly about the planning poker,0,0,0,0,0,0,0,0.25,0,0
-,Separate general Scrum-material from sprint specific Scrum-material,0,0,0,0,0,0,0,0.5,0,0
-,Write about non-functional requirements and how we are going to test them,0,0,0,0,0,0,,0,0,0.5
-3,User can see his personalia,0,0,0,0,0,0,0,0,0,0
-,Find graph libary,0.25,0,0,0,0,0,0,0,0,0
-,Add profile fields,0,0,0,0,1,0,0,0,1,0
-,Learn to use graph library and set it up.,0,0,4,0,0,0,0,0,0,0
-40,User has a log in screen,0,0,0,0,0,0,0,0,0,0
-,Placeholder log in screen,0.5,0,0,0,1,0,0,0,0,0
-41,User has a usage tab,0,0,0,0,0,0,0,0,0,0
-,Graph showing total usage,0,0,0,0,0,0,0,0,4,0
-,Buttons for changing views to 'last twelve months',0,0,0,0,0,0,0,0.5,0,0
-,Buttons for changing views to 'show devices' and the fragment,0,0,0,0,1,0,0,0,0,0
-,Familiarize with the code and what we should do from here,0,0,0,0,0,2,0,0,0,0
-42,User has a swipe in menu,0,0,0,0,0,0,0,0,0,0
-,Implement to all activites,1.5,0,0,0,0,0,0,0,0,0
-43,User menu has a search field,0,0,0,0,0,0,0,0,0,0
-,Search bar in the drawer,0,0,1,0,0,0,0,0,0,0
-44,User has a app on android to start,0,0,0,0,0,0,0,0,0,0
-,Create the project files,0.25,0,0,0,0,0,0,0,0,0
-,Localization,0,0,0,0,0.1,0,0,0,0,0
-,Add all fragments,0,0,0,0,0.75,0,0,0,0,0
-,Get development tools up and running,0,0,0,0,6,0,0,0,0,0
-,Set up dev. environment for application,0,0,2,0,4,0,0,0,0,1.5
-52,User has device tab,0,0,0,0,0,0,0,0,0,0
+
+49\cellcolor{lightgray},User can plot in data\cellcolor{lightgray},0\cellcolor{lightgray},0.75\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1.5\cellcolor{lightgray},0\cellcolor{lightgray},9\cellcolor{lightgray},1.5\cellcolor{lightgray},\cellcolor{lightgray}0
+,User can add energy data,0,0,0,0,0,0,0,9,0,0
+,SQLlite database schema for energy data,0,0,0,0,0,1.5,0,0,1.5,0
+,Provider wrapped around energy DB,0,0.75,0,0,0,0,0,0,0,0
+
+50\cellcolor{lightgray},\cellcolor{lightgray}Design prototype for sprint 2 functionality\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1\cellcolor{lightgray},0\cellcolor{lightgray},1.5\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},\cellcolor{lightgray}0,\cellcolor{lightgray}0,\cellcolor{lightgray}0
+,User has a menu,0,0,0.25,0,0,0,0,0,0,0
+,User har usage graph,0,0,0.75,0,0,0,0,0,0,0
+,Transferred prototype on paper onto computer (took pictures),0,0,0,0,1.5,0,0,0,0,0
+
+52\cellcolor{lightgray},\cellcolor{lightgray}User has device tab,\cellcolor{lightgray}0,\cellcolor{lightgray}0,\cellcolor{lightgray}0,\cellcolor{lightgray}0,\cellcolor{lightgray}0,\cellcolor{lightgray}0,\cellcolor{lightgray}0,\cellcolor{lightgray}3,11.5\cellcolor{lightgray},0\cellcolor{lightgray}
 ,Create device list,0,0,0,0,0,0,0,0,3,0
 ,Making it possible to add devices to the list,0,0,0,0,0,0,0,3,0,0
 ,Making it possible to add usage per device,0,0,0,0,0,0,0,0,1,0
 ,Doing research about android components,0,0,0,0,0,0,0,0,4,0
 ,Making it possible to see detailes on each device from the list,0,0,0,0,0,0,0,0,3.5,0
+
+, SUM, 23, 1, 24.75, 5, 33.35, 26, 6, 44.6, 18, 32.25
