@@ -1,8 +1,35 @@
 \chapter{Use cases}
-Devices
 
-\rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
+\rowcolors{0}{darkgray}{lightgray}
+\begin{tabular}{|l|p{11.7cm}|}
+\hline
+\textbf{ID: }2&\textbf{Display energy usage per device}\\\hline
+\textbf{Actor} &User\\\hline
+\textbf{Description}&
+The user should be able to see how much electricity each device in his house use on an average basis, on a monthly basis and on a yearly basis.\\\hline
+\textbf{Preconditions}&
+1. Devices are registred\newline
+2. Devices are connected to energy measurement device\\\hline
+\textbf{Input}&
+Registered energy usage\\\hline
+\textbf{Postconditions}& App displays sector graph where each area represents a device\\\hline
+\textbf{Basic flow}&
+1. User taps ''Usage''-tab in menu\newline
+2. User taps ''Show devices''\newline
+3. User wants to display graphs for specific time period\newline
+3.a User choose ''Last month'' in drop down menu (default view)\newline
+3.b User choose ''Last year'' in drop down menu\\\hline
+\textbf{Alternative flow}&
+3.1 No electricity usage is registred. Average consumption is shown.\newline
+3.1.a User choose ''Last month'' in drop down menu (default view)\newline
+3.1.b User choose ''Last year'' in drop down menu\\\hline
+\end{tabular}
+\caption{Textual use case 2}
+\end{table}
+
+\begin{table}[H]
+\rowcolors{0}{darkgray}{lightgray}
 \begin{tabular}{|l|p{11.7cm}|}
 \hline
 \textbf{ID:} 1&\textbf{Overview of devices}\\\hline
@@ -12,8 +39,8 @@ The user should be able to see which devices in his house that actually use or p
 \textbf{Preconditions}&
 1. Devices are registrered\newline
 2. Devices are connected to energy measurement device\newline
-3. Devices are active\newline
-Depends on x.\\\hline
+3. Devices are active\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 Registrered energy usage\\\hline
 \textbf{Postconditions}& App displays list of all active devices\\\hline
@@ -27,35 +54,9 @@ Registrered energy usage\\\hline
 \end{table}
 
 
-\rowcolors{0}{darkgray}{lightgray}
-\begin{table}[H]
-\begin{tabular}{|l|p{11.7cm}|}
-\hline
-\textbf{ID: }2&\textbf{Display energy usage per device}\\\hline
-\textbf{Actor} &User\\\hline
-\textbf{Description}&
-The user should be able to see how much electricity each device in his house use on an average basis, on a monthly basis and on a yearly basis.\\\hline
-\textbf{Preconditions}&
-1. Devices are registred\newline
-2. Devices are connected to energy measurement device\newline
-Depends on x.\\\hline
-\textbf{Input}&
-Registered energy usage\\\hline
-\textbf{Postconditions}& App displays sector graph where each area represents a device\\\hline
-\textbf{Basic flow}&
-1. User taps ''Usage''-tab in menu\newline
-2. User taps ''Show devices''\newline
-3. User wants to display graphs for specific time period\newline
-3.a User choose ''Last month'' in drop down menu (default view)\newline
-3.b User choose ''Last year'' in drop down menu\\\hline
-\textbf{Alternative flow}&
-3.1 No electricity usage is registred. Average consumption is displayed.\newline
-3.1.a User choose ''Last month'' in drop down menu (default view)\newline
-3.1.b User choose ''Last year'' in drop down menu\\\hline
-\end{tabular}
-\caption{Textual use case 2}
-\end{table}
 
+
+\begin{comment}
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
 \begin{tabular}{|l|p{11.7cm}|}
@@ -75,7 +76,7 @@ User should be able to turn off devices from the app.\\\hline
 \newline
 4. The device must be turned on.
 \newline
-Depends on x.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 User presses ''Turn off''-button
 \\\hline
@@ -112,7 +113,7 @@ User should be able to turn on devices from the app.\\\hline
 1. Device is connected to app.\newline
 2. The device must be functional. \newline
 3. The device must be turned off. \newline
-Depends on x.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 User presses ''Turn on''-button
 \\\hline
@@ -151,7 +152,7 @@ The user should have the ability to specify a maximum of power consumption per d
 2. Device is not a critical device\newline
 3. Device is connected to app\newline
 4. Device is turned on \newline
-Depends on x.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 User registers maximum kwh/day
 \\\hline
@@ -191,7 +192,7 @@ The user should have the ability to schedule when he want a device to consume po
 3. Device is turned on\newline
 4. User has scheduled a specific device\newline
 5. Device is not a critical device\newline
-Depends on x.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 Deviceid, time period
 \\\hline
@@ -232,7 +233,7 @@ The user should have the ability to specify a maximum of power consumption per d
 4. Device is turned on\newline
 5. Device is registered\newline
 6. The limit has been reached\newline
-Depends on x.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 Boolean value that checks whether the usage is higher than the specified maximum kwh/day.
 \\\hline
@@ -248,9 +249,10 @@ System sends notification to user about the device in question. User receives no
 \end{tabular}
 \caption{Textual use case 7}
 \end{table}
+\end{comment}
 
-\rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
+\rowcolors{0}{darkgray}{lightgray}
 \begin{tabular}{|l|p{11.7cm}|}
 \hline
 \textbf{ID: }8&\textbf{Adding Power Savers}
@@ -260,8 +262,8 @@ System sends notification to user about the device in question. User receives no
 \textbf{Description}&
 The user should be able to add his own Power Savers, steps that have been taken in order to decrease power consumption.\\\hline
 \textbf{Preconditions}&
-1. User is logged in.\newline
-Depends on x.\\\hline
+1. User is logged in.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 Description of users Power Saver.
 \\\hline
@@ -270,16 +272,16 @@ The Power Saver is added to the public database and is visible for other users.
 \\\hline
 \textbf{Basic flow}&
 1. System sends notification to user about the device in question. \newline
-2. User receives notification.\newline
+2. User receives notification.
 \\\hline
-\textbf{Alternative flow}&\\\hline
+%\textbf{Alternative flow}&\\\hline
 \end{tabular}
 \caption{Textual use case 8}
 \end{table}
 
 
-\rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
+\rowcolors{0}{darkgray}{lightgray}
 \begin{tabular}{|l|p{11.7cm}|}
 \hline
 \textbf{ID: }9&\textbf{Choosing anonymity}
@@ -289,8 +291,8 @@ The Power Saver is added to the public database and is visible for other users.
 \textbf{Description}&
 The user has a profile connected to his Facebook-account, but he should be able to choose whether the data he aggregates is to be used for comparison against others.\\\hline
 \textbf{Preconditions}&
-1. User is logged in.\newline
-Depends on x.\\\hline
+1. User is logged in.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 User's choice.
 \\\hline
@@ -300,13 +302,14 @@ Anonymity settings based on user's choice.
 \textbf{Basic flow}&
 1. User taps profile tab.\newline
 2. User taps anonymity button.\newline
-3. User is prompted with the choice to stay anonymous.\newline
+3. User is prompted with the choice to stay anonymous.
 \\\hline
-\textbf{Alternative flow}&\\\hline
+%\textbf{Alternative flow}&\\\hline
 \end{tabular}
 \caption{Textual use case 9}
 \end{table}
 
+\begin{comment}
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
 \begin{tabular}{|l|p{11.7cm}|}
@@ -319,7 +322,7 @@ Anonymity settings based on user's choice.
 The user should be able to add items with a name and a given price. He should later be able to track his savings up against the values of the items he has entered in the list.\\\hline
 \textbf{Preconditions}&
 1. User is logged in.\newline
-Depends on x.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 Name, price, and an url (optional) for an item the user's wishes for
 \\\hline
@@ -353,7 +356,7 @@ A list of items with their cost, followed by how much % of that item the user ha
 The application should project savings in consumption in a currency chosen by the user.\\\hline
 \textbf{Preconditions}&
 1. User is logged in.\newline
-Depends on x.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 Desired currency\\\hline
 \textbf{Postconditions}& 
@@ -372,6 +375,7 @@ All savings in the application are projected in the chosen currency\\\hline
 \end{table}
 
 
+
 \rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
 \begin{tabular}{|l|p{11.7cm}|}
@@ -384,7 +388,7 @@ All savings in the application are projected in the chosen currency\\\hline
 The user should be able to change the language of the application.\\\hline
 \textbf{Preconditions}&
 1. User is logged in.\newline
-Depends on x.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 Desired language of operation.\\\hline
 \textbf{Postconditions}& 
@@ -401,10 +405,11 @@ The application uses the chosen language.\\\hline
 \end{tabular}
 \caption{Textual use case 12}
 \end{table}
+\end{comment}
 
 
-\rowcolors{0}{darkgray}{lightgray}
 \begin{table}[H]
+\rowcolors{0}{darkgray}{lightgray}
 \begin{tabular}{|l|p{11.7cm}|}
 \hline
 \textbf{ID: }13&\textbf{Sharing power savings of social media like Facebook and Twitter.}
@@ -415,8 +420,8 @@ The application uses the chosen language.\\\hline
 The user should be able to share any savings in monthly consumption with his friends on social media.\\\hline
 \textbf{Preconditions}&
 1. User is logged in\newline
-2. User has connected social media accounts in question\newline
-Depends on x.\\\hline
+2. User has connected social media accounts in question\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 Users credentials for accounts in question.\\\hline
 \textbf{Postconditions}& 
@@ -430,7 +435,7 @@ The data is shared on the selected accounts. \\\hline
 \textbf{Alternative flow}&
 4.1. The social accounts do not allow the application to post
 \\\hline
-\textbf{Comments}& \\\hline
+%\textbf{Comments}& \\\hline
 \end{tabular}
 \caption{Textual use case 13}
 \end{table}
@@ -446,8 +451,8 @@ The data is shared on the selected accounts. \\\hline
 \textbf{Description}&
 The user should be able to find and connect to his friends through Facebook.\\\hline
 \textbf{Preconditions}&
-1. User is logged in.\newline
-Depends on x.\\\hline
+1. User is logged in.\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 User's facebook credentials.\\\hline
 \textbf{Postconditions}& 
@@ -458,7 +463,7 @@ A list of friends currently using the application.\\hline
 \textbf{Alternative flow}&
 1.1. The user does not have any friends currently using the application
 \\\hline
-\textbf{Comments}& \\\hline
+%\textbf{Comments}& \\\hline
 \end{tabular}
 \caption{Textual use case 14}
 \end{table}
@@ -476,8 +481,8 @@ A list of friends currently using the application.\\hline
 The user should be able to compare his power usage and power savers with friends or other people in the area\\\hline
 \textbf{Preconditions}&
 1. User is logged in\newline
-2. User has logged energy consumption data\newline
-Depends on x.\\\hline
+2. User has logged energy consumption data\\\hline
+% Depends on x.\\\hline
 \textbf{Input}&
 The users energy consumption data or power savers.\\\hline
 \textbf{Postconditions}& 
@@ -491,7 +496,7 @@ Application displays a list of friends and their respective energy consumption. 
 \textbf{Alternative flow}&
 3.1. The does not have any friends currently using the application
 \\\hline
-\textbf{Comments}& \\\hline
+%\textbf{Comments}& \\\hline
 \end{tabular}
 \caption{Textual use case 15}
 \end{table}
