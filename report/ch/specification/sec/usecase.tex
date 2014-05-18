@@ -16,13 +16,13 @@ Devices
 \textbf{Description}&
 The user should be able to see which devices in his house that actually use or produce electricity.\\\hline
 \textbf{Preconditions}&
-1. Devices are registrered\newline
+1. Devices are registered\newline
 2. Devices are connected to energy measurement device\newline
 3. Devices are active\newline
 Depends on x.\\\hline
 \textbf{Input}&
-Registrered energy usage\\\hline
-\textbf{Postconditions}& App displays list of all active devices\\\hline
+Registered energy usage\\\hline
+\textbf{Post-conditions}& App displays list of all active devices\\\hline
 \textbf{Basic flow}&
 1. User taps ''Devices''-tab in menu
 2. All active devices are displayed in list\\\hline
@@ -42,12 +42,12 @@ Registrered energy usage\\\hline
 \textbf{Description}&
 The user should be able to see how much electricity each device in his house use on a monthly basis and on a yearly basis.\\\hline
 \textbf{Preconditions}&
-1. Devices are registred\newline
+1. Devices are registered\newline
 2. Devices are connected to energy measurement device\newline
 Depends on x.\\\hline
 \textbf{Input}&
 Registered energy usage\\\hline
-\textbf{Postconditions}& App displays sector graph where each area represents a device\\\hline
+\textbf{Post-conditions}& App displays sector graph where each area represents a device\\\hline
 \textbf{Basic flow}&
 1. User taps ''Usage''-tab in menu\newline
 2. User taps ''Show devices''\newline
@@ -55,7 +55,7 @@ Registered energy usage\\\hline
 3.a User choose ''Last month'' in drop down menu (default view)\newline
 3.b User choose ''Last year'' in drop down menu\\\hline
 \textbf{Alternative flow}&
-3.1 No electricity usage is registred. Average consumption is displayed.\newline
+3.1 No electricity usage is registered. Average consumption is displayed.\newline
 3.1.a User choose ''Last month'' in drop down menu (default view)\newline
 3.1.b User choose ''Last year'' in drop down menu\\\hline
 \end{tabular}
@@ -86,7 +86,7 @@ Depends on x.\\\hline
 \textbf{Input}&
 User presses ''Turn off''-button
 \\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 Device is turned off.
 \\\hline
 \textbf{Basic flow}&
@@ -124,7 +124,7 @@ Depends on x.\\\hline
 \textbf{Input}&
 User presses ''Turn on''-button
 \\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 Device is turned on.
 \\\hline
 \textbf{Basic flow}&
@@ -163,7 +163,7 @@ Depends on x.\\\hline
 \textbf{Input}&
 User registers maximum kwh/day
 \\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 Device is turned off when maximum power consumption limit is reached.
 \\\hline
 \textbf{Basic flow}&
@@ -204,7 +204,7 @@ Depends on x.\\\hline
 \textbf{Input}&
 Deviceid, time period
 \\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 The specific device is turned off in the chosen time period.
 \\\hline
 \textbf{Basic flow}&
@@ -246,7 +246,7 @@ Depends on x.\\\hline
 \textbf{Input}&
 Boolean value that checks whether the usage is higher than the specified maximum kwh/day.
 \\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 System sends notification to user about the device in question. User receives notification.
 \\\hline
 \textbf{Basic flow}&
@@ -277,7 +277,7 @@ Depends on x.\\\hline
 \textbf{Input}&
 Description of users Power Saver.
 \\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 The Power Saver is added to the public database and is visible for other users.
 \\\hline
 \textbf{Basic flow}&
@@ -306,7 +306,7 @@ Depends on x.\\\hline
 \textbf{Input}&
 User's choice.
 \\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 Anonymity settings based on user's choice.
 \\\hline
 \textbf{Basic flow}&
@@ -336,7 +336,7 @@ Depends on x.\\\hline
 \textbf{Input}&
 Name, price, and an url (optional) for an item the user's wishes for
 \\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 A list of items with their cost, followed by how much of that item the user has saved
 \\\hline
 \textbf{Basic flow}&
@@ -369,7 +369,7 @@ The application should project savings in consumption in a currency chosen by th
 Depends on x.\\\hline
 \textbf{Input}&
 Desired currency\\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 All savings in the application are projected in the chosen currency\\\hline
 \textbf{Basic flow}&
 1. User taps profile tab\newline
@@ -400,7 +400,7 @@ The user should be able to change the language of the application.\\\hline
 Depends on x.\\\hline
 \textbf{Input}&
 Desired language of operation.\\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 The application uses the chosen language.\\\hline
 \textbf{Basic flow}&
 1. User taps the profile tab\newline
@@ -431,7 +431,7 @@ The user should be able to share any savings in monthly consumption with his fri
 Depends on x.\\\hline
 \textbf{Input}&
 Users credentials for Facebook account.\\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 The data is shared on Facebook. \\\hline
 \textbf{Basic flow}&
 1. OBSOBS, endre her? The user taps the social tab\newline
@@ -461,7 +461,7 @@ The user should be able to find and connect to his friends through Facebook.\\\h
 Depends on x.\\\hline
 \textbf{Input}&
 User's Facebook credentials.\\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 A list of friends currently using the application.\\hline
 \textbf{Basic flow}&
 1. The user taps the social tab
@@ -490,7 +490,7 @@ The user should be able to compare his power usage and power savers with friends
 Depends on x.\\\hline
 \textbf{Input}&
 The users energy consumption data or power savers.\\\hline
-\textbf{Postconditions}& 
+\textbf{Post-conditions}& 
 Application displays a list of friends and their respective energy consumption. A list of energy savers implemented by friends is also available. \\\hline
 \textbf{Basic flow}&
 1. The user taps the social tab\newline
