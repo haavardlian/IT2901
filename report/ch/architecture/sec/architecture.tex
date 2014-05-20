@@ -5,9 +5,9 @@ The implementation consisted of three parts. The server, the device in the users
 
 \subsection{Server}
 The server consisted of two parts. One for handling requests from the Android app and one for storing data that is collected in the users home. 
-The part that handles the Android app runs Dropwizard~\cite{dropwizard}, which is a collection of Java libraries that together constitutes a REST service. 
+The part that handles the Android app runs Dropwizard, which is a collection of Java libraries that together constitutes a REST service. 
 
-These libraries include Jetty~\cite{jetty}, Jersey~\cite{jersey}, JDBC~\cite{jdbc}, and Jackson~\cite{jackson}. These are discussed in further detail in section~\ref{sec:libraries}.
+These libraries include Jetty, Jersey, JDBC, and Jackson. These are discussed in further detail in section~\ref{sec:libraries}.
 The server exposes a set of URLs that provided the Android app with 
 possibilities to get and store data from the database. The other part, that stores data from the users home is under development.
 
@@ -19,8 +19,7 @@ The architecture heavily relied on using ContentProviders~\cite{contentproviders
 
 The remaining problem is where to place the business logic for data manipulation. This is where the pattern Model-View-Presenter (MVP)~\cite{mvp} comes in. MVP is a Model-View-Controller (MVC)~\cite{mvc} derivative. All business logic is handled in presenter classes. Through this uniform access, all logic applied to data preservation (sever synchronization), and data control can be done. The lifecycle of the presenter classes is in the base Activity class, and all other sub fragments can get access to it though a interface. This pushes almost all logic into the presenters, making the fragments code clean.
 
-The app will follow standard Android design guidelines~\cite{Androidgui}
-when it comes to user interface design.
+The app will follow standard Android design guidelines when it comes to user interface design.
 
 \subsection{Home Data Aggregator}
 This device collected data from sources in the user's home. The reason why we chose this external box as opposed to using the user's phone to collect data, was that with this solution, the system could fetch data at regular intervals throughout the whole day. This would result in that the user would not need to be home in order for the app to collect 
