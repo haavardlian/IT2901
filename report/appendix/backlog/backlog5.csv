@@ -2,6 +2,10 @@ id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeigh
 \vspace{-0.8cm}
 % 24, 	25,	26,	27, 28,	31, 	1, 	2, 	3, 	4
 
+x\cellcolor{lightgray},																\textbf{Planning}\cellcolor{lightgray},																	 \textbf{12}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{6}\cellcolor{lightgray},														\textbf{12}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+
+x\cellcolor{lightgray},																\textbf{Meetings}\cellcolor{lightgray},														 \textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{6}\cellcolor{lightgray},														\textbf{6}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray},														\textbf{0}\cellcolor{lightgray}
+
 
 88\cellcolor{lightgray}, \textbf{The user wants icons}\cellcolor{lightgray}, 			\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{5}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{1}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}, 	\textbf{0}\cellcolor{lightgray}
 ,create icons, 0, 0,0, 0,0 ,1 ,0 , 1, 0, 0
