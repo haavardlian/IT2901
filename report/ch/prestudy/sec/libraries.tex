@@ -2,65 +2,31 @@
 \label{sec:libraries}
 Libraries are pieces of code that is integrated into the project. They provide functionality needed and saves the team time by reducing the workload. The libraries used in this project and what they were used for is displayed in table~\ref{tab:libs}.
 %When utilizing libraries, it is important to make sure the licenses match the project and the customer's request.
- All the libraries used in the project falls under the Apache 2.0 license~\cite{Apache}.
+ All the libraries used in the project falls under the Apache 2.0 license~\cite{apache}.
 
 \begin{table}[H]
 \rowcolors{0}{darkgray}{lightgray}
 \begin{tabular}{|l|p{12.9cm}|}
 \hline
 \textbf{Library }& \textbf{What it is used for}\\\hline
-Jersey/JAX-RS & Provides the Representational State Transfer(REST) service of our server.\\\hline
-Jackson&Translates data to JSON before it is sent to the client.\\\hline
-JSON&Textual representation of the objects and standard way to store and transfer data between different components\\\hline
-Jetty&Allows the server app to run by itself without the need for any external web server\\\hline
-JDBI&Exposes relational databases and makes them more modular and flexible\\\hline
-Volley & Handles network requests on the Android device\\\hline
-aChartEngine& Displaying detailed power usage data through  pie charts and line charts.\\\hline
+Jersey/JAX-RS~\cite{jersey} & Provides the Representational State Transfer(REST) service of our server.\\\hline
+Jackson~\cite{jackson}&Translates data to JSON before it is sent to the client.\\\hline
+JSON~\cite{json}&Textual representation of the objects and standard way to store and transfer data between different components\\\hline
+Jetty~\cite{jetty}&Allows the server app to run by itself without the need for any external web server\\\hline
+JDBI~\cite{jdbi}&Exposes relational databases and makes them more modular and flexible\\\hline
+Volley~\cite{volley}& Handles network requests on the Android device\\\hline
+aChartEngine~\cite{achart}& Displaying detailed power usage data through  pie charts and line charts.\\\hline
 \end{tabular}
 \caption{Libraries and their app areas}
 \label{tab:libs}
 \end{table}
 
 \subsubsection{Dropwizard}
-Dropwizard is a lightweight collection of tools used to set up and host a server. Dropwizard itself is new and not much used yet, but the tools in the collection are popular and well maintained. 
+Dropwizard~\cite{dropwizard} is a lightweight collection of tools used to set up and host a server. Dropwizard itself is new and not much used yet, but the tools in the collection are popular and well maintained. 
 The advantages of using Dropwizard instead of using the tools by themselves is that everything is configured to work together and it synergises well. The most notable components of Dropwizard are Jetty, Jackson, Jersey and JDBI.
 
-
-
-\begin{comment}
-\subsubsection{Jersey/JAX-RS}
-%Jersey provides the Representational State Transfer(REST) service of our server. 
-REST is the Application Programming Interface(API) that provides programmers with an 
-interface to communicate with the server through basic HTTP commandos like GET, POST, PUT and UPDATE. For the app, the communication was done by using the JSON format 
-described in the subsequent subsection. 
-
-\subsubsection{Jackson}
-%Jackson is a tool used to translate data to JSON before it is sent to the client. 
-JSON is used as a textual representation of the objects and is a standard way to store 
-and transfer data between different components.
-
-\subsubsection{Jetty}
-Jetty is an integrated HTTP server that allows the server app to run by itself without the need for any external web server like Apache or Tomcat~\cite{tomcat}. 
-This makes setting up and running the server app more user friendly and faster.
-
-\subsubsection{JDBI}
-%JDBI is a library that exposes relational databases and makes them more modular and flexible. 
-This library removes many of the problems related to database usage and communication.
-
-\subsubsection{Volley}
-Volley is the library that was used to handle network requests on the Android device. It is a easy-to-use, lightweight library that makes communication with the server 
-simpler and more error proof. 
-
-\subsubsection{aChartEngine}
-aChartEngine~\cite{achart} is a popular Android library for creating graphs. In the project this library was mainly used for line graphs, for displaying detailed power 
-usage data, and pie charts for comparing power consumption between devices.
-\end{comment}
-
-
-
 \subsubsection{Facebook SDK}
-The Facebook SDK~\cite{fsdk} is a collection of functions that allows Facebook’s functionality to be integrated into the app. Key functionality for this project, 
+The Facebook SDK~\cite{fsdk} is a collection of functions that allows Facebook's functionality to be integrated into the app. The key functionality for this project, 
 provided by the SDK, is the possibility for the user to log in on their Facebook account, the possibility to collect relevant data from the user for statistical purposes, and the 
 friend functionality allowing the user to, for instance, compare power usage, achievements and tips and tricks with a friend. 
 
-%The Facebook SDK is used by numerous apps on the Android platform and is very well maintained and documented. 
