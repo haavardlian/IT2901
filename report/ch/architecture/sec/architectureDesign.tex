@@ -8,3 +8,5 @@ The server does not require much maintenance to keep running at peek performance
 
 \subsection{Modularity}
 As the final development architecture deviated from the architecture that was envisioned for a perfect product, a modular design was critical to allow for easy modifications and extensions of the software in the future. 
+
+The server has an inert  modularity in the fact that is based on stateless connections that transfer JSON objects. Adding hardware that can control and monitor devices in the users home can easily interface to the app by storing data on the server. By either using predefined functions, expanding upon them or by writing new functions hardware devices or a home data aggregation server can transfer data to the main server. No changes would be necessary on the client side to add this functionality.
