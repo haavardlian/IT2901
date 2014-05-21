@@ -1,8 +1,9 @@
-\documentclass[12pt, oneside]{memoir}
+\documentclass[12pt, oneside, report]{memoir}
 \input config.tex
+%\usepackage{titlepic}
 \input glossary.tex
 
-
+\thispagestyle{plain}
 \title{\uppercase{IT2901 Informatics Project II}\vspace{0.1\textwidth}
 \textbf{\rule{\linewidth}{0.2mm}\\Group 16 - SINTEF\_Energy\\\rule{\linewidth}{0.2mm}}}
 \author{Beate Baier Biribakken\\
@@ -13,12 +14,15 @@ Håvard	Holmboe	Lian\\
 Pia	Karlsen	Lindkjølen\\\vspace{0.1\textwidth}}
 
 \date{Spring 2014\vfill}
-
-
-
+%\titlepic{
+%\includegraphics[height=0.1\textwidth, width=0.4\textwidth]{ntnu.png}
+%\includegraphics[height=0.1\textwidth, width=0.4\textwidth]{sintef.jpg}
+%}
 
 \makeglossaries
 \pagenumbering{gobble}
+
+
 \begin{document}
 %\listoftodos
 \maketitle
@@ -27,16 +31,13 @@ Pia	Karlsen	Lindkjølen\\\vspace{0.1\textwidth}}
 \thispagestyle{empty}
 \pagenumbering{gobble}
 
-%\titleLL
+
 \clearpage
 
 \renewcommand\contentsname{Contents}
 \pagenumbering{Roman}
 \tableofcontents*
 
-
-%\renewcommand\lstlistlistingname{Code snippets}
-%\lstlistoflistings
 
 \renewcommand\listfigurename{Figures}
 \listoffigures*
