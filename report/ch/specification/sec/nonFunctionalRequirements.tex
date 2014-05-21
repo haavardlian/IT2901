@@ -1,15 +1,17 @@
 \section{Non-functional requirements}
-\todo{this section must be discussed and reformulated}
-The non-functional requirements of a system is requirements that can not be directly translated into explicit functionality to be integrated into the app. It is a set of criterias that can be used to judge the overall system. For instance, a non-functional requirement can be a requirement about a systems uptime or that it should follow some ethical guidelines. How to test these requirements is described in chapter ~\ref{sec:testingnonfunctionalrequirements} 
+The non-functional requirements of a system are requirements that can not be directly translated into explicit functionality, but rather a set of criterias that may be used to evaluate the overall system. How to test these requirements is described in chapter~\ref{sec:testingnonfunctionalrequirements}.
 
-\subsubsection{NFR1: The app should be easy to use.}
-To ensure familiarity for Android users, the user interface should follow standard Android specifications for graphical user interfaces.
+\subsubsection{NFR1: The app should be easy to use}
+More generally, the user interface should be easy to use, also for people whom are not accustomed to Android devices. In addition to following Android specifications, this will be achieved by keeping the interface as plain and intuitive as possible. 
+
+\subsubsection{NFR2: The app's user interface should follow standard Android specifications for graphical user interfaces}
+To ensure familiarity for users with previous experience with Android, the user interface should follow standard Android specifications for graphical user interfaces.
+
+\subsubsection{NFR3: The app should be able to function without the purchase of new hardware}
+
+It is our intention to facilitate so that the app is compatible with a solution consisting of a wireless power consumption reader and a small server that is to be positioned in the user's home, but it still should be possible to use the app without having these tools. 
  
-Furthermore, the app should be able to function without the purchase of new hardware. The app will be designed for use with wireless power consumption readers and a small server to be positioned in the home of the user, but the basic operation should be possible to perform even without these tools. The most basic mode operation is logging of data that 
-the user inputs manually after reading standalone power consumption meters.
- 
-More generally, the user interface should be easy to use, also for people whom are not accustomed to Android devices. In 
-addition to following Android specifications, this will be achieved by keeping the interface as plain and intuitive as possible.
+\begin{comment}
 
 \subsubsection{NFR2: Installation guide and documentation}
 The system should come with a comprehensive guide to using the system. This should include documentation for operation of the
@@ -23,9 +25,4 @@ of the intended architecture for the rest of the system.
 \item The applification should not need a lot of extra material to get started (Power devices, own server).
 \end{itemize}
 
-
-NFR1: The app should be easy to use.
-NFR2: The app’s user interface should follow standard Android specifications for graphical user interfaces. 
-NFR3: The app should be able to function without the purchase of new hardware. 
-NFR4: The app should have a user manual
-NFR5: The app should have technical documentation
+\end{comment}
