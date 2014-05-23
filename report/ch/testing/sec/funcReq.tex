@@ -1,0 +1,61 @@
+\section{Testing functional requirements}
+\label{sec:funcTest}
+Functional testing are tests that control the functionality of the software. Internal classes and methods is tested indirectly. This is a type of Black Box Testing~\cite{blackbox}. \todo{The team chose several classes and methods that the app should complete, and some that it should not, but handle in a satisfying way.} This was done by asking the app to do something and compare the result with what was expected.
+
+The following steps are required in order to test the system
+\begin{enumerate}
+\item Identify what features are to be tested
+\item Specify input to the system
+\item Specify expected output from the system
+\item Execute. Feed input data into the system and compare the output with what is expected. If the output is not what was expected there is a bug that needs to be investigated and fixed before the test is run again.
+\end{enumerate}
+
+\subsection{Test table}
+\begin{table}[H]
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor{darkgray} & \textbf{Description} & \textbf{Result}\\\hline \arrayrulecolor{lightgray}
+\rowcolor{lightgray} Server& \textit{Functional tests of server}&\\
+\cline{1-2}\cline{2-3}
+\rowcolor{lightgray}&Server should deliver data in JSON format&\\
+\cline{1-2}\cline{2-3}
+\rowcolor{lightgray}&\textit{REST calls that should have a reply}&\\
+\cline{1-2}\cline{2-3}
+\rowcolor{lightgray}&Fetch usage data for user&\\
+\cline{1-2}\cline{2-3}
+\rowcolor{lightgray}&Fetch usage data for users friends?&\\
+\cline{1-2}\cline{2-3}\arrayrulecolor{black}
+\rowcolor{lightgray}&Store usage data for user&\\\hline
+\arrayrulecolor{darkgray}
+\rowcolor{darkgray}Android app & \textit{Functional tests of app} &  \\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Add device&\\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Remove device&\\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Add power used for device&\\ \cline{1-2}\cline{2-3}
+\rowcolor{darkgray}&Add power produced for device&\\\arrayrulecolor{black}
+\hline
+\end{tabular}
+\caption{Test table}
+\label{tab:testTable}
+\end{table}
+
+\subsection{Planned tests}
+\begin{table}[H]
+\centering
+\rowcolors{1}{darkgray}{lightgray}
+\begin{tabular}{|l|l|}
+\hline
+Test 1&Get usage data in JSON for user 1\\
+Test 2&Store usage data in database for user 1\\
+Test 3&User can read the amount of power a device has produced\\
+Test 4&User can add a device\\
+Test 5&User can delete a device\\
+Test 6&User can read the amount of power a device has consumed\\
+Test 7&User can type in the amount of energy produced by a device\\
+Test 8&user can type in the amount of energy consumed by a device\\
+\hline
+\end{tabular}
+\caption{Planned tests}
+\label{tab:plannedTable}
+\end{table}
+
+
