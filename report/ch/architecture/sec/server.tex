@@ -1,0 +1,8 @@
+\section{Server architecture}
+The server consists of two parts. One for handling requests from the Android app and one for storing data that is collected in the users home. 
+The part that handles the Android app runs Dropwizard, which is a collection of Java libraries that together constitutes a REST service. 
+
+These libraries include Jetty, Jersey, JDBC, and Jackson. These are discussed in further detail in section~\ref{sec:libraries}. The server exposes a set of URLs that provided the Android app with the ability to retrieve and store data from the database. The part of the system that would aggregate collected data from a aggregation server in the users home is not implemented. More on this in modularity~\ref{sec:modularity} and the further developement chapter~\ref{sec:further}.
+
+
+\todo{add ER-diagram for database}
