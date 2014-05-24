@@ -1,16 +1,20 @@
 \section{Testing functional requirements}
 \label{sec:funcTest}
-Functional testing are tests that control the functionality of the software. Internal classes and methods is tested indirectly. This is a type of Black Box Testing~\cite{blackbox}. \todo{The team chose several classes and methods that the app should complete, and some that it should not, but handle in a satisfying way.} This was done by asking the app to do something and compare the result with what was expected.
+Functional testing are tests that control the functionality of the software. Internal classes and methods is tested indirectly. This is a type of Black Box Testing~\cite{blackbox}. This is done by feeding the application data and check that it responds the way it should. It is common to to give the application proper data to check that it is handled correctly and to give it incorrect data to check if the application fails gracefully and does not break the application. If a test fails there is a bug in the code that needs to be corrected.
 
-The following steps are required in order to test the system
+\linebreak
+To test a system the following steps are required.
 \begin{enumerate}
-\item Identify what features are to be tested
+\item Identify what features/functionality to test
 \item Specify input to the system
 \item Specify expected output from the system
-\item Execute. Feed input data into the system and compare the output with what is expected. If the output is not what was expected there is a bug that needs to be investigated and fixed before the test is run again.
+\item Execute
 \end{enumerate}
 
 \subsection{Test table}
+This table has some example of functional test that the project should support.
+\todo{Stemmer denne tabellen? git meg fint lite}
+
 \begin{table}[H]
 \begin{tabular}{|l|l|l|}
 \hline
@@ -39,6 +43,7 @@ The following steps are required in order to test the system
 \end{table}
 
 \subsection{Planned tests}
+\todo{Skriv hva dette er}
 \begin{table}[H]
 \centering
 \rowcolors{1}{darkgray}{lightgray}
