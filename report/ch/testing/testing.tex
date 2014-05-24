@@ -3,14 +3,8 @@
 In order to deliver a complete and functional product to the customer, it is paramount to make sure the system is regularly tested during development. 
 By running tests we increase system stability and robustness, which in turn increases the usability of the product. 
 
-There are several approaches when it comes to testing of software systems. The team looked into both \gls{unit} and functional testing. For the unit testing, we used JUnit, which is very common to use when unit testing Java based apps.
+There are several approaches when it comes to testing of software systems. The team looked into both \gls{unit} and functional testing. Unit testing is a method for testing small parts of a program, often individual functions, independent of the rest of the program. Functional testing is when you test functionality manually. The team decided to use functional testing on the android application because it is heavily focused on a user interface, and unit tests on the server, to make sure all the server functionality is up and running.
 
-With JUnit it is easy to test every function on the program. The team decided that functional testing made the most sense to use for this project. For further details, see section~\ref{sec:funcTest}.
-
-
-At the end of each sprint, tests was run to see whether the app met the specifications. Tests was also run at the end of the development process. 
-
-The team has also conducted usability tests to fulfill the non-functional requirement of a user friendly app. The customer also participated in this part of the testing, and delivered the app to third-party users. For further details about the usability testing, see section~\ref{sec:userTest}.
 \newpage
 \input ch/testing/sec/nonFuncReq.tex
 \input ch/testing/sec/funcReq.tex
