@@ -1,15 +1,29 @@
 \section{Designing the architecture}
-Choosing an architecture is probably the most influential decision in any software development project. The pre-study conducted earlier gave the team a solid base of knowledge to base architectural  decisions on. Even before the pre-study the team had some ideas on what parts the system should consist of and how they would interact, but getting an overview of how other systems were built was very helpful. As mentioned in the Requirements chapter, the original requirements specification was discarded due to time constraints. However, the architecture was built based on the original specifications. This means that the home data aggregation server shown in the architecture is not a part of the system that the team delivered to the customer.
+Choosing an architecture is probably the most influential decision in any software development project. The pre-study conducted earlier gave the team a solid base of knowledge to base architectural 
+decisions on. Even before the pre-study the team had some ideas on what parts the system should consist of and how they would interact, but getting an overview of how other systems were built was 
+very helpful. As mentioned in the Requirements chapter, the original requirements specification was discarded due to time constraints. However, the architecture was built based on the original 
+specifications. This means that the home data aggregation server shown in the architecture is not a part of the system that the team delivered to the customer.
 
-The design of the entire system started very abstract, but quickly developed into a detailed plan of how the different components would interact. As few of the team members had much experience with developing a server according to the design, development and design were done interchangeably and iteratively in the early stages of the project. This is also true for the android development. As new features or problems were discovered in the early development, the architecture design had to undergo updates regularly. A key concern for the team was that the server should be simple and fast. This is ideal for the stateless design that was ultimately chosen. 
+The design of the entire system started very abstract, but quickly developed into a detailed plan of how the different components would interact. As few of the team members had much 
+experience with developing a server according to the design, development and design were done interchangeably and iteratively in the early stages of the project. This is also true for the 
+android development. As new features or problems were discovered in the early development, the architecture design had to undergo updates regularly. A key concern for the team was that the 
+server should be simple and fast. This is ideal for the stateless design that was ultimately chosen. 
 
 \subsection{Performance and maintainability}
-A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a priority during development. This proved a sizeable challenge as all data in the app is synchronized with the server. The sheer amount of data also made the graph library render the graphs slower than satisfactory. This prompted a lot of query optimization and tweaking in both the android app and the server. The customer was initially sceptical to using a dedicated server to store data as this adds the responsibility of keeping the server running and performing for the app to be usable. Unfortunately, no peer-to-peer or similar solutions satisfied the teams requirements to data persistence and speed.
+A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a priority during development. This proved a sizeable challenge as all data in the 
+app is synchronized with the server. The sheer amount of data also made the graph library render the graphs slower than satisfactory. This prompted a lot of query optimization and tweaking 
+in both the android app and the server. The customer was initially sceptical to using a dedicated server to store data as this adds the responsibility of keeping the server running and performing 
+for the app to be usable. Unfortunately, no peer-to-peer or similar solutions satisfied the teams requirements to data persistence and speed.
 
-The server does not require much maintenance to keep running at peek performance. Much of the performance of the server depends on the hardware and internet connection. The software itself is easily scaled for the hardware by changing the configuration. By changing the allowed number of simultaneous requests and connections, the server can easily be scaled for a growing user based and more powerful hardware.
+The server does not require much maintenance to keep running at peek performance. Much of the performance of the server depends on the hardware and internet connection. 
+The software itself is easily scaled for the hardware by changing the configuration. By changing the allowed number of simultaneous requests and connections, the server can easily be 
+scaled for a growing user based and more powerful hardware.
 
 \subsection{Modularity}
 \label{sec:modularity}
-As the final development architecture deviated from the architecture that was envisioned for a perfect product, a modular design was critical to allow for easy modifications and extensions of the software in the future. 
+As the final development architecture deviated from the architecture that was envisioned for a perfect product, a modular design was critical to allow for easy modifications and 
+extensions of the software in the future. 
 
-The server has an inert  modularity in the fact that is based on stateless connections that transfer JSON objects. Adding hardware that can control and monitor devices in the users home can easily interface to the app by storing data on the server. By either using predefined functions, expanding upon them or by writing new functions hardware devices or a home data aggregation server can transfer data to the main server. No changes would be necessary on the client side to add this functionality. 
+The server has an inert  modularity in the fact that is based on stateless connections that transfer JSON objects. Adding hardware that can control and monitor devices in the users 
+home can easily interface to the app by storing data on the server. By either using predefined functions, expanding upon them or by writing new functions hardware devices or a home 
+data aggregation server can transfer data to the main server. No changes would be necessary on the client side to add this functionality. 
