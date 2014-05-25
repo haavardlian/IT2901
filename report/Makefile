@@ -1,4 +1,4 @@
-.PHONY: rapport.pdf rapport.gls all clean
+.PHONY: rapport.pdf rapport.gls rapport.bbl all clean
 
 all: rapport.pdf
 
@@ -7,6 +7,9 @@ rapport.pdf: rapport.tex
 
 rapport.gls:
 	makeglossaries rapport
+	
+rapport.bbl:
+	bibtex rapport
 
 clean:
 	latexmk -quiet -CA
