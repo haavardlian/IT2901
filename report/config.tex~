@@ -1,0 +1,122 @@
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{todonotes}
+\usepackage{changepage}
+\usepackage[left=2.5cm, right=2.5cm,top=3cm,bottom=2.5cm,
+  includefoot]{geometry}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{calc,color}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage[letterspace=1]{microtype}
+\usepackage{colortbl}
+\usepackage{csvsimple}
+\newsubfloat{figure}% Allow subfloats in figure environment
+
+
+
+%\usepackage{tabularx}
+% For debian derivater: Ved siden av standard texlive; Installere texlive-latex-extra, lmodern, latex-xcolor, pgf
+\bibliographystyle{ieeetr}
+
+\renewcommand\lstlistingname{Code}
+\renewcommand\lstlistlistingname{Code snippets}
+
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{darkgray}{gray}{0.7}
+
+%%Chapter-styling
+\newif\ifNoChapNumber
+\newcommand\Vlines{%
+\def\VL{\rule[-2cm]{1pt}{5cm}\hspace{1mm}\relax}
+\VL\VL\VL\VL\VL\VL\VL}
+\makeatletter
+\setlength\midchapskip{0pt}
+\makechapterstyle{VZ43}{
+\renewcommand\chapternamenum{}
+\renewcommand\printchaptername{}
+\renewcommand\printchapternum{}
+\renewcommand\chapnumfont{\Huge\bfseries\centering}
+\renewcommand\chaptitlefont{\Huge\bfseries\raggedright}
+\renewcommand\printchaptertitle[1]{%
+%\Vlines\hspace*{-2em}%
+\begin{tabular}{@{}p{1cm} p{\textwidth-3cm}}%
+\ifNoChapNumber\relax\else%
+\colorbox{black}{\color{white}%
+\makebox[.8cm]{\chapnumfont\strut \thechapter}}
+\fi
+& \chaptitlefont ##1
+\end{tabular}
+\NoChapNumberfalse
+}
+\renewcommand\printchapternonum{\NoChapNumbertrue\hspace{-1.5cm}\printchaptername}
+}
+\makeatother
+\chapterstyle{VZ43}
+
+%fixes indentation on list of code
+\makeatletter
+\renewcommand*{\l@lstlisting}{\@dottedtocline{1}{0em}{2.3em}}
+\makeatother
+
+
+%Row height in tables
+\renewcommand{\arraystretch}{1.5}
+
+%Header and page numbering
+\makepagestyle{headings}
+\makeheadrule{headings}{\textwidth}{\normalrulethickness}
+\makeevenfoot{headings}{}{\thepage}{}
+\makeoddfoot{headings}{}{\thepage}{}
+\makeevenhead{headings}{\sffamily\rightmark}{}{\sffamily\leftmark}
+\makeoddhead{headings}{\sffamily\rightmark}{}{\sffamily\leftmark}
+\makeatletter % because of \@chapapp
+\makepsmarks{headings}{
+\nouppercaseheads
+\createmark {chapter} {both} {shownumber}{\@chapapp\ }{. \ }
+\createmark {section} {right}{shownumber}{} {. \ }
+}
+\makeatother
+
+% Coding style
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+ 
+\lstset{language=Java,
+basicstyle=\ttfamily,
+keywordstyle=\color{javapurple}\bfseries,
+stringstyle=\color{javared},
+commentstyle=\color{javagreen},
+morecomment=[s][\color{javadocblue}]{/**}{*/},
+frame = single,
+numbers=left,
+stepnumber=1,
+numbersep=5pt,
+numberstyle=\small\color{black},
+tabsize = 2,
+showspaces=false,
+captionpos=b, 
+showstringspaces=false}
+
+% Controls what levels will be shown with numbering (such as subsubsection)
+% By default only chapter and section is shown.
+\setcounter{secnumdepth}{2}
+
+% Linker i table of contents
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+% Always show todo's inline
+\expandafter\def\expandafter\todo\expandafter{\todo[inline]}

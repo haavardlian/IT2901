@@ -8,7 +8,6 @@ PAGES= "327--344",
 YEAR=2000
 }
 
-
 @article{remoteTest,
     author    = "Susan Dray and David Siegel",
     title     = "Remote possibilities? International usability testing at a distance",
@@ -39,17 +38,6 @@ YEAR={2011},
 edition="1",
 publisher= "O'Reilly Media"
 }
-
-
-@book{usecase,
-AUTHOR="Martin Fowler",
-TITLE="UML Distilled: A brief guide to the standard object modelling language",
-YEAR={2004},
-edition="3",
-publisher= "Pearson Education"
-}
- 
-
 
 @inbook{scrum,
 AUTHOR="Ian Sommerville",
@@ -190,18 +178,13 @@ author = "{Android device fragmentation}",
 howpublished = "\par\url{https://developer.android.com/about/dashboards/index.html}",
 note="Retrieved March 15, 2014"
 }
-@misc{androidPracticePerformance,
-author = "{Android best practices for performance}",
-howpublished = "\par\url{https://developer.android.com/training/best-performance.html}",
-note="Retrieved Mari 25, 2014"
-}
 @misc{contentproviders,
-author = "{ContentProvider}",
+author = "{Content Providers}",
 howpublished = "\par\url{developer.android.com/reference/android/content/ContentProvider.html}",
 note="Retrieved March 15, 2014"
 }
 @misc{loadermanager,
-author = "{LoaderManager}",
+author = "{Loader Manager}",
 howpublished = "\par\url{developer.android.com/reference/android/app/LoaderManager.html}",
 note="Retrieved March 15, 2014"
 }
@@ -331,26 +314,6 @@ author = "{aChartEngine}",
 howpublished="\url{www.achartengine.org}"
 }
 
-@misc{psts,
-author = "{PagerSlidingTabStrip}",
-howpublished="\url{https://github.com/astuetz/PagerSlidingTabStrip}"
-}
-
-@misc{progressfragment,
-author = "{ProgressFragment}",
-howpublished="\url{https://github.com/johnkil/Android-ProgressFragment}"
-}
-
-@misc{segments,
-author = "{android-segmented-control}",
-howpublished="\url{https://github.com/hoang8f/android-segmented-control}"
-}
-
-@misc{spinnerwheel,
-author = "{android-spinnerwheel}",
-howpublished="\url{https://github.com/ai212983/android-spinnerwheel}"
-}
-
 @misc{fsdk,
 author = "{Facebook SDK}",
 howpublished="\url{https://developers.facebook.com/docs/android/}"
@@ -386,14 +349,3 @@ howpublished="\url{https://groups.google.com}"
 author = "{Tomcat}",
 howpublished="\par\url{tomcat.apache.org}"
 }
-
-@misc{untappd,
-author = "{Untappd}",
-howpublished="\url{https://untappd.com/}"
-}
-
-@misc{oemmodule,
-  author = "{Open Energy Monitor - Modules}",
-  howpublished = "\url{http://openenergymonitor.org/emon/Modules}",
-}
-

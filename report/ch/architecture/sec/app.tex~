@@ -1,11 +1,23 @@
+
+
 \section{Android app architecture}
 The app runs on the users' Android device and was designed to run on Android version 4.0 or greater. As of March 2014 this makes up for 79,7\% of Android devices~\cite{AndroidDeviceFragmentation}. 
 The team decided to only adapt the app for these versions because the app is a proof-of-concept, and for the purposes of the app, the team assumed that the relevant users would have a relatively 
 modern phone. 
 
+<<<<<<< Updated upstream
+The architecture heavily relied on using ContentProviders~\cite{contentproviders} for database access. This gives the app a uniform access model for the data that does not run on the UI thread. 
+When lists of data are accessed from an Activity or a Fragment, the LoaderManagers~\cite{loadermanager} is used. This handles the life cycle of data change notification through the cursor. 
+
+The remaining problem was where to place the business logic for data manipulation. This is where the pattern Model-View-Presenter (MVP) comes in. 
+MVP is a Model-View-Controller (MVC) derivative.~\cite{mvc} All business logic is handled in presenter classes. Through this uniform access, all logic applied to data preservation 
+(sever synchronization), and data control can be handled in one place. The life cycle of the presenter classes is in the base Activity class, and all other sub fragments can get access 
+to it though a interface. This pushes almost all logic into the presenters, making the code in the fragments as minimal as possible.
+=======
 \subsection{Best practice}
 
 The best practice guidelines for Android~\cite{androidPracticePerformance} states that one should keep the architecture as simple as possible. Avoid using large and complex design patterns. But some decisions need to be made to keep the development process as simple and providing as possible. 
+>>>>>>> Stashed changes
 
 The app will use a lot of data from a SQlite database, the UI must be responsive, and data will be synchronized from the Internet. To make the app work fluently a good architecture is needed. It is important to note that Android renders the UI on the main thread. Running long operations on the main thread will thus block the entire app and destroy the user experience. To make the data loading experience as good as possible and not block the main thread the team decided upon using Androids built in logic for data access and a design pattern for business logic.
 
@@ -34,9 +46,12 @@ Android has module named StrictPolicy. This monitors the UI thread and checking 
 \subsubsection{Model View Presenter}
 
 \todo{Write about MVP and other patterns that we follow}
+<<<<<<< Updated upstream
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/arch.png}
 \caption{Architecture overview}
 \label{fig:architecture}
 \end{figure}
+=======
+>>>>>>> Stashed changes
