@@ -6,7 +6,7 @@ The server exposes a set of endpoints that will have a behavior when a HTTP (GET
 The data is stored in a MySQL database using the JDBC API and JDBI for easier interfacing. A diagram of how the database is designed can be found in figure~\ref{fig:ER-Diagram}
 
 
-\begin{lstlisting}[language=java, frame=single, breaklines=true, caption={Dropwizard resource example}, label={lst:dropwizardResource}]
+\begin{lstlisting}[caption={Dropwizard resource example}, label={lst:dropwizardResource}]
 @Path("user/{user}/sync")
 @Produces(MediaType.APPLICATION_JSON)
 public class SyncResource {

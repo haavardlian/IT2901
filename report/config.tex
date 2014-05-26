@@ -23,14 +23,17 @@
 \usepackage{csvsimple}
 \newsubfloat{figure}% Allow subfloats in figure environment
 
-
+% New names for sections in table of content
+\renewcommand\listtablename{Tables}
+\renewcommand\listfigurename{Figures}
+\renewcommand\contentsname{Contents}
+\renewcommand\lstlistingname{Code}
+\renewcommand\lstlistlistingname{Code snippets}
 
 %\usepackage{tabularx}
 % For debian derivater: Ved siden av standard texlive; Installere texlive-latex-extra, lmodern, latex-xcolor, pgf
 \bibliographystyle{ieeetr}
 
-\renewcommand\lstlistingname{Code}
-\renewcommand\lstlistlistingname{Code snippets}
 
 \definecolor{lightgray}{gray}{0.9}
 \definecolor{darkgray}{gray}{0.7}
@@ -106,6 +109,7 @@ stepnumber=1,
 numbersep=5pt,
 numberstyle=\small\color{black},
 tabsize = 2,
+breaklines,
 showspaces=false,
 captionpos=b, 
 showstringspaces=false}
