@@ -1,12 +1,13 @@
 \section{Technical choices}
-The team agreed on using Android studio from the beginning, after discussing whether to use Android studio or eclipse with an Android plugin. In the beginning there were some problems with Android Studio. Some team members had trouble actually running the app. There was a problem with Android Studio not finding the correct SDK. (<-IS THIS CORRECT?) This took some time to solve, but after it was solved the team had no more trouble with is. However, since Android Studio is a relatively new IDE, is still has some start trouble and updates comes out regularly. This meant that all of the group members had to use at least two or three minutes every time a new update came out. 
+Even though the team aimed to plan well and make informed decisions before development started, some changes had to be made on the fly. This section shows the reasoning behind both the planned decisions and the ones made during development.
 
-We changed the architecture during the process, we should write about that and why here, do we think we chose the best one? We chose to create a provider, do we feel it was worth all the extra time it took? 
+\subsection{Change in architecture}
+\todo{We changed the architecture during the process, we should write about that and why here, do we think we chose the best one? We chose to create a provider, do we feel it was worth all the extra time it took? }
 
-\subsubsection{Choice of Android IDE}
-Despite the fact that some the team members already had experience with Android Studio's counterpart Eclipse ADT, and few of us had any experience with Android Studio, the team wanted to give it a try, as it appeared to have more features, such as a faster compiler, better search function and auto completion of code, than Eclipse ADT. 
+\subsection{Choice of Android IDE}
+The team agreed on using Android studio from the beginning, after discussing whether to use Android studio or Eclipse with an ADT. The reasoning was that Android Studio has features such as a faster compiler, a better search function and better auto completion of code than Eclipse ADT. In the beginning there were some problems with Android Studio. Some team members had trouble actually building and running the app. There was a problem with an Android Studio update which resulted in Gradle not being able to sync, and ultimately failing to build the project. This took some time to solve, but after it was solved the team had no more trouble with it. However, since Android Studio is a relatively new IDE, and still in beta, it still has some bugs and is updated frequently.
 
-As the project has progressed, it has become clear that the learning curve has not been as steep as expected. Neither have we encountered any problems that we did not think also would have been present if we had chosen to use Eclipse ADT.
+As the project has progressed, it has become clear that the learning curve was not as steep as expected. Development would likely not have been any faster if we had chosen Eclipse.
 
-\subsubsection{Choice of GitHub for code management}
+\subsection{Choice of GitHub for code management}
 By taking the customer's opinion in this matter into consideration, we were be more able to give the customer a better overview of the project and also to easily integrate our app into the customer's existing project. As a result, both the team and the customer were updated on the last version of the project and the team was more likely to receive relevant feedback. 
