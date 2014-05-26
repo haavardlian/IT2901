@@ -39,5 +39,6 @@ rapport.pdf
 
 # VIM
 *.swp
+*~
 #Mac
 .DS_Store
