@@ -1,6 +1,11 @@
 \section{Software improvements}
+Due to time restrictions in this project, not all functionality was fully implemented. In this section all of that functionality and how to implement it is described. 
+
 \subsection{Residences}
-Maa kobles til alt
+The way the system is built up right now is that everything inn the app is connected to a user. A user has devices and devices have usage. One possible improvement would be to make the user connected to one or several residences and the devices connected to those residences. This change would be relatively simple as one would only have to add one extra layer of models, and transform the existing user implementation into a representation of residences. Then adding the user upon that would allow for the functionality the team initially explored.
+
+This would make it possible to compare users more accurately, taking into consideration what type of residence they have, how many people living in that residence and so on. This would give each user the possibility of monitoring the power usage of their summer home, or their cabin. It is also possible to connect all tips to residences, so that the user can choose which residence he wants to perform the tip in. 
 
 \subsection{Profile}
-\todo{Must write something here}
+
+The profile tab is supposed to hold info about the user. What residences the user is connected to and can collect data from and connect devices to. The team also envisions this tab to hold information about whether or not this user wants his data to be collected anonymously. The user currently does not have the choice to remain anonymous. This means that the users data would not be used for any comparison in the app, and would not be viewable by other users.
