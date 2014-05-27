@@ -1,13 +1,15 @@
-\section{System qualities}
-\subsection{Performance and maintainability}
-A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a priority during development. This proved a sizeable challenge as all data in the 
-app is synchronized with the server. The sheer amount of data also made the graph library render the graphs slower than satisfactory. This prompted a lot of query optimization and tweaking 
-in both the android app and the server. The customer was initially sceptical to using a dedicated server to store data as this adds the responsibility of keeping the server running and performing 
-for the app to be usable. Unfortunately, no peer-to-peer or similar solutions satisfied the teams requirements to data persistence and speed.
+\subsection{Performance}
+A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a high priority during development. This proved a sizeable challenge as all data in the app is synchronized with the server. 
+The sheer amount of data also made the graph library render the graphs slower than satisfactory. This prompted a lot of query optimization and tweaking 
+in both the Android app and the server. 
+The customer was initially sceptical to using a dedicated server to store data as this adds the responsibility of keeping the server running and performing for the app to be usable. Unfortunately, no peer-to-peer or similar solutions satisfied the teams requirements to data persistence and speed.
 
-The server does not require much maintenance to keep running at peek performance. Much of the performance of the server depends on the hardware and internet connection. 
-The software itself is easily scaled for the hardware by changing the configuration. By changing the allowed number of simultaneous requests and connections, the server can easily be 
-scaled for a growing user base and more powerful hardware.
+\subsection{Maintainability}
+The server does not require much maintenance to be kept running at peek performance. Much of the server's performance depends on the hardware and Internet connection. 
+
+\subsection{Scalability}
+The software is easily scaled for the hardware by changing the configuration.  To make room for a growing user base and more powerful hardware, this can also be done for the server, by changing the allowed number of simultaneous requests and connections.
+
 
 \subsection{Modularity}
 \label{sec:modularity}
