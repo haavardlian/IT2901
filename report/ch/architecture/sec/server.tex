@@ -1,10 +1,19 @@
 \section{Server architecture}
-The server is implemented in Dropwizard, which is a framework to make RESTful web services. The team chose a RESTful approach because it makes the server easier to interface with as it is stateless. The data-interchange format chosen to transfer data between the app and the server is JSON. This format was chosen for its human readability and it is also very easily parsed by computer software.
+The servers is the systems back-end it is responsible for permanently storing data and providing it to the user on demand. The team decided that the server should be RESTful in order the make accessing it easier. The data-interchange format chosen to transfer data between the app and the server is JSON. This format was chosen for its human readability and it is also very easily parsed by computer software.
 
-The server exposes a set of endpoints that will have a behavior when a HTTP (GET, PUT etc.) request is sent to it. These endpoints provide all the functionality of the server like syncing of data and fetching friend activity. The main structure of how the server uses resources and the database can be found in figure~\ref{fig:classDiagramServer}. The main server service creates instances of the resources. When a resource handles a HTTP request will access the database through the ServerDAO (Server Data Access Object). The Dropwizard implementation that is used makes it very easy to handle requests and send data. A set of resources are defined that and each endpoint will bind to a method in a resource. An example implementation of a resource is included in the source code \hyperref[lst:dropwizardResource]{below}. The resource class and methods are annotated with parameters such as path and HTTP request type. The path can also contain variables so data can be passed to the server directly in the URI. 
+\subsection{Dropwizard}
+The server is implemented in Dropwizard which is a Java framework for making RESTful web services. Dropwizard was chosen for its use of popular Java libraries to implement its functionality such as Jetty, Jersey, and Jackson. The main class of the server is a service that at runtime defines the database access and all the resources to server will use. The main structure of how the server uses resources and the database can be found in figure~\ref{fig:classDiagramServer}.
 
-The data is stored in a MySQL database using the JDBC API and JDBI for easier interfacing. A diagram of how the database is designed can be found in figure~\ref{fig:ER-Diagram}
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{ch/architecture/fig/classDiagramServer.png}
+\caption{Class diagram for main server structure}
+\label{fig:classDiagramServer}
+\end{figure}
 
+\subsubsection{Resources}
+A Dropwizard implementation has a set of resource classes. These classes contain methods that map to a URI path. When the server receives a HTTP request it will try the match the path to the paths defined by the resource methods, it will then call the method found or return a 404 Not Found error.
+
+A example resource class is included in code~\ref{lst:dropwizardResource}.
 
 \begin{lstlisting}[caption={Dropwizard resource example}, label={lst:dropwizardResource}]
 @Path("user/{user}/sync")
@@ -26,14 +35,14 @@ public class SyncResource {
 }
 \end{lstlisting}
 
+\subsubsection{Database abstraction}
+Dropwizard uses the JDBC and JDBI libraries to communicate with the database. The JDBC is Javas standard interface to databases and MySQL provides a driver for JDBC in order to make communication possible. JDBI is a convenience layer on top of JDBC which makes it possible to write a interface with SQL queries and use that interface as a data access object.
+
+\subsection{Database}
+For permanent storage the server uses MySQL. MySQL is a reliable and easy to set up database. A diagram of how the database is designed can be found in figure~\ref{fig:ER-Diagram}
+
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/ER-Diagram.png}
 \caption{ER-Diagram for the database}
 \label{fig:ER-Diagram}
-\end{figure}
-
-\begin{figure}[H]
-\includegraphics[width=\textwidth]{ch/architecture/fig/classDiagramServer.png}
-\caption{Class diagram for main server structure}
-\label{fig:classDiagramServer}
 \end{figure}
