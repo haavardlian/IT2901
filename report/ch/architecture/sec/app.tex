@@ -12,7 +12,7 @@ To avoid the issue of blocking the main thread it was decided to make use of And
 
 \subsubsection{Class logic}
 
-An Activity is the main 'thing` in Android. It's a process with a full life-cycle and the possibility to show a view. 
+\todo{An Activity is the main 'thing` in Android. It's a process with a full life-cycle and the possibility to show a view. }
 
 The different parts of the app is accessed through a navigation drawer~\ref{fig:class_diagram_drawer}. The navigation drawer is a Fragment, a self contained view with a life-cycle that resides in a Activity. By using fragments will the code be modularized in self contained environments. When a tab in the navigation drawer is chosen it will use a callback to the activity which changes the view to the correct fragment class. 
 
@@ -32,7 +32,7 @@ Each tab has it's own logic and has a default behavior defined by 'DefaultTabFra
 
 \subsubsection{Data access}
 
-Data access to the underlying database is done using ContentProviders~\cite{contentproviders}. This gives the app a uniform \gls{CRUD} access model. The data will be accessed with \gls{URI}'s that is uniquely defined. Fetching the data is done using LoaderManager~\cite{loadermanager} . LoaderManager is an interface defining callbacks to get the URI to query, how to handle data reset, and the data returned from the query. The LoaderManager runs on another thread, and thus avoids the problem of halting the UI rendering. It will also handle the life cycle of the data. When data related to the URI changes the the LoaderManager will load the data again. 
+Data access to the underlying database is done using ContentProviders~\cite{contentproviders}. This gives the app a uniform \gls{CRUD} access model. The data will be accessed with \gls{URI}'s that is uniquely defined. Fetching the data is done using LoaderManager~\cite{loadermanager} . LoaderManager is an interface defining callbacks to get the URI to query, how to handle data reset, and the data returned from the query. The LoaderManager runs on another thread, and thus avoids the problem of halting the UI rendering. It will also handle the life cycle of the data. When data related to the URI changes the LoaderManager will load the data again. 
 
 ContentProviders contains a lot of boilerplate code and is time consuming to code. But the upsides far outweigh the downsides. When ContentProviders are used with LoaderManager one gets a view that is automatically updated when the data changes without bothering the UI thread. Other solutions are to work directly on the SQLite driver with SQL, or use patters to make it work fluently. But when the choice is between a native building block and a complex pattern the choice is easy to make. 
 
