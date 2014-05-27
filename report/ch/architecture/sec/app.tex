@@ -38,7 +38,7 @@ ContentProviders contains a lot of boilerplate code and is time consuming to cod
 
 \subsubsection{Business logic}
 
-The other problem is related to where to place the business logic for data manipulation. The business logic must be kept in a logic place and not spread around in the view code. That can create hard to find bugs and make it difficult to change how the logic works.
+\todo{What was the first problem? Why is this a problem?}The other problem is related to where to place the business logic for data manipulation. The business logic must be kept in a logic place and not spread around in the view code. That can create hard to find bugs and make it difficult to change how the logic works.
 The group decided to use the pattern Model-View-Presenter (MVP). MVP is a Model-View-Controller (MVC) derivative~\cite{mvc}. All business logic is handled in presenter classes, between the views and models. Through this uniform access, all logic applied to data preservation (sever synchronization), and data control can be handled in one place. The life cycle of the presenter classes is in the base Activity class, and all other sub fragments can get access to it though a interface. 
 This pushes almost all logic into the presenters, making the code in the fragments as minimal as possible. Since all data is accessed through a ContentProvider it was possible to only adopt this pattern. No view updating code is needed. Only how to manipulate the models and apply it back to the ContentProvider.
 
