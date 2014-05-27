@@ -1,0 +1,60 @@
+\documentclass[12pt]{report}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{todonotes}
+\usepackage{changepage}
+\usepackage[left=0cm, right=0cm,top=0cm,bottom=0cm]{geometry}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{calc,color}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{csvsimple}
+
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{darkgray}{gray}{0.7}
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+\pagestyle{empty}
+
+
+    \begin{longtable}{|l|p{5.5cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|}%
+
+
+\hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{ID}} &  \multicolumn{1}{p{5cm}!{\vrule width -1pt}|}{ \multirow{2}{*}{\textbf{Description}}} & \multicolumn{10}{c!{\vrule width -1pt}|}{\textbf{Remaining effort in sprint} (days)}\\  
+ \cline{3-12}
+ &&   \bfseries 1 & \bfseries 2 & \bfseries3 & \bfseries4 & \bfseries5 & \bfseries6 & \bfseries7 &\bfseries 8 &\bfseries 9 & \bfseries 10\\
+\endfirsthead
+
+
+\multicolumn{12}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\\hline
+\multicolumn{1}{|l!{\vrule width -1pt}|}{ \multirow{2}{*}{\textbf{ID}}} &  \multicolumn{1}{p{5cm}!{\vrule width -1pt}|}{ \multirow{2}{*}{\textbf{Description}}} & \multicolumn{10}{c!{\vrule width -1pt}|}{\textbf{Remaining effort in sprint} (days)}\\  
+ \cline{3-12}
+   &  & \bfseries 1 & \bfseries 2 & \bfseries3 & \bfseries4 & \bfseries5 & \bfseries6 & \bfseries7 &\bfseries 8 &\bfseries 9 & \bfseries 10
+\endhead
+
+ \multicolumn{12}{|c|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\endlastfoot
+\csvreader[head to column names]{backlog7.csv}{}% use head of csv as column names
+ {\\\hline \textbf{\id} & \tasks & \dayone & \daytwo & \daythree & \dayfour & \dayfive  & \daysix & \dayseven & \dayeight & \daynine &\dayten}\\\hline% 
+ 
+
+
+\caption{Sprint 7 backlog}
+\end{longtable}
+
+
+
+\end{document}
