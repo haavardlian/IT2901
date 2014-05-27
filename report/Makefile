@@ -13,4 +13,11 @@ rapport.bbl:
 
 clean:
 	latexmk -quiet -CA
+	rm -f rapport.bbl
+	rm -f rapport.glg
+	rm -f rapport.glo
+	rm -f rapport.gls
+	rm -f rapport.ist
+	rm -f rapport.lol
+	rm -f rapport.tdo
 

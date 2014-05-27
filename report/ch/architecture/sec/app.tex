@@ -48,7 +48,7 @@ This pushes almost all logic into the presenters, making the code in the fragmen
 
 The user authentication is made to be token based. For the moment this is not entirely true to how it is done now. Some shortcuts were done to have a working system. But the main authentication architecture is made.
 
-The Android system has it's own account architecture. Working with this architexture requires the app to register a AbstractAccountAuthenticator~\ref{androidAccount} class in the AndroidManifest. The AbstractAccountAuthenticator is generic and can be made to create accounts for all types of services. Our system uses OAuthV2.0 where the third party authenicator is facebook. The token returned from Facebook is stored in the account and accessed when necessary. All other data related to the account is also stored (facebook user id, etc).
+The Android system has it's own account architecture. Working with this architexture requires the app to register a AbstractAccountAuthenticator~\cite{androidAccount} class in the AndroidManifest. The AbstractAccountAuthenticator is generic and can be made to create accounts for all types of services. Our system uses OAuthV2.0 where the third party authenicator is facebook. The token returned from Facebook is stored in the account and accessed when necessary. All other data related to the account is also stored (facebook user id, etc).
 
 Other OAuthV2.0 authentication providers can also be used (Twitter, Google, your own private OAuthV2.0 authenticator, etc). 
 
