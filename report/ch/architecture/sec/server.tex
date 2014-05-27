@@ -1,7 +1,7 @@
-\section{Server architecture}
+\subsection{Server architecture}
 The servers is the systems back-end it is responsible for permanently storing data and providing it to the user on demand. The team decided that the server should be RESTful in order the make accessing it easier. The data-interchange format chosen to transfer data between the app and the server is JSON. This format was chosen for its human readability and it is also very easily parsed by computer software.
 
-\subsection{Dropwizard}
+\subsubsection{Dropwizard}
 The server is implemented in Dropwizard which is a Java framework for making RESTful web services. Dropwizard was chosen for its use of popular Java libraries to implement its functionality such as Jetty, Jersey, and Jackson. The main class of the server is a service that at runtime defines the database access and all the resources to server will use. The main structure of how the server uses resources and the database can be found in figure~\ref{fig:classDiagramServer}.
 
 \begin{figure}[H]
@@ -10,7 +10,7 @@ The server is implemented in Dropwizard which is a Java framework for making RES
 \label{fig:classDiagramServer}
 \end{figure}
 
-\subsubsection{Resources}
+\paragraph{Resources}
 A Dropwizard implementation has a set of resource classes. These classes contain methods that map to a URI path. When the server receives a HTTP request it will try the match the path to the paths defined by the resource methods, it will then call the method found or return a 404 Not Found error.
 
 A example resource class is included in code~\ref{lst:dropwizardResource}.
@@ -35,10 +35,10 @@ public class SyncResource {
 }
 \end{lstlisting}
 
-\subsubsection{Database abstraction}
+\paragraph{Database abstraction}
 Dropwizard uses the JDBC and JDBI libraries to communicate with the database. The JDBC is Javas standard interface to databases and MySQL provides a driver for JDBC in order to make communication possible. JDBI is a convenience layer on top of JDBC which makes it possible to write a interface with SQL queries and use that interface as a data access object.
 
-\subsection{Database}
+\subsubsection{Database}
 For permanent storage the server uses MySQL. MySQL is a reliable and easy to set up database. A diagram of how the database is designed can be found in figure~\ref{fig:ER-Diagram}
 
 \begin{figure}[H]
