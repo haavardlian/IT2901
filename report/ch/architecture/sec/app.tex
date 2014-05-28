@@ -1,13 +1,14 @@
 \section{Android app architecture}
 \todo{Fix refs}
 The app runs on the user`s Android device and was designed to run on Android version 4.0 or greater. As of March 2014 this makes up for 79,7\% of all Android devices~\cite{AndroidDeviceFragmentation}.
-The team decided to only adapt the app for these version`s because the app is a proof-of-concept, and for the purpose of the app, the team assumed that the relevant user`s would have a relatively modern phone. Making the app more backward compatible demands more work and extra support libraries. 
+The team decided to only adapt the app for these version's because the app is a proof-of-concept, and the team assumed that the relevant user's would have a relatively modern phone. Making the app more backward compatible would demand more work and extra support libraries. 
 
 \subsection{Best practice}
 
-The best practice guidelines for Android~\cite{androidPracticePerformance} states that one should avoid using a complex architecture. A complex architecture makes for a larger code base, and the complexity is most often not needed in an app. However design decisions still need to be made. Having concise code guidelines, and reasonable use of tools will keep the development process as simple, effective, and bug free as possible. 
+The best practice guidelines for Android~\cite{androidPracticePerformance} states that one should avoid using a complex architecture. A complex architecture would require a larger code base, and the complexity is often not needed in an app. However, design decisions still need to be made. 
+By having concise code guidelines, and reasonable use of tools would keep the development process as simple, effective, and bug free as possible. 
 
-The functionality of the app will demand a lot data storage and transactions. Data is stored in the internal SQLite database. Data transactions takes time and blocks the thread it's running on.
+The functionality of the app would demand a lot data storage and transactions. Data is stored in an internal SQLite database. Data transactions takes time and blocks the thread it's running on.
 Android does UI rendering on the main thread. Thus, by running long operations on the main thread, the entire app interface will be unresponsive. That must be avoided at all cost to not destroy the user experience. The app also needs to handle user authentication and data backup on the remote server.
 
 The choice of how to do the architecture will thus give a large impact on the overall impression of the app. The next sections will explain how the different parts of the app work together as a process, how data is accessed and used, what patterns are used, how a user is authenticated, and data backup.
@@ -16,7 +17,7 @@ The choice of how to do the architecture will thus give a large impact on the ov
 
 \subsection{Class structure}
 
-An Activity is the main 'thing` in Android. It's a process with the full life-cycle of the device and the possibility to show a view to the user.
+An Activity is the main 'thing' in Android. It's a process with the full life-cycle of the device and the possibility to show a view to the user.
 
 To access the different parts of the app it was decided to use a navigation drawer that is accessed through the app icon on the action bar, or with a swipe from the left. The different parts of the app is shown when the user clicks on it in the navigation drawer. Each part accessed through the navigation drawer is henceforth called a tab. The structure of how the main activity communicates with the navigation drawer is shown in figure~\ref{fig:class_diagram_drawer}.
 
