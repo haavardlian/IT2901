@@ -12,7 +12,8 @@ The server is implemented in Dropwizard which is a Java framework for making RES
 \end{figure}
 
 \subsubsection{Resources}
-A Dropwizard implementation has a set of resource classes. These classes contain methods that map to a URI path. When the server receives a HTTP request it will try the match the path to the paths defined by the resource methods, it will then call the method found or return a 404 Not Found error. An example resource class is included in code~\ref{lst:dropwizardResource}. The method in this resource will handle HTTP GET calls to /user/{user}/sync/usage/{timestamp} where {user} and {timestamp} matches any text. These variables is then used inside the method to perform actions depending on user and time stamp.
+A Dropwizard implementation has a set of resource classes. These classes contain methods that map to a URI path. When the server receives a HTTP request it will try the match the path to the paths defined by the resource methods, it will then call the method found or return a 404 Not Found error. An example resource class is included in code~\ref{lst:dropwizardResource}. The method in this resource will handle HTTP GET calls to /user/\{user\}/sync/usage/\{timestamp\} where \{user\} and \{timestamp\} matches any text. These variables is then used inside the method to perform actions depending on user and time stamp.
+\newline
 
 \noindent\begin{minipage}{\textwidth}
 \begin{lstlisting}[caption={Dropwizard resource example}, label={lst:dropwizardResource}]
