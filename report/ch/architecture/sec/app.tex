@@ -1,10 +1,11 @@
 \section{Android app architecture}
+\todo{Fix refs}
 The app runs on the user`s Android device and was designed to run on Android version 4.0 or greater. As of March 2014 this makes up for 79,7\% of Android devices~\cite{AndroidDeviceFragmentation}.
 The team decided to only adapt the app for these version`s because the app is a proof-of-concept, and for the purpose of the app, the team assumed that the relevant user`s would have a relatively modern phone. Making the app more backward compatible demands more work and extra libraries. 
 
 \subsection{Best practice}
 
-The best practice guidelines for Android~\cite{androidPracticePerformance} states that one should avoid using a complex architecture. A complex architecture makes for a larger code base, and the complexity is most often not needed in an app. \todo{But design decisions still need to be made (restructure?)}. Having concise code guidelines, and reasonable use of tools will keep the development process as simple, effective, and bug free as possible. 
+The best practice guidelines for Android~\cite{androidPracticePerformance} states that one should avoid using a complex architecture. A complex architecture makes for a larger code base, and the complexity is most often not needed in an app. However design decisions still need to be made. Having concise code guidelines, and reasonable use of tools will keep the development process as simple, effective, and bug free as possible. 
 
 The functionality of the app will demand a lot data storage and transactions. Data is stored in the internal SQlite database. Data transactions takes time and blocks the thread it's running on.
 Android does UI rendering on the main thread. Thus, by running long operations on the main thread, the entire app interface will be unresponsive. That must be avoided at all cost to not destroy the user experience. The app also needs to handle user authentication and data backup on the remote server.
@@ -39,18 +40,16 @@ Each tab has it's own logic and has a default behavior defined by 'DefaultTabFra
 \end{figure}
 
 \subsection{Data access}
-
 Data access to the underlying database is done using ContentProviders~\cite{contentproviders}. This gives the app a uniform \gls{CRUD} (abbreviation for create, read, update, and delete) access model. The data will be accessed with \gls{URI}'s (abbreviation for uniform resource identifier) that is uniquely defined. Fetching the data is done by implementing a LoaderManager~\cite{loadermanager}. LoaderManager is an interface defining callbacks to get the URI to query, how to handle data reset, and the data returned from the query. The LoaderManager runs on another thread, and thus avoids the problem of blocking the main thread from rendering the UI. It will also handle the life cycle of the data. When data related to the URI changes, the LoaderManager will load the data again. 
 
 ContentProviders contains a lot of boilerplate code and is time consuming to code. But the upsides far outweigh the downsides. When ContentProviders are used with LoaderManager one gets a view that is automatically updated when the data changes without bothering the UI thread. Other solutions are to work directly on the SQLite driver with SQL, or use a pattern to make it work fluently. One such pattern is discussed in the next section. 
 
 \subsection{Business logic}
+\todo{Problems?}
 The other problem is related to where to place the business logic (data manipulation). Keeping the business logic in one generic place makes doing changes easier, and avoids the issue of knowing where every data operation is done that must be updated. Doing that can also create hard to find bugs. Following a smart design pattern will handle your business logic and make it easy to update the view. 
 The team decided to use the pattern Model-View-Presenter (MVP). MVP is a Model-View-Controller (MVC) derivative~\cite{mvc}. All business logic is handled in presenter classes, between the views and models. Through this uniform access, all logic applied to data preservation (server synchronization), and data control can be handled in one place. The life cycle of the presenter classes is in the base Activity class, and all other sub fragments can get access to it though a interface. 
 This pushes almost all logic into the presenters, making the code in the fragments as minimal as possible. 
 MVP also makes updating the view easy when the data changes. But since all data is accessed through a ContentProvider it was possible to avoid setting up listeners. But having the possibility to do so is a good idea for further iterations of the app. But for the moment no view updating code is needed. The Presenters only handle how to manipulate the models and applies it back to the database.
-\todo{Problem to issue instead..}
-\todo{What was the first problem? Why is this a problem?}
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/mvp.png}
@@ -66,7 +65,7 @@ For the time being the third party authenticator is Facebook and the Facebook se
 %For the moment this is not entirely true to how it is done now. Some shortcuts were done to have a working system. But the main authentication architecture is made.
 Now the a user can log in with his Facebook user and fetch data from his Facebook account, but not communicate with our server. 
 
-The next case is how to handle the session data from Facebook. The Android system has it's own account architecture. Working with this architecture requires the app to register a AbstractAccountAuthenticator~\cite{androidAccount} class in the AndroidManifest. The AbstractAccountAuthenticator is generic and can be made to create accounts for all types of services. The token and other related data (facebook id) returned from Facebook is stored in the account and can accessed when necessary.
+The next case is how to handle the session data from Facebook. The Android system has it's own account architecture. Working with this architecture requires the app to register a AbstractAccountAuthenticator~\cite{androidAccount} class in the AndroidManifest. The AbstractAccountAuthenticator is generic and can be made to create accounts for all types of services. The token and other related data (Facebook id) returned from Facebook is stored in the account and can accessed when necessary.
 
 Other OAuthV2.0 authentication providers can also be used (Twitter, Google, your own private OAuthV2.0 authenticator, etc). 
 
@@ -107,7 +106,7 @@ if no errors
 The algorithm is straightforward and will retry data synchronization until it does not fail. The reason for that is that the synchronization time stamp only will be updated when everything goes well. If the error checking fails and the last synchronization time stamp fails, then data will be lost. 
 This is not a perfect approach to synchronization, but acceptable within the time frame that it was needed. 
 
-SyncAdapters can be configured to run when it is best suited. This is when processor is not busy and the device has wifi Internet connection. It can also be forced to run on regular intervals.
+SyncAdapters can be configured to run when it is best suited. This is when processor is not busy and the device has WiFi Internet connection. It can also be forced to run on regular intervals.
 
 \subsection{Keeping the code clean}
 
