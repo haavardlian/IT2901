@@ -1,102 +1,97 @@
 id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeight, daynine, dayten
 \vspace{-0.8cm}
-ID,Description,Day1,Day2,Day 3,Day4,Day5,Day6,Day7,Day8,Day9,Day10
-,planlegging,12,,12,,,12,,,,
-,møter,,,,,6,,,,,
-148,The user has a functional home page,0,0,0,0,0,0,2.25,3,0,0
-,Add support for wall posts on server,0,0,0,0,0,0,0,4,0,0
-,Add support for wall posts on client,0,0,0,0,0,0,0,0,0,0
-,Populate wall on event,0,0,0,0,0,0,0,0,0,0
-146,Administration,0,0,0,0,0,0,0,0,0,0
-,Add tasks from friday to yodiz,0,0,0,0,0,0.75,0,0,0,0
-145,General improvements,0,0,0,0,0,0,0,0,0,0
-,Change the spinner text/ style,0,0,0,0,0,0.5,0,0,0,0
-,Update devices user id when the user logs on to facebook for the first time,0,0,0,0,0,0.25,0,0,0,0
-,Add usage tab: input field for kWh cant even hold 2 digits. Remove the arrow thingys and have a clean input field?,0,0,0,0,0,0,0,1,0,0
-,Add usage tab: when the keyboard opens the add usage button looks bad,0,0,0,0,0,0,0,0,0,1
-,Update the look on the homepage,0,0,0,0,0,0,0,4,0,2.25
-142,Language support,0,0,0,0,0,0,0,0,0,0
-,Translate usage changes,0,0,0,0,0,0,1,0,0,0
-,Translate device tab changes,0,0,0,1,0,0,0,0,0,0
-,Fix missing translations,0,0,0,0,0,0,1,1,0,0
-129,Final version of report,0,0,0,0,0,0,0,0,0,0
+x\cellcolor{lightgray},planlegging\cellcolor{lightgray},12\cellcolor{lightgray},0\cellcolor{lightgray},12\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},12\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
+x\cellcolor{lightgray},møter\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},6\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
+
+
+104\cellcolor{lightgray},Refactor and optimizing\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
+
+106\cellcolor{lightgray},Bug fixing and testing\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},5\cellcolor{lightgray},0\cellcolor{lightgray},4.5\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},8\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
+
+114\cellcolor{lightgray},Profile tab\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1.25\cellcolor{lightgray},\cellcolor{lightgray},3\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},\cellcolor{lightgray}0
+,hide share function when not logged on to FB,0,0,0,1.25,0,0,0,0,0,0
+,Weeks bugged in the line graph,0,0,0,0,0,2,0,0,0,0
+,Line graph start at wrong place,0,0,0,0,0,1,0,0,0,0
+
+129\cellcolor{lightgray},Final version of report\cellcolor{lightgray},0.75\cellcolor{lightgray},3.75\cellcolor{lightgray},11.75\cellcolor{lightgray},7.75\cellcolor{lightgray},2.25\cellcolor{lightgray},24.5\cellcolor{lightgray},1.5\cellcolor{lightgray},12.75\cellcolor{lightgray},7\cellcolor{lightgray},25.25\cellcolor{lightgray}
 ,Technical documentation,0,0,0,0,0,0.75,0,0,0,0
-,Remove unnecessary links,0,0,0,0,0,0,0,0,0.5,0
-,revise report,0,0,0,0,0,0,0,0.5,0.5,4.5
+,revise report,0,0,0,0,0,0,0,0.5,1,4.5
 ,User Manual - write overview of the usagetab,0,0,0.5,0,0,0,0,0,0,0
-,rewrite the use cases,0,0,0,0,1,0,0,0,0,0
+,rewrite use cases,0,0,0,0,1,0,0,0,0,0
 ,burndown charts,0,2.25,0,0,1,0,0,0.5,0,0
 ,User manual outline,0,0,1,0,0,0,0,0,1.5,0
-,Sprint 4 - summary,0,0,0.25,0,0,0,0,0,0,0
-,Sprint 5 - issues and solutions,0,0,0.25,0,0,0,0,0,0,0
+,Sprint - summary,0,0,0.75,0,0,0,0,0,0,0
+,Sprint - issues and solutions,0,0,0.5,0,0,0,0,0,0,1.5
+,Sprint  - work done,0,0,0.75,0,0,0.5,0,0,3,0
+,Sprint - review ,0,0,0.75,0,0,0.5,0,0,0,0
 ,Reviewed, rewrote and added todos in chapter 5,0.5,0,0,0,0,0,0,0,0,0.5
 ,add screenshot of existing solutions,0.75,1.5,0,0,0,0,0,0,0,2.75
-,Sprint 6 - summary,0,0,0.25,0,0,0,0,0,0,0
-,Sprint 6 - work done,0,0,0,0,0,0.5,0,0,0,0
-,Sprint 6 - review,0,0,0,0,0,0.25,0,0,0,0
-,Sprint 5 - summary,0,0,0.25,0,0,0,0,0,0,0
-,Sprint 5 - review,0,0,0.25,0,0,0,0,0,0,0
-,Sprint 5 - work done,0,0,0.5,0,0,0,0,0,3,0
-,Sprint 4 - work done,0,0,0.25,0,0,0,0,0,0,0
-,Sprint 4 - issues and solutions,0,0,0.25,0,0,0,0,0,0,1.5
-,Sprint 4 - review,0,0,0.5,0,0.25,0,0,0,0,0
 ,Fix sharelatex,0,0,0.5,0,0,0,0,0,0,0
 ,add further development outline,0,0,0,0,0,2,0,0,0,2.25
 ,Read through the report and add/fix todos,0,0,0,0,0,3,0,0,0,0
 ,Write status report for supervisor,0,0,1,0,0,0,0,0,0,0
 ,Restructure sprints,0,0,0,0,0,0,0,4,0,0
-,backlog for sprint 1,0,0,0,6.5,0,0,0,0,0,3.75
-,backlog for sprint 5,0,0,6,0,0,3,0,0,0,0
-,backlog sprint 4,0,0,0,0,0,2.75,0,0,0,1.5
-,backlog sprint 3,0,0,0,0,0,3.5,0,0,0,0
-,backlog sprint 2,0,0,0,0,0,0,1.5,0,0.5,0
-,Discuss restructure of report,0,0,0,1.25,0,0,1.5,0,0,0
-,Write about domain knowledge,0,0,0,0,1,0,0,0,0,0
-,Discuss restructure of report,0,0,0,0,0.25,0,0,0,0,0
-,Discuss restructure of report,0,0,0,0,0,1.75,0,0,0,0
-,Discuss report restructure,0,0,0,0,0,1.75,0,0,0,0
-,Fix design section in development process,0,0,0,0,0,0,0,2.75,0,4.75
+,backlog reformatting,0,0,6,6.5,0,10.75,0,0,0.5,5.25
+,Discuss restructure of report,0,0,0,1.25,0.25,3.5,1.5,0,0,0
+,design in development process,0,0,0,0,0,0,0,2.75,0,4.75
+,Write domain knowledge,0,0,0,0,1,0,0,0,0,0
 ,Report cleanup,0,0,0,0,0,0.5,0,0,1,0
 ,Fix small tasks after meeting,0,0,0,0,1,1,0,0,0,0
 ,Move most influential risks to retrospect,0,0,0,0,0,2,0,0,0,0
 ,report restructure,0,0,0,0,0,0,0,4.25,0,0
-,Update about the customer,0,0,0,0,0,0,0,0.25,0,0.25
+,Update about customer,0,0,0,0,0,0,0,0.25,0,0.25
 ,Update milestones,0,0,0,0,0,0,0,0.25,0,0
 ,Development envrionment intro + dropwizard contents,0,0,0,0,0,0,0,0.25,0,0
 ,add scrum illustration,0,0,0,0,0,0,0,0.25,0,0.75
 ,Add intro to 3.2,0,0,0,0,0,0,0,0,0,0.5
 ,Write sections in further development,0,0,0,0,0,0,0,0,0,2.25
 ,Read through the report conventions on github,0,0,0,0,0,0,0,0,0,0.5
-133,User has a concept device tab,0,0,0,0,0,0,0,0,0,0
+
+
+130\cellcolor{lightgray},Concept social tab\cellcolor{lightgray},2.25\cellcolor{lightgray},0\cellcolor{lightgray},4\cellcolor{lightgray},1.75\cellcolor{lightgray},0\cellcolor{lightgray},1.5\cellcolor{lightgray},1\cellcolor{lightgray},6.75\cellcolor{lightgray},0\cellcolor{lightgray},\cellcolor{lightgray}0
+,add "back" button in compare to others,0,0,0,0,0,1,1,3.75,0,0
+,Add actual FB data. Picture and friends list.,0,0,4,1.75,0,0,0,0,0,0
+,add comparison settings to hamburger menu(filter),2.25,0,0,0,0,0,0,0,0,0
+,"Filter" menu-item multiplies,0,0,0,0,0,0.5,0,3,0,0
+
+131\cellcolor{lightgray},Branding\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},2.25\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1.25\cellcolor{lightgray},1.5\cellcolor{lightgray},0\cellcolor{lightgray}
+,Make logo,0,0,0,0,1,0,0,0,1.5,0
+,Create icons,0,0,0,0,1.25,0,0,1.25,0,0
+
+133\cellcolor{lightgray},Concept device tab\cellcolor{lightgray},3\cellcolor{lightgray},6.25\cellcolor{lightgray},4\cellcolor{lightgray},5\cellcolor{lightgray},0\cellcolor{lightgray},3\cellcolor{lightgray},5\cellcolor{lightgray},9\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
 ,Work on the design,3,4,1,1,0,1,4,2,0,0
-,Fix bug: Category spinner always selects the first category when editing,0,0,1,0,0,0,0,0,0,0
+,Category spinner selects first category when editing,0,0,1,0,0,0,0,0,0,0
 ,Add delete option to devices,0,0,2,0,0,0,0,0,0,0
 ,Fix android device,0,1.25,0,0,0,1,1,3,0,0
-,Change name of editdialog from add dialog to edit dialog,0,1,0,0,0,0,0,0,0,0
+,Change name of edit dialog,0,1,0,0,0,0,0,0,0,0
 ,Implement number of devices indicator,0,0,0,2,0,0,0,0,0,0
-,Update the device tab to support an permament total usage instance,0,0,0,1,0,0,0,0,0,0
+,Update device tab to support permament total usage instance,0,0,0,1,0,0,0,0,0,0
 ,Add toasts for events,0,0,0,1,0,0,0,0,0,0
 ,Long clicking category craches the app,0,0,0,0,0,1,0,4,0,0
-130,The user has a concept social tab,0,0,0,0,0,0,0,0,0,0
-,add "back" button in compare to others,0,0,0,0,0,1,1,3.75,0,0
-,Add actual facebook data. Picture and friends list.,0,0,4,1.75,0,0,0,0,0,0
-,add comparison settings to hamburger menu(filter),2.25,0,0,0,0,0,0,0,0,0
-,fix bug with "Filter" menu-item multiplying when changing to another fragment/tab,0,0,0,0,0,0.5,0,3,0,0
-114,The user has a profile tab,0,0,0,0,0,0,0,0,0,0
-,Hide/Deactivate share function when not logged on to facebook,0,0,0,1.25,0,0,0,0,0,0
-,Weeks bugged in the line graph,0,0,0,0,0,2,0,0,0,0
-,Line graph starts at the wrong place,0,0,0,0,0,1,0,0,0,0
-131,Branding,0,0,0,0,0,0,0,0,0,0
-,Make logo,0,0,0,0,1,0,0,0,1.5,0
-,Create lighting icon,0,0,0,0,0.25,0,0,0,0,0
-,Redo tip-icon,0,0,0,0.75,0,0,0,0,0,0
-,upload icons,0,0,0,0,0.25,0,0,0,0,0
-,wattometer,0,0,0,0,0,0,0,1.25,0,0
-141,Complete design of tabs,0,0,0,0,0,0,0,0,0,0
+
+141\cellcolor{lightgray},Complete design of tabs\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1.75\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
 ,Revise design consistency,0,0,0,0,1.75,0,0,0,0,0
-106,Bug fixing,0,0,0,0,0,0,0,0,0,0
-,Bug fixing and testing,0,0,5,0,4.5,0,0,8,0,0
-104,Refactor and optimizing,0,0,0,0,0,0,0,0,0,0
+
+142\cellcolor{lightgray},Language support\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},2\cellcolor{lightgray},1\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
+,Translate usage changes,0,0,0,0,0,0,1,0,0,0
+,Translate device tab changes,0,0,0,1,0,0,0,0,0,0
+,Fix missing translations,0,0,0,0,0,0,1,1,0,0
+
+145\cellcolor{lightgray},General improvements\cellcolor{lightgray},0\cellcolor{lightgray},2\cellcolor{lightgray},2\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0.75\cellcolor{lightgray},4\cellcolor{lightgray},7.75\cellcolor{lightgray},0\cellcolor{lightgray},3.25\cellcolor{lightgray}
+,Change the spinner text/ style,0,0,0,0,0,0.5,0,0,0,0
+,Update device user id when user logs on to FB 1. time,0,0,0,0,0,0.25,0,0,0,0
+,input field for kWh cant even hold 2 digits.,0,0,0,0,0,0,0,1,0,0
+,when keyboard opens add usage button looks bad,0,0,0,0,0,0,0,0,0,1
+,Update look on the homepage,0,0,0,0,0,0,0,4,0,2.25
 ,Server configuration,0,0,0,0,0,0,0,2.75,0,0
 ,General optimizations,0,2,2,0,0,0,4,0,0,0
-,,18.5,12,38.75,17.5,18.25,43.75,17.25,53.75,8.5,29
+
+146\cellcolor{lightgray},Administration\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0.75\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},\cellcolor{lightgray}0
+,Add tasks from friday to yodiz,0,0,0,0,0,0.75,0,0,0,0
+
+148\cellcolor{lightgray},\cellcolor{lightgray}Functional home page,0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},2.25\cellcolor{lightgray},7\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
+,Add support for wall posts on server,0,0,0,0,0,0,0,4,0,0
+,Add support for wall posts on client,0,0,0,0,0,0,2.25,3,0,0
+%,Populate wall on event,0,0,0,0,0,0,0,0,0,0
+
+,Sum,18.5,12,38.75,17.5,18.25,43.75,17.25,53.75,8.5,29
