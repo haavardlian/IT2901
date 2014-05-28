@@ -1,6 +1,7 @@
 \section{Existing solutions}
 \label{sec:altsolution}
-Based on the product requirements the team worked out along with the customer, some research on existing solutions in the same market was done.\todo{Restructure?} This resulted in a list of the most relevant solutions, possibly competing with the team's own app.
+
+To get a full impression of what functionality our product should have, the team did some research on similar solutions that already existed on the market. The research was based on the product requirements the team worked out along with the customer, resulting in a list of the most relevant solutions.
  
 This list contains a brief overview of the functionalities and drawbacks of the existing solutions, summarized in table~\ref{tab:existingSolutions}. The team will use this study in alternative solutions as an inspiration for functionality and features to implement in the project app.
 
@@ -29,8 +30,7 @@ The NTE miniSolo energydisplay~\cite{nte} measures the total power usage real ti
 
 \subsection{Theowl}
 
-Theowl~\cite{theowl} mainly focuses on temperature control. 
-As that was not the only property the team would like to focus on, the solution lacked many of the features the team wanted to have in the app. Other drawbacks is that the product does not have any official support in Norway and also is beyond a reasonable price range. \todo{Rotete setninger?}
+Theowl~\cite{theowl} mainly focuses on temperature control. This was a drawback because the team also would like to focus on other properties, such as controlling individual devices. The product does not have any official support in Norway, and nor is it within a reasonable price range. 
 
 However, Theowl has an architecture with remote sensors that sends precise data and allow the user to control certain devices, which the team would like to consider for the app.
 
@@ -39,8 +39,7 @@ However, Theowl has an architecture with remote sensors that sends precise data 
 
 Smartly~\cite{smartly} allows the user to monitor and control things like temperature and lighting in the house, as shown in figure~\ref{fig:smartlya}. It also has an overview over total power consumption, as shown in figure~\ref{fig:smartlyb}.
 
-Smartly has several interesting features and concepts such as being able to turn on and turn off certain devices, functionality for displaying money saved and the design is well designed and user friendly. It does however lack the functionality to monitor the power usage of single devices.
-\todo{Skrev om dette, sjekk at det er greit}
+Smartly has several interesting features and concepts, such as being able to turn on and off certain devices, and functionality for displaying money saved. The graphical user interface is also well designed and user friendly. It does however lack the functionality to monitor the power usage of single devices, which might be a disadvantage.
 
 \begin{figure}[H]
 \addcontentsline{lof}{figure}{2.1\hspace{4mm}Smartly screenshots}
@@ -74,6 +73,10 @@ However, OpenEnergyMonitor offers no automatic collection of data - the user wou
 
 \newpage
 
+\subsection{Efergy}
+
+Efergy~\cite{efergy} was considered to be the solution that was closest to what the team wanted to develop. As shown in figure~\ref{fig:efergyGUI}, it has nice visual representation of data, and it offers social integration. The architecture is interesting, as it supports measuring the power usage of single devices over wireless radio through a local receiver. The receiver is connected to a server on the Internet. Unfortunately, it lacks the ability to monitor and control private power production. It is also beyond a reasonable price range.
+
 
 \begin{figure}[H]
 \centering
@@ -82,12 +85,6 @@ However, OpenEnergyMonitor offers no automatic collection of data - the user wou
 \label{fig:efergyGUI}
 \end{figure}
 
-\todo{Bilde over teksten? litt inkonsistent, er det bevist?}
-
-\subsection{Efergy}
-
-Efergy~\cite{efergy} was considered to be the closest solution to what the team wanted to develop. As shown in figure~\ref{fig:efergyGUI}, it has nice visual representation of data, and it offers social integration. The architecture is interesting, as it supports measuring the power usage of single devices over wireless radio through a local receiver. The receiver is connected to a server on the Internet. Unfortunately, it lacks the ability to monitor and control private power production. It is also beyond a reasonable price range.
-\todo{Endret på}
 
 
 
