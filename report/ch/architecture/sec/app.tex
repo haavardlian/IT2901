@@ -44,7 +44,6 @@ Data access to the underlying database is done using ContentProviders~\cite{cont
 ContentProviders contains a lot of boilerplate code and is time consuming to code. But the upsides far outweigh the downsides. When ContentProviders are used with LoaderManager one gets a view that is automatically updated when the data changes without bothering the UI thread. Other solutions are to work directly on the SQLite driver with SQL, or use a pattern to make it work fluently. One such pattern is discussed in the next section. 
 
 \subsection{Business logic}
-\todo{Problems?}
 After having a uniform access model to the database, the issue of where to place the actual business logic (data manipulation) must be tackled. Keeping the business logic in one generic place makes doing changes easier, and avoids the issue of knowing where every data operation is done that must be updated. Doing that can also create hard to find bugs. Following a smart design pattern will handle your business logic and make it easy to update the view. 
 The team decided to use the pattern Model-View-Presenter (MVP). MVP is a Model-View-Controller (MVC) derivative~\cite{mvc}. All business logic is handled in presenter classes, between the views and models. Through this uniform access, all logic applied to data preservation (server synchronization), and data control can be handled in one place. The life cycle of the presenter classes is in the base Activity class, and all other sub fragments can get access to it though a interface. 
 This pushes almost all logic into the presenters, making the code in the fragments as minimal as possible. 
@@ -57,7 +56,7 @@ MVP also makes updating the view easy when the data changes. But since all data 
 \end{figure}
 
 \subsection{User authentication}
-The app needs to backup data on a server. Our server~\ref{sec:arch_server} exposes a restful API were data can be backed up.
+The app needs to backup data on a server. Our server, as explained in chapter~\ref{sec:arch_server}, exposes a restful API were data can be backed up.
 
 The first problem that arises with backing up data is that the user must be identified as a specific user. The choice was made not to make our own authenticator. By using a third party authenticator to handle user and user id with OAuthV2.0 we made the device authentication token based. 
 For the time being the third party authenticator is Facebook and the Facebook session is maintained with the FacebookSDK for Android. 
