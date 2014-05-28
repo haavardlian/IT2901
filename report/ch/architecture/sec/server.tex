@@ -3,7 +3,7 @@
 The servers is the systems back-end it is responsible for permanently storing data and providing it to the user on demand. The team decided that the server should be RESTful in order the make accessing it easier. The data-interchange format chosen to transfer data between the app and the server is JSON. This format was chosen for its human readability and it is also very easily parsed by computer software.
 
 \subsubsection{Dropwizard}
-The server is implemented in Dropwizard which is a Java framework for making RESTful web services. Dropwizard was chosen for its use of popular Java libraries to implement its functionality such as Jetty, Jersey, and Jackson. The main class of the server is a service that at runtime defines the database access and all the resources to server will use. The main structure of how the server uses resources and the database can be found in figure~\ref{fig:classDiagramServer}.
+The server is implemented in Dropwizard which is a Java framework for making RESTful web services. Dropwizard was chosen for its use of popular Java libraries such as Jetty, Jersey, and Jackson to implement its functionality. The main class of the server is a service that at runtime provides access to the database and adds resources to the runtime environment. The main structure of how the server uses resources and the database can be found in figure~\ref{fig:classDiagramServer}.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/classDiagramServer.png}
@@ -13,7 +13,6 @@ The server is implemented in Dropwizard which is a Java framework for making RES
 
 \paragraph{Resources}
 A Dropwizard implementation has a set of resource classes. These classes contain methods that map to a URI path. When the server receives a HTTP request it will try the match the path to the paths defined by the resource methods, it will then call the method found or return a 404 Not Found error. An example resource class is included in code~\ref{lst:dropwizardResource}. The method in this resource will handle HTTP GET calls to /user/{user}/sync/usage/{timestamp} where {user} and {timestamp} matches any text. These variables is then used inside the method to perform actions depending on user and time stamp.
-\newpage
 
 \begin{lstlisting}[caption={Dropwizard resource example}, label={lst:dropwizardResource}]
 @Path("user/{user}/sync")
