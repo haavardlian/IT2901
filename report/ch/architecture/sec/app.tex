@@ -57,7 +57,7 @@ MVP also makes updating the view easy when the data changes. But since all data 
 \end{figure}
 
 \subsection{User authentication}
-The app needs to backup data on a server. Our server~\ref{sec:arch_server} exposes a restful API were data can be backed up.
+The app needs to backup data on a server. Our server, as explained in chapter~\ref{sec:arch_server}, exposes a restful API were data can be backed up.
 
 The first problem that arises with backing up data is that the user must be identified as a specific user. The choice was made not to make our own authenticator. By using a third party authenticator to handle user and user id with OAuthV2.0 we made the device authentication token based. 
 For the time being the third party authenticator is Facebook and the Facebook session is maintained with the FacebookSDK for Android. 
