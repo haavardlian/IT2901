@@ -22,7 +22,7 @@ The following instructions assume that the previously listed requirements are in
   \item[Build project] \hfill \\
   The systems server should be build using Apache Maven. Navigate into the "server" directory and build the server by running "mvn package"
   \item[Configure server] \hfill \\
-  Traffic between the server and clients run on port 8080. Make sure this port is open in the computer's and network's firewall. Configure the included config.json file, found in the newly built project, to match the settings of your database. Run "java -jar server.jar db migrate config.json" to create the tables needed for running the server. 
+  Configure the included config.json file, found in the root of the server project, to match the settings of your database and http port needs. Run "java -jar target/server-1.0.jar db migrate config.json" from the root directory to create the tables needed for running the server. 
   
 \end{description}
 

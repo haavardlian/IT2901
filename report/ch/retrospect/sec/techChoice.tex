@@ -1,13 +1,23 @@
 \section{Technical choices}
 Even though the team aimed to plan well and make informed decisions before development started, some changes had to be made on the fly. This section shows the reasoning behind both the planned decisions and the ones made during development.
 
-\subsection{Change in architecture}
-\todo{We changed the architecture during the process, we should write about that and why here, do we think we chose the best one? We chose to create a provider, do we feel it was worth all the extra time it took? Her må noen som kan litt mer om endringene enn meg skrive litt.}
+\subsection{Choices of architecture}
+\subsubsection{The app}
+A good deal of decisions made on the Android side of the project turned out to be reasonable. As one of the team members had previous experience, pit falls could be avoided. The problem was that some of the Android building blocks are specific to the Android platform. Starting to use these building blocks can seem unintuitive unless you know about the alternatives and the problems these can cause. In retrospect, we should have devoted the first couple of sprints not only to research, but also to learn how Android works. A lot of resources could have been saved if the entire team had a clearer understanding of Android from the beginning of the project.
+
+\subsubsection{Server side}
+
+The decision to implement the server in Dropwizard is reasonable as long as the server is meant to provide a RESTful interface. There are other choices, but every solution usually includes some/all of the libraries used in Dropwizard (Jersey, Jackson, Jetty). One could also create the server from scratch and use a stand alone HTTP server, but this was not feasible in the time frame of this project, and would have been a huge waste of resources considering how well Dropwizard works.
+
+\subsubsection{In-house devices}
+In the beginning the team designed a complete architecture with a server, Android app, and device monitoring that communicated new data to the server. This would have been a minimum viable complete solution. However device monitoring showed itself to be unrealistic within the time frame of the project. The team decided to drop the feature entirely after a consulting with the customer. As mentioned in section~\ref{sec:obtainingreq}, this requirement was optional.
+
+After learning more about the Cossmic project, we realized that a solution for that was already under development, and that we could have tried to interface to these devices, or at least designed our server to have interoperability with it. But as this information was not available to us in the first sprints, it was not done. Instead, further development is documented in chapter~\ref{sec:further}.
 
 \subsection{Choice of Android IDE}
-The team agreed on using Android studio from the beginning, after discussing whether to use Android studio or Eclipse with an ADT. The reasoning was that Android Studio has features such as a faster compiler, a better search function and better auto completion of code than Eclipse ADT. In the beginning there were some problems with Android Studio. Some team members had trouble actually building and running the app. There was a problem with an Android Studio update which resulted in Gradle not being able to sync, and ultimately failing to build the project. This took some time to solve, but after it was solved the team had no more trouble with it. However, since Android Studio is a relatively new IDE, and still in beta, it still has some bugs and is updated frequently.
+The team agreed on using Android studio from the beginning, after discussing whether to use Android studio or Eclipse with ADT (Android development tools). The reasoning was that Android Studio has features such as a better search function, better auto completion of code, and better integration to the Android toolchain. In the beginning there were some problems with Android Studio. Some team members had trouble actually building and running the app. There was a problem with an Android Studio update which resulted in Gradle not being able to set up the project, and ultimately failing to build the project. This took some time to solve, but after it was solved the team had no more trouble with it. However, since Android Studio is a relatively new IDE, and still in beta, it still has some bugs and is updated frequently.
 
 As the project has progressed, it has become clear that the learning curve was not as steep as expected. Development would likely not have been any faster if we had chosen Eclipse.
 
-\subsection{Choice of GitHub for code management}
-By taking the customer's opinion in this matter into consideration, we were be more able to give the customer a better overview of the project and also to easily integrate our app into the customer's existing project. As a result, both the team and the customer were updated on the last version of the project and the team was more likely to receive relevant feedback. 
+%\subsection{Choice of GitHub for code management}
+%By taking the customer's opinion in this matter into consideration, we were able to give the customer a better overview of the project and also to easily integrate our app into the customer's existing project. As a result, both the team and the customer were updated on the last version of the project and the team was more likely to receive relevant feedback. 
