@@ -6,7 +6,8 @@ Even though the team aimed to plan well and make informed decisions before devel
 A good deal of decision on the Android platform was reasonable. As one of the team members had previous experience with the pit falls to avoid. The problem was that some of the Android building blocks are specific to the Android platform. The first time using them can seem foreign, and unnecessary if one does not know the problems of the alternatives. The first sprints of the project should have focused more on having a learning process with the entire team, so everyone could have been certain from the beginning why the choices was made.
 
 \subsubsection{Server side}
-\todo{HERPADERPA: HÅVARD}
+
+The decision to implement the server in Dropwizard is reasonable as long the server should provide a RESTful interface. There are other choices, but every solution usually includes some/all of the libraries used in Dropwizard (Jersey, Jackson, Jetty). One could also create the server from scratch and use a stand alone HTTP server, but this was not feasible in the time frame of this project. 
 
 \subsubsection{In-house devices}
 In the beginning we had decided to make a complete architecture with a server, Android app, and device monitoring that communicated new data to the server. This would have been a minimum viable complete solution. However device monitoring showed itself to be unrealistic within the time frame of the project. The team decided to drop the feature entirely after a while. The customer had from the beginning said that it was an optional feature if we had time, and as the app was prioritized, it was acceptable to drop it.
