@@ -1,13 +1,26 @@
 \section{Technical choices}
 Even though the team aimed to plan well and make informed decisions before development started, some changes had to be made on the fly. This section shows the reasoning behind both the planned decisions and the ones made during development.
 
-\subsection{Change in architecture}
-\todo{We changed the architecture during the process, we should write about that and why here, do we think we chose the best one? We chose to create a provider, do we feel it was worth all the extra time it took? Her må noen som kan litt mer om endringene enn meg skrive litt.}
+\subsection{Choices of architecture}
+
+\subsubsection{The app}
+
+A good deal of decision on the Android platform was reasonable. As one of the team members had previous experience with the pit falls to avoid. The problem was that some of the Android building blocks are specific to the Android platform. The first time using them can seem foreign, and unnecessary if one does not know the problems of the alternatives. The first sprints of the project should have focused more on having a learning process with the entire team, so everyone could have been certain from the beginning why the choices was made.
+
+\subsubsection{Server side}
+
+\todo{HERPADERPA: HÅVARD}
+
+\subsubsection{In-house devices}
+
+In the beginning we had decided to make a complete architecture with a server, Android app, and device monitoring that communicated new data to the server. This would have been a minimum viable complete solution. However device monitoring showed itself to be unrealistic within the time frame of the project. The team decided to drop the feature entirely after a while. The customer had from the beginning said that it was an optional feature if we had time, and as the app was prioritized, it was acceptable to drop it.
+
+After learning more about the Cossmic project, we saw that a solution for that was already on the way, and we could have tried to interface to these devices, or at least designed our server to have interoperability with it. But as this information was not available to us in the first sprints, it was not done. 
 
 \subsection{Choice of Android IDE}
-The team agreed on using Android studio from the beginning, after discussing whether to use Android studio or Eclipse with an ADT. The reasoning was that Android Studio has features such as a faster compiler, a better search function and better auto completion of code than Eclipse ADT. In the beginning there were some problems with Android Studio. Some team members had trouble actually building and running the app. There was a problem with an Android Studio update which resulted in Gradle not being able to sync, and ultimately failing to build the project. This took some time to solve, but after it was solved the team had no more trouble with it. However, since Android Studio is a relatively new IDE, and still in beta, it still has some bugs and is updated frequently.
+The team agreed on using Android studio from the beginning, after discussing whether to use Android studio or Eclipse with ADT (Android development tools). The reasoning was that Android Studio has features such as a better search function, better auto completion of code, and better integration to the Android toolchain. In the beginning there were some problems with Android Studio. Some team members had trouble actually building and running the app. There was a problem with an Android Studio update which resulted in Gradle not being able to set up the project, and ultimately failing to build the project. This took some time to solve, but after it was solved the team had no more trouble with it. However, since Android Studio is a relatively new IDE, and still in beta, it still has some bugs and is updated frequently.
 
 As the project has progressed, it has become clear that the learning curve was not as steep as expected. Development would likely not have been any faster if we had chosen Eclipse.
 
-\subsection{Choice of GitHub for code management}
-By taking the customer's opinion in this matter into consideration, we were be more able to give the customer a better overview of the project and also to easily integrate our app into the customer's existing project. As a result, both the team and the customer were updated on the last version of the project and the team was more likely to receive relevant feedback. 
+%\subsection{Choice of GitHub for code management}
+%By taking the customer's opinion in this matter into consideration, we were able to give the customer a better overview of the project and also to easily integrate our app into the customer's existing project. As a result, both the team and the customer were updated on the last version of the project and the team was more likely to receive relevant feedback. 
