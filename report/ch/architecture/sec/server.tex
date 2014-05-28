@@ -1,6 +1,6 @@
 \label{sec:arch_server}
 \subsection{Server architecture}
-The servers is the systems back-end it is responsible for permanently storing data and providing it to the user on demand. The team decided that the server should be RESTful in order the make accessing it easier. The data-interchange format chosen to transfer data between the app and the server is JSON. This format was chosen for its human readability and it is also very easily parsed by computer software.
+The server is the systems back-end it is responsible for permanently storing data and providing it to the user on demand. The team decided that the server should be RESTful in order to make it easy to access. The data-interchange format chosen to transfer data between the app and the server is JSON. This format was chosen for its human readability and it is also very easily parsed by computer software. In addition, both these properties allow for easy integration with future functionality.
 
 \subsubsection{Dropwizard}
 The server is implemented in Dropwizard which is a Java framework for making RESTful web services. Dropwizard was chosen for its use of popular Java libraries such as Jetty, Jersey, and Jackson to implement its functionality. The main class of the server is a service that at runtime provides access to the database and adds resources to the runtime environment. The main structure of how the server uses resources and the database can be found in figure~\ref{fig:classDiagramServer}.
@@ -35,7 +35,7 @@ public class SyncResource {
 \end{lstlisting}
 
 \paragraph{Database abstraction}
-Dropwizard uses the JDBC and JDBI libraries to communicate with the database. The JDBC is Javas standard interface to databases and MySQL provides a driver for JDBC in order to make communication possible. JDBI is a convenience layer on top of JDBC which makes it possible to write an interface with SQL queries and use that interface as a data access object.
+Dropwizard uses the JDBC and JDBI libraries to communicate with the database. The JDBC library is Javas standard interface to databases. MySQL provides a driver for JDBC in order to make communication possible. JDBI is a convenience layer on top of JDBC which makes it possible to write an interface with SQL queries and use that interface as a data access object.
 
 \subsubsection{Database}
 For permanent storage the server uses MySQL. MySQL is a reliable and easy to set up database. A diagram of how the database is designed can be found in figure~\ref{fig:ER-Diagram}
