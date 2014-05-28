@@ -80,11 +80,12 @@ Data synchronization is done by using Androids built in SyncAdapter. The SyncAda
 
 Communication to the database is still done through a ContentProvider. Since the changes will affect the URI, the view will get the new data and be rendered again automatically if the the app is running. 
 
-The algorithm for how the data synchronization is done is showed as pseudo code in figure~\ref{fig:algorithm_sync}
+The algorithm for how the data synchronization is done is showed as pseudo code in figure~\ref{fig:algorithm_sync}.
 
 %Pseudo code for the sync
-\begin{figure}[H]
-\begin{lstlisting}[]
+
+\noindent\begin{minipage}{\textwidth}
+\begin{lstlisting}[caption={Algorithm for the synchronization flow.}, label={fig:algorithm_sync}]
 var lastSync = Last synchronization time stamp from account
 var now = Current time in Unix epoch
 
@@ -99,9 +100,7 @@ saveModelsToLocalDB(serverDataModels)
 if no errors
   accountLastSync = now
 \end{lstlisting}
-\caption{Algorithm for the synchronization flow.}
-\label{fig:algorithm_sync}
-\end{figure}
+\end{minipage}
 
 The algorithm is straightforward and will retry data synchronization until it does not fail. The reason for that is that the synchronization time stamp only will be updated when everything goes well. If the error checking fails and the last synchronization time stamp fails, then data will be lost. 
 This is not a perfect approach to synchronization, but acceptable within the time frame that it was needed. 
