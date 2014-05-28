@@ -25,7 +25,7 @@ Efergy & Yes & Yes &  No & Yes\\\hline
 
 \subsection{NTE miniSolo energydisplay}
 
-The NTE miniSolo energydisplay~\cite{nte} measures the total power usage real time and allows the user to power off devices to see the effect the device has on the total power consumption. It offers some interesting features like detailed power consumption and a relation to how much money the power usage amounts to, which the team also want to have in the app. However, the miniSolo energydisplay has some drawbacks: It is linked to a proprietary device and has no Android app. These drawbacks made the solution incompatible with the team's app.
+The NTE miniSolo energydisplay~\cite{nte} measures the total power usage real time and allows the user to power off devices to see the effect the device has on the total power consumption. It offers some interesting features like detailed power consumption and an overview of how much money the power usage amounts to, which the team also want to have in the app. However, the miniSolo energydisplay has some drawbacks: It is linked to a proprietary device and has no Android app. These drawbacks made the solution incompatible with the team's app.
 
 
 \subsection{Theowl}
@@ -50,15 +50,16 @@ Smartly has several interesting features and concepts, such as being able to tur
 \quad
   \subbottom[\label{fig:smartlyb} Screenshot of Smartly's consumption overview.]{%
 \includegraphics[width=0.35\textwidth, trim=0cm 12cm 13cm 0cm, clip]{ch/prestudy/fig/smartlyConsume.pdf}}
+\caption{Screenshots from the Smartly solution}
 \end{figure}
 \newpage
 
 
 \subsection{OpenEnergyMonitor}
 \label{sec:openenergymonitor}
-OpenEnergyMonitor~\cite{openenergymonitor} is an open source project that allows data collection from power outages. Some of the architecture for collecting data can be an interesting option to consider if improved. The architecture, shown in figure~\ref{fig:oem}, is somewhat similar to what the team itself imagined to use in the app. 
+OpenEnergyMonitor~\cite{openenergymonitor} is an open source project that allows data collection from power outages. Some of the architecture for collecting data can be an interesting option to consider, after some improvements. The architecture, shown in figure~\ref{fig:oem}, is somewhat similar to what the team imagined using in the app. This solution also has an app for processing, logging and visualizing energy usage, all features the team wanted to have in the app.
 
-However, OpenEnergyMonitor offers no automatic collection of data - the user would have to manually go around his house to collect the data. It is also somewhat hard to set up, which would make the solution not very user friendly for the average consumer. This solution also has an app for processing, logging and visualizing energy usage. These are features the team wanted to have in the app.
+However, OpenEnergyMonitor offers no automatic collection of data - the user would have to manually go around his house to collect the data. It is also somewhat hard to set up, which would make the solution not very user friendly for the average consumer. 
 
 \setcounter{figure}{1}
 \begin{figure}[H]
@@ -67,8 +68,6 @@ However, OpenEnergyMonitor offers no automatic collection of data - the user wou
 \caption{OpenEnergyMonitor's system architecture}
 \label{fig:oem}
 \end{figure}
-
-
 
 
 \newpage
@@ -80,7 +79,7 @@ Efergy~\cite{efergy} was considered to be the solution that was closest to what 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=13cm, trim=0.5cm 12cm 3cm 0.7cm, clip]{ch/prestudy/fig/efergy.pdf}
+\includegraphics[width=13cm, trim=0.4cm 12cm 3cm 0.7cm, clip]{ch/prestudy/fig/efergy.pdf}
 \caption{Screenshot of the Efergy Engage GUI}
 \label{fig:efergyGUI}
 \end{figure}
