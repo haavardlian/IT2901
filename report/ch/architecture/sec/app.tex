@@ -73,12 +73,12 @@ Other OAuthV2.0 authentication providers can also be used (Twitter, Google, your
 
 All the user data is saved on the server. Communication to server is done with a framework named Volley. It is created by Google and the source code resides within AOSP (Android Open Source Project). It is made to make communication with restful endpoints easier.
 
-Most of all server access is done when synchronizing data with the server~\ref{fig:architecture}. 
+Most of all server access is done when synchronizing data with the server. 
 Data synchronization is done by using Androids built in SyncAdapter. The SyncAdapter is a self-contained process that that fetches and delivers all new data to and from the server. The SyncAdapter is registered to a specific account on the Android system. The account will then provide the session data that will identify the user to the server. How the session data was acquired was explained in the last section. For the time being only the Facebook id is used when communicating with the server. This is not secure in any way. But changing this to use the token and make the server find the user id based on the token is a easy next step to make.
 
 Communication to the database is still done through a ContentProvider. Since the changes will affect the URI, the view will get the new data and be rendered again automatically if the the app is running. 
 
-The algorithm for how the data synchronization is done is showed as pseudo code in figure~\ref{fig:algorithm_sync}.
+The algorithm for how the data synchronization is done is showed as pseudo code in code snippet~\ref{fig:algorithm_sync}.
 
 %Pseudo code for the sync
 
