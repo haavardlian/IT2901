@@ -1,9 +1,9 @@
 \section{Existing solutions}
 \label{sec:altsolution}
 
-To get a full impression of what functionality our product should have, the team did some research on similar solutions that already existed on the market. The research was based on the product requirements the team worked out along with the customer, resulting in a list of the most relevant solutions.
+To get a full impression of what functionality our product should have, the team did some research on similar solutions that already existed on the market. The research was based on the product requirements the team worked out with the customer, resulting in a list of the most relevant solutions.
  
-This list contains a brief overview of the functionalities and drawbacks of the existing solutions, summarized in table~\ref{tab:existingSolutions}. The team will use this study in alternative solutions as an inspiration for functionality and features to implement in the project app.
+This list contains a brief overview of the functionalities and drawbacks of existing solutions, summarized in table~\ref{tab:existingSolutions}. The team will use this study in alternative solutions as an inspiration for functionality and features to implement in the project app.
 
 
 \begin{table}[H]
@@ -25,21 +25,21 @@ Efergy & Yes & Yes &  No & Yes\\\hline
 
 \subsection{NTE miniSolo energydisplay}
 
-The NTE miniSolo energydisplay~\cite{nte} measures the total power usage real time and allows the user to power off devices to see the effect the device has on the total power consumption. It offers some interesting features like detailed power consumption and an overview of how much money the power usage amounts to, which the team also want to have in the app. However, the miniSolo energydisplay has some drawbacks: It is linked to a proprietary device and has no Android app. These drawbacks made the solution incompatible with the team's app.
+The NTE miniSolo energydisplay~\cite{nte} measures the total power usage real time and allows the user to power off devices to see the effect the device has on the total power consumption. It offers some interesting features like detailed power consumption and an overview of how much money the power usage amounts to, which the team also want to have in the app. However, the miniSolo energydisplay has some drawbacks: It is linked to a proprietary device and has no Android app. These drawbacks made the solution incompatible with the team's project.
 
 
 \subsection{Theowl}
 
-Theowl~\cite{theowl} mainly focuses on temperature control. This was a drawback because the team also would like to focus on other properties, such as controlling individual devices. The product does not have any official support in Norway, and nor is it within a reasonable price range. 
+Theowl~\cite{theowl} mainly focuses on temperature control. This was a drawback because the team would like to focus on other properties, such as controlling individual devices. The product does not have any official support in Norway, and it is not within a reasonable price range. 
 
-However, Theowl has an architecture with remote sensors that sends precise data and allow the user to control certain devices, which the team would like to consider for the app.
+However, Theowl has an architecture with remote sensors that sends precise data and allow the user to control certain devices, which the team would like to consider for the project.
 
 
 \subsection{Smartly}
 
-Smartly~\cite{smartly} allows the user to monitor and control things like temperature and lighting in the house, as shown in figure~\ref{fig:smartlya}. It also has an overview over total power consumption, as shown in figure~\ref{fig:smartlyb}.
+Smartly~\cite{smartly} allows the user to monitor and control things like temperature and lighting in the house, as shown in figure~\ref{fig:smartlya}. It has an overview over the total power consumption as well, as shown in figure~\ref{fig:smartlyb}.
 
-Smartly has several interesting features and concepts, such as being able to turn on and off certain devices, and functionality for displaying money saved. The graphical user interface is also well designed and user friendly. It does however lack the functionality to monitor the power usage of single devices, which might be a disadvantage.
+Smartly has several interesting features and concepts, such as being able to turn on and off certain devices, and functionality for displaying money saved. The graphical user interface is also well designed and user friendly. It does however lack the functionality to monitor the power usage of single devices.
 
 \begin{figure}[H]
 \addcontentsline{lof}{figure}{2.1\hspace{4mm}Smartly screenshots}
@@ -57,9 +57,9 @@ Smartly has several interesting features and concepts, such as being able to tur
 
 \subsection{OpenEnergyMonitor}
 \label{sec:openenergymonitor}
-OpenEnergyMonitor~\cite{openenergymonitor} is an open source project that allows data collection from power outages. Some of the architecture for collecting data can be an interesting option to consider, after some improvements. The architecture, shown in figure~\ref{fig:oem}, is somewhat similar to what the team imagined using in the app. This solution also has an app for processing, logging and visualizing energy usage, all features the team wanted to have in the app.
+OpenEnergyMonitor~\cite{openenergymonitor} is an open source project that allows data collection from power outages. Some of the architecture for collecting data can, with some improvements, be an interesting option to consider. The architecture, shown in figure~\ref{fig:oem}, is somewhat similar to what the team imagined using in the project. This solution also has an application for processing, logging and visualizing energy usage.
 
-However, OpenEnergyMonitor offers no automatic collection of data - the user would have to manually go around his house to collect the data. It is also somewhat hard to set up, which would make the solution not very user friendly for the average consumer. 
+However, OpenEnergyMonitor offers no automatic collection of data - the user would have to manually go around his house to collect the data. The solution is somewhat hard to set up and not very user friendly for the average consumer. 
 
 \setcounter{figure}{1}
 \begin{figure}[H]
@@ -74,7 +74,7 @@ However, OpenEnergyMonitor offers no automatic collection of data - the user wou
 
 \subsection{Efergy}
 
-Efergy~\cite{efergy} was considered to be the solution that was closest to what the team wanted to develop. As shown in figure~\ref{fig:efergyGUI}, it has nice visual representation of data, and it offers social integration. The architecture is interesting, as it supports measuring the power usage of single devices over wireless radio through a local receiver. The receiver is connected to a server on the Internet. Unfortunately, it lacks the ability to monitor and control private power production. It is also beyond a reasonable price range.
+Efergy~\cite{efergy} was considered to be the solution that was closest to what the team wanted to develop. As shown in figure~\ref{fig:efergyGUI}, it has a nice visual representation of data, and it offers social integration. The architecture is interesting, as it  has support for measuring the power usage of single devices over wireless radio through a local receiver. The receiver collects the data and sends it to a server on the Internet. Unfortunately, this solution lacks the ability to monitor and control private power production. It is also beyond a reasonable price range.
 
 
 \begin{figure}[H]
