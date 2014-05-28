@@ -1,16 +1,16 @@
 \subsection{Extreme Programming}
-The XP approach has several principles we practiced throughout the duration of the project. A brief summary of these principles are given in table~\ref{tab:exProg}. In the subsequent sections we describe how we used these principles in our project and the modifications we made in order to adjust this approach to our project.
+The XP approach has several principles the team practiced throughout the duration of the project. A brief summary of these principles are given in table~\ref{tab:exProg}. Further details on how the team used these principles in the project and the modifications that were made in order to adjust this approach to the project may be found in section~\ref{sec:adapExtremeProgr}.
 
 \begin{table}[H]
 \rowcolors{0}{darkgray}{lightgray}
 \begin{tabular}{|p{4cm}|p{11.7cm}|}
 \hline
-Principle & Description \\\hline
+\textbf{Principle} & \textbf{Description} \\\hline
 Pair programming & Developers work in pairs and continuously checks each other's work.\\\hline
 Planning game & Involves the whole team in the planning process. The plan is developed incrementally and, if problems should arise, adjusted so the software functionality is reduced instead of delaying the delivery.
 \\\hline
 Continuous integration and collective ownership& As soon as a task is completed, it is to be integrated into the whole system\\\hline
-Design improvement and optimization & Continuously refactor code as soon as possible code improvements are found and to leave the optimization process to last. \\\hline
+Design improvement and optimization & Continuously refactor code as soon as code improvements are found and leave the optimization process to last. \\\hline
 Small releases & Develop a minimal useful set of functionality first. Releases of the system are frequent and incrementally add functionality to the first release.\\\hline
 Simple design & The only design that is to be carried out is the design that meets the current requirements\\\hline
 Sustainable pace & Avoiding large amounts of overtime, as it is likely to result in reduction of the code quality and less productivity. \\\hline
@@ -20,34 +20,3 @@ On-site customer & The customer should be available full time for the use of the
 \caption{Principles in extreme programming}
 \label{tab:exProg}
 \end{table}
-
-\subsubsection{Pair programming}
-The team has practiced this principle by dividing the team into small groups or pairs when designing prototypes, deciding on architecture and in a few cases, collaborated on code sections.
-
-\subsubsection{Planning game}
-The team interpreted the planning game in XP to be a more generic description of planning methods. We therefore argue that planning poker, which the team have used for estimating the tasks, is a more specific implementation of the planning game in XP. Amongst other, one of the most important aspects of planning poker is that no team member should not know what the rest of the team choose to estimate in order to avoid the influence of the other participants. This aspect is not mentioned in the planning game specification in XP.
-
-\subsubsection{Continuous integration and collective ownership}
-The team has practiced this principle by working on code on separate branches in Git and merged these branches in a master-branch when a task was considered to be completed.
-
-The team has also practiced the collective ownership principle by sharing and collaborating on the project's code on GitHub. In addition, we agreed with the customer on following the Java code convention and Android code convention in the development.
-
-\subsubsection{Design improvement and optimization}
-The team has continuously followed this practice and also practiced it during design improvements in the development of prototypes.
- 
-\subsubsection{Small releases}
-The team has followed this practice by having sprints with a duration of two weeks, with a release for each sprint.
-
-
-\subsubsection{Simple design}
-Although the team worked iteratively and in close collaboration with the customer, it has not always been easy to \emph{only} implement the basic functionality the customer requested. The initial assignment was very open for interpretation, and because it was the team's task to define the requirements specification, it was hard not to try to add functionality that we sincerely thought would improve the application, even though that functionality might not had been marked as a high priority assignment.
-
-\subsubsection{Sustainable pace}
-The team has practiced this by having an estimation process where the amount of work hours were set to twenty hours a week.
-
-\subsubsection{On-site customer}
-This principle does not apply to the team's project, as our customer comes from an external organization. However, we were co-located with our customer at a regular basis, usually once a week and hence got continuous feedback and acceptance testing.
-
-\subsubsection{Test-first development}
-The team has not followed this practice. Although we initially thought it would be a good idea to have a test-driven development approach towards the testing process, the team quickly realized that we both lacked the experience and the time to follow this practice and therefore chose to drop it.
-
