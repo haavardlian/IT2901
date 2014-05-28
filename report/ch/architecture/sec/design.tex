@@ -1,14 +1,19 @@
 \section{Architectural design decisions}
-Selecting an architecture is one of the most influential decision in any software development project. To be able to make better decisions, the team conducted a preliminary study and created a detailed plan on how the different components would interact. 
+Selecting an architecture is perhaps the most influential decision in any software development project. To be more able to make good decisions, the team conducted a preliminary study and created a detailed plan on how the different components would interact. 
 
 The team members had little to no experience with developing a server according to the chosen design. Development and design were therefore done interchangeably and iteratively in the early stages of the project. Changes in the architectural design was also done because, as mentioned in chapter~\ref{sec:recSpecification}, many of the requirements in the first requirements specification was discarded due to time constraints.
 
-The team emphasized that the server should be simple and fast, which is ideal for the stateless design that was ultimately chosen.
+The team emphasized that the server should be simple and fast, which is ideal for the stateless design that was ultimately chosen. 
+
+\todo{Dette må legges til et sted i dette kapittelet: The customer was initially sceptical to using a dedicated server to store data as this adds the responsibility of maintaining the server.
+ Unfortunately, no peer-to-peer or similar solutions satisfied the teams requirements to data persistence and speed.}
+
+
+More system qualities required by the team are described in the subsequent sections.
 
 \subsection{Performance}
 A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a high priority during development. This proved a sizeable challenge as all data in the app is synchronized with the server. 
-The sheer amount of data also made the graph library render the graphs slower than satisfactory. This prompted a lot of query optimization and tweaking in both the Android app and the server. 
-The customer was initially sceptical to using a dedicated server to store data as this adds the responsibility of keeping the server running and performing for the app to be usable. Unfortunately, no peer-to-peer or similar solutions satisfied the teams requirements to data persistence and speed.
+The sheer amount of data also made the graph library render the graphs slower than desired. This prompted a lot of query optimization and tweaking in both the Android app and the server. 
 
 \subsection{Maintainability}
 The server does not require much maintenance to be kept running at peek performance. Much of the server's performance depends on the hardware and Internet connection. 
@@ -19,7 +24,6 @@ The software is easily scaled for the hardware by changing the configuration.  T
 
 \subsection{Modularity}
 \label{sec:modularity}
-As the final development architecture deviated from the architecture that was envisioned for a perfect product, a modular design was critical to allow for easy modifications and 
-extensions of the software in the future. 
+As the final development architecture deviated from the architecture that was envisioned for a utopian product, it was critical to have a modular design in order to allow for easy modifications and extensions of the software in the future. 
 
-The server has an inherent modularity in the fact that it is based on stateless connections that transfer JSON objects. Functionality that monitors and controls devices in the users home can easily be added and interface with the existing solution without major changes. No changes would be necessary on the client side to add this functionality.
+The server has an inherent modularity in the fact that it is based on stateless connections that transfer JSON objects. Functionality that monitors and controls devices in the users' home can easily be added and interfaced with the existing solution without major changes. No changes would be necessary on the client side to add this functionality.
