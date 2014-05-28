@@ -1,22 +1,35 @@
-\section{New concepts}
-In this section all ideas for new concepts that the team came up with are described. In essence this is functionality that has not been implemented.
+\section{Unimplemented concepts}
+During the first few weeks of the project the team came up with several good concepts that can make the users more aware of their power usage and more motivated to reduce their usage. This section will describe some of the concepts that were ultimately dropped from the project because of time limitations.
 
-\subsection{Energy Production}
-The team has implemented the possibility of creating a device with the category production. This was meant to be a category where all of a residence's energy generating devices could be added. The customer wanted energy production to be in focus, and wanted the possibility of the users to not only monitor their consumption, but their energy production as well. 
+\subsection{Power Production}
+The team has implemented the possibility of creating a device with the category \emph{production}. This was meant to be a category where the users energy generating devices could be added. This allows the users to view power production the same way as power usage. To improve functionality for personal power production a dedicated tab could be created allowing more advanced functionality for displaying power production.
+It is common for users producing power to store power in battery parks, with hardware support it would be possible to display, and to some degree, control the battery park in the application.
 
-It is also possible to implement a way for the user to monitor his usage contra his production, within the usage tab. By doing this the user has the possibility to see whether he is capable of selling power to his neighbours. 
+\subsection{Power saving comparisons}
+\label{sec:psc}
+Most people is interested in saving money. By calculating the money a user saves based on reduction in power usage and displaying it can be a major motivational factor for many users. The cost of electricity varies from day to day but with the new ASM\cite{asm} system that is being implemented in Norway it might be possible to get detailed information about the costs. This would give the user a precise representation of money saved per kWh. It would be possible to use some average price to calculate the money saved but the results will be less accurate.
+
+Another interesting way to compare power saved would be to compare it to other things or events like for instance ''You have now saved enough energy to send a rocket 1/100 of the way to the moon''. This would give the users some perspective and it might increase their motivation.
 
 \subsection{Gamification}
-From the start, the customer uttered a wish of making the act of saving energy around your house a contest of some sort, through the concept of gamification. This was discussed within the team and a few different ideas came up. The general thought was that the user should feel that he achieved something by saving energy and logging it within the app, and therefore would use the app to a greater extent. 
+At the start of the project the customer requested some way of making power saving more engaging and rewarding for the users. The concept of gamification is when you turn something into a game or competition to motivate users. The sections below describes different kinds of gamefication concepts the team considered.
+\todo{Litt knotete og usamenhengende, restrukturer}
 
-\subsection{Achievements}
-One of the ideas that were discussed was the concept of having an achievement system. The idea behind this is that the user would get some sort of reward for achieving a saving goal or implementing a saving tip in his residence. One of the ideas that came up was built on the achievement system that you find in the app "Untappd."~\cite{untappd}
-This idea is based on a large base of "badges," or achievements that the user will get after doing something relevant and logging it within the app. 
+\subsubsection{Competitive rankings}
+With enough data collected for a user it would be possible to create scores based on reductions in the power usage, or improvements in the power productions. This score could be used to create a ranking system with scoreboards allowing a user to compete with friends and others. This does unfortunately requires a somewhat advanced model to calculate the score representing improvements.
 
-Another achievement system that was discussed was to integrate different "Wattitude levels" into the app. The idea was to have one level per devotion to saving energy around your house. Installing Wattitude would get the user to level one since it indicates that he wishes to be aware of his energy usage. After installing the app the user would gain levels by using different features in the app. For instance level three could be gained by logging production of energy, to have tried at least five saving tips or to have shared your power consumption with your friends on Facebook. By using this system the user could set goals like getting a higher lever than his friends.
+\subsubsection{Achievements}
+Achievements is a common concept in modern applications. The idea behind it is that the user would get some sort of reward for achieving a goal. A goal might be something like ''use 10\% less power than last month'', "Strted producing power" or successfully using a tip.
+One example of a successful achievement system can be found in the app ''Untappd.''~\cite{untappd}
+The idea here is based on a large base of "badges," or achievements that the user will get after doing something relevant and logging it within the app. 
 
-\subsection{Wishlist}
-To achieve even more gamification, the amount of energy saved over the course of using Wattitude should be displayed in the local currency. This allows for another concept, namely that the user can create his own wish list with things he wants to save money for. Wattitude could then show the energy savings of the user as progress towards the value of the items on the list. The app could also display the amount of energy being saved in a given moment in comparison to an earlier moment and how long it would take for the user to save up a given amount of money.  
+Another achievement system that was discussed was to integrate different ''Wattitude levels'' into the app. The idea behind this is that the user gain points for things like reducing power usage, producing power, sharing tips etc, and "level up" when they get enough points. The user can then compete with friends to gain levels. Based on the level it would be the possible to reward the users with things in the application, like emblems or icons, or even real life things like coupon codes.
+
+
+\subsubsection{Wish list}
+With the energy to money conversion explained in section \ref{sec:psc}, implemented the user can create wish lists. 
+The purpose of a wish list is that the user can set up a list of things they want, like new shoes or a vacation, and then the application keeps track of how much the user has saved compared to the price of the item. This could be displayed using for instance a progress bar showing how close the user is to the goal.
+
 
 \subsection{The CoSSMic projects API}
 \label{sec:cossmicapi}
