@@ -1,26 +1,24 @@
 \section{Architectural design decisions}
+\label{sec:arch_design}
 Selecting an architecture is perhaps the most influential decision in any software development project. To be more able to make good decisions, the team conducted a preliminary study and created a detailed plan on how the different components would interact. 
 
 The team members had little to no experience with developing a server according to the chosen design. Development and design were therefore done interchangeably and iteratively in the early stages of the project. Changes in the architectural design was also done because, as mentioned in chapter~\ref{sec:recSpecification}, many of the requirements in the first requirements specification was discarded due to time constraints.
 
 The team emphasized that the server should be simple and fast, which is ideal for the stateless design that was ultimately chosen. 
 
-\todo{Dette må legges til et sted i dette kapittelet: The customer was initially sceptical to using a dedicated server to store data as this adds the responsibility of maintaining the server.
- Unfortunately, no peer-to-peer or similar solutions satisfied the teams requirements to data persistence and speed.}
-
+The customer was initially skeptical to using a dedicated server to store data as this adds the responsibility of maintenance. Unfortunately, no peer-to-peer or similar solutions satisfied the requirements to data persistence and speed.
 
 More system qualities required by the team are described in the subsequent sections.
 
 \subsection{Performance}
-A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a high priority during development. This proved a sizeable challenge as all data in the app is synchronized with the server. 
+A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a high priority during development. This proved a sizable challenge as all data in the app is synchronized with the server. 
 The sheer amount of data also made the graph library render the graphs slower than desired. This prompted a lot of query optimization and tweaking in both the Android app and the server. 
 
 \subsection{Maintainability}
-The server does not require much maintenance to be kept running at peek performance. Much of the server's performance depends on the hardware and Internet connection. 
+The server does not require much maintenance to be kept running at peek performance. Much of the server's performance depends on the hardware and Internet connectivity. 
 
 \subsection{Scalability}
-The software is easily scaled for the hardware by changing the configuration.  To make room for a growing user base and more powerful hardware, this can also be done for the server, by changing the allowed number of simultaneous requests and connections.
-
+The software is easily scaled for the hardware by changing the configuration. To make room for a growing user base and more powerful hardware by changing the allowed number of simultaneous requests and connections.
 
 \subsection{Modularity}
 \label{sec:modularity}
