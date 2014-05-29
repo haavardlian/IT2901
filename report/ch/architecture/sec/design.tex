@@ -1,18 +1,18 @@
 \section{Architectural design decisions}
 \label{sec:arch_design}
-Selecting an architecture is one of the most influential decision in any software development project. To create the best possible solution, a preliminary study was performed and a detailed plan on how the different components would interact was created. 
+Selecting the architecture is an important part of any software development project. To create the best possible solution, a preliminary study was performed and a plan on how the different components would interact, was created. 
 
-The team members had little to no experience with developing a server according to the chosen design. Development and design was therefore done interchangeably and iteratively in the early stages of the project. Changes in the architectural design were also made because many of the requirements in the first requirements specification were discarded due to time constraints.
+The team members had little to no experience with developing a server according to the chosen design. Development and design was therefore done interchangeably and iteratively in the early stages of the project. Changes in the architectural design were made because many of the requirements in the first draft were discarded due to time constraints.
 
-The team emphasized that the server should be simple and fast, which is ideal for the stateless design that was ultimately chosen. 
+The server should be simple and fast, which is ideal for the stateless design that was ultimately chosen. 
 
-The customer was initially skeptical to use of a dedicated server to store data as this adds the responsibility of uptime and maintenance. The customer proposed to use Dropbox, Google Drive or some other solution without a centralized server. Unfortunately, no peer-to-peer or similar solutions satisfied the team's requirements to data persistence and speed.
+The customer was initially skeptical to use a dedicated server to store data as this adds a responsibility of uptime and maintenance. The customer suggested alternative solutions, like Dropbox and Google Drive.
+These were incompatible with several of the functional requirements, including tips(FR3), and comparison functionality(FR5.4). In addition, this would limit furter development. 
 
-The properties the team weighted heavily when designing the architecture are described in the next sections.
+When selecting an architecture, the following properties were evaluated. 
 
 \subsection{Performance}
-A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a high priority during development. This proved to be a sizable challenge as all the app data on the device had to be synchronized with the server. 
-The sheer amount of data also made the graph library render the graphs slower than desired. This prompted a lot of query optimization and tweaking on both the Android app and the server. 
+A responsive user interface had a high priority during development. This proved to be a challenge, as all the app data on the device required synchronization with the server. The amount of data also made the graph library render slower than desired. To solve this, query optimization and tweaking on both the Android app and the server was necessary.
 
 \subsection{Maintainability}
 The server does not require much maintenance to run at peek performance. Much of the server's performance depends on the hardware and Internet connectivity. If the user base grows, or additional heavy server functionality is added, the hardware can be upgraded to keep up.
