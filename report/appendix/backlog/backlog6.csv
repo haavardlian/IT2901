@@ -32,7 +32,7 @@ x\cellcolor{lightgray},Meetings\cellcolor{lightgray},0\cellcolor{lightgray},0\ce
 
 114\cellcolor{lightgray},Profile tab\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},8.75\cellcolor{lightgray},0\cellcolor{lightgray},2.25\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},1\cellcolor{lightgray},4.5\cellcolor{lightgray}
 ,Retrieve facebook info when logged in,0,0,0,3.25,0,1.5,0,0,0,0
-,Profile tab backend,0,0,0,5.5,0,0,0,0,1,0
+,Profile tab back-end,0,0,0,5.5,0,0,0,0,1,0
 ,Finish profile tab design,0,0,0,0,0,0.75,0,0,0,0
 ,Add support for editing residences,0,0,0,0,0,0,0,0,0,4.5
 
