@@ -37,14 +37,14 @@ Android renders the UI on the main thread. Running long operations on the main t
 
 The functionality of the app uses a lot of data stored in the local SQLite database. The data will also be synchronized to the server with a authenticated user. All these types of operations take time and blocks the thread it is running on.
 
-The choice of how to handle this will make a large impact on the overall performance of the app. The next sections will explain how the different parts of the app work together as a process, how data is accessed and used, what patterns are used, how a user is authenticated, and data backup.
+The choice of how to handle this will make a large impact on the overall performance of the app. The next sections will explain how the different parts of the app work together as a process, how data is accessed and used, what patterns are used, how a user is authenticated, and data is backed up.
 
 %To avoid the issue of blocking the main thread it was decided to make use of Androids built in logic for async data access, and a design pattern for business logic.
 
 \subsection{Data access}
-Data access to the underlying database is done using ContentProviders~\cite{contentproviders}. This gives the app a uniform \gls{CRUD} (acronym for create, read, update, and delete) access model. The data will be accessed with \gls{URI}'s (acronym for uniform resource identifier) that are uniquely defined. An overview of how the data layer is implemented is shown in figure~\ref{fig:archAppOverview}.
+Data access to the underlying database is done using ContentProviders~\cite{contentproviders}. This gives the app a uniform \gls{CRUD} (create, read, update, and delete) access model. The data will be accessed with \gls{URI}'s (uniform resource identifier) that are uniquely defined. An overview of how the data layer is implemented is shown in figure~\ref{fig:archAppOverview}.
 
-The boxes in the figure represent the different Fragments that use data in the app. Fetching data to the Fragment is done by through the LoaderManager~\cite{loadermanager} interface. \todo{LoaderManager defines a callback to retrieve the URI to query, how to handle data reset, and the data returned from the query}. The LoaderManager runs on a separate thread, and thus avoids the problem of blocking the main thread from rendering the UI. It will also handle the life cycle of the data. When data related to the URI changes, the LoaderManager will load the data again. 
+The boxes in the figure represent the different Fragments that use data in the app. Fetching data to the Fragment is done through the LoaderManager~\cite{loadermanager} interface. \todo{LoaderManager defines a callback to retrieve the URI to query, how to handle data reset, and the data returned from the query}. The LoaderManager runs on a separate thread, and thus avoids the problem of blocking the main thread from rendering the UI. It will also handle the life cycle of the data. When data related to the URI changes, the LoaderManager will load the data again. 
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/arch_app_overview.png}
