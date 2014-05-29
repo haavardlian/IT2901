@@ -1,36 +1,38 @@
+\newpage
 \section{Testing functional requirements}
 \label{sec:funcTest}
-Functional testing are tests that inspect the functionality of the software. Internal classes and methods are tested indirectly. This is a type of Black Box Testing~\cite{blackbox}. This is done by feeding the application data and checking that it responds the way it should. It is common to to give the application proper data to check that it is handled correctly and to give it incorrect data to make sure the application fails gracefully and does not crash. If a test fails there is a bug in the code that needs to be corrected.
+Functional testing are tests that inspect the functionality of the software. The internal classes and methods are tested indirectly. This is done by using a type of black-box testing~\cite{blackbox}, which is a software testing method that examines application functionality without exploring the application's internal structures. This is done by feeding the application data and checking that it responds properly. The given input is either a) correct data, where it is checked that the data is handled correctly, or b) incorrect data, to make sure the application fails gracefully and does not crash. Should a test fail, there is a bug in the code that needs to be corrected.
 
-To test a system the following steps are required.
-\begin{enumerate}
-\item Identify what features/functionality to test
-\item Specify input to the system
-\item Specify expected output from the system
-\item Execute
-\end{enumerate}
+To test a system the following steps are required:\\\\
+1. Identify what features or functionality to test\\
+2. Specify input to the system\\
+3. Specify expected output from the system\\
+4. Execute
 
 \subsection{Test table}
-Table \ref{tab:testTable} presents a list of functionality that should be tested thoroughly every iteration of the application. Because of the lack of automatic unit testing the functionality had to be tested manually to be sure new functionality and bug fixes did not break anything new in the application.
+Table \ref{tab:testTable} presents a list of functionality that should be tested thoroughly of every iteration of the application. Because of the lack of automatic unit testing, the functionality had to be tested manually in order to be sure that new functionality and bug fixes did not break anything that was newly added in the application.
 
 \begin{table}[H]
-\begin{tabular}{|l|l|l|}
-\hline
-\rowcolor{darkgray} & \textbf{Description} & \textbf{Result}\\\hline \arrayrulecolor{lightgray}
+\centering
 \rowcolors{0}{darkgray}{lightgray}
-Android app & \textit{Functional tests of app} &  \\ \cline{1-2}\cline{2-3}
-&Add device&\\ \cline{1-2}\cline{2-3}
-&Remove device&\\ \cline{1-2}\cline{2-3}
-&Edit device&\\ \cline{1-2}\cline{2-3}
-&Add power used for device&\\ \cline{1-2}\cline{2-3}
-&View power usage&\\ \cline{1-2}\cline{2-3}
-&View power distribution&\\ \cline{1-2}\cline{2-3}
-&Create new tip&\\ \cline{1-2}\cline{2-3}
-&Log into Facebook&\\ \cline{1-2}\cline{2-3}
-&Log out of Facebook&\\\arrayrulecolor{black}
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor{darkgray} \textbf{Description} & \textbf{Result}\\\hline \arrayrulecolor{lightgray}
+\textbf{Android app}&\\ \cline{1-2}\cline{2-3}
+\textit{Functional tests of app} &  \\ \cline{1-2}\cline{2-3}
+Add device&\\ \cline{1-2}\cline{2-3}
+Remove device&\\ \cline{1-2}\cline{2-3}
+Edit device&\\ \cline{1-2}\cline{2-3}
+Add power used for device&\\ \cline{1-2}\cline{2-3}
+View power usage&\\ \cline{1-2}\cline{2-3}
+View power distribution&\\ \cline{1-2}\cline{2-3}
+Create new tip&\\ \cline{1-2}\cline{2-3}
+Log into Facebook&\\ \cline{1-2}\cline{2-3}
+Log out of Facebook&\\\arrayrulecolor{black}
 \hline
 \end{tabular}
 \caption{Test table}
 \label{tab:testTable}
 \end{table}
-\todo{Pynt på tabell}
+\todo{1. er det sånn dere ville ha tabellen? send mail hvis ikke.
+2. er det nødvendig med "Android app"? Kan vi ikke bare ha "Functional tests of app" på øverste linje eller evt. bare i caption?}
