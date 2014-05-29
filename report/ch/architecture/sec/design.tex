@@ -6,19 +6,19 @@ The team members had little to no experience with developing a server according 
 
 The team emphasized that the server should be simple and fast, which is ideal for the stateless design that was ultimately chosen. 
 
-The customer was initially sceptical to using a dedicated server to store data as this adds the responsibility of uptime and maintenance. The customer proposed to use Dropbox, Google Drive or some other solution without a centralized server to store data. Unfortunately, no peer-to-peer or similar solutions satisfied the team's requirements to data persistence and speed.
+The customer was initially skeptical to use of a dedicated server to store data as this adds the responsibility of uptime and maintenance. The customer proposed to use Dropbox, Google Drive or some other solution without a centralized server. Unfortunately, no peer-to-peer or similar solutions satisfied the team's requirements to data persistence and speed.
 
 The properties the team weighted heavily when designing the architecture are described in the next sections.
 
 \subsection{Performance}
-A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a high priority during development. This proved to be a sizeable challenge as all the applications data on the Android device has to be synchronized with the server. 
+A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a high priority during development. This proved to be a sizable challenge as all the app data on the device had to be synchronized with the server. 
 The sheer amount of data also made the graph library render the graphs slower than desired. This prompted a lot of query optimization and tweaking on both the Android app and the server. 
 
 \subsection{Maintainability}
-The server does not require much maintenance to run at peek performance. Much of the server's performance depends on the hardware and Internet connectivity. If the user base grows, or additional server heavy functionality is added, the hardware can be upgraded to keep up.
+The server does not require much maintenance to run at peek performance. Much of the server's performance depends on the hardware and Internet connectivity. If the user base grows, or additional heavy server functionality is added, the hardware can be upgraded to keep up.
 
 \subsection{Modularity}
 \label{sec:modularity}
 As the final development architecture deviated from the architecture that was envisioned for an optimal product, it was critical to have a modular design in order to allow for easy modifications and extensions of the software in the future. 
 
-The server has an inherent modularity in the fact that it is based on stateless connections making it independent from the application. Functionality that monitors and controls devices in the user's home can easily be added and interfaced with the existing solution without major changes. No changes would be necessary on the client side to add this functionality.
+The server has an inherent modularity in the fact that it is based on stateless connections, making it independent from the app. Functionality that monitors and controls devices in the user's home can easily be added, and interfaced with the existing solution without major changes. No changes would be necessary on the client side to add this functionality.
