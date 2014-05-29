@@ -1,18 +1,13 @@
 \section{Android app architecture}
 \label{sec:arch_app}
-The app runs on the user`s Android device and was designed to run on Android version 4.0 or greater. As of March 2014 this makes up for 79,7\% of all Android devices~\cite{AndroidDeviceFragmentation}.
+The app is developed to run on Android versions 4.0 or greater. As of March 2014 this makes up for 79,7\% of all Android devices in use~\cite{AndroidDeviceFragmentation}.
+Support for earlier versions would require extra work and because the app is a proof-of-concept and by the time an apps released for personal use almost everyone will use a compatible device.
 
-The team decided to only adapt the app for these version's because the app is a proof-of-concept, and the team assumed that the relevant user's would have a relatively modern phone. Making the app more backward compatible would demand more work and extra support libraries. 
-%
-% Konseptet:
-% Best practise, klasse struktur, data, sync, etc
-%
+
 \subsection{Best practice}
-
 The best practice guidelines for Android~\cite{androidPracticePerformance} states that one should avoid using a complex architecture. A complex architecture will increase the code base and is overkill in most situations. However, some design decisions still need to be made to keep the development process as simple, effective, and bug free as possible. Concise code guidelines and a structured pattern is needed. The next sections will explain how the app is started, and the code structure that allows a flow through the different functionality of the app. The sections after that goes into detail about threading, data access, and synchronization.
 
 \subsection{Overall structure}
-
 The Activity is the starting point of the app. It can also be explained as the main ''thing'' in Android. It is a self contained process with the full life-cycle of the device and the possibility to show a view to the user.
 
 To access the different parts of the app it was decided to use a navigation drawer that is accessed through the app icon on the action bar, or with a swipe from the left. The different parts of the app is shown when the user clicks on it in the navigation drawer. Each part accessed through the navigation drawer is henceforth called a tab. The structure of how the main activity communicates with the navigation drawer is shown in figure~\ref{fig:classDiagramDrawer}.
