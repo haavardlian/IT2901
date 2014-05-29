@@ -1,34 +1,32 @@
 \subsection{Libraries}
 \label{sec:libraries}
-Libraries are pieces of code that are integrated into the project. They provide functionality needed and saves time by reducing the workload. The libraries used in this project and what they were used for is displayed in table~\ref{tab:libs}.
+Libraries are pieces of code that are integrated into the project. They provide functionality needed and save time by reducing the workload. The libraries used and what they were used for is displayed in table~\ref{tab:libs}.
 %When utilizing libraries, it is important to make sure the licenses match the project and the customer's request.
- All the libraries used in the project falls under the Apache 2.0 license~\cite{apache}.
+ All libraries used fall under the Apache 2.0 license~\cite{apache}.
 
 \begin{table}[H]
 \rowcolors{0}{darkgray}{lightgray}
 \begin{tabular}{|l|p{10.4cm}|}
 \hline
 \textbf{Library }& \textbf{What it is used for}\\\hline
-Jersey/JAX-RS~\cite{jersey} & Provides the Representational State Transfer(REST) service of our server\\\hline
-Jackson~\cite{jackson}&Translates data to \gls{JSON} before it is sent to the client\\\hline
-Jetty~\cite{jetty}&Allows the server to run by itself without the need for any external software\\\hline
-JDBI~\cite{jdbi}&Exposes relational databases and makes them more modular and flexible\\\hline
-Volley~\cite{volley}& Handles network requests on the Android device\\\hline
-aChartEngine~\cite{achart}& Displays detailed power usage data through pie charts and line charts\\\hline
-PagerSlidingTabStrip~\cite{psts}& Creates tabs for easy swapping between views\\\hline
-ProgressFragment~\cite{progressfragment}& Makes it easy to show that a Fragment is loading the view\\\hline
-android-segmented-control~\cite{segments}& Segment view for swapping between data resolutions\\\hline
-android-spinnerwheel\cite{spinnerwheel}& Spinner wheel for date selection\\\hline
+Jersey/JAX-RS~\cite{jersey} & Provides the Representational State Transfer(REST) service of our server.\\\hline
+Jackson~\cite{jackson}&Translates data to \gls{JSON} before it is sent to the client.\\\hline
+Jetty~\cite{jetty}&Is a HTTP server.\\\hline
+JDBI~\cite{jdbi}&Exposes relational databases and makes them more modular and flexible.\\\hline
+Volley~\cite{volley}& Handles network requests on the Android device.\\\hline
+aChartEngine~\cite{achart}& Displays detailed power usage data through pie charts and line charts.\\\hline
+PagerSlidingTabStrip~\cite{psts}& Creates tabs for easy swapping between views.\\\hline
+ProgressFragment~\cite{progressfragment}& Makes it easy to show that a Fragment is loading the view.\\\hline
+android-segmented-control~\cite{segments}& Segment view for swapping between data resolutions.\\\hline
+android-spinnerwheel\cite{spinnerwheel}& Spinner wheel for date selection.\\\hline
 \end{tabular}
-\caption{Libraries and their app areas}
+\caption{Libraries and their application areas}
 \label{tab:libs}
 \end{table}
 
 \subsubsection{Dropwizard}
-Dropwizard~\cite{dropwizard} is a lightweight collection of tools used to set up and host a server. Dropwizard itself is new and not much used yet, but the tools in the collection are popular and well maintained. 
-The advantages of using Dropwizard instead of using the tools by themselves is that everything is configured to work together and it synergies well. The most notable components of Dropwizard are Jetty, Jackson, Jersey, and JDBI.
+Dropwizard~\cite{dropwizard} is a lightweight collection of tools used to set up and host a server. Dropwizard is a relatively new framework, but the tools in the collection are popular and well maintained. 
+The advantages of using Dropwizard instead of using the tools by themselves is that everything is configured to work well together. The most notable components of Dropwizard are Jetty, Jackson, Jersey, and JDBI.
 
 \subsubsection{Facebook SDK}
-The Facebook SDK~\cite{fsdk} is a collection of functions that allows Facebook's functionality to be integrated into the app. The key functionality for this project, 
-provided by the SDK, is the possibility for the user to log in on their Facebook account. The possibility to collect relevant data from the user for statistical purposes, and the 
-friend functionality allowing the user to, for instance, compare power usage, achievements, and tips and tricks with friends. 
+The Facebook SDK~\cite{fsdk} is a collection of functions that allows Facebook's functionality to be integrated into the app. The key functionality for this project, provided by the SDK, is the possibility for the user to log in on their Facebook account.
