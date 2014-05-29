@@ -3,7 +3,7 @@
 
 To get a full impression of what functionality our product should have, the team did some research on similar solutions that already existed on the market. The research was based on the product requirements the team worked out with the customer, resulting in a list of the most relevant solutions.
  
-This list contains a brief overview of the functionalities and drawbacks of existing solutions, summarized in table~\ref{tab:existingSolutions}. The team will use this study in alternative solutions as an inspiration for functionality and features to implement in the project app.
+This list contains a brief overview of the functionalities and drawbacks of existing solutions, summarized in table~\ref{tab:existingSolutions}. The team used this study in alternative solutions as an inspiration for functionality and features to implement in the project app.
 
 
 \begin{table}[H]
@@ -25,7 +25,7 @@ Efergy & Yes & Yes &  No & Yes\\\hline
 
 \subsection{NTE miniSolo energydisplay}
 
-The NTE miniSolo energydisplay~\cite{nte} measures the total power usage real time and allows the user to power off devices to see the effect the device has on the total power consumption. It offers some interesting features like detailed power consumption and an overview of how much money the power usage amounts to, which the team also want to have in the app. However, the miniSolo energydisplay has some drawbacks: It is linked to a proprietary device and has no Android app. These drawbacks made the solution incompatible with the team's project.
+The NTE miniSolo energydisplay~\cite{nte} measures the total power usage real time and allows the user to power off devices to see the effect the device has on the total power consumption. It offers some interesting features like detailed power consumption and an overview of how much money the power usage amounts to. However, the miniSolo energydisplay has some drawbacks: It is linked to a proprietary device and has no Android app. These drawbacks made the solution incompatible with the team's project.
 
 
 \subsection{Theowl}
@@ -58,7 +58,7 @@ Smartly has several interesting features and concepts, such as being able to tur
 \label{sec:openenergymonitor}
 OpenEnergyMonitor~\cite{openenergymonitor} is an open source project that allows data collection from power outages. Some of the architecture for collecting data can, with some improvements, be an interesting option to consider. The architecture, shown in figure~\ref{fig:oem}, is somewhat similar to what the team imagined using in the project. This solution also has an application for processing, logging and visualizing energy usage.
 
-However, OpenEnergyMonitor offers no automatic collection of data - the user would have to manually go around his house to collect the data. The solution is somewhat hard to set up and not very user friendly for the average consumer. 
+However, OpenEnergyMonitor offers no automatic collection of data - the user would have to manually collect it. The solution is somewhat hard to set up and not very user friendly for the average consumer. 
 
 \setcounter{figure}{1}
 \begin{figure}[H]
@@ -71,7 +71,7 @@ However, OpenEnergyMonitor offers no automatic collection of data - the user wou
 
 \subsection{Efergy}
 
-Efergy~\cite{efergy} was considered to be the solution that was closest to what the team wanted to develop. As shown in figure~\ref{fig:efergyGUI}, it has a nice visual representation of data, and it offers social integration. The architecture is interesting, as it  has support for measuring the power usage of single devices over wireless radio through a local receiver. The receiver collects the data and sends it to a server on the Internet. Unfortunately, this solution lacks the ability to monitor and control private power production. It is also beyond a reasonable price range.
+Efergy~\cite{efergy} was considered to be the solution that was closest to what the team wanted to develop. As shown in figure~\ref{fig:efergyGUI}, it has a nice visual representation of data, and it offers social integration. The architecture is interesting, as it supports measuring the power usage of single devices. There is a local receiver collecting data from the devices and sending it to a server on the Internet. Unfortunately, this solution lacks the ability to monitor and control private power production. It is also beyond a reasonable price range.
 
 
 \begin{figure}[H]
