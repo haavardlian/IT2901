@@ -15,21 +15,21 @@ Another interesting way to compare power saved would be to compare it to other t
 At the start of the project the customer expressed that he wanted gamification implemented in some way. The concept of gamification is when you turn something into a game or competition to motivate users. The sections below describes different kinds of gamefication concepts the team considered.
 
 \subsubsection{Competitive rankings}
-With enough data collected for a user it would be possible to create scores based on reductions in the power usage, or improvements in the power productions. This score could be used to create a ranking system with scoreboards allowing a user to compete with friends and others. Unfortunately, this requires a somewhat advanced model to calculate the score representing improvements.
+With enough data collected for a user it would be possible to create scores based on reductions in the power usage, or improvements in power productions. This score could be used to create a ranking system with scoreboards allowing a user to compete with friends and other people. Unfortunately, this requires a somewhat advanced model to calculate the score representing improvements.
+
+\todo{Skrive mer om machine learning}
 
 \subsubsection{Achievements}
-Achievements is a common concept in modern applications. The idea behind it is that the user would get some sort of reward for achieving a goal. A goal might be something like ''use 10\% less power than last month'', "Started producing power" or successfully using a tip.
+Achievements is a common concept in modern applications. The idea behind it is that the user would get some sort of reward for achieving a goal. A goal might be something like ''use 10\% less power than last month'', ''Started producing power'' or successfully using a tip.
 One example of a successful achievement system can be found in the app ''Untappd.''~\cite{untappd}
-The idea here is based on a large base of "badges," or achievements that the user will get after doing something relevant and logging it within the app. 
+The idea here is based on a large base of ''badges'', or achievements the user will get after doing something relevant and have logged it within the app. 
 
-Another achievement system that was discussed was to integrate different ''Wattitude levels'' into the app. The idea behind this is that the user gains points for things like reducing power usage, producing power, sharing tips etc, and "level up" when they get enough points. The user can then compete with friends to gain levels. Based on the level it would be the possible to reward the users with things in the application, like emblems or icons, or even real life things like coupon codes.
-
+Another achievement system that was discussed was to integrate different ''Wattitude levels'' into the app. The idea behind this is that the user gains points for things like reducing power usage, producing power, sharing tips, ''level up'', etc when they get enough points. The user can then compete with friends to gain levels. Based on the level it would be the possible to reward the users with things in the application, like emblems or icons, or even real life things like coupon codes.
 
 \subsubsection{Wish list}
-With the energy to money conversion explained in section \ref{sec:psc}, implemented the user can create wish lists. 
+With the energy to money conversion explained in section \ref{sec:psc} implemented the user can create wish lists. 
 The purpose of a wish list is that the user can set up a list of things they want, like new shoes or a vacation. The idea is that the application could keep track of how much the user has saved, compared to the price of the item. This could be displayed using for instance a progress bar showing how close the user is to the goal.
-
 
 \subsection{The CoSSMic projects API}
 \label{sec:cossmicapi}
-Towards the end of the development period the team was made aware of an API that could be used to get data from devices. The team did not have time to implement the system using this API or test this API in any way. This API is meant to work with Emoncms, which is a part of the Open Energy Monitor project as described in section~\ref{sec:openenergymonitor}. The little research done by the team indicates that this API aims to interface the CoSSMic project to work with the Emoncms. The team briefly spoke with the people working on the CoSSMic project while at Sintef for a demonstration of the Wattitude app. The team learned that they are also using a REST architecture for their system. By modifying the models and databases of the Wattitude app and server, integration with the API should be possible without monumental effort.
+Towards the end of the development period the team was made aware of an API that could be used to get data from devices. The team did not have time to implement the system using this API or test this API in any way. This API is meant to work with Emoncms, which is a part of the Open Energy Monitor project as described in section~\ref{sec:openenergymonitor}. The little research done by the team indicates that this API aims to interface the CoSSMic project to work with the Emoncms. The team briefly spoke with the people working on the CoSSMic project after the demonstration of Wattitude at Sintef. The team learned that they are also using a REST architecture for their system. By modifying the models and databases of the Wattitude app and server, integration with the API should be possible without monumental effort.
