@@ -2,11 +2,10 @@
 Due to time restrictions in this project, not all functionality was fully implemented. In this section all of that functionality and how to implement it is described. 
 
 \subsection{Residences}
-The way the system is built up right now is that everything inn the app is connected to a user. A user has devices and devices have usage. One possible improvement would be to have the user connect to one or several residences and the devices connected to those residences. This change would be relatively simple as there is only one extra layer of models needed.
+The way the system is built up right now is that everything inn the app is connected to a user. A user has devices and devices have usage. One possible improvement would be to have the user connected to one or several residences and the devices connected to those residences. This change would be relatively simple as there is only one extra layer of models needed.
 
 This would make it possible to compare users more accurately, taking into consideration what type of residence they have, how many people living in that residence and so on. This would give each user the possibility of monitoring the power usage of their summer home, cabin or rented out apartments. It is also possible to connect all tips to residences, so that the user can choose which residence he wants to perform specific tips in. 
 
 \subsection{Profile}
-
 The profile tab is supposed to show information about the user and let the user manage residences. The team also envisions this tab to contain privacy settings, allowing the user to for instance disable data collection for statistics and comparison. In the last version of the application, the user has no option to remain anonymous. 
 On the server side this could be implemented by adding a flag to users that indicate if the user wishes to remain anonymous. When retrieving data for comparison or statistics the server could then filter out the users based on this flag.
