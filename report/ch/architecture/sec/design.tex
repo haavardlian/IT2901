@@ -12,17 +12,15 @@ The customer was initially sceptical to using a dedicated server to store data a
 The system requirements are described in the following chapters.
 
 \subsection{Performance}
-A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a high priority during development. This proved a sizable challenge as all data in the app is synchronized with the server. 
-The sheer amount of data also made the graph library render the graphs slower than desired. This prompted a lot of query optimization and tweaking in both the Android app and the server. 
+A seamless user experience is a big part of usability. Immediate response in the GUI was therefore a high priority during development. This proved to be a sizeable challenge as all the applications data on the Android device has to be synchronized with the server. 
+The sheer amount of data also made the graph library render the graphs slower than desired. This prompted a lot of query optimization and tweaking on both the Android app and the server. 
 
 \subsection{Maintainability}
-The server does not require much maintenance to be kept running at peek performance. Much of the server's performance depends on the hardware and Internet connectivity. 
-
-\subsection{Scalability}
-The software is easily scaled for the hardware by changing the configuration. To make room for a growing user base and more powerful hardware by changing the allowed number of simultaneous requests and connections.
+The server does not require much maintenance to run at peek performance. Much of the server's performance depends on the hardware and Internet connectivity. If the user base grows, or additional server heavy functionality is added, the hardware can be upgraded to keep up.
 
 \subsection{Modularity}
 \label{sec:modularity}
-As the final development architecture deviated from the architecture that was envisioned for a utopian product, it was critical to have a modular design in order to allow for easy modifications and extensions of the software in the future. 
+As the final development architecture deviated from the architecture that was envisioned for an optimal product, it was critical to have a modular design in order to allow for easy modifications and extensions of the software in the future. 
 
-The server has an inherent modularity in the fact that it is based on stateless connections that transfer JSON objects. Functionality that monitors and controls devices in the users' home can easily be added and interfaced with the existing solution without major changes. No changes would be necessary on the client side to add this functionality.
+The server has an inherent modularity in the fact that it is based on stateless connections making it independent from the application. Functionality that monitors and controls devices in the users' home can easily be added and interfaced with the existing solution without major changes. No changes would be necessary on the client side to add this functionality.
+\todo{Mulig dette bør skrives litt om}
