@@ -38,10 +38,10 @@ public class SyncResource {
 \end{minipage}
 
 \subsubsection{Database abstraction}
-Dropwizard uses the JDBC and JDBI libraries to communicate with the database. The JDBC library is Java's standard interface to databases. MySQL provides a driver for JDBC in order to make communication possible. JDBI is a convenience layer on top of JDBC which makes it possible to write an interface with SQL queries and use that interface as a ~\gls{DAO}.
+Dropwizard uses the JDBC and JDBI libraries to communicate with the database. The JDBC library is Java's standard interface to databases. MySQL provides a driver for JDBC in order to make communication possible. JDBI is a convenience layer on top of JDBC which makes it possible to write an interface with SQL queries and use that interface as a~\gls{DAO}.
 
 \subsection{Database}
-For permanent storage the server uses MySQL. MySQL is a reliable and easy to set up database. A diagram of how the database is designed can be found in figure~\ref{fig:ER-Diagram}
+For permanent storage the server uses MySQL. The database design is illustrated in figure~\ref{fig:ER-Diagram}. This diagram represents the data entities stored in the database and the relation between them. 
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/ER-Diagram.png}
