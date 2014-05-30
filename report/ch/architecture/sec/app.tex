@@ -8,29 +8,17 @@ The best practice guidelines for Android~\cite{androidPracticePerformance} state
 \subsection{Overall structure}
 The Activity is the starting point of the app. It is a self contained process with the possibility to display a user interface to the user. To access the different parts of the app it was decided to use a ~\gls{navigation drawer}. The sections accessed through the navigation drawer is called a tab. The navigation drawer and all of the tabs are implemented as Fragments. A Fragment is a representation of some behavior or an interface. It is embedded inside an Activity and can be swapped in and out of the Activity. Multiple Fragments can live in the same view. A subset of the Activity life-cycle is implemented in Fragments so it can work as a self-contained module. To read more about the Android life-cycle, see the official Android documentation.~\cite{androiddoc}
 
-\subsection{Android rendering and the main thread}
-One of the key issues on mobile app development (besides having a good interface design) is keeping the \gls{UI} responsive. Having a UI that lags will most often upset the user and result in the app being uninstalled from the device.
-
-Android renders the UI on the main thread. Running long operations on the main thread will make the entire interface unresponsive.
-
-The functionality of the app uses a lot of data stored in the local SQLite database. The data will also be synchronized to the server with the authenticated user. All these types of operations take time and will block the thread it is running on.
-
-The choice of how to handle these operations will make a large impact on the overall performance of the app.
-
-%To avoid the issue of blocking the main thread it was decided to make use of Androids built in logic for async data access, and a design pattern for business logic.
+\subsection{Performance}
+One of the key issues in mobile app development is keeping the user interface responsive. Android renders the user interface on the main thread. Running long operations on this thread will make the interface unresponsive. Requesting data from external sources, like the server, or Facebook, is time consuming and should not run on the mein thread. Handling threading correctly is critical for the overall performance of the app.
 
 \subsection{Data access}
-Data access to the underlying database is done using ContentProviders~\cite{contentproviders}. This gives the app a uniform \gls{CRUD} (create, read, update, and delete) access model. Data is accessed with \gls{URI}'s (uniform resource identifier) that are uniquely defined. An overview of how the data layer is implemented is shown in figure~\ref{fig:archAppOverview}.
-
-The view box in the figure represent the different Fragments that use data in the app. Fetching data to the view is done through the LoaderManager~\cite{loadermanager} interface. The LoaderManager is used to make the app load in data from the ContentProvider from another thread, and return the result asynchronously on a callback. 
+Data access to the underlying database is done using ContentProviders~\cite{contentproviders}. Data is accessed with \gls{URI}'s (uniform resource identifier) that are uniquely defined. An overview of the data leyer implementation is shown in figure~\ref{fig:archAppOverview}. The view box in the figure represent the different Fragments that use data in the app. Fetching data to the view is done through the LoaderManager~\cite{loadermanager} interface. The LoaderManager loads data from the ContentProvider, and return the result asynchronously on a callback. ContentProviders used with a LoaderManager results in a view that is automatically updated when data changes, without bothering the UI thread.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/arch_app_overview.png}
-\caption{Overview of how data is accessed.}
+\caption{Overview of how data is accessed}
 \label{fig:archAppOverview}
 \end{figure}
-
-ContentProviders contain a lot of boilerplate code and are time consuming to code. However, the upsides to using a ContentProvider far outweigh the downsides. ContentProviders used with a LoaderManager results in a view that is automatically updated when data changes, without bothering the UI thread.
 
 \subsection{Business logic}
 After defining a uniform access model to the database, the issue of where to place the actual business logic (data manipulation) must be tackled. Keeping the business logic in one place makes changing data manipulation logic a lot easier, avoids the issue of keeping track of where every data operation is defined in the view, and the bug bug free.
