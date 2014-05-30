@@ -30,63 +30,9 @@ Keeping the business logic in one place makes maintaining and updating the code 
 \end{figure}
 
 \subsection{User authentication}
-The app is designed with the ability to synchronize data to the server. Our server, as explained in chapter~\ref{sec:arch_server}, exposes a restful API were data can be backed up.
 
-The first challenge that arises with data synchronization is that the user must be identified as a unique and authorized user. Authentication is done with OAuthV2.0 and, for the time being, the third party authenticator is Facebook and session data is maintained with the FacebookSDK for Android. 
-%For the moment this is not entirely true to how it is done now. Some shortcuts were done to have a working system. But the main authentication architecture is made.
-
-The next case is how to handle the session data from Facebook. The Android system has its own account architecture. Working with this architecture requires the app to register a AbstractAccountAuthenticator~\cite{androidAccount} class in the AndroidManifest. The AbstractAccountAuthenticator is generic and can be made to create accounts for all types of services. The token and other related data (Facebook id) returned from Facebook is stored in the account and can accessed when necessary.
-
-Other OAuthV2.0 authentication providers can also be used (Twitter, Google, your own private OAuthV2.0 authenticator, etc). 
-
-%For the time being only the Facebook user id is used to authenticate the user to our server.
+The system requires the user to be identified as a unique and authorized user. This authentication is done using the OAuthV2.0 protocol. This needs a third party authenticator, in our case Facebook is used. Other OAuthV2.0 authentication providers can also be used, for instance Twitter or Google.
+The Android system has its own account architecture. Working with this architecture requires the app to register an AbstractAccountAuthenticator~\cite{androidAccount} class in the AndroidManifest~\cite{androidmanifest}. When the user logges in, facebook returnes a token, stored in the AbstractAccountAuthenticator object. The token and other related user data (Facebook id) can be accessed, by the application when necessary.
 
 \subsection{Server communication}
-Communication with the server is done with the framework ''Volley''. It is created by Google and the source code resides within AOSP (Android Open Source Project). It is made to make communication with restful endpoints easier.
-
-Data synchronization is done by using Androids built in SyncAdapter. The SyncAdapter is a self-contained process that fetches and delivers all new data to and from the server. 
-
-The SyncAdapter is registered to a specific account on the Android system. The account will then provide the session data that will identify the user to the server. How the session data was acquired was explained in the previous section. For the time being only the users Facebook id is as authentication with the server. 
-
-\todo{This is not secure in any way. But changing this to use the session token, and make the server authenticate the user based on the token is an relatively easy improvement to implement. - FLYTT TIL FURTHER}
-
-Communication with the database is still done through a ContentProvider, as seen in figure~\ref{fig:archAppOverview}. Since the changes will affect the URI, the view will get the new data and be rendered again automatically if the the app is running.
-
-The algorithm for how data synchronization is done is showed as pseudo code in code snippet~\ref{fig:algorithm_sync}.\\
-
-%Pseudo code for the sync
-
-\noindent\begin{minipage}{\textwidth}
-\begin{lstlisting}[caption={Algorithm for the synchronization flow}, label={fig:algorithm_sync}]
-lastSync <- Last synchronization time stamp from account
-now <- Current time in Unix epoch
-
-localDataModels <- Get all local changes after lastSync
-
-serverDataModels <- Get all server changes after lastSync
-
-sendLocalModelsToServer(localDataModels)
-
-saveModelsToLocalDB(serverDataModels)
-
-if no errors
-  accountLastSync = now
-\end{lstlisting}
-\end{minipage}
-
-The algorithm is straightforward and will retry data synchronization until it succeeds. The reason for this is that the synchronization timestamp will only be updated when everything goes well. 
-
-\todo{TIL FURTHER - 
-If the error checking fails and the last synchronization timestamp fails, then data will be lost. 
-This is not a perfect approach to synchronization, \todo{what? ->}but acceptable within the time frame that it was needed.} 
-
-SyncAdapters can be configured to run when Android feels it has time to run them. This is when the processor is not busy and WiFi Internet connection is available. It can also be forced to run on regular intervals.
-
-\subsection{Keeping the code clean}
-Other long running operations, for example the rendering of the graph, will block the main thread if it is not implemented correctly. To avoid the main thread to be blocked in those cases, AsyncTask is used. AsyncTask is helpful when making asynchronous code that will update the view when finished.
-
-\todo{ DETTE KAN NOK FJERNES -
-\todo{Thereafter code written must generally continue to avoid doing wrong operations on the main thread. Forgetting to do this properly is easy. fix please, skjønner lite} To enforce the proper use of this threading, Android has a tool named StrictMode~\cite{androidStrictMode}. It can be tweaked to monitor the UI thread and check for file operations, network access and other problems. The penalty for breaking these defined rules can be set to emit a stack trace or kill the app. Having StrictMode configured while coding makes discovering bad implementation choices easier. 
-}
-
-%The app will follow standard Android design guidelines regarding the user interface design.
+The app is designed with the ability to synchronize data to the server. The server, as explained in section~\ref{sec:arch_server}, exposes a restful API were the app can retrieve and store data. Data synchronization is done by using Androids built in SyncAdapter. The SyncAdapter is an external, self-contained process that keeps the data updated. The SyncAdapter is registered to a specific account on the Android system and utilizes the ContentProvider to manipulate data. SyncAdapters can be configured to run when the system has available resources. It can also be forced to run on regular intervals.

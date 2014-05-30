@@ -13,5 +13,11 @@ The current user authentication is done with the FacebookSDK. This authenticatio
 The problem is that user authentication to the server is done by having a user id \gls{slug} in the URL. The connection is not secured in any way, and no validation is done on the server side.
 The token returned by the authentication to Facebook should be included in the header when communicating with the server. This is enough to validate the user and his access rights server-side.
 
+\todo{
+If the error checking fails and the last synchronization timestamp fails,
+then data will be lost. This is not a perfect approach to synchronization,
+what? ->
+but acceptable within the time frame that it was needed.}
+
 \subsection{Graph factory}
 The current graph creating process is done within an AsyncTask that resides in the class where the line graph is made. The current implementation can create memory leaks (because inner classes should be static). More graphs are needed in the other tabs (data comparison, etc). With some more work it can work like a generic graph factory that can be used anywhere in the app.
