@@ -4,7 +4,7 @@ In the very beginning of the project, the team looked into the possibility of ge
 
 \subsection{Hardware architecture}
 
-The envisioned architecture is shown in figure~\ref{fig:idealArchitecture}. This includes both finished functionality and the concepts the team were unable to implement because of technical restrictions or time constraints. The team concluded that the best architecture for a such a system would include a home data aggregator. The home data aggregator recieves data from the measuring units connected with the devices. Depending on the functionality of the measuring units, remotely controlling devices, can be possible.
+The envisioned architecture is shown in figure~\ref{fig:idealArchitecture}. This includes both finished functionality and the concepts the team were unable to implement because of technical restrictions or time constraints. The team concluded that the best architecture for a such a system would include a home data aggregator. The home data aggregator receives data from the measuring units connected with the devices. Depending on the functionality of the measuring units, remotely controlling devices, can be possible.
 
 \begin{figure}[H]
 \centering
@@ -28,9 +28,9 @@ To ensure full operability 24 hours a day, a base station is needed in the user'
 To make real time monitoring possible, every device the user wants to monitor must be connected to a wireless monitoring unit. The team tried to find an existing solution that was satisfying, but most of the options found was proprietary and/or too expensive. The following paragraphs describes the most viable options.
 
 \subsubsection{HomeMatic plug}
-This is the device that the CoSSMic team at SINTEF has been experimenting with. The drawbacks is that it has a unit price of almost 500 NOK and must be imported. Covering most home devices with such a measuring device would be extremely costly. As hardware devices were not a part of the project scope, the team did not do any research on how to interface with this unit. More detailes about this can be found in Appendix~ref{sec:homematic}.
+This is the device that the CoSSMic team at SINTEF has been experimenting with. The drawbacks is that it has a unit price of almost 500 NOK and must be imported. Covering most home devices with such a measuring device would be extremely costly. As hardware devices were not a part of the project scope, the team did not do any research on how to interface with this unit. More details about this can be found in appendix~\ref{sec:homematic}.
 
-\subsubsection{Do It Yourself (DIY) Arduino}
+\subsubsection{Do It Yourself Arduino}
 A much cheaper, but perhaps limited solution, is one from Open Energy Monitor~\cite{oemmodule}. These units do not support the ability to control devices, only measurement of consumption. They are much cheaper than the HomeMatic unit, but must be assembled manually. The unit can be good for experimenting and prototyping but it is far from ready for the home market.
 
 
