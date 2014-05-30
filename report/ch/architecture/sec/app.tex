@@ -32,7 +32,7 @@ Keeping the business logic in one place makes maintaining and updating the code 
 
 \subsection{User authentication}
 
-The system requires the user to be identified as a unique and authorized user. This authentication is done using the OAuthV2.0 protocol. This needs a third party authenticator, in our case Facebook is used. Other OAuthV2.0 authentication providers can also be used, for instance Twitter or Google.
+The system requires the user to be identified as a unique and authorized user. This authentication is done using the OAuthV2.0 protocol~\cite{oauthv2.0}. This needs a third party authenticator, in our case Facebook is used. Other OAuthV2.0 authentication providers can also be used, for instance Twitter or Google.
 The Android system has its own account architecture. Working with this architecture requires the app to register an AbstractAccountAuthenticator~\cite{androidAccount} class in the AndroidManifest~\cite{androidmanifest}. When the user logs in, Facebook returns a token, stored in the AbstractAccountAuthenticator object. The token and other related user data (Facebook id) can be accessed, by the application when necessary.
 
 \subsection{Server communication}
