@@ -20,16 +20,12 @@ Data access to the underlying database is done using ContentProviders~\cite{cont
 \label{fig:archAppOverview}
 \end{figure}
 
-\subsection{Business logic}
-After defining a uniform access model to the database, the issue of where to place the actual business logic (data manipulation) must be tackled. Keeping the business logic in one place makes changing data manipulation logic a lot easier, avoids the issue of keeping track of where every data operation is defined in the view, and the bug bug free.
-
-The team decided to use the pattern Model-View-Presenter (MVP). MVP is a Model-View-Controller (MVC) derivative~\cite{mvc}. All business logic is handled in presenter classes, between the views and models. Through this uniform access, all logic applied to data preservation (server synchronization), and data control can be handled in one place. How the presenter accesses data can be seen in figure~\ref{fig:archAppOverview}.
-
-By using the full MVP pattern, the view is easy to update when data changes. In our case that was not needed since all data is accessed through a ContentProvider. The Presenters only handle the manipulation of the models and commits the changes to the database. The current implementation can easily be extended to use the complete pattern if it is needed in another iteration of the app.  
+\subsection{Data manipulation}
+Keeping the business logic in one place makes maintaining and updating the code easier. The team decided to use the pattern Model-View-Presenter (MVP). MVP is a Model-View-Controller (MVC) derivative~\cite{mvc}. The MVP pattern separates the models, containing the data, from the presenter, handling the data, and the view, displaying the data. This is illustrated in figure~\ref{fig:mvp}. 
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/mvp.png}
-\caption{MVP}
+\caption{An illustraton of the Model-View-Presenter pattern}
 \label{fig:mvp}
 \end{figure}
 
