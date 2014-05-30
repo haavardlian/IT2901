@@ -5,19 +5,13 @@ Due to time restrictions in this project, not all functionality was fully implem
 The way the system is built up right now is that everything in the app is connected to a user. A user has devices and devices have usage. One possible improvement would be to have the user connected to one or several residences and the devices connected to those residences. This change would be relatively simple as there is only one extra layer of models needed. It would also make it possible to compare users more accurately, taking into consideration what type of residence they have, how many people live in that residence and so on. This would give each user the possibility of monitoring the power usage of their summer home, cabin or rented out apartments. It is also possible to connect all tips to residences, so the user can choose which residence he wants to perform specific tips for. 
 
 \subsection{Profile}
-The profile tab is supposed to show information about the user and let the user manage residences. The team also envisions this tab to contain privacy settings, allowing the user to, for instance, disable data collection for statistics and comparison. In the current version of the app, the user has no option to remain anonymous. 
+The profile tab is supposed to show information about the user and let the user manage residences. The team envisions this tab to contain privacy settings, allowing the user to, for instance, disable data collection for statistics and comparison. In the current version of the app, the user has no option to remain anonymous. 
 On the server side this could be implemented by adding a flag to the user that indicate a wish to remain anonymous. When retrieving data for comparison or statistics the server can then filter out the users based on this flag.
 
 \subsection{User authentication}
-The current user authentication is done with the FacebookSDK. This authentication is secure enough in itself. 
-The problem is that user authentication to the server is done by having a user id \gls{slug} in the URL. The connection is not secured in any way, and no validation is done on the server side.
+The current user authentication is done with the Facebook SDK. This authentication is secure enough in itself. 
+The problem is that user authentication to the server is done by having a user id in the URL. The connection is not secured in any way, and no validation is done on the server side.
 The token returned by the authentication to Facebook should be included in the header when communicating with the server. This is enough to validate the user and his access rights server-side.
 
-\todo{
-If the error checking fails and the last synchronization timestamp fails,
-then data will be lost. This is not a perfect approach to synchronization,
-what? ->
-but acceptable within the time frame that it was needed.}
-
-\subsection{Graph factory}
-The current graph creating process is done within an AsyncTask that resides in the class where the line graph is made. The current implementation can create memory leaks (because inner classes should be static). More graphs are needed in the other tabs (data comparison, etc). With some more work it can work like a generic graph factory that can be used anywhere in the app.
+\subsection{Graph improvements}
+The current graph creating process is done within an AsyncTask that resides in the class where the line graph is made. The current implementation can create memory leaks, because inner classes should be static. There is a need for an easy way of reusing graphs in different tabs. To solve this, a generic graph factory can be created.
