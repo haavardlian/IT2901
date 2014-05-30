@@ -2,26 +2,28 @@
 Even though the team aimed to make informed decisions before the development started, some changes had to be made during the project. This section presents an evaluation of these decisions.
 
 \subsection{Android development}
-%A good deal of decisions made on the Android side of the project turned out to be reasonable. As only one of the team members had previous experience, pit falls could be avoided. The problem was that some of the Android building blocks are specific to the Android platform. Starting to use these building blocks can seem unintuitive unless you know about the alternatives and the problems these can cause. 
 When it comes to the Android development, a great deal of the decisions made turned out to be reasonable. Few of the team members had previous experience with development in Android.
 
-Each team member spent a significant amount of time getting up to speed with the Android platform and the front-end architecture of Android apps. In retrospect, more time should have been spent getting all team members up to date and practicing Android programming together in the beginning of the project. One of the team members had some experience with Android before and ended up spending a lot of time teaching and explaining to the other team members. If this had been organized in a way, for instance by holding a course in the beginning, some of the time spent on this could have been saved.
+Each team member spent a significant amount of time getting up to speed with the Android platform and the front-end architecture of Android apps. In retrospect, more time should have been spent getting all team members up to date and practicing Android programming together in the beginning of the project. One of the team members had some experience with Android development and ended up spending a lot of time teaching and explaining to the other team members. This could have been organized in a way, for instance by holding a workshop in the beginning. Learning Android development properly from the start could have saved a lot of time.
 
-\subsection{Server side}
-
-The decision to implement the server in Dropwizard is reasonable as long as the server is used to provide a RESTful interface. There are other choices, but every solution usually includes some, or even all of the libraries used in Dropwizard. One could also create the server from scratch and use a stand-alone HTTP server, but this was not feasible in the time frame of this project, and would have been a huge waste of resources considering how well Dropwizard works.
-
-\subsection{In-house devices}
-In the beginning the team designed a complete architecture with a server, Android app, and a monitoring device that communicated any new data to the server. This would have been a minimum viable complete solution. However, device monitoring turned out to be unrealistic within the project time frame. The team decided to drop the feature entirely after consulting with the customer. As mentioned in section~\ref{sec:obtainingreq}, this requirement was optional.
-
-After learning more about the CoSSMic project, the team realized that a solution for the complete architecture already was under development. This solution opened the possibility of interfacing to these devices, or at least design the server to be compatible with it. This information was unfortunately not made available before halfway through the project, which in turn lead to not taking that solution into consideration during the development. Instead, further development involving this solution is documented in chapter~\ref{sec:further}.
-
-\subsection{Choice of Android IDE}
-The team agreed on using Android Studio after a brief discussion on whether to use Android Studio or Eclipse with ADT. Even though most of the team only had experience with Eclipse, it seemed like Android Studio had better features. This included better search function, auto completion of code, and integration to the Android tools.
+\subsubsection{Development tools}
+The team agreed on using Android Studio after a brief discussion on whether to use Android Studio or Eclipse with ADT.
  
-At the start of the project, the team experienced some issues with Android Studio - some of the team members had trouble actually running the app. This was caused by an Android Studio update, resulting in Gradle not being able to setup the project. The issue took some time to solve, but after it was resolved, the team did not experience any more trouble with Android Studio. However, since Android Studio is a relatively new IDE, it still has some bugs and is updated frequently with major changes.
+At the start of the project, the team experienced some issues with Android Studio - some of the team members had trouble compiling the app. This was caused by an Android Studio version inclompatibility, resulting in Gradle not being able to setup the project. Resolving this issue, took more time than estimated. However, since Android Studio is a relatively new IDE, it still has some bugs and is updated frequently with major changes.
 
 As the project progressed, it became clear that the learning curve was not as steep as first expected. Development would most likely not have been faster if Eclipse had been chosen.
+
+
+\subsection{Server development}
+
+The decision to implement the server in Dropwizard is reasonable as long as the server is used to provide a RESTful interface. There are other choices, but every solution usually includes some, or even all of the libraries used in Dropwizard. The server could be created from scratch and use a stand-alone HTTP server. This was not feasible in the time frame of this project, and would have been a waste of resources considering how well Dropwizard works.
+
+\subsection{Device monitoring}
+In the beginning the team designed a complete architecture with a server, Android app, and a monitoring device that communicated with a server. However, device monitoring turned out to be unrealistic within the project's time frame. The team decided to drop the feature entirely after consulting with the customer. As mentioned in section~\ref{sec:obtainingreq}, this requirement was optional.
+After learning more about the CoSSMic project, the team realized that a solution for the complete architecture was already under development. This solution opened the possibility of interfacing to these devices, or at least design the server to be compatible with it. This information was unfortunately made available too late in the project. Because of this, the team was not able to include this functionality into the product. 
+The team's device monitoring concepts is described in section ~\ref{sec:hardwareComponents}.
+
+\subsection{Choice of Android IDE}
 
 
 
