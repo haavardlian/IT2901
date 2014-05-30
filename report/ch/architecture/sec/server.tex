@@ -1,18 +1,18 @@
 \section{Server architecture}
 \label{sec:arch_server}
-The server is the systems back-end and is responsible for permanently storing data and providing it to the user on demand. The team decided that the server should be RESTful in order to make it easy to access. The data-interchange format chosen to transfer data between the app and the server is JSON. This format was chosen for its human readability and it is also very easily parsed by computer software. In addition, both these properties allow for easy integration with future functionality.
+The server is the system back-end and is responsible for permanently storing data and providing it to the user on demand. The team decided that the server should be RESTful in order to make it easy to access. The data-interchange format chosen to transfer data between the app and the server is JSON. This format was chosen for its human readability and it is easily parsed by computer software. In addition, both these properties allow for easy integration with future functionality.
 
 \subsection{Dropwizard}
-The server is implemented in Dropwizard which is a Java framework for making RESTful web services. Dropwizard was chosen for its use of popular Java libraries such as Jetty, Jersey, and Jackson to implement its functionality. The main class of the server is a service that at runtime provides access to the database and adds resources to the runtime environment. The main structure of how the server uses resources and the database can be found in figure~\ref{fig:classDiagramServer}.
+The server is implemented in Dropwizard which is a Java framework for making RESTful web services. The main class of the server is a service that provides access to the database at runtime. The main structure of how the server uses resources and the database can be found in figure~\ref{fig:classDiagramServer}.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/classDiagramServer.png}
-\caption{Class diagram for main server structure}
+\caption{UML Class diagram for main server structure}
 \label{fig:classDiagramServer}
 \end{figure}
 
 \subsubsection{Resources}
-A Dropwizard implementation has a set of resource classes. These classes contain methods that map to a URI path. When the server receives a HTTP request it will try the match the path to the paths defined by the resource methods, it will then call the method found or return a 404 Not Found error. An example resource class is included in code~\ref{lst:dropwizardResource}. The method in this resource will handle HTTP GET calls to /user/\{user\}/sync/usage/\{timestamp\} where \{user\} and \{timestamp\} matches any text. These variables is then used inside the method to perform actions depending on user and time stamp.
+A Dropwizard implementation has a set of resource classes. These classes contain methods that map to a URI path. When the server receives a ~\gls{HTTP} request it will try to match the path to the paths defined by the resource methods. Then it will call the method found or return a ''not found'' error. An example resource class is included in code snippet~\ref{lst:dropwizardResource}. The method in this resource will handle HTTP GET calls to \emph{/user/\{user\}/sync/usage/\{timestamp\}} where \{user\} and \{timestamp\} matches any text. These variables is then used inside the method to perform actions depending on user and timestamp.
 \newline
 
 \noindent\begin{minipage}{\textwidth}
