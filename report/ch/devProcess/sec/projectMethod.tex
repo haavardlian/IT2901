@@ -5,37 +5,35 @@
 As explained in section~\ref{sec:devMethods}, Scrum was chosen as project management framework. Adapting Scrum and XP into the project had several challenges that will be described in this section.
 
 \subsection{The team's adaptation of Scrum}
-The team made several modifications and adaptations to the Scrum framework in order to make it match the projects needs. The modifications made are described in the sections below.
+The team made several modifications and adaptations to the Scrum framework in order to make it match the project's needs. These modifications are described in the sections below.
 
 \subsubsection{Keeping the project leader}
 The concept behind the Scrum approach is to empower the entire team to make decisions, so that a project leader would become redundant. However, in order to manage and make the best of the team's resources, the team found it necessary to keep this position in the project. The tasks related to this role is described in table~\ref{tab:mainResponsibilities}.
 
 \subsubsection{Sprints}
-The team agreed to meet twice a week, each meeting starting with a daily meeting. This was done because having daily meetings was incompatible with the team's schedule. In addition, the team had a fixed time to meet with the customer once a week, and with the supervisor once every second week.
-
-The sprint backlog included all tasks the team should be able to complete during a sprint. This was created in collaboration with the customer, and gave him a possibility to affect the team's main focus. This was done every week, although each sprint lasted two weeks.
+As having daily meetings was incompatible with the team's schedule, the team agreed to meet twice a week, each meeting starting with the daily meeting routine. In addition, the team met weekly with the customer, and with the supervisor once every second week. In collaboration with the customer, tasks were moved from the product backlog to the sprint backlog. This gave the customer a possibility to affect the team's main focus.
 
 \subsubsection{Scrum Tool}
 \label{sec:scrumtool}
 The team's main requirements in a Scrum tool was that it should be easy to use, effective for project management, and had GitHub integration. It should support chart generation for documentation and overview purposes as well. With this tool the team would ideally get an overview of the project's progress and the team's performance. After a brief decision process, the team chose Yodiz because it provided free accounts for educational purposes and satisfied the team's requirements. Further details on this process can be found in section~\ref{sec:choiceScrumTool}.
 
 \subsubsection{Planning poker}
-In the team's planning poker sessions, we used custom units for the estimations. These units were small, medium, large, and extra large, each of them representing one, two, four, and eight hours respectively.
+In the team's planning poker sessions, custom units for the estimations were used. These units were small, medium, large, and extra large, each of them representing one, two, four, and eight hours respectively.
 
-\subsection{The teams adaptation of Extreme Programming}
+\subsection{The team's adaptation of Extreme Programming}
 \label{sec:adapExtremeProgr}
 Several modifications and adaptations were made to the Extreme Programming method in order to optimize it to fit the project's needs. These modifications are described in the subsequent sections.
 
 \subsubsection{Pair programming}
-The team practiced this principle by dividing the team into small groups or pairs when designing prototypes, deciding on architecture, and in a few cases, collaborated on code sections.
+The team practiced the principle of pair programming, by dividing the team into small groups or pairs when designing prototypes, deciding on architecture, and in a few cases, collaborated on code sections.
 
 \subsubsection{Planning game}
-The team interpreted the planning game in XP to be a more generic description of planning methods. The team interpreted that planning poker, which was used for the estimation of the tasks, was a more specific implementation of the planning game in XP. This assumption was made based on one of the most important aspects of planning poker: To avoid the influence of the other participants, no team member should know what the rest of the team estimates. This aspect is not mentioned in the planning game specification in XP.
+The team interpreted the planning game in XP to be a more generic description of planning methods. The team felt that planning poker, which was used for the estimation of the tasks, was a more specific implementation of the planning game in XP. This assumption was made based on one of the most important aspects of planning poker: To avoid the influence of the other participants, no team member should know what the rest of the team estimates. This aspect is not mentioned in the planning game specification in XP.
 
 \subsubsection{Continuous integration and collective ownership}
-The team practiced this principle by developing on separate branches in Git and then merge the branch back to the master branch when a task was considered to be completed and all the functionality was working.
+The team practiced the principle of continous integration by developing on separate branches in Git, and then merge the branch back to the master branch when a task was considered to be completed.
 
-The team practiced the collective ownership principle by sharing and collaborating on the project's code on GitHub. It was also agreed with the customer to follow the Java code convention and Android code convention while developing.
+The team practiced the collective ownership principle by sharing and collaborating the project's code. It was also agreed with the customer to follow standard code conventions.
 
 \subsubsection{Design improvement and optimization}
 The team continuously followed this practice by refactoring, cleaning up code, and leaving the optimization of the code to the last two sprints. It was also practiced during design improvements in the development of the prototypes.
@@ -46,12 +44,9 @@ By the end of each sprint the team had a goal of releasing a new version of the 
 \subsubsection{Simple design}
 Although the team worked iteratively and in close collaboration with the customer, it was not always easy to \emph{only} implement the basic functionality the customer requested. As it was up to the team to define the requirements specification, it was hard leaving out requirements the team thought would improve the app, even though they were not directly requested by the customer.
 
-%\subsubsection{Sustainable pace}
-%The team practiced this by having an estimation process where the amount of work hours were set to 20 a week.
-%\todo{Trengs denne seksjonen?}
 
 \subsubsection{Test-first development}
-The team did not follow this practice. Although it was a good idea to have a test-driven development approach towards the developing process, the team lacked both the experience and the time to use this practice. The team therefore decided to drop it.
+The team did not follow this practice. Although it was a good idea to use a test-driven development approach towards the developing process, the team lacked both the experience and the time to use this practice. The team therefore decided to drop it.
 
 \subsubsection{On-site customer}
-This principle does not apply to the team's project, as our customer comes from an external organization. However, the team had co-located meetings with our customer at a regular basis, usually once a week and hence got continuous feedback and acceptance testing. Further details on the customer's acceptance testing can be found in section~\ref{sec:acceptance}.
+This principle does not apply to the team's project, as our customer comes from an external organization. However, the team had co-located meetings with the customer at a regular basis, usually once a week and hence got continuous feedback and acceptance testing. Further details on the customer's acceptance testing can be found in section~\ref{sec:acceptance}.
