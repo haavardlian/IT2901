@@ -1,25 +1,16 @@
-\section{Android app architecture}
+\section{Android app}
 \label{sec:arch_app}
 The app is developed to run on Android versions 4.0 or greater. As of March 2014 this makes up for 79,7\% of all Android devices in use~\cite{AndroidDeviceFragmentation}.
 Support for earlier versions would require extra work, and because the app is a proof-of-concept this was not considered a problem.
 
-
-\subsection{Best practice}
-The best practice guidelines for Android~\cite{androidPracticePerformance} state that one should avoid using a complex architecture. A complex architecture will increase the code base and is overkill in most situations. A structured pattern with concise code guidelines is needed to keep the development process as simple, effective, and bug free as possible. The next sections will explain how the app is initialized, and the code structure that allows a flow through the different functionality of the app. The subsequent sections after that go into detail about threading, data access, and synchronization.
+The best practice guidelines for Android~\cite{androidPracticePerformance} state that one should avoid using a complex architecture. A complex architecture will increase the code base and is unnecessary in most situations. A structured pattern with concise code guidelines is needed to keep the development process as simple, effective, and bug free as possible. This section will give a detailed description of the Android app architecture. 
 
 \subsection{Overall structure}
-The Activity is the starting point of the app. It can also be explained as the main ''thing'' in Android. It is a self contained process with the full life-cycle of the device and the possibility to show a view to the user.
+The Activity is the starting point of the app. It is a self contained process with the possibility to display a user interface to the user.
 
-To access the different parts of the app it was decided to use a navigation drawer that is accessed through the app icon on the action bar, or with a swipe from the left. The different sections of the app are shown when the user clicks on it in the navigation drawer. Each section accessed through the navigation drawer is henceforth called a tab. The structure of how the main activity communicates with the navigation drawer is shown in figure~\ref{fig:classDiagramDrawer}.
+To access the different parts of the app it was decided to use a ~\gls{navigation drawer}. The sections accessed through the navigation drawer is called a tab. 
 
-\todo{Fragments til glossary? -->}
-The navigation drawer and all of the tabs are implemented as Fragments. A Fragment is a representation of some behavior or an interface. It is embedded inside an Activity and can be swapped in and out of the Activity. Multiple Fragments can live in the same view. A subset of the Activity life-cycle is implemented in Fragments so it can work as a self contained module. 
-
-\begin{figure}[H]
-\includegraphics[width=\textwidth]{ch/architecture/fig/class_diagram_drawer.png}
-\caption{Class diagram for the main Activity.}
-\label{fig:classDiagramDrawer}
-\end{figure}
+The navigation drawer and all of the tabs are implemented as Fragments. A Fragment is a representation of some behavior or an interface. It is embedded inside an Activity and can be swapped in and out of the Activity. Multiple Fragments can live in the same view. A subset of the Activity life-cycle is implemented in Fragments so it can work as a self-contained module. To read more about the Android life-cycle, see the official Android documentation.~\cite{androiddoc}
 
 The navigation drawer handles when a tab is clicked. A callback to the main activity is issued, and the Fragment view is swapped in.
 
