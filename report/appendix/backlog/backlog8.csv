@@ -1,0 +1,72 @@
+id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeight, daynine, dayten
+\vspace{-0.8cm}
+x,planlegging,12,0,12,0,0,12,0,0,0,0
+x,møter,0,0,0,0,6,0,0,0,0,0
+
+154,customer presentation,0,0,0,0,0,0,0,0,0,0
+,prepare,10,5,0,12,0,0,0,0,0,0,0
+,present,0,0,0,0,9,0,0,0,0,0
+
+152,Code quality and cleaning,0,0,0,0,0,0,0,0,0,0
+,Cleanup usage, devices and home,0,0,5,0,0,0,0,0,0,0
+,Cleanup Tips,0,0,2,0,0,0,0,0,0,4
+,Cleanup server,0,0,2,0,4,0,0,0,0,0
+,Going over large parts of the code to make usure its consistent.,0,0,0,0,0,0,0,6,0,0
+,Cleanup in app (code conventions),4,0,3,0,0,0,0,0,4,0
+
+147,Branding,0,0,0,0,0,0,0,0,0,0
+,Branding,0.75,0,0,0,0,0,0,0,0,0
+
+153,Last minute functionality,0,0,0,0,0,0,0,0,0,0
+,add images in wall posts,0,0,0,5,0,0,0,0,0,0,0
+
+149,Final version of report,0,0,0,0,0,0,0,0,0,0
+,Technical documentation (installation guide)should be written,0,2,0,0,0,0,0,0,0,0
+,rewrite the use cases,0,0,0,0.5,0,0,0,0,0,0
+,Add usecase diagram and write about it,0,0,0,0,0.75,0,0,0,0,0
+,Write User Manual,0,2,0,0,0.75,0,0,0,0,0
+,Ch. 5: Fix design of class diagrams,0,0,0,0,0,1.75,1.75,0,0,0
+,Correct the referance from retrospectchapter to the risktable,0,0,0.25,0,0,0,0,0,0,0
+,Modify architecture chapter. Ref. mail 13.04.2014,0,0,2.75,0,0,0,0,0,0,0
+,backlog sprint 6,2,0,0,0,0,0,0,0,0,0
+,Write abstract,0,0,0.75,0,0,0,0,0,0,0
+,update meeting overview with supervisor and customer to include latest dates,0,0,0,0,0.5,0,0,0,0,0
+,backlog sprint 7,0,0,2,0,0,0,0,0,0,0
+,revise wbsa,0,0.25,0,0,0,0,0,0,0,0
+,Ch.5: Reformulate and revise system architecture chapter,0,0,0,0,2.25,0,0,0,0,0
+,6.3 : Write our adaption to scrum,0,0,0,1,0,0,0,0,0,0
+,7.1.6 : Revise testing non functional requirements,0,0,0,0,0,0,0,4,0,0
+,7.2.1 : Write hallwaytesting section,0,0,0,0,0,0,0,1,0,0
+,Reorganize how we mention scrum, our adaption to it and retrospect,0,0,2.5,0,0,0,0,0,0,0
+,Prestudy : Write about libraries not written about,0,0,0,0,0,0,0,2,0,0
+,Rewrite non functonal requirements,0,0,1.25,0,0,0,0,0,0,0
+,Write about acceptance testing,0,0,0.25,0,0,0,0,0,0,0
+,fix todo and title page,0,0,1.75,0,0,0,0,0,0,0
+,update wbs,0,0,1,0,0,0,0,0,0,0
+,Write our adaption to scrum,0,0,3,0,0,0,0,0,0,0
+,Write about the patterns we use and revise chapter 5,0,0,0,0,0,2,2,0,0,0
+,6.3 : Add list of goals in each sprint in process development sprint overview,0,0,0,0,1,0,0,0,0,0
+,Write about sprint 7 in development process,0,0,0.5,0,0,0,0,0,0,0
+,revise domain knowledge,0,0,0,1,0,0,0,0,0,0
+,Insert backlog 7 into report,0,0.25,0,0,0,0,0,0,0,0
+,restructure report and add chapters/sections according to discussion,0,0,0,0,1,0,0,0,0,0
+,Create pictures to user manual and research how to place pictures in latex,0,0,0,0,2,0,0,0,0,0
+,Write about how to actually install the application on your phone,0,0,0,0,0.25,0,0,0,0,0
+,write resource allocation,0,0,0,0,1,0,0,0,0,0
+,Write further development,0,0,0,0,1.5,0,0,0,0,0
+,8.5 - product evaluation,0,0,0,0,1,0,0,0,0,0
+,Revise further development,0,0,0,0,0,2.5,0,1,0,0
+,Change elicitation of requirements to include documentation and picture of steps,0,0,0,0,0,0,0,0.75,0,0
+,Fix usermanual,0,0,0,0,0,0,0,1,0,0
+,Revise chapter 3,0,0,0,0,0,0,0,3,0,0
+,revised chapter1, 2, 6,0,0,0,0,0,0,0,6.5,0,0
+,Revise chapter 1,0,0,0,0,0,0,0,0,2.25,0
+,Revise chapter 2,0,0,0,0,0,0,0,0,2.25,0
+,Revise chapter 3,0,0,0,0,0,0,0,0,2.5,0
+,Revise report,0,2,0,0.5,2.75,0,2.75,6.5,13,2
+,Write documentation,0,0,0,2.5,0,0,0,0,0,0
+,Revise report,0,2,0,0,1,0,2,6,14.5,0
+,Revise report,0,2,0,0,0,0,0,10,12,10
+,Revise report,0,2,0,0,3.75,0,0,0,10,4,75
+,Finalize retrospect,0,0,0,0,0,0,0,0,0,0
+,Revise report,2,2,3.25,0,5,3.5,4.5,1.75,12,6
