@@ -6,21 +6,7 @@ Support for earlier versions would require extra work, and because the app is a 
 The best practice guidelines for Android~\cite{androidPracticePerformance} state that one should avoid using a complex architecture. A complex architecture will increase the code base and is unnecessary in most situations. A structured pattern with concise code guidelines is needed to keep the development process as simple, effective, and bug free as possible. This section will give a detailed description of the Android app architecture. 
 
 \subsection{Overall structure}
-The Activity is the starting point of the app. It is a self contained process with the possibility to display a user interface to the user.
-
-To access the different parts of the app it was decided to use a ~\gls{navigation drawer}. The sections accessed through the navigation drawer is called a tab. 
-
-The navigation drawer and all of the tabs are implemented as Fragments. A Fragment is a representation of some behavior or an interface. It is embedded inside an Activity and can be swapped in and out of the Activity. Multiple Fragments can live in the same view. A subset of the Activity life-cycle is implemented in Fragments so it can work as a self-contained module. To read more about the Android life-cycle, see the official Android documentation.~\cite{androiddoc}
-
-The navigation drawer handles when a tab is clicked. A callback to the main activity is issued, and the Fragment view is swapped in.
-
-Each tab has its own logic and has a default behavior defined by 'DefaultTabFragment`. A class diagram illustrating the main Fragments is shown in figure~\ref{fig:classDiagramFragments}. The default behavior takes care of updating the name of the current tab to the Action Bar.
-
-\begin{figure}[H]
-\includegraphics[width=\textwidth]{ch/architecture/fig/class_diagram_fragments.png}
-\caption{Class diagram for the fragments.}
-\label{fig:classDiagramFragments}
-\end{figure}
+The Activity is the starting point of the app. It is a self contained process with the possibility to display a user interface to the user. To access the different parts of the app it was decided to use a ~\gls{navigation drawer}. The sections accessed through the navigation drawer is called a tab. The navigation drawer and all of the tabs are implemented as Fragments. A Fragment is a representation of some behavior or an interface. It is embedded inside an Activity and can be swapped in and out of the Activity. Multiple Fragments can live in the same view. A subset of the Activity life-cycle is implemented in Fragments so it can work as a self-contained module. To read more about the Android life-cycle, see the official Android documentation.~\cite{androiddoc}
 
 \subsection{Android rendering and the main thread}
 One of the key issues on mobile app development (besides having a good interface design) is keeping the \gls{UI} responsive. Having a UI that lags will most often upset the user and result in the app being uninstalled from the device.
