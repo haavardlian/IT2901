@@ -12,7 +12,7 @@ The server is implemented in Dropwizard which is a Java framework for making RES
 \end{figure}
 
 \subsubsection{Resources}
-A Dropwizard implementation has a set of resource classes. These classes contain methods that map to a URI path. When the server receives a ~\gls{HTTP} request it will try to match the path to the paths defined by the resource methods. Then it will call the method found or return a ''not found'' error. An example resource class is included in code snippet~\ref{lst:dropwizardResource}. The method in this resource will handle HTTP GET calls to \emph{/user/\{user\}/sync/usage/\{timestamp\}} where \{user\} and \{timestamp\} matches any text. These variables is then used inside the method to perform actions depending on user and timestamp.
+A Dropwizard implementation has a set of resource classes. These classes contain methods that map to a URI path. When the server receives a ~\gls{HTTP} request it will try to match the path to the paths defined by the resource methods. Then it will call the method found or return a ''not found'' error. An example resource class is included in code snippet~\ref{lst:dropwizardResource}. The method in this resource will handle HTTP GET calls to ''/user/\{user\}/sync/usage/\{timestamp\}'' where \{user\} and \{timestamp\} matches any text. These variables is then used inside the method to perform actions depending on user and timestamp.
 \newline
 
 \noindent\begin{minipage}{\textwidth}
@@ -38,7 +38,7 @@ public class SyncResource {
 \end{minipage}
 
 \subsubsection{Database abstraction}
-Dropwizard uses the JDBC and JDBI libraries to communicate with the database. The JDBC library is Javas standard interface to databases. MySQL provides a driver for JDBC in order to make communication possible. JDBI is a convenience layer on top of JDBC which makes it possible to write an interface with SQL queries and use that interface as a data access object.
+Dropwizard uses the JDBC and JDBI libraries to communicate with the database. The JDBC library is Java's standard interface to databases. MySQL provides a driver for JDBC in order to make communication possible. JDBI is a convenience layer on top of JDBC which makes it possible to write an interface with SQL queries and use that interface as a ~\gls{DAO}.
 
 \subsection{Database}
 For permanent storage the server uses MySQL. MySQL is a reliable and easy to set up database. A diagram of how the database is designed can be found in figure~\ref{fig:ER-Diagram}
