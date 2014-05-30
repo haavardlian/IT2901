@@ -2,7 +2,20 @@
 \label{sec:hardwareComponents}
 In the very beginning of the project, the team looked into the possibility of getting live data directly from devices. This required some technical equipment for collecting and transmitting power usage from a device. The original idea was that the app should get data directly from devices in the house, and if possible, control the devices.
 
-The team concluded that the only reasonable architecture for a such a system would include a small server, running on a small computer (for example Raspberry Pi), and measurement devices with a wireless transmitter connected to anything the user wanted to control and monitor. Finding already usable devices that allow for energy monitoring on the market was not successful. Communication between the home server and devices is also a challenge. Much of this is due to the lack of standards in transmission between devices and servers. The technology on this front is currently moving very fast due to the ongoing \gls{IoT} trend. The team found that many of the existing apps would have a device that were desired, but with a proprietary communication protocol and technology. The customer had previously requested that the devices should be cheap and preferably based on open source technology.
+\subsection{Hardware architecture}
+
+The envisioned architecture is shown in figure~\ref{fig:idealArchitecture}. This includes both finished functionality and the concepts the team were unable to implement because of technical restrictions or time constraints. More detail can be found in section~\ref{sec:hardwareComponents}.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.3\textheight]{ch/further/fig/architecture.png}
+\caption{Ideal Wattitude architecture.}
+\label{fig:idealArchitecture}
+\end{figure}
+
+
+The team concluded that the only best architecture for a such a system would include a small server, running on a small computer (for example Raspberry Pi), and measurement devices with a wireless transmitter connected to anything the user wanted to control and monitor. Finding already usable devices that allow for energy monitoring on the market was not successful. Communication between the home server and devices is also a challenge. Much of this is due to the lack of standards in transmission between devices and servers. The technology on this front is currently moving very fast due to the ongoing \gls{IoT} trend. The team found that many of the existing apps would have a device that were desired, but with a proprietary communication protocol and technology. The customer had previously requested that the devices should be cheap and preferably based on open source technology.
 
 \subsection{Home data aggregator}
 To ensure full operability 24 hours a day, a base station is needed in the user's home. This server will serve as an aggregating agent for data from measuring units attached to devices. Given an ideal architecture implementation, this unit would also be responsible for controlling devices. The team envisions this unit as a synchronization service working for the Wattitude cloud server. The software for such a server could be based on the current server software made. The hardware for this base station would be as simple as a Raspberry pi~\cite{pi}. These computers are small, cheap and provides all the hardware needed for a simple home aggregator. Some modifications might be necessary to communicate with the measuring units. The architecture for this aggregation unit is shown in figure~\ref{fig:aggregator}.
@@ -24,15 +37,3 @@ This is the device that the CoSSMic team at SINTEF has been experimenting with. 
 A much cheaper, but perhaps limited solution, is one from Open Energy Monitor~\cite{oemmodule}. These units do not support the ability to control devices, only measurement of consumption. They are much cheaper than the HomeMatic unit, but must be assembled manually. The unit can be good for experimenting and prototyping but it is far from ready for the home market.
 
 
-
-
-
-The envisioned architecture is shown in figure~\ref{fig:idealArchitecture}. This includes both finished functionality and the concepts the team were unable to implement because of technical restrictions or time constraints. More detail can be found in section~\ref{sec:hardwareComponents}.
-
-
-\begin{figure}[H]
-\centering
-\includegraphics[height=0.3\textheight]{ch/further/fig/architecture.png}
-\caption{Ideal Wattitude architecture.}
-\label{fig:idealArchitecture}
-\end{figure}
