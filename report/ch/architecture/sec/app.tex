@@ -9,10 +9,10 @@ The best practice guidelines for Android~\cite{androidPracticePerformance} state
 The Activity is the starting point of the app. It is a self contained process with the possibility to display a user interface to the user. To access the different parts of the app it was decided to use a ~\gls{navigation drawer}. The sections accessed through the navigation drawer is called a tab. The navigation drawer and all of the tabs are implemented as Fragments. A Fragment is a representation of some behavior or an interface. It is embedded inside an Activity and can be swapped in and out of the Activity. Multiple Fragments can live in the same view. A subset of the Activity life-cycle is implemented in Fragments so it can work as a self-contained module. To read more about the Android life-cycle, see the official Android documentation.~\cite{androiddoc}
 
 \subsection{Performance}
-One of the key issues in mobile app development is keeping the user interface responsive. Android renders the user interface on the main thread. Running long operations on this thread will make the interface unresponsive. Requesting data from external sources, like the server, or Facebook, is time consuming and should not run on the mein thread. Handling threading correctly is critical for the overall performance of the app.
+One of the key issues in mobile app development is keeping the user interface responsive. Android renders the user interface on the main thread. Running long operations on this thread will make the interface unresponsive. Requesting data from external sources, like the server, or Facebook, is time consuming and should not run on the main thread. Handling threading correctly is critical for the overall performance of the app.
 
 \subsection{Data access}
-Data access to the underlying database is done using ContentProviders~\cite{contentproviders}. Data is accessed with \gls{URI}'s (uniform resource identifier) that are uniquely defined. An overview of the data leyer implementation is shown in figure~\ref{fig:archAppOverview}. The view box in the figure represent the different Fragments that use data in the app. Fetching data to the view is done through the LoaderManager~\cite{loadermanager} interface. The LoaderManager loads data from the ContentProvider, and return the result asynchronously on a callback. ContentProviders used with a LoaderManager results in a view that is automatically updated when data changes, without bothering the UI thread.
+Data access to the underlying database is done using ContentProviders~\cite{contentproviders}. Data is accessed with \gls{URI}'s that are uniquely defined. An overview of the data layer implementation is shown in figure~\ref{fig:archAppOverview}. The view box in the figure represent the different Fragments that use data in the app. Fetching data to the view is done through the LoaderManager~\cite{loadermanager} interface. The LoaderManager loads data from the ContentProvider, and return the result asynchronously on a callback. ContentProviders used with a LoaderManager results in a view that is automatically updated when data changes, without bothering the user interface thread.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/arch_app_overview.png}
@@ -20,12 +20,13 @@ Data access to the underlying database is done using ContentProviders~\cite{cont
 \label{fig:archAppOverview}
 \end{figure}
 
+\newpage
 \subsection{Data manipulation}
 Keeping the business logic in one place makes maintaining and updating the code easier. The team decided to use the pattern Model-View-Presenter (MVP). MVP is a Model-View-Controller (MVC) derivative~\cite{mvc}. The MVP pattern separates the models, containing the data, from the presenter, handling the data, and the view, displaying the data. This is illustrated in figure~\ref{fig:mvp}. 
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ch/architecture/fig/mvp.png}
-\caption{An illustraton of the Model-View-Presenter pattern}
+\caption{An illustration of the Model-View-Presenter pattern}
 \label{fig:mvp}
 \end{figure}
 
