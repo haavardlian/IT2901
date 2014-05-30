@@ -1,26 +1,26 @@
 id, tasks, dayone, daytwo, daythree, dayfour, dayfive, daysix, dayseven, dayeight, daynine, dayten
 \vspace{-0.8cm}
-x,planlegging,12,0,12,0,0,12,0,0,0,0
-x,møter,0,0,0,0,6,0,0,0,0,0
+x\cellcolor{lightgray},planning\cellcolor{lightgray},12\cellcolor{lightgray},0\cellcolor{lightgray},12\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},12\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
+x\cellcolor{lightgray},meetings\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},6\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
 
-154,customer presentation,0,0,0,0,0,0,0,0,0,0
+154\cellcolor{lightgray},customer presentation\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
 ,prepare,10,5,0,12,0,0,0,0,0,0,0
 ,present,0,0,0,0,9,0,0,0,0,0
 
-152,Code quality and cleaning,0,0,0,0,0,0,0,0,0,0
+152\cellcolor{lightgray},Code quality and cleaning\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
 ,Cleanup usage, devices and home,0,0,5,0,0,0,0,0,0,0
 ,Cleanup Tips,0,0,2,0,0,0,0,0,0,4
 ,Cleanup server,0,0,2,0,4,0,0,0,0,0
 ,Going over large parts of the code to make usure its consistent.,0,0,0,0,0,0,0,6,0,0
 ,Cleanup in app (code conventions),4,0,3,0,0,0,0,0,4,0
 
-147,Branding,0,0,0,0,0,0,0,0,0,0
+147\cellcolor{lightgray},Branding\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
 ,Branding,0.75,0,0,0,0,0,0,0,0,0
 
-153,Last minute functionality,0,0,0,0,0,0,0,0,0,0
+153\cellcolor{lightgray},Last minute functionality\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
 ,add images in wall posts,0,0,0,5,0,0,0,0,0,0,0
 
-149,Final version of report,0,0,0,0,0,0,0,0,0,0
+149\cellcolor{lightgray},Final version of report\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray},0\cellcolor{lightgray}
 ,Technical documentation (installation guide)should be written,0,2,0,0,0,0,0,0,0,0
 ,rewrite the use cases,0,0,0,0.5,0,0,0,0,0,0
 ,Add usecase diagram and write about it,0,0,0,0,0.75,0,0,0,0,0
