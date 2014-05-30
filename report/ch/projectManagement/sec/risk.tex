@@ -8,40 +8,42 @@ In table~\ref{tab:risktable} elements considered as risks in the project is eval
 
 
 \setlength{\tabcolsep}{6pt}
+\small
 \rowcolors{2}{darkgray}{lightgray}
-\begin{longtable}{|p{3.6cm}!{\vrule width -1pt}l!{\vrule width -1pt}l!{\vrule width -1pt}l!{\vrule width -1pt}p{4.8cm}!{\vrule width -1pt}p{4.8cm}|}
+\begin{longtable}{|p{0.4cm}!{\vrule width -1pt}p{3.4cm}!{\vrule width -1pt}l!{\vrule width -1pt}l!{\vrule width -1pt}l!{\vrule width -1pt}p{4.5cm}!{\vrule width -1pt}p{4.5cm}|}
 \hline
-\multicolumn{1}{|l!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{Description}} &  \multicolumn{1}{c!{\vrule width -1pt}}{ \cellcolor{darkgray}\textbf{P}} & \multicolumn{1}{c!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{E}} & \multicolumn{1}{c!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{I}} & \multicolumn{1}{l!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{Preventive actions}} & \multicolumn{1}{l|}{\cellcolor{darkgray}\textbf{Remedial actions}}\\ 
+\multicolumn{1}{|l!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{\#}} &\multicolumn{1}{l!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{Description}} &  \multicolumn{1}{c!{\vrule width -1pt}}{ \cellcolor{darkgray}\textbf{P}} & \multicolumn{1}{c!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{E}} & \multicolumn{1}{c!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{I}} & \multicolumn{1}{l!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{Preventive actions}} & \multicolumn{1}{l|}{\cellcolor{darkgray}\textbf{Remedial actions}}\\ 
 \endfirsthead
 
-\multicolumn{6}{c}%
+\multicolumn{7}{c}%
 {{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\\hline
-\multicolumn{1}{|l!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{Description}} &  \multicolumn{1}{c!{\vrule width -1pt}}{ \cellcolor{darkgray}\textbf{P}} & \multicolumn{1}{c!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{E}} & \multicolumn{1}{c!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{I}} & \multicolumn{1}{l!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{Preventive actions}} & \multicolumn{1}{l|}{\cellcolor{darkgray}\textbf{Remedial actions}}\\ \hline 
+\multicolumn{1}{|l!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{\#}} &\multicolumn{1}{l!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{Description}} &  \multicolumn{1}{c!{\vrule width -1pt}}{ \cellcolor{darkgray}\textbf{P}} & \multicolumn{1}{c!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{E}} & \multicolumn{1}{c!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{I}} & \multicolumn{1}{l!{\vrule width -1pt}}{\cellcolor{darkgray}\textbf{Preventive actions}} & \multicolumn{1}{l|}{\cellcolor{darkgray}\textbf{Remedial actions}}\\ \hline 
 \endhead
 
-\hline \multicolumn{6}{|l|}{{Continued on next page}} \\ \hline
+\hline \multicolumn{7}{|l|}{{Continued on next page}} \\ \hline
 \endfoot
  
 \endlastfoot
 \hline
-Underestimation of workload & 9 & 8 & 72 & Continuously revise workload and time left, and prioritize. & Reestimate continuously.\\
-Issues with software or tools & 9 & 5 & 45 & Choose software the team members are familiar with. & Hold workshops and view tutorials.\\
-Customer does not fulfill obligations. & 8 & 5 & 40 & Keep customer updated. Continuously communicate. Final deadline for feedback. & Contact supervisor.\\
-Illness & 9 & 4 & 36 & Multiple team members work on the same task.& Allocate sick member's task to remaining members.\\
-Unbalanced workload & 5 & 7 & 35 & Coordinate with entire team and log hours. & Reallocate tasks.\\
-Unproductive hours caused by external disruptions & 7 & 5 & 35 & & Find another place to work. Work extra hours to make up for lost time. \\
-Team member unavailable & 9 & 3 & 27 & Inform on unavailable dates. Good infrastructure for communication and progress reports. & Keep in touch with unavailable team member or redistribute tasks.\\
-Spending more time than estimated on discussions & 7 & 3& 21& Include a buffer in our estimations. & Team leader decides if subject is not worth the time or should be rescheduled.\\
-External services unavailable & 4 & 7 & 21 & Project not fully dependent of external services. Server is easy to deploy. & Find new external service to replace the one(s) becoming unavailable. Deploy elsewhere.\\
-Data loss & 2 & 9 & 18 & Use version control system. &Restore data from previous versions.\\
-Customer unavailable & 3 & 6 & 18 & Keep regular contact with customer. & Discuss problem within team and contact supervisor.\\
-Communication failure & 7 & 2 & 14 & Make e-mail-list and exchange contact information. %Be explicit.
+1&Underestimation of workload & 9 & 8 & 72 & Continuously revise workload and time left, and prioritize. & Reestimate continuously.\\
+2&Issues with software or tools & 9 & 5 & 45 & Choose software the team members are familiar with. & Hold workshops and view tutorials.\\
+3&Customer does not fulfill obligations. & 8 & 5 & 40 & Keep customer updated. Continuously communicate. Final deadline for feedback. & Contact supervisor.\\
+4&Illness & 9 & 4 & 36 & Multiple team members work on the same task.& Allocate sick member's task to remaining members.\\
+5&Unbalanced workload & 5 & 7 & 35 & Coordinate with team and log hours. & Reallocate tasks.\\
+6&Unproductive hours caused by external disruptions & 7 & 5 & 35 & & Find other place to work. Work extra to compensate. \\
+7&Team member unavailable & 9 & 3 & 27 & Inform about unavailable dates, progress report and continuous communication. & Keep in touch with unavailable team member or redistribute tasks.\\
+8&Spending more time than estimated on discussions & 7 & 3& 21& Include a buffer in our estimations. & Team leader decides if subject is not worth the time or should be rescheduled.\\
+9&External services unavailable & 4 & 7 & 21 & Project not fully dependent of external services. Server is easy to deploy. & Find new external service to replace unavailable service. Deploy elsewhere.\\
+10&Data loss & 2 & 9 & 18 & Use version control system. &Restore data from previous versions.\\
+11&Customer unavailable & 3 & 6 & 18 & Keep regular contact with customer. & Discuss problem within team, contact supervisor.\\
+12&Communication failure & 7 & 2 & 14 & Make e-mail-list and exchange contact information. %Be explicit.
  & Check e-mail and phones multiple times a day.\\
-Customer requirements exceed project time scope& 4 & 3 & 12 & Continuously revise the workload and prioritize. Set a date for last major changes. & Politely explain that there is not enough time for the changes he suggests. Drop low-priority tasks.\\
-Supervisor unavailable & 3 & 4 & 12 & Keep regular contact with supervisor. & Discuss problem internally and contact department.\\
+13&Customer requirements exceed project time scope& 4 & 3 & 12 & Continuously revise the workload and prioritize. Set a date for last major changes. & Politely explain that there is not enough time for the changes he suggests. Drop low-priority tasks.\\
+14&Supervisor unavailable & 3 & 4 & 12 & Keep regular contact with supervisor. & Discuss problem internally and contact department.\\
 %13&Conflict in group & 5 & 2 & 10 & Have in mind that people often misunderstand each other and have an open dialog to solve problem. & Contact supervisor for help.\\
-A team member drops out of the course & 1 & 7 & 7 & Pair programming and keep everyone motivated & Contact supervisor and redistribute tasks. \\\hline
+15&Team member drops out of the course & 1 & 7 & 7 & Pair programming and keep everyone motivated & Contact supervisor and redistribute tasks. \\\hline
 \caption{Risk analysis table}
 \label{tab:risktable}
 \end{longtable}
 \rowcolors{0}{}{}
+\normalsize
