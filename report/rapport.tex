@@ -1,4 +1,4 @@
-\documentclass[12pt, oneside, report]{memoir}
+\documentclass[12pt, oneside,report]{memoir}
 \input config.tex
 \usepackage{titlepic}
 \input glossary.tex
@@ -31,10 +31,17 @@ Pia	Karlsen	Lindkjølen\\\vspace{0.1\textwidth}}
 \thispagestyle{empty}
 \pagenumbering{gobble}
 
-
+\newpage
+\thispagestyle{empty}
+\mbox{}
 \clearpage
-
+\thispagestyle{empty}
+\begin{adjustwidth}{1cm}{-1cm}
 \input abstract.tex
+\end{adjustwidth}
+\newpage
+\thispagestyle{empty}
+\mbox{}
 
 \newpage
 \renewcommand\contentsname{Contents}
